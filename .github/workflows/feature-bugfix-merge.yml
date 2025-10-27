@@ -12,4 +12,4 @@ jobs:
       - name: Restrict branch merges to main
         uses: actions/branch-merge-restrictor@v1
         with:
-          allowed_source_branches: feature,hotfix
+          allowed_source_branches: feature,bugfix
