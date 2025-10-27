@@ -26,6 +26,21 @@
                     "chapter": "II",
                     "id": "chapter-ii",
                     "title": "THE LEADING WARM SAUCES"
+                },
+                {
+                    "chapter": "III",
+                    "id": "chapter-iii",
+                    "title": "THE SMALL COMPOUND SAUCES"
+                },
+                {
+                    "chapter": "IV",
+                    "id": "chapter-iv",
+                    "title": "COLD SAUCES AND COMPOUND BUTTERS"
+                },
+                {
+                    "chapter": "V",
+                    "id": "chapter-v",
+                    "title": "SAVOURY JELLIES OR ASPICS"
                 }
             ]
         }

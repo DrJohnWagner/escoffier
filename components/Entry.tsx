@@ -19,7 +19,7 @@ const Entry: React.FC<{ entry: InstructionalEntry }> = ({ entry }) => {
 
             {/* The introduction for a principle, definition, etc. */}
             {entry.introduction && (
-                <div className="entry-introduction prose prose-gray max-w-none mb-6">
+                <div className="entry-introduction prose prose-gray max-w-none mb-4">
                     {typeof entry.introduction === "string" ? (
                         <p>{entry.introduction}</p>
                     ) : (
@@ -30,9 +30,9 @@ const Entry: React.FC<{ entry: InstructionalEntry }> = ({ entry }) => {
 
             {/* Only render this section if the type is 'recipe' */}
             {entry.type === "recipe" && (
-                <div className="recipe-details space-y-6">
+                <div className="recipe-details space-y-4">
                     {entry.yield && (
-                        <p className="recipe-yield text-sm text-gray-600 italic">
+                        <p className="recipe-yield text-gray-600 italic">
                             <strong>Yield:</strong> {entry.yield}
                         </p>
                     )}
