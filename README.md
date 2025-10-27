@@ -26,6 +26,15 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - **`functions/`**: Contains utility functions, notably `getData.ts`, which provides a standardized way to read and parse JSON data files on the server.
 - **`types/`**: This directory holds TypeScript definitions. The `generated.ts` subdirectory is particularly important as it contains the auto-generated types that align the code with the data schemas.
 
+## Github Branching
+- Using https://gist.github.com/digitaljhelms/4287848
+- Using `feature`, `bugfic` and `stable`
+- Feature Branches: These branches are used for developing new features. Use the prefix feature/. For instance, feature/login-system.
+- Bugfix Branches: These branches are used to fix bugs in the code. Use the prefix bugfix/. For example, bugfix/header-styling.
+- Hotfix Branches: These branches are made directly from the production branch to fix critical bugs in the production environment. Use the prefix hotfix/. For instance, hotfix/critical-security-issue.
+- Release Branches: These branches are used to prepare for a new production release. They allow for last-minute dotting of i’s and crossing t’s. Use the prefix release/. For example, release/v1.0.1.
+- Documentation Branches: These branches are used to write, update, or fix documentation eg. the README.md file. Use the prefix docs/. For instance, docs/api-endpoints.
+
 ## Getting Started
 
 First, run the development server:
