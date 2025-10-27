@@ -43,3 +43,7 @@ next-env.d.ts
 # Project raw data and samples
 data/RawData/
 data/sample/
+
+# Local artifacts not meant for version control
+/test.html
+/escoffier.zip

@@ -4,34 +4,6 @@ import React from "react"
 import Link from "next/link"
 import TableOfContentsItemType from "@/types/TableOfContentsItemType"
 
-// A small, recursive component to render the nested list of entries
-const TOCEntriesList: React.FC<{ items: TableOfContentsItemType[] }> = ({
-    items,
-}) => {
-    return (
-        <ul className="space-y-2 mt-2 pl-4">
-            {items.map((item) => (
-                <li key={item.title}>
-                    {/* This check is already correct for nested items */}
-                    {item.link ? (
-                        <Link
-                            href={item.link}
-                            className="text-lg text-gray-600 hover:text-blue-600 hover:underline transition-colors"
-                        >
-                            {item.title}
-                        </Link>
-                    ) : (
-                        <span className="text-lg text-gray-600">
-                            {item.title}
-                        </span>
-                    )}
-                </li>
-            ))}
-        </ul>
-    )
-}
-
-// The props for our new, unified component
 type TableOfContentsProps = {
     items: TableOfContentsItemType[]
     title: string
@@ -49,41 +21,69 @@ const TableOfContents: React.FC<TableOfContentsProps> = ({
         return null
     }
 
+    const allItems = items.flatMap((section) => {
+        const sectionHeader = { ...section, isSectionHeader: true }
+        const children =
+            section.children?.map((child) => ({
+                ...child,
+                isSectionHeader: false,
+            })) || []
+        return [sectionHeader, ...children]
+    })
+
     const containerClasses =
         variant === "chapter" ? "chapter-toc my-10 p-8" : "table-of-contents"
-    const gridGapClass = variant === "chapter" ? "gap-y-4" : "gap-y-8"
+
+    // --- FIX #1: Define item margin to replace the old grid row-gap ---
+    // This will control the vertical space between items in each column.
+    const itemMarginClass = variant === "chapter" ? "mb-4" : "mb-8"
 
     return (
         <nav className={containerClasses}>
             <h2 className="text-3xl font-bold text-gray-800 border-b pb-4 mb-6 text-center">
                 {title}
             </h2>
-            <div
-                className={`grid grid-cols-1 md:grid-cols-2 gap-x-12 ${gridGapClass}`}
-            >
-                {items.map((item) => (
-                    <div key={item.title}>
-                        {/* --- MODIFICATION HERE --- */}
-                        {/*
-						  Render a link only if topLevelItemsAreLinks is true AND
-						  the specific item has a valid link property.
-						*/}
-                        {topLevelItemsAreLinks && item.link ? (
-                            <Link
-                                href={item.link}
-                                className="text-xl font-semibold text-gray-800 hover:text-blue-600 hover:underline"
-                            >
-                                {item.title}
-                            </Link>
+            {/* --- FIX #2: Replace CSS Grid with CSS Columns --- */}
+            {/* The `columns-2` class creates the column-major flow you want. */}
+            <div className={`columns-1 md:columns-2 gap-x-12`}>
+                {allItems.map((item, index) => (
+                    // --- FIX #3: Add classes to each item ---
+                    // `break-inside-avoid` prevents an item from being split across columns.
+                    // The margin class adds the necessary vertical spacing.
+                    <div
+                        key={`${item.title}-${index}`}
+                        className={`break-inside-avoid ${itemMarginClass}`}
+                    >
+                        {item.isSectionHeader ? (
+                            <>
+                                {topLevelItemsAreLinks && item.link ? (
+                                    <Link
+                                        href={item.link}
+                                        className="text-xl font-semibold text-gray-800 hover:text-blue-600 hover:underline"
+                                    >
+                                        {item.title}
+                                    </Link>
+                                ) : (
+                                    <h3 className="text-2xl font-semibold text-gray-700">
+                                        {item.title}
+                                    </h3>
+                                )}
+                            </>
                         ) : (
-                            // Fallback for all non-link cases
-                            <h3 className="text-2xl font-semibold text-gray-700">
-                                {item.title}
-                            </h3>
-                        )}
-
-                        {item.children && item.children.length > 0 && (
-                            <TOCEntriesList items={item.children} />
+                            <div className="pl-4">
+                                {item.link ? (
+                                    <Link
+                                        href={item.link}
+                                        className="text-lg text-gray-600 hover:text-blue-600 hover:underline transition-colors"
+                                    >
+                                        {item.title}
+                                    </Link>
+                                ) : (
+                                    <span className="text-lg text-gray-600">
+                                        {item.title}
+                                    </span>
+                                )}
+                            </div>
                         )}
                     </div>
                 ))}
