@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://example.com/schemas/recipe.json",
+    "title": "Recipe",
+    "description": "A standalone recipe entry.",
+    "type": "object",
+    "properties": {
+        "number": {
+            "type": "number",
+            "description": "The unique number of the recipe."
+        },
+        "title": {
+            "type": "string",
+            "description": "The title of the recipe."
+        },
+        "type": {
+            "description": "The type of entry, which must be 'recipe'.",
+            "const": "recipe"
+        },
+        "introduction": {
+            "$ref": "./content-block-schema.json"
+        },
+        "notes": {
+            "type": "array",
+            "items": {
+                "$ref": "./content-block-schema.json"
+            }
+        },
+        "yield": {
+            "type": "string"
+        },
+        "ingredients": {
+            "type": "array",
+            "items": {
+                "$ref": "./content-block-schema.json"
+            }
+        },
+        "instructions": {
+            "type": "array",
+            "items": {
+                "$ref": "./content-block-schema.json"
+            }
+        }
+    },
+    "required": ["number", "title", "type", "ingredients", "instructions"]
+}

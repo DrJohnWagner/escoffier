@@ -1,0 +1,36 @@
+{
+    "title": "A Digital Guide to Modern Cookery",
+    "authors": ["A. Escoffier", "Digital Edition by [Your Name/Project]"],
+    "language": "English",
+    "source": {
+        "title": "A Guide to Modern Cookery",
+        "authors": ["A. Escoffier"],
+        "edition": "New and Revised Edition",
+        "year": 1907,
+        "publisher": "William Heinemann",
+        "location": "London",
+        "url": "https://www.gutenberg.org/ebooks/71395"
+    },
+    "introduction": [],
+    "contents": [
+        {
+            "part": "I",
+            "title": "FUNDAMENTAL ELEMENTS",
+            "chapters": [
+                {
+                    "chapter": "I",
+                    "id": "chapter-i",
+                    "title": "FONDS DE CUISINE"
+                },
+                {
+                    "chapter": "II",
+                    "id": "chapter-ii",
+                    "title": "THE LEADING WARM SAUCES"
+                }
+            ]
+        }
+    ],
+    "menus": [],
+    "glossary": [],
+    "index": []
+}

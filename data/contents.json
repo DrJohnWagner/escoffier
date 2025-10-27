@@ -1,0 +1,129 @@
+[
+    {
+        "part": "I",
+        "title": "FUNDAMENTAL ELEMENTS",
+        "chapters": [
+            {
+                "chapter": "I",
+                "id": "chapter-i",
+                "title": "FONDS DE CUISINE"
+            },
+            {
+                "chapter": "II",
+                "id": "chapter-ii",
+                "title": "THE LEADING WARM SAUCES"
+            },
+            {
+                "chapter": "III",
+                "id": "chapter-iii",
+                "title": "THE SMALL COMPOUND SAUCES"
+            },
+            {
+                "chapter": "IV",
+                "id": "chapter-iv",
+                "title": "COLD SAUCES AND COMPOUND BUTTERS"
+            },
+            {
+                "chapter": "V",
+                "id": "chapter-v",
+                "title": "SAVOURY JELLIES OR ASPICS"
+            },
+            {
+                "chapter": "VI",
+                "id": "chapter-vi",
+                "title": "THE COURT-BOUILLONS AND THE MARINADES"
+            },
+            {
+                "chapter": "VII",
+                "id": "chapter-vii",
+                "title": "ELEMENTARY PREPARATIONS"
+            },
+            {
+                "chapter": "VIII",
+                "id": "chapter-viii",
+                "title": "THE VARIOUS GARNISHES FOR SOUPS"
+            },
+            {
+                "chapter": "IX",
+                "id": "chapter-ix",
+                "title": "GARNISHING PREPARATIONS FOR RELEVÉS AND ENTRÉES"
+            },
+            {
+                "chapter": "X",
+                "id": "chapter-x",
+                "title": "LEADING CULINARY OPERATIONS"
+            }
+        ]
+    },
+    {
+        "part": "II",
+        "title": "RECIPES AND MODES OF PROCEDURE",
+        "chapters": [
+            {
+                "chapter": "XI",
+                "id": "chapter-xi",
+                "title": "HORS-D’ŒUVRES"
+            },
+            {
+                "chapter": "XII",
+                "id": "chapter-xii",
+                "title": "EGGS"
+            },
+            {
+                "chapter": "XIII",
+                "id": "chapter-xiii",
+                "title": "SOUPS"
+            },
+            {
+                "chapter": "XIV",
+                "id": "chapter-xiv",
+                "title": "FISH"
+            },
+            {
+                "chapter": "XV",
+                "id": "chapter-xv",
+                "title": "RELEVÉS AND ENTRÉES OF BUTCHER’S MEAT"
+            },
+            {
+                "chapter": "XVI",
+                "id": "chapter-xvi",
+                "title": "RELEVÉS AND ENTRÉES OF POULTRY AND GAME"
+            },
+            {
+                "chapter": "XVII",
+                "id": "chapter-xvii",
+                "title": "ROASTS AND SALADS"
+            },
+            {
+                "chapter": "XVIII",
+                "id": "chapter-xviii",
+                "title": "VEGETABLES AND FARINACEOUS PRODUCTS"
+            },
+            {
+                "chapter": "XIX",
+                "id": "chapter-xix",
+                "title": "SAVORIES"
+            },
+            {
+                "chapter": "XX",
+                "id": "chapter-xx",
+                "title": "ENTREMETS (SWEETS)"
+            },
+            {
+                "chapter": "XXI",
+                "id": "chapter-xxi",
+                "title": "ICES AND SHERBETS"
+            },
+            {
+                "chapter": "XXII",
+                "id": "chapter-xxii",
+                "title": "DRINKS AND REFRESHMENTS"
+            },
+            {
+                "chapter": "XXIII",
+                "id": "chapter-xxiii",
+                "title": "FRUIT-STEWS AND JAMS"
+            }
+        ]
+    }
+]

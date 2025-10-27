@@ -1,0 +1,158 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://example.com/schemas/chapter.json",
+    "title": "Cookbook Chapter",
+    "$defs": {
+        "EntryBase": {
+            "title": "Base for all Entries",
+            "type": "object",
+            "properties": {
+                "number": {
+                    "type": "number"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "introduction": {
+                    "$ref": "./content-block-schema.json"
+                },
+                "notes": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "./content-block-schema.json"
+                    }
+                }
+            },
+            "required": ["number", "title", "type"]
+        },
+        "Principle": {
+            "title": "Principle",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "const": "principle"
+                }
+            }
+        },
+        "Technique": {
+            "title": "Technique",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "const": "technique"
+                }
+            }
+        },
+        "Definition": {
+            "title": "Definition",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "const": "definition"
+                }
+            }
+        },
+        "Entry": {
+            "title": "Instructional Entry",
+            "oneOf": [
+                {
+                    "allOf": [
+                        {
+                            "$ref": "#/$defs/EntryBase"
+                        },
+                        {
+                            "$ref": "./recipe-schema.json"
+                        }
+                    ]
+                },
+                {
+                    "allOf": [
+                        {
+                            "$ref": "#/$defs/EntryBase"
+                        },
+                        {
+                            "$ref": "#/$defs/Principle"
+                        }
+                    ]
+                },
+                {
+                    "allOf": [
+                        {
+                            "$ref": "#/$defs/EntryBase"
+                        },
+                        {
+                            "$ref": "#/$defs/Technique"
+                        }
+                    ]
+                },
+                {
+                    "allOf": [
+                        {
+                            "$ref": "#/$defs/EntryBase"
+                        },
+                        {
+                            "$ref": "#/$defs/Definition"
+                        }
+                    ]
+                }
+            ]
+        },
+        "Section": {
+            "title": "Chapter Section",
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string"
+                },
+                "introduction": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "entries": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/Entry"
+                    }
+                },
+                "sections": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/Section"
+                    }
+                }
+            },
+            "required": ["title"]
+        }
+    },
+    "type": "object",
+    "properties": {
+        "chapter": {
+            "type": "string"
+        },
+        "id": {
+            "type": "string",
+            "description": "A unique, machine-readable identifier for the chapter, used for linking (e.g., 'chapter-i')."
+        },
+        "title": {
+            "type": "string"
+        },
+        "introduction": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "sections": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/Section"
+            }
+        }
+    },
+    "required": ["chapter", "id", "title", "sections"]
+}

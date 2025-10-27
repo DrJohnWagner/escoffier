@@ -1,0 +1,407 @@
+[
+    {
+        "term": "Abats",
+        "definition": "Stands for such butcher's supplies as heads, hearts, livers, kidneys, feet, etc."
+    },
+    {
+        "term": "Aiguillettes",
+        "see_recipe": "1755"
+    },
+    {
+        "term": "Ailerons",
+        "see_recipe": "1583"
+    },
+    {
+        "term": "Amourettes",
+        "see_recipe": "1288"
+    },
+    {
+        "term": "Anglaise",
+        "definition": "To treat à l'Anglaise",
+        "see_recipe": "174"
+    },
+    {
+        "term": "Anglaise",
+        "definition": "To cook à l'Anglaise means to cook plainly in water."
+    },
+    {
+        "term": "Anglaise",
+        "definition": "A preparation of beaten eggs, oil and seasoning."
+    },
+    {
+        "term": "Attereaux",
+        "see_recipe": "1219"
+    },
+    {
+        "term": "Baba-moulds",
+        "definition": "A kind of small deep cylindrical mould, slightly wider at the top than at the bottom."
+    },
+    {
+        "term": "Bain-Marie",
+        "definition": "A hot-water bath in which utensils containing various culinary preparations are immersed to keep warm, or for the purpose of poaching or cooking."
+    },
+    {
+        "term": "Barquettes",
+        "see_recipe": "314"
+    },
+    {
+        "term": "Biscottes",
+        "definition": "A kind of rusks."
+    },
+    {
+        "term": "Blanch",
+        "see_recipe": "273"
+    },
+    {
+        "term": "Brandade",
+        "see_recipe": "1027"
+    },
+    {
+        "term": "Brunoise-fashion",
+        "see_term": "Cut"
+    },
+    {
+        "term": "Canapés",
+        "see_recipe": "316"
+    },
+    {
+        "term": "Caramel Stage",
+        "see_term": "Stages in the Cooking of Sugar"
+    },
+    {
+        "term": "Casserole (En)",
+        "see_recipe": "250"
+    },
+    {
+        "term": "Cassolette",
+        "definition": "A kind of hot hors-d'œuvre, moulded to the shape of a small drum."
+    },
+    {
+        "term": "Cèpes",
+        "definition": "A kind of mushroom (Boletus edulis)."
+    },
+    {
+        "term": "Chartreuse-fashion",
+        "see_recipe": "1220"
+    },
+    {
+        "term": "Chiffonade",
+        "see_recipe": "215"
+    },
+    {
+        "term": "Chinois",
+        "definition": "A very small green candied orange."
+    },
+    {
+        "term": "Chipolata",
+        "definition": "A kind of small sausages."
+    },
+    {
+        "term": "Choux",
+        "definition": "A kind of cake made from Pâte à Choux."
+    },
+    {
+        "term": "Cisel",
+        "definition": "To cut a vegetable after the manner of a chaff-cutting machine."
+    },
+    {
+        "term": "Clothe",
+        "see_recipe": "916"
+    },
+    {
+        "term": "Cocotte (En)",
+        "see_recipe": "250"
+    },
+    {
+        "term": "Concass",
+        "definition": "To chop roughly."
+    },
+    {
+        "term": "Contise",
+        "definition": "To incise a piece of meat at stated intervals, and to insert slices of truffle, or other substance, into each incision."
+    },
+    {
+        "term": "Crépinettes",
+        "see_recipe": "1410"
+    },
+    {
+        "term": "Croustade",
+        "see_recipe": "2393"
+    },
+    {
+        "term": "Croûtons",
+        "definition": "Pieces of bread of various shapes and sizes, fried in butter. In the case of aspic jelly, croûtons stand for variously shaped pieces used in bordering dishes."
+    },
+    {
+        "term": "Cut",
+        "sub_terms": [
+            "Brunoise-fashion",
+            "Julienne-fashion",
+            "Paysanne-fashion"
+        ],
+        "definition": "Brunoise-fashion = to cut a product into small dice. Julienne-fashion = to cut a product into match-shaped rods. Paysanne-fashion = to cut a product into triangles."
+    },
+    {
+        "term": "Dariole-moulds",
+        "definition": "Small Baba-moulds."
+    },
+    {
+        "term": "Darne",
+        "see_recipe": "784"
+    },
+    {
+        "term": "Daubière",
+        "definition": "An earthenware utensil used in the cooking of Daubes."
+    },
+    {
+        "term": "Écarlate (A l')",
+        "definition": "Salted meat is said to be à l'écarlate when it is swathed in a coat of scarlet jelly."
+    },
+    {
+        "term": "Escarole",
+        "definition": "Batavia chicory."
+    },
+    {
+        "term": "Feuilletés",
+        "definition": "A kind of puffs made from puff-paste."
+    },
+    {
+        "term": "Flute",
+        "definition": "A long crisp roll of bread."
+    },
+    {
+        "term": "Fondue",
+        "definition": "(1) a cheese preparation; (2) a pulpy state to which such vegetables as tomatoes, sorrel, etc., are reduced by cooking."
+    },
+    {
+        "term": "Fumet",
+        "definition": "A kind of essence extracted from fish, game, etc."
+    },
+    {
+        "term": "Galette",
+        "definition": "A large quoit, made from puff-paste or short-paste, etc."
+    },
+    {
+        "term": "Gaufrette",
+        "definition": "A special wafer."
+    },
+    {
+        "term": "Génoise",
+        "see_recipe": "2376"
+    },
+    {
+        "term": "Gild",
+        "definition": "(1) to cover an object with beaten eggs, by means of a brush; (2) to give a golden sheen to objects by means of heat."
+    },
+    {
+        "term": "Gratin",
+        "see_recipe": "268"
+    },
+    {
+        "term": "Hatelet",
+        "definition": "An ornamental skewer; the word sometimes stands for Attereaux."
+    },
+    {
+        "term": "Julienne",
+        "see_term": "Cut"
+    },
+    {
+        "term": "Langoustine",
+        "definition": "A small variety of the Spiny Lobster."
+    },
+    {
+        "term": "Stages in the Cooking of Sugar",
+        "sub_terms": [
+            "Small-Thread Stage",
+            "Large-Thread Stage",
+            "Small-Ball Stage",
+            "Large-Ball Stage",
+            "Small-Crack Stage",
+            "Large-Crack Stage",
+            "Caramel Stage",
+            "Nappe Stage"
+        ],
+        "definition": "Various stages in sugar cooking including Small-Thread, Large-Thread, Small-Ball, Large-Ball, Small-Crack, Large-Crack, Caramel, and Nappe stages."
+    },
+    {
+        "term": "Macédoine",
+        "definition": "A mixture of early-season vegetables or fruit."
+    },
+    {
+        "term": "Madeleine-mould",
+        "definition": "A mould in the shape of a narrow scallop-shell."
+    },
+    {
+        "term": "Manied",
+        "definition": "Said of butter",
+        "see_recipe": "151"
+    },
+    {
+        "term": "Marinade",
+        "see_recipe": "168"
+    },
+    {
+        "term": "Meringue",
+        "see_recipe": "2382"
+    },
+    {
+        "term": "Mirepoix",
+        "see_recipe": "228"
+    },
+    {
+        "term": "Mise-en-place",
+        "definition": "A general name given to those elementary preparations which are constantly resorted to during the various stages of most culinary operations."
+    },
+    {
+        "term": "Morue",
+        "definition": "Newfoundland or Iceland salt-cod."
+    },
+    {
+        "term": "Mousses",
+        "definition": "A class of light, hot or cold preparations of fish, meat, poultry, game, etc., and sweets, moulded in large moulds in sufficient quantities for several people."
+    },
+    {
+        "term": "Mousselines",
+        "definition": "Same as Mousses, but moulded in small quantities at a time, enough for one person."
+    },
+    {
+        "term": "Mousserons",
+        "definition": "A kind of mushroom."
+    },
+    {
+        "term": "Nappe Stage",
+        "see_term": "Stages in the Cooking of Sugar"
+    },
+    {
+        "term": "Orgeat",
+        "definition": "A beverage made from syrup and almonds."
+    },
+    {
+        "term": "Oxalis",
+        "definition": "A Mexican vegetable, allied to sorrel, of which the roots principally are eaten."
+    },
+    {
+        "term": "Paillettes au Parmesan",
+        "see_recipe": "2322"
+    },
+    {
+        "term": "Palmettes",
+        "definition": "Palm-shaped pieces of puff-paste, used in decorating."
+    },
+    {
+        "term": "Panés à l'Anglaise",
+        "see_term": "Anglaise"
+    },
+    {
+        "term": "Pannequets",
+        "see_recipe": "2403"
+    },
+    {
+        "term": "Papillote",
+        "see_recipe": "1259"
+    },
+    {
+        "term": "Pâte à Choux",
+        "see_recipe": "2373"
+    },
+    {
+        "term": "Paupiette",
+        "definition": "A strip of chicken, of fish fillet, or other meat, garnished with forcemeat, rolled to resemble a scroll and cooked."
+    },
+    {
+        "term": "Paysanne-fashion",
+        "see_term": "Cut"
+    },
+    {
+        "term": "Pluches",
+        "definition": "The shreds of chervil, used for soups."
+    },
+    {
+        "term": "Poële",
+        "see_recipe": "250"
+    },
+    {
+        "term": "Poêle (A la)",
+        "see_recipe": "395"
+    },
+    {
+        "term": "Pralin",
+        "see_recipe": "2352"
+    },
+    {
+        "term": "Pralined",
+        "definition": "Having been treated with Pralin."
+    },
+    {
+        "term": "Printanier",
+        "definition": "A name given to a garnish of early-season vegetables, cut to various shapes."
+    },
+    {
+        "term": "Profiterolles",
+        "see_recipe": "218"
+    },
+    {
+        "term": "Râble",
+        "definition": "The back of a hare."
+    },
+    {
+        "term": "Ravioli",
+        "see_recipe": "2296"
+    },
+    {
+        "term": "Ribbon Stage",
+        "see_recipe": "2376"
+    },
+    {
+        "term": "Rissole",
+        "definition": "To fry brown."
+    },
+    {
+        "term": "Salpicon",
+        "definition": "A compound of various products, cut into dice, and, generally, cohered with sauce or forcemeat."
+    },
+    {
+        "term": "Sauté",
+        "see_recipe": "251"
+    },
+    {
+        "term": "Savarin-mould",
+        "definition": "An even, crown-shaped mould."
+    },
+    {
+        "term": "Soufflé",
+        "definition": "Name given to a class of light, hot or cold preparations of fish, meat, poultry, game, etc., and sweets, to which the whites of eggs are usually added if the preparation is served hot, and to which whisked cream is added if the preparation is served cold."
+    },
+    {
+        "term": "Soup-Flute",
+        "see_term": "Flute"
+    },
+    {
+        "term": "Subrics",
+        "see_recipe": "2137"
+    },
+    {
+        "term": "Suprême",
+        "definition": "A name given to the fillet of the breast of a fowl. The term has been extended to certain of the best parts of fish, game, etc."
+    },
+    {
+        "term": "Terrine",
+        "definition": "A patty."
+    },
+    {
+        "term": "Terrine à Pâté",
+        "definition": "A special utensil in which patties are cooked."
+    },
+    {
+        "term": "Tomatéd",
+        "definition": "Preparations are said to be tomatéd when they are mixed with enough tomato purée for the shade and flavour of the latter to be distinctly perceptible in them."
+    },
+    {
+        "term": "Vesiga",
+        "definition": "The dried spine-marrow of the sturgeon."
+    },
+    {
+        "term": "Zest",
+        "definition": "The outermost, coloured, glossy film of the rind of an orange or lemon."
+    }
+]

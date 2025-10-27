@@ -1,0 +1,87 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://example.com/schemas/menus.json",
+    "title": "Cookbook Menus",
+    "description": "A collection of menus, which can be grouped into sets.",
+    "$defs": {
+        "MenuItem": {
+            "title": "Menu Item",
+            "description": "Represents a single course in a menu, which can be a simple string or a choice between multiple options.",
+            "oneOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "choice": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "minItems": 2
+                        }
+                    },
+                    "required": ["choice"]
+                }
+            ]
+        },
+        "Menu": {
+            "title": "Menu",
+            "description": "A single menu, containing a list of food items, an optional wine list, and optional metadata.",
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string"
+                },
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/MenuItem"
+                    }
+                },
+                "wines": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "metadata": {
+                    "type": "object",
+                    "properties": {
+                        "date": {
+                            "type": "string"
+                        },
+                        "location": {
+                            "type": "string"
+                        },
+                        "occasion": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "MenuCollection": {
+            "title": "Menu Collection",
+            "description": "A titled group of menus, like 'Menus for Luncheons'.",
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string"
+                },
+                "menus": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/Menu"
+                    }
+                }
+            },
+            "required": ["title", "menus"]
+        }
+    },
+    "type": "array",
+    "items": {
+        "$ref": "#/$defs/MenuCollection"
+    }
+}
