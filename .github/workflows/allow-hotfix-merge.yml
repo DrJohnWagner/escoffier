@@ -1,0 +1,18 @@
+name: Enforce Hotfix to Stable Merge
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  check-hotfix-merge:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Fail if not merging hotfix into stable
+      run: |
+        if [[ "${{ github.base_ref }}" == "stable" && "${{ github.head_ref }}" == "hotfix" ]]; then
+          echo "Allowed: hotfix => stable"
+        else
+          echo "Only merges from hotfix into stable are allowed."
+          exit 1
+        fi
