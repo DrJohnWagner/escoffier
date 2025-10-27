@@ -49,7 +49,8 @@
           "number": 20,
           "title": "PALE ROUX",
           "type": "recipe",
-          "ingredients": [
+        "yield": "about 1 lb (454 g)",
+        "ingredients": [
             "8 oz (227 g) of clarified butter",
             "9 oz (255 g) of best-quality flour"
           ],
@@ -66,7 +67,8 @@
           "number": 21,
           "title": "WHITE ROUX",
           "type": "recipe",
-          "introduction": "White roux differs from pale roux in that the cooking is still more slighted, and that it is prepared in a different manner.",
+        "yield": "about 1 lb (454 g)",
+        "introduction": "White roux differs from pale roux in that the cooking is still more slighted, and that it is prepared in a different manner.",
           "ingredients": [
             "8 oz (227 g) of clarified butter",
             "9 oz (255 g) of best-quality flour"
