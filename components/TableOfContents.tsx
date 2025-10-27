@@ -36,20 +36,15 @@ const TableOfContents: React.FC<TableOfContentsProps> = ({
 
     // --- FIX #1: Define item margin to replace the old grid row-gap ---
     // This will control the vertical space between items in each column.
-    const itemMarginClass = variant === "chapter" ? "mb-4" : "mb-8"
+    const itemMarginClass = variant === "chapter" ? "mb-2" : "mb-4"
 
     return (
         <nav className={containerClasses}>
             <h2 className="text-3xl font-bold text-gray-800 border-b pb-4 mb-6 text-center">
                 {title}
             </h2>
-            {/* --- FIX #2: Replace CSS Grid with CSS Columns --- */}
-            {/* The `columns-2` class creates the column-major flow you want. */}
-            <div className={`columns-1 md:columns-2 gap-x-12`}>
+            <div className={`columns-1 md:columns-2`}>
                 {allItems.map((item, index) => (
-                    // --- FIX #3: Add classes to each item ---
-                    // `break-inside-avoid` prevents an item from being split across columns.
-                    // The margin class adds the necessary vertical spacing.
                     <div
                         key={`${item.title}-${index}`}
                         className={`break-inside-avoid ${itemMarginClass}`}
