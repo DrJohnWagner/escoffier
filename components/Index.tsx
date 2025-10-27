@@ -1,28 +1,19 @@
 "use client"
 
 import React, { useState } from "react"
-import Link from "next/link"
 
-// Define the shape of the data this component expects
-interface TermEntry {
-    term: string
-    recipe_number?: string
-}
+// 1. Import the generated types from the .d.ts file
+import {
+    CookbookIndex,
+    IndexEntry,
+    IndexCrossReference,
+} from "@/types/generated.ts/index-schema"
 
-interface CrossReferenceEntry {
-    term: string
-    see?: string
-}
+// 2. The manual interfaces are now removed.
 
-type IndexEntry = TermEntry | CrossReferenceEntry
-
-interface IndexGroup {
-    letter: string
-    entries: IndexEntry[]
-}
-
+// 3. Update the props to use the imported 'CookbookIndex' type
 interface IndexProps {
-    data: IndexGroup[]
+    data: CookbookIndex
 }
 
 const Index: React.FC<IndexProps> = ({ data }) => {
@@ -32,14 +23,19 @@ const Index: React.FC<IndexProps> = ({ data }) => {
         return null
     }
 
-    // The letters are already defined by the data structure!
     const sortedLetters = data.map((group) => group.letter).sort()
     const groupsToRender = selectedLetter
         ? data.filter((group) => group.letter === selectedLetter)
         : data
 
-    // A key tracker for handling potential duplicate terms within a letter group
     const keyTracker: { [key: string]: number } = {}
+
+    // A helper function to act as a type guard
+    const isCrossReference = (
+        entry: IndexEntry
+    ): entry is IndexCrossReference => {
+        return "see" in entry
+    }
 
     return (
         <article className="index max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -94,8 +90,8 @@ const Index: React.FC<IndexProps> = ({ data }) => {
                                         key={uniqueKey}
                                         className="index-entry flex justify-between items-baseline"
                                     >
-                                        {/* Use a type guard to check which kind of entry it is */}
-                                        {"see" in entry ? (
+                                        {/* 4. Use the type guard. This helps TypeScript understand the object's shape. */}
+                                        {isCrossReference(entry) ? (
                                             <span className="text-lg text-gray-600">
                                                 {entry.term}{" "}
                                                 <em>See: {entry.see}</em>
@@ -105,8 +101,8 @@ const Index: React.FC<IndexProps> = ({ data }) => {
                                                 <span className="text-lg text-gray-800">
                                                     {entry.term}
                                                 </span>
-                                                {/* We could make this a link in the future */}
-                                                {"recipe_number" in entry && (
+                                                {/* In this block, TS now knows `entry` is an `IndexTerm`. */}
+                                                {entry.recipe_number && (
                                                     <span className="text-md font-mono text-gray-500">
                                                         {entry.recipe_number}
                                                     </span>

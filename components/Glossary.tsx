@@ -1,19 +1,19 @@
 "use client"
 
 import React, { useState } from "react"
-import Link from "next/link"
 
-// --- Interfaces (remain the same) ---
-interface GlossaryEntry {
-    term: string
-    definition?: string
-    see_recipe?: string
-    see_term?: string
-    sub_terms?: string[]
-}
+// 1. Import the generated types from the .d.ts file
+import {
+    CookbookGlossary,
+    GlossaryEntry,
+} from "@/types/generated.ts/glossary-schema"
 
+// 2. The manual interfaces are now removed.
+
+// 3. Update the props to use the imported 'CookbookGlossary' type.
+//    (CookbookGlossary is an alias for GlossaryEntry[])
 interface GlossaryProps {
-    data: GlossaryEntry[]
+    data: CookbookGlossary
 }
 
 const Glossary: React.FC<GlossaryProps> = ({ data }) => {
@@ -23,7 +23,7 @@ const Glossary: React.FC<GlossaryProps> = ({ data }) => {
         return null
     }
 
-    // --- Data Processing (remains the same) ---
+    // This logic works perfectly with the imported types.
     const groupedEntries: { [letter: string]: GlossaryEntry[] } = data.reduce(
         (acc, entry) => {
             const baseLetter = entry.term
@@ -54,20 +54,18 @@ const Glossary: React.FC<GlossaryProps> = ({ data }) => {
             <header
                 className="
                     sticky top-0 z-10 
-                    py-4                  // REDUCED: Vertical padding is now 1rem (was 2rem)
-                    bg-gray-50/95         // ADDED: A slightly transparent background for a modern effect
-                    backdrop-blur-sm      // ADDED: Blurs the content scrolling underneath
+                    py-4
+                    bg-gray-50/95
+                    backdrop-blur-sm
                     border-b border-gray-200
                 "
             >
                 <div className="text-center">
-                    {/* REDUCED: Font size is now 3xl (was 5xl) */}
                     <h1 className="text-3xl font-extrabold text-gray-900">
                         Glossary
                     </h1>
                 </div>
 
-                {/* REDUCED: Margin-top is now 1rem (was 2rem) */}
                 <nav className="filter-nav flex flex-wrap justify-center gap-2 mt-4">
                     <button
                         onClick={() => setSelectedLetter(null)}
@@ -96,9 +94,6 @@ const Glossary: React.FC<GlossaryProps> = ({ data }) => {
             </header>
             <main className="pt-12">
                 {lettersToRender.map((letter) => {
-                    // --- THIS IS THE FIX ---
-                    // A key tracker is created for each letter group to ensure keys are unique
-                    // only among their siblings within that specific group.
                     const keyTracker: { [key: string]: number } = {}
 
                     return (
@@ -108,13 +103,11 @@ const Glossary: React.FC<GlossaryProps> = ({ data }) => {
                             </h2>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
                                 {groupedEntries[letter].map((entry) => {
-                                    // --- GENERATE THE UNIQUE KEY ---
                                     keyTracker[entry.term] =
                                         (keyTracker[entry.term] || 0) + 1
                                     const uniqueKey = `${entry.term}-${keyTracker[entry.term]}`
 
                                     return (
-                                        // --- USE THE UNIQUE KEY ---
                                         <div
                                             key={uniqueKey}
                                             className="glossary-entry"
