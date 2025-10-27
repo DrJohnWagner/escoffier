@@ -1,0 +1,15 @@
+name: Restrict merges to stable from allowed branches
+
+on:
+  pull_request:
+    branches:
+      - stable
+
+jobs:
+  restrict-branch-merges:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Restrict branch merges to main
+        uses: actions/branch-merge-restrictor@v1
+        with:
+          allowed_source_branches: hotfix
