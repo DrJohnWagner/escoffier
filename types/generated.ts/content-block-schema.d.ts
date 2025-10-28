@@ -6,10 +6,11 @@
  */
 
 /**
- * Represents a piece of information that can be a simple string or a titled object with a list of detail strings.
+ * Represents a piece of information that can be a simple string, an array of strings for paragraphs, or a titled object with a list of detail strings.
  */
 export type ContentBlock =
-    | string
-    | {
-          [k: string]: string[]
-      }
+  | string
+  | {
+      [k: string]: string[];
+    }
+  | string[];

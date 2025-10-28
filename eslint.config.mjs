@@ -55,6 +55,7 @@ const eslintConfig = [
             globals: {
                 ...globals.browser,
                 ...globals.node, // Next.js often uses both browser and node environments
+                JSX: "readonly",
             },
         },
         rules: {

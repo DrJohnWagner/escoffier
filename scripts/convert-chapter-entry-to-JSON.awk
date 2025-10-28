@@ -1,35 +1,36 @@
 #!/usr/bin/awk -f
 
 #
-# A standard, portable awk script to convert "key:value" lines
-# into a JSON array of objects.
+# Converts "chapter:entry" lines into a single JSON object (map).
 #
 
-# BEGIN block: Runs once before processing any lines.
+# BEGIN block: Runs once before processing.
 BEGIN {
     # Set the Field Separator to a colon.
     FS = ":"
-    # Print the opening bracket for the JSON array.
-    print "["
+    # Print the opening brace for the JSON object.
+    printf "{\n"
+    # Use a flag to handle commas correctly.
+    first_line = 1
 }
 
-# Main block: Runs for every single line in the input file.
+# Main block: Runs for every single line.
 {
-    # If this is not the first line (NR > 1), print a comma and a newline
-    # to correctly separate the JSON objects.
-    if (NR > 1) {
+    if (!first_line) {
+        # If this isn't the first line, print a comma and a newline
+        # to separate it from the previous entry.
         printf ",\n"
     }
+    first_line = 0
 
-    # Print the formatted JSON object for the current line.
-    # $1 is the part before the colon (chapter).
-    # $2 is the part after the colon (entry).
-    # The output is indented with two spaces for readability.
-    printf "  { \"chapter\": \"%s\", \"entry\": \"%s\" }", $1, $2
+    # Print the formatted key-value pair.
+    # $2 is the entry (e.g., "26a"), $1 is the chapter.
+    # Indented with two spaces for readability.
+    printf "  \"%s\": \"%s\"", $2, $1
 }
 
 # END block: Runs once after all lines have been processed.
 END {
-    # Print a final newline and the closing bracket for the array.
-    print "\n]"
+    # Print a final newline and the closing brace for the object.
+    print "\n}"
 }

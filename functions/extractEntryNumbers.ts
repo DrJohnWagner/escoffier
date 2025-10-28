@@ -39,7 +39,6 @@ function extractEntryIdentifiers(str: string): FoundIdentifier[] | null {
     // Define a regex to find ONLY the identifier parts.
     // The 'g' flag is crucial for finding all matches.
     const identifierRegex = /\d+[a-zA-Z]?/g
-
     // Use a loop with .exec() to get the index of each individual match.
     let singleMatch
     while ((singleMatch = identifierRegex.exec(blockText)) !== null) {
@@ -50,12 +49,10 @@ function extractEntryIdentifiers(str: string): FoundIdentifier[] | null {
 
         identifiers.push({ identifier, index: absoluteIndex })
     }
-
     // If the main block matched but no identifiers were found (should not happen with this regex, but safe to check), return null.
     if (identifiers.length === 0) {
         return null
     }
-
     return identifiers
 }
 

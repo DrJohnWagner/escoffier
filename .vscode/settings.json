@@ -33,5 +33,6 @@
     // Prettier will handle the formatting, and ESLint will handle other auto-fixable rules.
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": "explicit"
-    }
+    },
+    "typescript.tsdk": "node_modules/typescript/lib"
 }

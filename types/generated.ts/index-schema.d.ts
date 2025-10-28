@@ -8,39 +8,39 @@
 /**
  * Can be either a standard term or a cross-reference.
  */
-export type IndexEntry = IndexTerm | IndexCrossReference
+export type IndexEntry = IndexTerm | IndexCrossReference;
 /**
  * An index for the cookbook, grouped alphabetically.
  */
-export type CookbookIndex = IndexGroup[]
+export type CookbookIndex = IndexGroup[];
 
 /**
  * A group of index entries under a specific letter of the alphabet.
  */
 export interface IndexGroup {
-    letter: string
-    entries: IndexEntry[]
-    [k: string]: unknown
+  letter: string;
+  entries: IndexEntry[];
+  [k: string]: unknown;
 }
 export interface IndexTerm {
-    /**
-     * The indexed term or phrase.
-     */
-    term: string
-    /**
-     * The associated recipe number or range (e.g., '1652' or '2104-6').
-     */
-    recipe_number?: string
-    [k: string]: unknown
+  /**
+   * The indexed term or phrase.
+   */
+  term: string;
+  /**
+   * The associated recipe number or range (e.g., '1652' or '2104-6').
+   */
+  recipe_number?: string;
+  [k: string]: unknown;
 }
 export interface IndexCrossReference {
-    /**
-     * The term to be redirected.
-     */
-    term: string
-    /**
-     * The term to which the user is redirected (e.g., 'Apricots').
-     */
-    see: string
-    [k: string]: unknown
+  /**
+   * The term to be redirected.
+   */
+  term: string;
+  /**
+   * The term to which the user is redirected (e.g., 'Apricots').
+   */
+  see: string;
+  [k: string]: unknown;
 }

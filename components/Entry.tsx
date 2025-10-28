@@ -1,6 +1,7 @@
 import React from "react"
 import { InstructionalEntry } from "@/types/generated.ts/chapter-schema"
 import ContentBlockList from "./ContentBlockList"
+import EntryText from "@/components/EntryText"
 
 const Entry: React.FC<{ entry: InstructionalEntry }> = ({ entry }) => {
     return (
@@ -21,7 +22,7 @@ const Entry: React.FC<{ entry: InstructionalEntry }> = ({ entry }) => {
             {entry.introduction && (
                 <div className="entry-introduction prose prose-gray max-w-none mb-4">
                     {typeof entry.introduction === "string" ? (
-                        <p>{entry.introduction}</p>
+                        <p><EntryText text={entry.introduction} /></p>
                     ) : (
                         <ContentBlockList items={[entry.introduction]} />
                     )}

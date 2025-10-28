@@ -1,26 +1,15 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Recipe Index",
-    "description": "A list of recipe entries, where each entry maps a chapter to a specific recipe identifier.",
-    "type": "array",
-    "items": {
-        "type": "object",
-        "description": "A single recipe link containing a chapter and an entry identifier.",
-        "properties": {
-            "chapter": {
-                "description": "The chapter identifier, using the format 'chapter-' followed by a Roman numeral.",
-                "type": "string",
-                "pattern": "^chapter-[ivxlcdm]+$"
-            },
-            "entry": {
-                "description": "The unique recipe identifier, consisting of digits and an optional trailing letter.",
-                "type": "string",
-                "pattern": "^\\d+[a-zA-Z]?$"
-            }
-        },
-        "required": [
-            "chapter",
-            "entry"
-        ]
-    }
+    "title": "Recipe Dictionary Map",
+    "description": "A key-value map where each key is a recipe identifier and the value is its corresponding chapter identifier. This format is optimized for fast lookups.",
+    "type": "object",
+    "patternProperties": {
+        "^\\d+[a-zA-Z]?$": {
+            "description": "The value must be a chapter identifier string, e.g., 'chapter-i'.",
+            "type": "string",
+            "pattern": "^chapter-[ivxlcdm]+$"
+        }
+    },
+    "additionalProperties": false,
+    "minProperties": 1
 }
