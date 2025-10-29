@@ -6,200 +6,201 @@
  */
 
 /**
- * Represents a piece of information that can be a simple string or a titled object with a list of detail strings.
+ * Represents a piece of information that can be a simple string, an array of strings for paragraphs, or a titled object with a list of detail strings.
  */
 export type ContentBlock =
-    | string
-    | {
-          [k: string]: string[]
-      }
+  | string
+  | {
+      [k: string]: string[];
+    }
+  | string[];
 /**
  * The table of contents for the cookbook, organized into parts and chapters.
  */
-export type CookbookTableOfContents = PartEntry[]
+export type CookbookTableOfContents = PartEntry[];
 /**
  * Represents a single course in a menu, which can be a simple string or a choice between multiple options.
  */
 export type MenuItem =
-    | string
-    | {
-          /**
-           * @minItems 2
-           */
-          choice: [string, string, ...string[]]
-          [k: string]: unknown
-      }
+  | string
+  | {
+      /**
+       * @minItems 2
+       */
+      choice: [string, string, ...string[]];
+      [k: string]: unknown;
+    };
 /**
  * A collection of menus, which can be grouped into sets.
  */
-export type CookbookMenus = MenuCollection[]
+export type CookbookMenus = MenuCollection[];
 /**
  * A list of culinary terms and their definitions or cross-references.
  */
-export type CookbookGlossary = GlossaryEntry[]
+export type CookbookGlossary = GlossaryEntry[];
 /**
  * Can be either a standard term or a cross-reference.
  */
-export type IndexEntry = IndexTerm | IndexCrossReference
+export type IndexEntry = IndexTerm | IndexCrossReference;
 /**
  * An index for the cookbook, grouped alphabetically.
  */
-export type CookbookIndex = IndexGroup[]
+export type CookbookIndex = IndexGroup[];
 
 /**
  * The master schema for an entire cookbook, assembling all component parts.
  */
 export interface Cookbook {
+  /**
+   * The main title of this digital cookbook project.
+   */
+  title: string;
+  /**
+   * The author or editors of this digital cookbook project.
+   */
+  authors: string[];
+  /**
+   * The language of the cookbook text.
+   */
+  language?: string;
+  /**
+   * Details of the original source publication.
+   */
+  source: {
     /**
-     * The main title of this digital cookbook project.
+     * The original title of the work.
      */
-    title: string
+    title: string;
     /**
-     * The author or editors of this digital cookbook project.
+     * The original author or authors of the work.
      */
-    authors: string[]
+    authors: string[];
     /**
-     * The language of the cookbook text.
+     * The specific edition of the original work (e.g., 'New and Revised Edition').
      */
-    language?: string
+    edition?: string;
+    year?: number;
+    publisher?: string;
+    location?: string;
     /**
-     * Details of the original source publication.
+     * The URL of the source text (e.g., the Project Gutenberg page).
      */
-    source: {
-        /**
-         * The original title of the work.
-         */
-        title: string
-        /**
-         * The original author or authors of the work.
-         */
-        authors: string[]
-        /**
-         * The specific edition of the original work (e.g., 'New and Revised Edition').
-         */
-        edition?: string
-        year?: number
-        publisher?: string
-        location?: string
-        /**
-         * The URL of the source text (e.g., the Project Gutenberg page).
-         */
-        url?: string
-        [k: string]: unknown
-    }
-    /**
-     * The foreword or introduction to the cookbook, as an array of ContentBlocks.
-     */
-    introduction?: ContentBlock[]
-    contents: CookbookTableOfContents
-    menus?: CookbookMenus
-    glossary?: CookbookGlossary
-    index?: CookbookIndex
-    [k: string]: unknown
+    url?: string;
+    [k: string]: unknown;
+  };
+  /**
+   * The foreword or introduction to the cookbook, as an array of ContentBlocks.
+   */
+  introduction?: ContentBlock[];
+  contents: CookbookTableOfContents;
+  menus?: CookbookMenus;
+  glossary?: CookbookGlossary;
+  index?: CookbookIndex;
+  [k: string]: unknown;
 }
 /**
  * A major part of the cookbook, containing a title and a list of chapters.
  */
 export interface PartEntry {
-    /**
-     * The part number, expressed as a Roman numeral.
-     */
-    part: string
-    /**
-     * The title of the part.
-     */
-    title: string
-    chapters: ChapterEntry[]
-    [k: string]: unknown
+  /**
+   * The part number, expressed as a Roman numeral.
+   */
+  part: string;
+  /**
+   * The title of the part.
+   */
+  title: string;
+  chapters: ChapterEntry[];
+  [k: string]: unknown;
 }
 export interface ChapterEntry {
-    /**
-     * The chapter number, expressed as a Roman numeral.
-     */
-    chapter: string
-    /**
-     * A machine-readable identifier for building hyperlinks (e.g., 'chapter-i').
-     */
-    id: string
-    /**
-     * The title of the chapter.
-     */
-    title: string
-    [k: string]: unknown
+  /**
+   * The chapter number, expressed as a Roman numeral.
+   */
+  chapter: string;
+  /**
+   * A machine-readable identifier for building hyperlinks (e.g., 'chapter-i').
+   */
+  id: string;
+  /**
+   * The title of the chapter.
+   */
+  title: string;
+  [k: string]: unknown;
 }
 /**
  * A titled group of menus, like 'Menus for Luncheons'.
  */
 export interface MenuCollection {
-    title: string
-    menus: Menu[]
-    [k: string]: unknown
+  title: string;
+  menus: Menu[];
+  [k: string]: unknown;
 }
 /**
  * A single menu, containing a list of food items, an optional wine list, and optional metadata.
  */
 export interface Menu {
-    title?: string
-    items?: MenuItem[]
-    wines?: string[]
-    metadata?: {
-        date?: string
-        location?: string
-        occasion?: string
-        [k: string]: unknown
-    }
-    [k: string]: unknown
+  title?: string;
+  items?: MenuItem[];
+  wines?: string[];
+  metadata?: {
+    date?: string;
+    location?: string;
+    occasion?: string;
+    [k: string]: unknown;
+  };
+  [k: string]: unknown;
 }
 export interface GlossaryEntry {
-    /**
-     * The term being defined.
-     */
-    term: string
-    /**
-     * The textual definition of the term.
-     */
-    definition?: string
-    /**
-     * A cross-reference to a recipe number (e.g., '1755').
-     */
-    see_recipe?: string
-    /**
-     * A cross-reference to another glossary term (e.g., 'Cut').
-     */
-    see_term?: string
-    /**
-     * A list of sub-terms that fall under this main term, often sharing a common cross-reference.
-     */
-    sub_terms?: string[]
-    [k: string]: unknown
+  /**
+   * The term being defined.
+   */
+  term: string;
+  /**
+   * The textual definition of the term.
+   */
+  definition?: string;
+  /**
+   * A cross-reference to a recipe number (e.g., '1755').
+   */
+  see_recipe?: string;
+  /**
+   * A cross-reference to another glossary term (e.g., 'Cut').
+   */
+  see_term?: string;
+  /**
+   * A list of sub-terms that fall under this main term, often sharing a common cross-reference.
+   */
+  sub_terms?: string[];
+  [k: string]: unknown;
 }
 /**
  * A group of index entries under a specific letter of the alphabet.
  */
 export interface IndexGroup {
-    letter: string
-    entries: IndexEntry[]
-    [k: string]: unknown
+  letter: string;
+  entries: IndexEntry[];
+  [k: string]: unknown;
 }
 export interface IndexTerm {
-    /**
-     * The indexed term or phrase.
-     */
-    term: string
-    /**
-     * The associated recipe number or range (e.g., '1652' or '2104-6').
-     */
-    recipe_number?: string
-    [k: string]: unknown
+  /**
+   * The indexed term or phrase.
+   */
+  term: string;
+  /**
+   * The associated recipe number or range (e.g., '1652' or '2104-6').
+   */
+  recipe_number?: string;
+  [k: string]: unknown;
 }
 export interface IndexCrossReference {
-    /**
-     * The term to be redirected.
-     */
-    term: string
-    /**
-     * The term to which the user is redirected (e.g., 'Apricots').
-     */
-    see: string
-    [k: string]: unknown
+  /**
+   * The term to be redirected.
+   */
+  term: string;
+  /**
+   * The term to which the user is redirected (e.g., 'Apricots').
+   */
+  see: string;
+  [k: string]: unknown;
 }

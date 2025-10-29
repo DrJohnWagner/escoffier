@@ -8,28 +8,28 @@
 /**
  * A list of culinary terms and their definitions or cross-references.
  */
-export type CookbookGlossary = GlossaryEntry[]
+export type CookbookGlossary = GlossaryEntry[];
 
 export interface GlossaryEntry {
-    /**
-     * The term being defined.
-     */
-    term: string
-    /**
-     * The textual definition of the term.
-     */
-    definition?: string
-    /**
-     * A cross-reference to a recipe number (e.g., '1755').
-     */
-    see_recipe?: string
-    /**
-     * A cross-reference to another glossary term (e.g., 'Cut').
-     */
-    see_term?: string
-    /**
-     * A list of sub-terms that fall under this main term, often sharing a common cross-reference.
-     */
-    sub_terms?: string[]
-    [k: string]: unknown
+  /**
+   * The term being defined.
+   */
+  term: string;
+  /**
+   * The textual definition of the term.
+   */
+  definition?: string;
+  /**
+   * A cross-reference to a recipe number (e.g., '1755').
+   */
+  see_recipe?: string;
+  /**
+   * A cross-reference to another glossary term (e.g., 'Cut').
+   */
+  see_term?: string;
+  /**
+   * A list of sub-terms that fall under this main term, often sharing a common cross-reference.
+   */
+  sub_terms?: string[];
+  [k: string]: unknown;
 }

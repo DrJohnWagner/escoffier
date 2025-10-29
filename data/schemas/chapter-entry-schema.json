@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Recipe Dictionary Map",
+    "description": "A key-value map where each key is a recipe identifier and the value is its corresponding chapter identifier. This format is optimized for fast lookups.",
+    "type": "object",
+    "patternProperties": {
+        "^\\d+[a-zA-Z]?$": {
+            "description": "The value must be a chapter identifier string, e.g., 'chapter-i'.",
+            "type": "string",
+            "pattern": "^chapter-[ivxlcdm]+$"
+        }
+    },
+    "additionalProperties": false,
+    "minProperties": 1
+}

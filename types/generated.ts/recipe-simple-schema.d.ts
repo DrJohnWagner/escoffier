@@ -6,19 +6,18 @@
  */
 
 /**
- * Represents a piece of information that can be a simple string, an array of strings for paragraphs, or a titled object with a list of detail strings.
+ * Represents a piece of information that can be a simple string or a titled object with a list of detail strings.
  */
 export type ContentBlock =
   | string
   | {
       [k: string]: string[];
-    }
-  | string[];
+    };
 
 /**
- * A standalone recipe entry.
+ * A standalone recipe entry with embedded content block definitions.
  */
-export interface Recipe {
+export interface RecipeCombinedSchema {
   /**
    * The unique number of the recipe.
    */
@@ -34,7 +33,7 @@ export interface Recipe {
   introduction?: ContentBlock;
   notes?: ContentBlock[];
   yield?: string;
-  ingredients: ContentBlock[];
-  instructions: ContentBlock[];
+  ingredients?: ContentBlock[];
+  instructions?: ContentBlock[];
   [k: string]: unknown;
 }
