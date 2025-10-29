@@ -8,8 +8,10 @@
 BEGIN {
     # Set the Field Separator to a colon.
     FS = ":"
-    # Print the opening brace for the JSON object.
-    printf "{\n"
+    import = "import { RecipeDictionaryMap } from"
+    from = "\"@/types/generated.ts/chapter-entry-schema\";"
+    print import, from, "\n\n"
+    printf "const dictionary: RecipeDictionaryMap = {\n"
     # Use a flag to handle commas correctly.
     first_line = 1
 }
@@ -32,5 +34,5 @@ BEGIN {
 # END block: Runs once after all lines have been processed.
 END {
     # Print a final newline and the closing brace for the object.
-    print "\n}"
+    print "\n};\n\nexport default dictionary"
 }

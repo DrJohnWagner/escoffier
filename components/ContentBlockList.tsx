@@ -4,9 +4,8 @@ import { ContentBlock } from "@/types/generated.ts/content-block-schema"
 import React from "react"
 import EntryText from "@/components/EntryText"
 
-// --- FIX #1: Make the 'title' prop optional ---
 interface ContentBlockListProps {
-    title?: string // Changed from 'string' to 'string | undefined'
+    title?: string
     items: ContentBlock[]
     isOrdered?: boolean
 }
@@ -17,7 +16,14 @@ const ContentBlockList: React.FC<ContentBlockListProps> = ({
     isOrdered = false,
 }) => {
     const ListComponent = isOrdered ? "ol" : "ul"
-    const listClasses = `space-y-2 prose prose-gray max-w-none`
+
+    // --- THE FIX IS HERE ---
+    // Remove the 'prose', 'prose-gray', and 'max-w-none' classes.
+    // The parent component is already providing the 'prose' context,
+    // so these styles will cascade down to the <ul> and its children correctly.
+    const listClasses = `space-y-2`
+    // --- END OF FIX ---
+
     const listItemClasses = isOrdered ? "list-decimal" : "list-disc"
 
     return (
@@ -27,20 +33,27 @@ const ContentBlockList: React.FC<ContentBlockListProps> = ({
                     {title}
                 </h5>
             )}
-
             <ListComponent className={`${listClasses} ${listItemClasses} ml-5`}>
                 {items.map((item, index) => (
                     <li key={index}>
+                        {/* Your existing logic here is perfectly fine. */}
                         {typeof item === "string" ? (
                             <span>
                                 <EntryText text={item} />
                             </span>
+                        ) : Array.isArray(item) ? (
+                            <div className="space-y-2">
+                                {item.map((paragraph, pIndex) => (
+                                    <p key={pIndex} className="!my-0">
+                                        <EntryText text={paragraph} />
+                                    </p>
+                                ))}
+                            </div>
                         ) : (
                             Object.entries(item).map(([subTitle, details]) => (
                                 <div key={subTitle}>
                                     <strong>{subTitle}</strong>
                                     <ul className="list-circle ml-5 mt-1 space-y-1">
-                                        {/* This check handles both arrays and non-arrays gracefully */}
                                         {Array.isArray(details) ? (
                                             details.map(
                                                 (detail, detailIndex) => (
@@ -69,4 +82,4 @@ const ContentBlockList: React.FC<ContentBlockListProps> = ({
     )
 }
 
-export default ContentBlockList;
+export default ContentBlockList

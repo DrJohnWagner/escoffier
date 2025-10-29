@@ -37,8 +37,12 @@ const EntryText: React.FC<EntryTextProps> = ({ text }) => {
             // If a chapter was found, create the link.
             const href = `/chapters/${chapter}#entry-${found.identifier}`
             parts.push(
-                <a key={`${found.identifier}-${i}`} href={href}>
-                    {found.identifier}
+                <a
+                    key={`${found.identifier}-${i}`}
+                    href={href}
+                    className="text-blue-600 font-medium hover:underline transition-colors"
+                >
+                    {"#" + found.identifier}
                 </a>
             )
         } else {
