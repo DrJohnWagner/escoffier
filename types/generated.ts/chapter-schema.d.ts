@@ -6,77 +6,78 @@
  */
 
 export type InstructionalEntry =
-    | (BaseForAllEntries & Recipe)
-    | (BaseForAllEntries & Principle)
-    | (BaseForAllEntries & Technique)
-    | (BaseForAllEntries & Definition)
+  | (BaseForAllEntries & Recipe)
+  | (BaseForAllEntries & Principle)
+  | (BaseForAllEntries & Technique)
+  | (BaseForAllEntries & Definition);
 /**
- * Represents a piece of information that can be a simple string or a titled object with a list of detail strings.
+ * Represents a piece of information that can be a simple string, an array of strings for paragraphs, or a titled object with a list of detail strings.
  */
 export type ContentBlock =
-    | string
-    | {
-          [k: string]: string[]
-      }
+  | string
+  | {
+      [k: string]: string[];
+    }
+  | string[];
 
 export interface CookbookChapter {
-    chapter: string
-    /**
-     * A unique, machine-readable identifier for the chapter, used for linking (e.g., 'chapter-i').
-     */
-    id: string
-    title: string
-    introduction?: string[]
-    sections: ChapterSection[]
-    [k: string]: unknown
+  chapter: string;
+  /**
+   * A unique, machine-readable identifier for the chapter, used for linking (e.g., 'chapter-i').
+   */
+  id: string;
+  title: string;
+  introduction?: string[];
+  sections: ChapterSection[];
+  [k: string]: unknown;
 }
 export interface ChapterSection {
-    title: string
-    introduction?: string[]
-    entries?: InstructionalEntry[]
-    sections?: ChapterSection[]
-    [k: string]: unknown
+  title: string;
+  introduction?: string[];
+  entries?: InstructionalEntry[];
+  sections?: ChapterSection[];
+  [k: string]: unknown;
 }
 export interface BaseForAllEntries {
-    number: number
-    title: string
-    type: string
-    introduction?: ContentBlock
-    notes?: ContentBlock[]
-    [k: string]: unknown
+  number: number;
+  title: string;
+  type: string;
+  introduction?: ContentBlock;
+  notes?: ContentBlock[];
+  [k: string]: unknown;
 }
 /**
  * A standalone recipe entry.
  */
 export interface Recipe {
-    /**
-     * The unique number of the recipe.
-     */
-    number: number
-    /**
-     * The title of the recipe.
-     */
-    title: string
-    /**
-     * The type of entry, which must be 'recipe'.
-     */
-    type: "recipe"
-    introduction?: ContentBlock
-    notes?: ContentBlock[]
-    yield?: string
-    ingredients: ContentBlock[]
-    instructions: ContentBlock[]
-    [k: string]: unknown
+  /**
+   * The unique number of the recipe.
+   */
+  number: number;
+  /**
+   * The title of the recipe.
+   */
+  title: string;
+  /**
+   * The type of entry, which must be 'recipe'.
+   */
+  type: "recipe";
+  introduction?: ContentBlock;
+  notes?: ContentBlock[];
+  yield?: string;
+  ingredients: ContentBlock[];
+  instructions: ContentBlock[];
+  [k: string]: unknown;
 }
 export interface Principle {
-    type?: "principle"
-    [k: string]: unknown
+  type?: "principle";
+  [k: string]: unknown;
 }
 export interface Technique {
-    type?: "technique"
-    [k: string]: unknown
+  type?: "technique";
+  [k: string]: unknown;
 }
 export interface Definition {
-    type?: "definition"
-    [k: string]: unknown
+  type?: "definition";
+  [k: string]: unknown;
 }

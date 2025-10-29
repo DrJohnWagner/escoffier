@@ -8,35 +8,35 @@
 /**
  * The table of contents for the cookbook, organized into parts and chapters.
  */
-export type CookbookTableOfContents = PartEntry[]
+export type CookbookTableOfContents = PartEntry[];
 
 /**
  * A major part of the cookbook, containing a title and a list of chapters.
  */
 export interface PartEntry {
-    /**
-     * The part number, expressed as a Roman numeral.
-     */
-    part: string
-    /**
-     * The title of the part.
-     */
-    title: string
-    chapters: ChapterEntry[]
-    [k: string]: unknown
+  /**
+   * The part number, expressed as a Roman numeral.
+   */
+  part: string;
+  /**
+   * The title of the part.
+   */
+  title: string;
+  chapters: ChapterEntry[];
+  [k: string]: unknown;
 }
 export interface ChapterEntry {
-    /**
-     * The chapter number, expressed as a Roman numeral.
-     */
-    chapter: string
-    /**
-     * A machine-readable identifier for building hyperlinks (e.g., 'chapter-i').
-     */
-    id: string
-    /**
-     * The title of the chapter.
-     */
-    title: string
-    [k: string]: unknown
+  /**
+   * The chapter number, expressed as a Roman numeral.
+   */
+  chapter: string;
+  /**
+   * A machine-readable identifier for building hyperlinks (e.g., 'chapter-i').
+   */
+  id: string;
+  /**
+   * The title of the chapter.
+   */
+  title: string;
+  [k: string]: unknown;
 }
