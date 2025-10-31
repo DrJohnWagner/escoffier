@@ -3,10 +3,14 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation"; // 2. Import the usePathname hook
+import { useShoppingList } from "@/app/contexts/ShoppingListContext"
 
 const Header: React.FC = () => {
 	// 3. Get the current URL path
 	const pathname = usePathname();
+	const { shoppingListItems } = useShoppingList()
+
+    const itemCount = shoppingListItems.length
 
 	// 4. Define the logic: only show the header if the path is NOT the homepage ('/')
 	const showHeader = pathname !== "/";
@@ -34,6 +38,17 @@ const Header: React.FC = () => {
 
                     {/* Right side: Navigation Links (optional) */}
                     <nav className="hidden md:flex md:space-x-8">
+                        <Link
+                            href="/shopping-list"
+                            className="relative text-gray-600 hover:text-gray-900 font-medium"
+                        >
+                            Shopping List
+                            {itemCount > 0 && (
+                                <span className="absolute top-0 right-0 -mt-2 -mr-4 flex h-5 w-5 items-center justify-center rounded-full bg-blue-600 text-xs font-bold text-white">
+                                    {itemCount}
+                                </span>
+                            )}
+                        </Link>
                         <Link
                             href="/glossary"
                             className="text-gray-600 hover:text-gray-900 font-medium"

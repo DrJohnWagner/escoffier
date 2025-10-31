@@ -11,6 +11,7 @@ import {
 import ContentBlockList from "./ContentBlockList"
 import EntryText from "@/components/EntryText" // This is already imported, which is great.
 import CopyIcon from "@/components/CopyIcon"
+import { useShoppingList } from "@/app/contexts/ShoppingListContext"
 
 // Type guard to check if an entry is a Recipe
 const isRecipe = (
@@ -18,6 +19,22 @@ const isRecipe = (
 ): entry is BaseForAllEntries & Recipe => {
     return entry.type === "recipe"
 }
+
+// A simple plus icon for the "Add to List" button
+const PlusIcon = ({ className }: { className?: string }) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        className={className}
+    >
+        <path d="M5 12h14M12 5v14" />
+    </svg>
+)
 
 // Helper type for BaseForAllEntries & Recipe
 type BaseForAllEntries = {
@@ -121,6 +138,19 @@ const Entry: React.FC<{ entry: InstructionalEntry }> = ({ entry }) => {
     const [copiedType, setCopiedType] = useState<"text" | "markdown" | null>(
         null
     )
+    const { addItem, isItemInList } = useShoppingList()
+
+    const alreadyInList = isItemInList(entry.number)
+
+    const handleAddItem = () => {
+        if (isRecipe(entry)) {
+            addItem({
+                number: entry.number,
+                title: entry.title,
+                ingredients: entry.ingredients,
+            })
+        }
+    }
 
     const handleCopy = (format: "text" | "markdown") => {
         const textToCopy = generateFormattedText(entry, format)
@@ -142,7 +172,21 @@ const Entry: React.FC<{ entry: InstructionalEntry }> = ({ entry }) => {
                 </h4>
 
                 {/* Right Side: Action Buttons */}
-                <div className="flex items-center space-x-2 shrink-0">
+                <div className="flex items-center space-x-1 shrink-0">
+                    {isRecipe(entry) && (
+                        <button
+                            onClick={handleAddItem}
+                            disabled={alreadyInList}
+                            title={
+                                alreadyInList
+                                    ? "Already in Shopping List"
+                                    : "Add to Shopping List"
+                            }
+                            className="p-2 rounded-md transition-colors text-gray-500 enabled:hover:bg-gray-100 enabled:hover:text-gray-800 disabled:text-gray-300 disabled:cursor-not-allowed"
+                        >
+                            <PlusIcon />
+                        </button>
+                    )}
                     <button
                         onClick={() => handleCopy("text")}
                         title="Copy as Text"
