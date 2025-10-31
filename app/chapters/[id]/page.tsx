@@ -39,9 +39,5 @@ export default async function ChapterPage({
 
     // The Chapter component now handles its own internal TOC.
     // No need to render a separate TOC component here.
-    return (
-        <main>
-            <Chapter data={chapter} />
-        </main>
-    )
+    return <Chapter data={chapter} />
 }
