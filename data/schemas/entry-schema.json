@@ -1,0 +1,168 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://example.com/schemas/entry.json",
+    "title": "Instructional Entry",
+    "description": "Defines an instructional entry, which can be a recipe, principle, technique, or definition.",
+    "$defs": {
+        "ContentBlock": {
+            "title": "Content Block",
+            "description": "Represents a piece of information that can be a simple string, an array of strings for paragraphs, or a titled object with a list of detail strings.",
+            "oneOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            ]
+        },
+        "EntryBase": {
+            "title": "Base for all Entries",
+            "type": "object",
+            "properties": {
+                "number": {
+                    "type": "number"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "recipe",
+                        "principle",
+                        "technique",
+                        "definition"
+                    ]
+                },
+                "introduction": {
+                    "$ref": "#/$defs/ContentBlock"
+                },
+                "notes": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/ContentBlock"
+                    }
+                }
+            },
+            "required": [
+                "number",
+                "title",
+                "type"
+            ]
+        },
+        "Recipe": {
+            "title": "Recipe Specifics",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "const": "recipe"
+                },
+                "yield": {
+                    "type": "string"
+                },
+                "ingredients": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/ContentBlock"
+                    }
+                },
+                "instructions": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/ContentBlock"
+                    }
+                }
+            },
+            "required": [
+                "ingredients",
+                "instructions"
+            ]
+        },
+        "Principle": {
+            "title": "Principle",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "const": "principle"
+                }
+            }
+        },
+        "Technique": {
+            "title": "Technique",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "const": "technique"
+                }
+            }
+        },
+        "Definition": {
+            "title": "Definition",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "const": "definition"
+                }
+            }
+        }
+    },
+    "oneOf": [
+        {
+            "title": "Recipe Entry",
+            "allOf": [
+                {
+                    "$ref": "#/$defs/EntryBase"
+                },
+                {
+                    "$ref": "#/$defs/Recipe"
+                }
+            ]
+        },
+        {
+            "title": "Principle Entry",
+            "allOf": [
+                {
+                    "$ref": "#/$defs/EntryBase"
+                },
+                {
+                    "$ref": "#/$defs/Principle"
+                }
+            ]
+        },
+        {
+            "title": "Technique Entry",
+            "allOf": [
+                {
+                    "$ref": "#/$defs/EntryBase"
+                },
+                {
+                    "$ref": "#/$defs/Technique"
+                }
+            ]
+        },
+        {
+            "title": "Definition Entry",
+            "allOf": [
+                {
+                    "$ref": "#/$defs/EntryBase"
+                },
+                {
+                    "$ref": "#/$defs/Definition"
+                }
+            ]
+        }
+    ]
+}

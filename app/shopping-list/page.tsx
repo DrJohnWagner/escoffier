@@ -1,12 +1,17 @@
 "use client"
 
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { useShoppingList } from "@/app/contexts/ShoppingListContext"
 import ContentBlockList from "@/components/ContentBlockList"
 import ShoppingListItemType from "@/types/ShoppingListItemType"
 
 export default function ShoppingListPage() {
     const { shoppingListItems, removeItem, removeAllItems } = useShoppingList()
+    const [isClient, setIsClient] = useState(false)
+
+    useEffect(() => {
+        setIsClient(true)
+    }, [])
 
     const handleRemoveAll = () => {
         // Ask for confirmation before clearing the list
@@ -24,14 +29,16 @@ export default function ShoppingListPage() {
                     Your Shopping List
                 </h1>
                 <p className="mt-2 text-lg text-gray-600">
-                    {shoppingListItems.length === 0
-                        ? "Your list is currently empty."
-                        : `You have ${shoppingListItems.length} recipe(s) in your list.`}
+                    {!isClient
+                        ? "Loading..."
+                        : shoppingListItems.length === 0
+                          ? "Your list is currently empty."
+                          : `You have ${shoppingListItems.length} recipe(s) in your list.`}
                 </p>
             </header>
 
             {/* --- THIS IS THE NEW SECTION --- */}
-            {shoppingListItems.length > 0 && (
+            {isClient && shoppingListItems.length > 0 && (
                 <div className="text-center mb-8">
                     <button
                         onClick={handleRemoveAll}
@@ -43,7 +50,7 @@ export default function ShoppingListPage() {
             )}
             {/* --- END OF NEW SECTION --- */}
 
-            {shoppingListItems.length > 0 && (
+            {isClient && shoppingListItems.length > 0 && (
                 <div className="space-y-8">
                     {shoppingListItems.map((item: ShoppingListItemType) => (
                         <article

@@ -1,0 +1,282 @@
+{
+    "chapter": "VI",
+    "id": "chapter-vi",
+    "title": "The Court-bouillons and the Marinades",
+    "introduction": [],
+    "sections": [
+        {
+            "title": "Court-bouillons",
+            "introduction": [],
+            "entries": [
+                {
+                    "number": 163,
+                    "title": "COURT-BOUILLON WITH VINEGAR",
+                    "type": "recipe",
+                    "yield": "Five Quarts (4.7 L). This court-bouillon is principally used for cooking trout and salmon, as well as for various shell-fish.",
+                    "ingredients": [
+                        "5 quarts (4.7 L) of water",
+                        "0.5 pint (237 ml) of vinegar",
+                        "2 oz (57 g) of gray salt",
+                        "0.5 oz (14 g) of peppercorns",
+                        "0.75 lb (340 g) of carrots",
+                        "1 lb (454 g) of onions",
+                        "A little thyme and bay",
+                        "2 oz (57 g) of parsley stalks"
+                    ],
+                    "instructions": [
+                        "Put into a saucepan the water, salt, vinegar, minced carrots and onions, and the parsley, thyme, and bay, gathered into a bunch.",
+                        "Boil, then allow to simmer for one hour.",
+                        "Add the peppercorns twelve minutes before the end of the simmering time.",
+                        "Rub through a tammy, and put aside until wanted."
+                    ],
+                    "notes": [
+                        "If the pepper were in for too long a time it would give a bitterness to the preparation. This rule also applies to the formulæ that follow, in which the use of peppercorns is also required."
+                    ]
+                },
+                {
+                    "number": 164,
+                    "title": "COURT-BOUILLON WITH WHITE WINE",
+                    "type": "recipe",
+                    "yield": "Two Quarts (1.9 L). This preparation is principally used for poaching fresh-water fish.",
+                    "ingredients": [
+                        "1 quart (946 ml) of white wine",
+                        "1 quart (946 ml) of water",
+                        "3 oz (85 g) of minced onions",
+                        "1 large faggot",
+                        "0.5 oz (14 g) of gray salt",
+                        "A few peppercorns"
+                    ],
+                    "instructions": [
+                        "Put into a saucepan the white wine, water, salt, minced onions, and the faggot.",
+                        "Boil, then allow to simmer for thirty minutes.",
+                        "Add the peppercorns twelve minutes before the end of the simmering time.",
+                        "Strain through a tammy."
+                    ],
+                    "notes": [
+                        "If the court-bouillon has to be reduced the quantity of salt should be proportionately less."
+                    ]
+                },
+                {
+                    "number": 165,
+                    "title": "COURT-BOUILLON WITH RED WINE",
+                    "type": "recipe",
+                    "yield": "The uses of court-bouillon with red wine are similar to those of the white-wine kind.",
+                    "ingredients": [
+                        "1.33 quarts (1.26 L) of excellent red wine",
+                        "0.67 quarts (631 ml) of water",
+                        "4 oz (113 g) of minced carrots",
+                        "3 oz (85 g) of minced onions",
+                        "1 large faggot",
+                        "0.5 oz (14 g) of gray salt",
+                        "A few peppercorns"
+                    ],
+                    "instructions": [
+                        "Put into a saucepan the red wine, water, salt, minced carrots and onions, and the faggot.",
+                        "Boil, then allow to simmer for thirty minutes.",
+                        "Add the peppercorns twelve minutes before the end of the simmering time.",
+                        "Strain through a tammy."
+                    ],
+                    "notes": [
+                        "If the court-bouillon is to be reduced, the salt should be less accordingly.",
+                        "When the court-bouillon with red wine is to constitute an aspic stock, fish fumet with enough gelatine takes the place of the water."
+                    ]
+                },
+                {
+                    "number": 166,
+                    "title": "PLAIN COURT-BOUILLON",
+                    "type": "recipe",
+                    "yield": "Used with large pieces of turbot and brill.",
+                    "introduction": "The quantity of court-bouillon is determined by the size of the piece which it is to cover.",
+                    "ingredients": [
+                        "Cold water",
+                        "Salt (a little less than 0.5 oz per quart of water)",
+                        "Milk (0.25 pint per quart of water)",
+                        "1 thin slice of peeled lemon (per quart of water)"
+                    ],
+                    "instructions": [
+                        "Immerse the fish in the cold liquor, composed of the water, salt, milk, and lemon.",
+                        "Very slowly bring the liquor to a boil.",
+                        "As soon as boiling is reached, move the receptacle to the side of the fire, where the cooking of the fish is completed."
+                    ],
+                    "notes": [
+                        "This court-bouillon is never prepared beforehand."
+                    ]
+                },
+                {
+                    "number": 167,
+                    "title": "SPECIAL COURT-BOUILLON, OR BLANC",
+                    "type": "recipe",
+                    "yield": "Five Quarts (4.7 L). Used for calf’s head or foot, sheep’s trotters, cocks’ kidneys or combs, or vegetables like salsify, cardoon, &c.",
+                    "introduction": "This preparation is a genuine court-bouillon, though it is not used in cooking fish.",
+                    "ingredients": [
+                        "A little less than 2 oz (57 g) of flour",
+                        "1.5 oz (43 g) of grey salt",
+                        "The juice of 3 lemons or 0.125 pint (59 ml) of good vinegar",
+                        "5 quarts (4.7 L) of cold water"
+                    ],
+                    "instructions": [
+                        "Gradually mix the flour and the water.",
+                        "Add the salt and the lemon juice, and pass through a strainer.",
+                        "Set to boil, and stir the mixture the while, in order to prevent the flour from precipitating.",
+                        "As soon as the boil is reached, immerse the objects to be treated."
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Marinades and Brines",
+            "introduction": [
+                "Remarks upon the Use of Court-bouillon:",
+                "1. Court-bouillon must always be prepared in advance for all fish, the time for poaching which is less than half an hour, except turbots and brills.",
+                "2. When a fish is of such a size as to need more than half an hour’s poaching, proceed as follows:—Place under the drainer of the fish-kettle the minced carrots and onions and the faggot; put the fish on the drainer, and cover it with water and vinegar, or white wine, in accordance with the kind of court-bouillon wanted and the quantity required. Add the salt, boil, and keep the court-bouillon gently simmering for a period of time fixed by the weight of the fish.",
+                "3. Fish, when whole, should be immersed in cold court-bouillon; when sliced, in the same liquor, boiling. The exceptions to this rule are small trout “au bleu” and shell-fish.",
+                "4. If fish be cooked in short liquor the aromatics are put under the drainer and the liquid elements of the selected court-bouillon are so calculated as to cover only one-third of the solid body. Fish cooked in this way should be frequently basted.",
+                "5. Court-bouillon for ordinary and spiny lobsters should always be at full boiling pitch when these are immersed. The case is the same for small or medium fish “au bleu.”",
+                "6. Fish which is to be served cold, also shell-fish, should cool in the court-bouillon itself; the cooking period is consequently curtailed.",
+                "Marinades play but a small part in English cookery, venison or other ground-game being generally preferred fresh. However, in the event of its being necessary to resort to these methods of preparation, I shall give two formulæ for venison and two for mutton.",
+                "The use of the marinade for venison is very much debated. Certainly it is often desirable that the fibre of those meats that come from old specimens of the deer and boar species be softened, but there is no doubt that what the meat gains in tenderness it loses in flavour. On the whole, therefore, it would be best to use only those joints which come from young beasts.",
+                "In the case of the latter, the marinade may well be dispensed with. It would add nothing to the savour of a haunch of venison, such as may be got in England, while it would be equally ineffectual in the case of the roebuck or hare. A summary treatment of these two, with raw marinade, may well be adopted, as also for deer.",
+                "As for cooked marinade, its real and only use lies in the fact that during stormy summer weather it enables one to preserve meat which would otherwise have to be wasted. It may, moreover, be used for braised venison, but this treatment of game is very uncommon nowadays."
+            ],
+            "entries": [
+                {
+                    "number": 168,
+                    "title": "COOKED MARINADE FOR VENISON",
+                    "type": "recipe",
+                    "yield": "Five Quarts (4.7 L)",
+                    "ingredients": [
+                        "0.5 pint (237 ml) of oil",
+                        "0.5 lb (227 g) of minced carrots",
+                        "0.5 lb (227 g) of minced onions",
+                        "2 oz (57 g) of minced shallots",
+                        "1 crushed garlic clove",
+                        "1 faggot (including 1 oz parsley stalks, 2 sprigs of rosemary, 2 sprigs of thyme, and 2 bay leaves)",
+                        "1 pint (473 ml) of vinegar",
+                        "2 bottles of white wine",
+                        "3 quarts (2.8 L) of water",
+                        "2 oz (57 g) of salt",
+                        "0.5 oz (14 g) of peppercorns",
+                        "4 oz (113 g) of brown sugar"
+                    ],
+                    "instructions": [
+                        "Heat the oil in a stewpan, add the carrots and onions, and fry them while stirring frequently.",
+                        "When they begin to brown, add the shallots, the garlic, and the faggot.",
+                        "Add the vinegar, white wine, and water. Cook this marinade for twenty minutes.",
+                        "Add the salt, peppercorns, and brown sugar.",
+                        "Ten minutes afterwards, pass it through a strainer and let it cool before inserting the meats."
+                    ],
+                    "notes": [
+                        "In summer the marinade very often decomposes, because of the blood contained by the meat under treatment in it. The only means of averting this is to boil the marinade every two or three days at least."
+                    ]
+                },
+                {
+                    "number": 169,
+                    "title": "RAW MARINADE FOR BUTCHER’S MEAT OR VENISON",
+                    "type": "technique",
+                    "introduction": "This marinade is prepared immediately before using and is very active.",
+                    "ingredients": [
+                        "Meat to be marinated",
+                        "Salt and pepper",
+                        "Minced carrots",
+                        "Minced onions",
+                        "Chopped shallots",
+                        "Parsley stalks",
+                        "Thyme",
+                        "Bay leaf",
+                        "Oil",
+                        "Vinegar"
+                    ],
+                    "instructions": [
+                        "Salt and pepper the meat on all sides.",
+                        "Put the meat in a receptacle just large enough to hold it, and lay it on a litter of aromatics (carrots, onions, shallots, parsley, thyme, and bay).",
+                        "Sprinkle the meat copiously with oil and half as much vinegar.",
+                        "Cover the dish with oil-paper, and put it somewhere in the cool.",
+                        "Turn the meat over three or four times a day, covering it each time with a layer of vegetables."
+                    ],
+                    "notes": [
+                        "This marinade is admirably suited to all butcher’s meat and venison, provided these be not allowed to remain in it for too long a time. The time varies according to the size and quality of the joints, and the taste of the consumer. All that can be said is that three hours should be sufficient to marinade a cutlet or escalope of roebuck, and that for big joints such as saddle or leg the time should not exceed four days."
+                    ]
+                },
+                {
+                    "number": 170,
+                    "title": "MARINADE FOR MUTTON, ROEBUCK-STYLE",
+                    "type": "recipe",
+                    "ingredients": [
+                        "0.5 pint (237 ml) of oil",
+                        "0.5 lb (227 g) of minced carrots",
+                        "0.5 lb (227 g) of minced onions",
+                        "2 oz (57 g) of minced shallots",
+                        "3 crushed garlic cloves",
+                        "1 faggot (including 1 oz parsley stalks, rosemary, wild thyme, basil, and bay leaves)",
+                        "1 oz (28 g) of juniper berries",
+                        "1 pint (473 ml) of vinegar",
+                        "2 bottles of white wine",
+                        "2 quarts (1.9 L) of water",
+                        "2 oz (57 g) of salt",
+                        "0.5 oz (14 g) of peppercorns",
+                        "4 oz (113 g) of brown sugar"
+                    ],
+                    "instructions": [
+                        "Heat the oil in a stewpan, add the carrots and onions, and fry them while stirring frequently.",
+                        "When they begin to brown, add the shallots, garlic, juniper berries, and faggot.",
+                        "Add the vinegar, white wine, and water. Cook this marinade for twenty minutes.",
+                        "Add the salt, peppercorns, and brown sugar.",
+                        "Ten minutes afterwards, pass it through a strainer and let it cool before inserting the meats."
+                    ]
+                },
+                {
+                    "number": 171,
+                    "title": "MARINADE WITH RED WINE FOR MUTTON",
+                    "type": "recipe",
+                    "introduction": "An excellent marinade for mutton which in summer enables one to preserve meat, otherwise perishable, for some days.",
+                    "ingredients": [
+                        "0.5 pint (237 ml) of oil",
+                        "Slightly increased quantity of minced carrots",
+                        "Slightly increased quantity of minced onions",
+                        "2 oz (57 g) of minced shallots",
+                        "3 crushed garlic cloves",
+                        "1 faggot (including 1 oz parsley stalks, rosemary, wild thyme, basil, and bay leaves)",
+                        "1 oz (28 g) of juniper berries",
+                        "1 pint (473 ml) of vinegar",
+                        "2 quarts (1.9 L) of red wine",
+                        "2 oz (57 g) of salt",
+                        "0.5 oz (14 g) of peppercorns",
+                        "4 oz (113 g) of brown sugar"
+                    ],
+                    "instructions": [
+                        "Heat the oil in a stewpan, add the carrots and onions, and fry them while stirring frequently.",
+                        "When they begin to brown, add the shallots, garlic, juniper berries, and faggot.",
+                        "Add the vinegar and red wine. Cook this marinade for twenty minutes.",
+                        "Add the salt, peppercorns, and brown sugar.",
+                        "Ten minutes afterwards, pass it through a strainer and let it cool before inserting the meats."
+                    ]
+                },
+                {
+                    "number": 172,
+                    "title": "BRINE",
+                    "type": "recipe",
+                    "yield": "Fifty Quarts (47.3 L)",
+                    "ingredients": [
+                        "56 lbs (25.4 kg) of gray salt",
+                        "50 quarts (47.3 L) of water",
+                        "6 lbs (2.7 kg) of saltpetre",
+                        "3.5 lbs (1.6 kg) of brown sugar",
+                        "1 peeled potato (for testing)"
+                    ],
+                    "instructions": [
+                        "Put the salt and the water in a tinned copper pan, and put it on an open fire.",
+                        "When the water boils, throw in a peeled potato. If the potato floats, add water until it begins to sink. If the potato sinks immediately, reduce the liquid until it is able to buoy the tuber up.",
+                        "At this stage, add the sugar and saltpetre; let them dissolve.",
+                        "Remove the brine from the fire and allow it to cool.",
+                        "Pour it into a receptacle of slate, stone, cement, or well-jointed tiles. Place a wooden lattice at the bottom for the meats to rest on.",
+                        "For large pieces of meat, inoculate them with brine using a special syringe to ensure even salting. Allow eight days for salting a piece of beef over 8-10 lbs (3.6-4.5 kg).",
+                        "For ox-tongue, trim the cartilage, beat it, and prick it on all sides with a string-needle before immersing. A medium-sized tongue needs about seven days."
+                    ],
+                    "notes": [
+                        "Though brine does not turn as easily as the cooked marinades, it would be well, especially in stormy weather, to watch it and occasionally to boil it. As boiling concentrates the brine, a little water should be added each time, and the test of the potato should always be resorted to."
+                    ]
+                }
+            ]
+        }
+    ]
+}

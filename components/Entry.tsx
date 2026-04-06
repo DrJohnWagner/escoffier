@@ -2,7 +2,7 @@
 
 "use client"
 
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import {
     InstructionalEntry,
     ContentBlock,
@@ -138,9 +138,14 @@ const Entry: React.FC<{ entry: InstructionalEntry }> = ({ entry }) => {
     const [copiedType, setCopiedType] = useState<"text" | "markdown" | null>(
         null
     )
+    const [isClient, setIsClient] = useState(false)
     const { addItem, isItemInList } = useShoppingList()
 
-    const alreadyInList = isItemInList(entry.number)
+    useEffect(() => {
+        setIsClient(true)
+    }, [])
+
+    const alreadyInList = isClient ? isItemInList(entry.number) : false
 
     const handleAddItem = () => {
         if (isRecipe(entry)) {

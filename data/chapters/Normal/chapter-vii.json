@@ -1,0 +1,674 @@
+{
+    "chapter": "VII",
+    "id": "chapter-vii",
+    "title": "Elementary Preparations",
+    "introduction": [],
+    "sections": [
+        {
+            "title": "1. Elementary Preparations",
+            "introduction": [
+                "Before broaching the question of the numerous preparations which constitute the various soup, relevé, and entrée garnishes, it will be necessary to give the formulæ of the elementary preparations, or what are technically called the mise en place. If the various operations which go to make the mise en place were not, at least summarily, discussed here, I should be compelled to repeat them in each formula for which they are required—that is to say, in almost every formula. I should thus resemble those bad operators who, having neglected their mise en place, are obliged to make it in the course of other work, and thereby not only run the risk of making it badly, but also of losing valuable time which might be used to better advantage.",
+                "Elementary preparations consist of those things whereof one is constantly in need, which may be prepared in advance, and which are kept available for use at a moment’s notice."
+            ],
+            "entries": [
+                {
+                    "number": 173,
+                    "title": "ANCHOVIES (FILLETS OF)",
+                    "type": "technique",
+                    "introduction": "Whether they be for hors d’œuvres or for culinary use, it is always best to have these handy.",
+                    "instructions": [
+                        "Wash and well wipe the anchovies to remove the white powder from their scales.",
+                        "Neatly trim them to the shape of extended oblongs.",
+                        "Detach the fillets from the bones by gentle pulling.",
+                        "Divide each fillet lengthwise into three or four smaller fillets.",
+                        "Put the smaller fillets into a small narrow dish or a little bowl, and cover them with oil.",
+                        "The fillets may also be kept whole with a view to rolling them into rings."
+                    ]
+                },
+                {
+                    "number": 174,
+                    "title": "ANGLAISE (FOR EGG-AND-BREAD-CRUMBING)",
+                    "type": "recipe",
+                    "introduction": "It is well to have this always ready for those dishes which are to be panés à l’anglaise, or as many of the recipes direct: treated à l’anglaise.",
+                    "ingredients": [
+                        "Eggs",
+                        "Salt",
+                        "Pepper",
+                        "1 dessertspoonful (10 ml) of oil per couple of eggs"
+                    ],
+                    "instructions": [
+                        "Whisk the eggs well with salt, pepper, and oil."
+                    ],
+                    "notes": [
+                        {
+                            "Its Uses": [
+                                "The solids to be panés à l’anglaise are dipped into the Anglaise preparation, taking care that the latter coats them thoroughly. Whereupon, according to the requirements, they are rolled either in bread-crumbs or in fine raspings.",
+                                "This combination of egg with bread-crumbs or raspings results in a kind of coat which, at the moment of contact with the hot fat, is immediately converted into a resisting crust. In croquettes this crust checks the escape, into the fat, of the substances it encloses.",
+                                "A solid prepared à l’anglaise and cooked in fat should always be put into the latter when this is very hot, so as to ensure the instantaneous solidification of the egg and bread-crumbs."
+                            ],
+                            "N.B.": "Objects to be treated à l’anglaise are generally rolled in flour before being immersed in the anglaise, for the flour helps the foregoing to adhere to the object. The crust formed over the solid thus acquires a density which is indispensable."
+                        }
+                    ]
+                },
+                {
+                    "number": "174a",
+                    "title": "AROMATICS",
+                    "type": "definition",
+                    "introduction": [
+                        "Aromatics play a very prominent part in cookery, and their combination with the condiments constitutes, as Grimod de la Reynière said, “the hidden soul of cooking.” Their real object, in fact, is to throw the savour of dishes into relief, to intensify that savour, and to give each culinary preparation its particular stamp.",
+                        "They are all derived from the vegetable kingdom; but, while some are used dry, others are used fresh."
+                    ],
+                    "notes": [
+                        {
+                            "Dry Aromatics (Permanent Kitchen Stock)": [
+                                "sage, basil, rosemary, sweet marjoram, thyme, and bay",
+                                "Also: cinnamon, ginger, juniper-berries, nutmeg, cloves, mace, and vanilla"
+                            ],
+                            "Fresh Aromatics": [
+                                "parsley, chervil, tarragon, pimpernel, and common savory",
+                                "Also: bits of common- and Seville-orange rind and zests of lemon rind"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "number": "174b",
+                    "title": "SEASONING AND CONDIMENTS",
+                    "type": "definition",
+                    "introduction": "Seasonings are divided into several classes, which comprise:",
+                    "notes": [
+                        {
+                            "Saline seasonings": "Salt, spiced salt, saltpetre.",
+                            "Acid seasonings": "Plain vinegar, or the same aromatised with tarragon; verjuice, lemon juice, and common- or Seville-orange juices.",
+                            "Hot seasonings": "Peppercorns, ground or concassed pepper, or mignonette; paprika, curry, cayenne, and compound spices.",
+                            "Saccharine seasonings": "Sugar and honey.",
+                            "The pungents": "Onions, shallots, garlic, chives, and horseradish.",
+                            "Hot condiments": "Mustard, gherkins, capers, English sauces, such as Worcester, Harvey, Ketchup, Escoffier’s sauces, &c.; the wines used in reductions and braisings; the finishing elements of sauces and soups.",
+                            "Fatty substances": "Most animal fats, butter, vegetable greases (edible oils and cocoanut butter).",
+                            "Remarks": "In cookery it should be borne in mind that both excellence and eatableness depend entirely upon a judicious use and a rational blending of the aromatics, seasonings, and condiments. And, according as the latter have been used and apportioned, their action will be either beneficial or injurious to the health of the consumer. In the matter of seasoning there can be no question of approximation or half measures; the quantities must be exact, allowing only of slight elasticity in respect of the various tastes to be satisfied."
+                        }
+                    ]
+                },
+                {
+                    "number": 175,
+                    "title": "CLARIFIED BUTTER",
+                    "type": "technique",
+                    "introduction": "A certain quantity of clarified butter should always be kept ready and handy.",
+                    "instructions": [
+                        "Put 1 lb (454 g) of butter to melt in a saucepan large enough to hold twice that amount.",
+                        "Place the saucepan on the side of the fire, over moderate heat.",
+                        "Remove all the scum which rises to the surface.",
+                        "When the butter looks quite clear and all foreign substances have dropped to the bottom, put the liquid carefully away and strain it through muslin."
+                    ]
+                },
+                {
+                    "number": 176,
+                    "title": "FAGGOTS (BOUQUETS GARNIS)",
+                    "type": "recipe",
+                    "yield": "1 ounce (28 g) faggot",
+                    "introduction": "The name “faggot” is given to those little bunches of aromatics.",
+                    "ingredients": [
+                        "0.8 oz (22.7 g) of parsley stalks and roots",
+                        "0.1 oz (2.8 g) of bay leaves",
+                        "0.1 oz (2.8 g) of thyme"
+                    ],
+                    "instructions": [
+                        "Put the various aromatics neatly together so that no sprig of the one sticks out beyond the others, and string them together properly."
+                    ]
+                },
+                {
+                    "number": 177,
+                    "title": "CHERVIL",
+                    "type": "technique",
+                    "instructions": [
+                        "Chopped Chervil: Clean the chervil and remove the stalks; wash, dry it well while tossing it, then chop it finely and put it aside on a plate in the cool, if it is not for immediate use.",
+                        "Concassed Chervil: Proceed as above, except that, instead of chopping it, compress it between the fingers and slice it after the manner of a chaff-cutter. Concassed and chopped chervil are, if possible, only prepared at the last moment.",
+                        "Chervil Pluches: The pluches are the serrated portions only of the leaves, which are torn away to show no trace of the veinings. They are immersed in water, and at the last moment withdrawn, so as to be added, raw, to either soups or boiling consommés."
+                    ]
+                },
+                {
+                    "number": 178,
+                    "title": "RASPINGS",
+                    "type": "technique",
+                    "instructions": [
+                        "Golden raspings are obtained by pounding and passing through a fine sieve bread-crusts which have been previously well dried in the oven.",
+                        "White raspings are similarly prepared, except that very dry, white crumb is used."
+                    ]
+                },
+                {
+                    "number": 179,
+                    "title": "PEELED, CHANNELLED, AND ZESTED LEMONS",
+                    "type": "technique",
+                    "introduction": "Lemons are greatly used in cookery, as dish and comestible garnish.",
+                    "instructions": [
+                        "Peeled: When a whole lemon is used for marinades or 'blancs', peel it to the pulp, removing the peel and all of the underlying white. The lemon is then cut into slices.",
+                        "Zested: Flatten the removed rind, inside uppermost, and with a very sharp and flexible knife, remove all the white. Slice the remaining peel (zest) into strips about one inch (2.5 cm) wide, and cut these laterally in fine julienne-fashion. Scald the resulting bits for five minutes, cool, and drain them. Zest may also be finely chopped.",
+                        "Channelled: Using a channel knife, excise parallel ribbons from the surface of the rind. A lemon channelled in this way is cut in two, lengthwise, its ends removed, and the two halves are cut laterally into thin, regular slices to look like serrated half-discs.",
+                        "For Garnish: The simplest way is to cut the lemon through the centre, after having trimmed the two ends quite straight, and then to remove the rind roughly from the edge."
+                    ],
+                    "notes": [
+                        "For whatever purpose the lemon be intended, it should be, as far as possible, only prepared at the last moment. If it must be prepared beforehand, it would be well to keep it in a bowl of fresh water."
+                    ]
+                },
+                {
+                    "number": 180,
+                    "title": "SHALLOTS",
+                    "type": "technique",
+                    "instructions": [
+                        "Chopped Shallots: Clean the shallots and, with a very sharp knife, cut them lengthwise into thin slices, letting them cling together at the root. Turn them half round and proceed in the same way at right angles. Finally, cut them laterally to produce very fine and regular, small cubes.",
+                        "Ciseled Shallots: These are merely laterally sliced shallots, resulting in a series of thin, regular discs."
+                    ],
+                    "notes": [
+                        "Ciseled or chopped shallots should, when possible, only be prepared when required; if, however, they must be treated in advance, they should be kept somewhere in the cool until wanted."
+                    ]
+                },
+                {
+                    "number": 181,
+                    "title": "SPICES",
+                    "type": "recipe",
+                    "introduction": [
+                        "Strictly speaking, spices include cinnamon, nutmeg, ginger, mace; and the many varieties of peppers and pimenta, cayenne, paprika, &c. These various condiments need only be kept dry in air-tight boxes.",
+                        "But there is another kind of preparation, in cookery, to which the name of spice or all-spice is more especially given. The following is a recipe for the spice in question, which would be found useful if it had to be prepared at a moment’s notice:"
+                    ],
+                    "ingredients": [
+                        "5 oz (142 g) of bay leaves, very dry",
+                        "3 oz (85 g) of thyme (half wild, if possible), very dry",
+                        "3 oz (85 g) of coriander, very dry",
+                        "4 oz (113 g) of cinnamon, very dry",
+                        "6 oz (170 g) of nutmeg, very dry",
+                        "4 oz (113 g) of cloves, very dry",
+                        "3 oz (85 g) of ginger-root, very dry",
+                        "3 oz (85 g) of mace, very dry",
+                        "10 oz (283 g) of mixed pepper (half black and half white), very dry",
+                        "1 oz (28 g) of cayenne, very dry"
+                    ],
+                    "instructions": [
+                        "Put all these ingredients into a mortar and pound them until they are all able to pass through a very fine sieve.",
+                        "Put the resulting powder into an air-tight box, which must be kept dry."
+                    ],
+                    "notes": [
+                        "Before being used, this spice is generally mixed with salt. (Recipe 188)"
+                    ]
+                },
+                {
+                    "number": 182,
+                    "title": "FLOUR",
+                    "type": "principle",
+                    "introduction": "For whatever use the flour is intended, it is always best to sift it. This is more particularly necessary in the case of flour used for coating objects to be fried; for the latter, being first dipped into milk, must of necessity let a few drops of that liquid fall into the flour they are rolled in. Lumps would therefore form, which might adhere to the objects to be fried if the flour were not sifted."
+                },
+                {
+                    "number": 183,
+                    "title": "HERB JUICE",
+                    "type": "recipe",
+                    "introduction": "This is to finish or intensify certain preparations.",
+                    "ingredients": [
+                        "Parsley leaves",
+                        "Chervil leaves",
+                        "Tarragon leaves",
+                        "Chive leaves"
+                    ],
+                    "instructions": [
+                        "Throw equal quantities of parsley, chervil, tarragon and chive leaves into a small saucepan of boiling water.",
+                        "Set to boil for two minutes, drain, and cool.",
+                        "Press the herbs in a towel, twisting the latter.",
+                        "Pound very finely, and extract the juice from the resulting paste by twisting a strong towel round it.",
+                        "Keep this juice in the cool."
+                    ]
+                },
+                {
+                    "number": 184,
+                    "title": "BREAD-CRUMBS",
+                    "type": "technique",
+                    "instructions": [
+                        "Thoroughly rub some stale, well-broken-up bread-crumb in a closed towel.",
+                        "Pass it through a fine sieve or colander, according as to whether it is required very fine or not.",
+                        "Put it aside in a convenient receptacle."
+                    ]
+                },
+                {
+                    "number": 185,
+                    "title": "CHOPPED ONION",
+                    "type": "technique",
+                    "instructions": [
+                        "Cut the onion finely, like the shallots.",
+                        "If it is to be minced even finer, it should be freed of its pungent juice to prevent blackening.",
+                        "To do this, put the chopped onion in the corner of a towel, pour plenty of cold water over it, and twist the towel to express the water. By this means the onion remains quite white."
+                    ]
+                },
+                {
+                    "number": 186,
+                    "title": "TURNED OR STONED OLIVES",
+                    "type": "technique",
+                    "instructions": [
+                        "Using a special stoning instrument or the point of a small knife, cut the fruit spirally from the stone.",
+                        "Keep the olives in slightly salted water."
+                    ]
+                },
+                {
+                    "number": 187,
+                    "title": "PARSLEY",
+                    "type": "technique",
+                    "instructions": [
+                        "Chopped Parsley: If parsley is properly chopped, no juice should be produced. If the operation is performed badly, expressing juice, wash the choppings in fresh water and press in a towel to expel the water.",
+                        "Concassed Parsley: This is roughly chopped parsley. When used, it should be added a few moments before serving to undergo a slight cooking process.",
+                        "Parsley Sprays: Used for garnishing. Use the curled-leaf kind, after removing the long stalks. Keep the sprays in fresh water until required.",
+                        "Fried Parsley: Consists of sprays, well drained of water, immersed for an instant in very hot fat. The moment it is fried, carefully drain it, salt it, and place it in a clean towel to remove superfluous grease. It is used to dress fried viands."
+                    ],
+                    "notes": [
+                        "Parsley, when quite fresh and used in moderation, is an excellent thing; but, should it have remained too long in the heat, it becomes quite insufferable. It is wiser to discard it entirely than to use it when not fresh."
+                    ]
+                },
+                {
+                    "number": 188,
+                    "title": "SALT",
+                    "type": "technique",
+                    "introduction": "Two kinds of salt are used in cooking, viz., grey, or sea-salt, and rock-salt.",
+                    "instructions": [
+                        "Grey-salt: Used more especially for Brines and in the preparation of ices. For roasts and grills, it is crushed with a roller, without being pounded, so every grain is perceptible. This salt, in melting, imparts a supplementary flavour.",
+                        "Rock-salt: Found as cooking and table-salt. If using cooking salt, the required quantity should be dried, pounded in the mortar, passed through a fine sieve, and then put aside in a dry place. Even table-salt sometimes needs drying and sifting.",
+                        "Spiced Salt: This is obtained from a mixture of 1 lb (454 g) of table salt with 3.5 oz (99 g) of spices. (Recipe 181). This salt should be kept in a very dry place."
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. The Various Kinds of Garnishes for Soups, Relevés, and Entrées, Hot or Cold",
+            "introduction": [],
+            "sections": [
+                {
+                    "title": "STUFFINGS AND FORCEMEATS",
+                    "entries": [
+                        {
+                            "number": 189,
+                            "title": "VARIOUS PANADAS FOR STUFFINGS",
+                            "type": "definition",
+                            "introduction": [
+                                "Panadas are those preparations which go to make the leason of forcemeats and which ensure their proper consistence when they are cooked. They are not necessary to every forcemeat; for the mousseline kind, which are the finest and lightest, do not require them.",
+                                "Nevertheless, they are useful for varying the taste and the uses of forcemeats, and I thought it advisable to introduce them here. The reader will thus be able to use either forcemeats with a panada base or mousseline forcemeats; in accordance with the requirements and his resources."
+                            ]
+                        },
+                        {
+                            "number": 190,
+                            "title": "A. BREAD PANADA",
+                            "type": "recipe",
+                            "ingredients": [
+                                "0.5 lb (227 g) of the crumb of bread",
+                                "0.5 oz (14 g) of salt",
+                                "0.5 pint (237 ml) of boiling milk",
+                                "Butter for greasing"
+                            ],
+                            "instructions": [
+                                "Put the bread crumb and salt into the boiling milk.",
+                                "When the crumb has absorbed all the milk, place the saucepan over a brisk fire and stir with a spatula until the paste has become so thick as not to cling any longer to the end of the spatula.",
+                                "Turn the contents of the saucepan into a buttered platter, and lightly butter the surface of the panada to avoid its drying while it cools."
+                            ]
+                        },
+                        {
+                            "number": 191,
+                            "title": "B. FLOUR PANADA",
+                            "type": "recipe",
+                            "ingredients": [
+                                "0.5 pint (237 ml) of water",
+                                "A little salt",
+                                "2 oz (57 g) of butter",
+                                "5 oz (142 g) of sifted flour"
+                            ],
+                            "instructions": [
+                                "Put the water, a little salt, and the butter into a small saucepan.",
+                                "When the liquid boils, add the sifted flour, stirring the while over a brisk fire until it reaches the consistence where it no longer clings to the spatula.",
+                                "Cool as in the preceding case. (Recipe 190)"
+                            ]
+                        },
+                        {
+                            "number": 192,
+                            "title": "C. FRANGIPAN PANADA",
+                            "type": "recipe",
+                            "ingredients": [
+                                "4 oz (113 g) of sifted flour",
+                                "4 egg yolks",
+                                "A little salt, pepper, and nutmeg",
+                                "3 oz (85 g) of melted butter",
+                                "0.5 pint (237 ml) of boiled milk"
+                            ],
+                            "instructions": [
+                                "Put the sifted flour, egg yolks, salt, pepper, and nutmeg into a stewpan.",
+                                "Add the melted butter by degrees and dilute with the boiled milk.",
+                                "Pass through a strainer, stir over the fire until the boil is reached.",
+                                "Set to cook for five minutes while gently wielding the whisk, and cool as in the preceding cases. (Recipe 190, 191)"
+                            ]
+                        },
+                        {
+                            "number": 193,
+                            "title": "CHICKEN FORCEMEAT WITH PANADA AND BUTTER",
+                            "type": "recipe",
+                            "ingredients": [
+                                "1 lb (454 g) of chicken-meat, tendons removed",
+                                "0.33 oz (9 g) of salt",
+                                "A little pepper and nutmeg",
+                                "0.5 lb (227 g) of very cold Bread Panada (Recipe 190)",
+                                "0.5 lb (227 g) of butter",
+                                "2 whole eggs",
+                                "4 egg yolks"
+                            ],
+                            "instructions": [
+                                "Cut the chicken-meat into cubes, pound it, and add the salt, pepper, and nutmeg.",
+                                "When the meat is well pounded, remove it from the mortar.",
+                                "Place the cold panada in the mortar and pound it finely. (Recipe 190)",
+                                "Add the butter, taking care that the two ingredients mix thoroughly.",
+                                "Put in the chicken-meat, and wield the pestle vigorously until the whole mass is completely mixed.",
+                                "Finally, add consecutively the whole eggs and the egg yolks, stirring incessantly and ensuring each egg is fully incorporated before adding the next.",
+                                "Rub through a sieve, put the forcemeat into a basin, and smooth it with a wooden spoon.",
+                                "Test the forcemeat by poaching a small portion in salted, boiling water to rectify seasoning and consistence. If too light, add a little white of egg; if too stiff, add a little softened butter."
+                            ],
+                            "notes": [
+                                "By substituting for chicken veal, game, or fish, &c., any kind of forcemeat may be made; for the quantities of the other ingredients remain the same whatever the basic meat may be."
+                            ]
+                        },
+                        {
+                            "number": 194,
+                            "title": "CHICKEN FORCEMEAT WITH PANADA AND CREAM (FOR FINE QUENELLES)",
+                            "type": "recipe",
+                            "ingredients": [
+                                "1 lb (454 g) of chicken-meat, tendons removed",
+                                "0.25 oz (7 g) of salt",
+                                "A little pepper and nutmeg",
+                                "2 oz (57 g) of white of egg",
+                                "7 oz (198 g) of Frangipan panada (Recipe 192)",
+                                "1 pint (473 ml) of raw cream",
+                                "0.5 pint (237 ml) of whipped cream"
+                            ],
+                            "instructions": [
+                                "Finely pound the chicken-meat with the salt, pepper and nutmeg.",
+                                "When the meat has been reduced to a fine paste, add, very gradually, the white of egg.",
+                                "Finish with the Frangipan panada, and work vigorously with the pestle until amalgamated. (Recipe 192)",
+                                "Strain through a fine sieve, put the forcemeat into a vegetable-pan, and place it on ice for a good hour.",
+                                "Stir the forcemeat on the ice for a few seconds with a wooden spoon, then add, in small quantities, the raw cream.",
+                                "Complete the preparation by adding the whipped cream.",
+                                "Test as directed in the preceding recipe (Recipe 193), and add a little white of egg if it be too light, and a little cream if it be too stiff."
+                            ],
+                            "notes": [
+                                "This forcemeat may be prepared from all butcher’s meats, game, or fish."
+                            ]
+                        },
+                        {
+                            "number": 195,
+                            "title": "FINE CHICKEN FORCEMEAT OR “MOUSSELINE”",
+                            "type": "recipe",
+                            "ingredients": [
+                                "1 lb (454 g) of chicken-meat, tendons removed",
+                                "1 oz (28 g) of salt",
+                                "A little pepper and nutmeg",
+                                "Whites of 2 eggs",
+                                "1 pint (473 ml) of thick, fresh cream"
+                            ],
+                            "instructions": [
+                                "Trim and cut the chicken-meat into cubes. Season with salt, pepper, and nutmeg.",
+                                "Finely pound, and, when it is reduced to a paste, gradually add the whites of two eggs, vigorously working with the pestle.",
+                                "Strain through a fine sieve, put the forcemeat into a vegetable-pan, and stir it for a moment with a wooden spoon.",
+                                "Combine with it, gradually, the thick, fresh cream, working with great caution and keeping the receptacle on ice."
+                            ],
+                            "notes": [
+                                {
+                                    "Remarks Relative to Mousseline Forcemeat": [
+                                        "This, like the preceding forcemeats, may be prepared from any kind of meat. The addition of the white of egg is not essential if the meats used already possess a certain quantity of albumen; but without the white of egg the forcemeat absorbs much less cream.",
+                                        "This forcemeat is particularly suited to preparations with a shell-fish base. Incomparably delicate results are obtained by the process, while it also furnishes ideal quenelles for the purpose of garnishing soup. In a word, it may be said of mousseline forcemeat that, whereas it can replace all other kinds, none of these can replace it."
+                                    ],
+                                    "N.B.": "Mousseline forcemeats of all kinds, with meat, poultry, game, fish, or shell-fish, may be made according to the principles and quantities given above."
+                                }
+                            ]
+                        },
+                        {
+                            "number": 196,
+                            "title": "PORK FORCEMEAT FOR DIVERS USES",
+                            "type": "recipe",
+                            "yield": "Used for ordinary pies and terrines. Strictly speaking, it is “sausage-meat.”",
+                            "ingredients": [
+                                "2 lbs (907 g) of fillet of pork, tendons removed",
+                                "2 lbs (907 g) of fresh, fat bacon",
+                                "1.75 oz (50 g) of spiced salt (Recipe 188)",
+                                "2 eggs",
+                                "2 tbsp (30 ml) of brandy"
+                            ],
+                            "instructions": [
+                                "Cut the fillet of pork and fresh, fat bacon into large cubes.",
+                                "Season with spiced salt. (Recipe 188)",
+                                "Chop the fillet and bacon up, together or separately, then pound them finely in the mortar.",
+                                "Finish with the eggs and brandy."
+                            ],
+                            "notes": [
+                                "The inclusion of eggs in this forcemeat really only obtains when it is used to stuff joints that are to be braised, such as stuffed breast of veal; or in the case of pies and terrines. The addition of the egg in these cases prevents the grease from melting too quickly, and thus averts the drying of the forcemeat."
+                            ]
+                        },
+                        {
+                            "number": 197,
+                            "title": "FORCEMEAT FOR GALANTINES, PIES AND TERRINES",
+                            "type": "recipe",
+                            "ingredients": [
+                                "1 lb (454 g) of fillet of veal, tendons removed",
+                                "1 lb (454 g) of fillet of pork, tendons removed",
+                                "2 lbs (907 g) of fresh, fat bacon",
+                                "3 oz (85 g) of spiced salt",
+                                "3 eggs",
+                                "3 tbsp (45 ml) of burnt brandy"
+                            ],
+                            "instructions": [
+                                "Cut the veal, pork, and bacon into cubes.",
+                                "Season with spiced salt, chop the three ingredients together or apart, and then finely pound them.",
+                                "Finish with the eggs and burnt brandy.",
+                                "Strain through a sieve, and place in a basin.",
+                                "When about to serve, add to it a little fumet corresponding with the meat that is to constitute the dish. For terrines, pies, and galantines of game, one-quarter or one-fifth of the forcemeat’s weight of gratin stuffing is added."
+                            ]
+                        },
+                        {
+                            "number": 198,
+                            "title": "VEAL FORCEMEAT WITH FAT OR GODIVEAU",
+                            "type": "recipe",
+                            "ingredients": [
+                                "1 lb (454 g) of fillet of veal, tendons removed",
+                                "2 lbs (907 g) of very dry fat of kidneys of beef",
+                                "0.5 oz (14 g) of salt",
+                                "A little pepper and nutmeg",
+                                "4 eggs",
+                                "14 oz (397 g) of very clean ice (in small pieces) or iced water"
+                            ],
+                            "instructions": [
+                                "Cut the veal into cubes. Pare the beef fat by detaching skin and filaments.",
+                                "Chop them separately, then combine and pound them in the mortar.",
+                                "Season with salt, pepper, and nutmeg, and pound until the veal and fat become a homogeneous mass.",
+                                "Add the eggs consecutively, at intervals of a few minutes, without ceasing to pound, ensuring each egg is mixed in before adding the next.",
+                                "Spread the forcemeat on a dish, and put it on ice until the next day.",
+                                "The next day, pound once more, and add the ice or iced water little by little.",
+                                "Poach a small portion in boiling water to test its consistence. If too firm, add more ice; if too flimsy, add a little white of an egg."
+                            ]
+                        },
+                        {
+                            "number": 199,
+                            "title": "VEAL FORCEMEAT WITH FAT AND CREAM",
+                            "type": "recipe",
+                            "ingredients": [
+                                "1 lb (454 g) of very white fillet of veal, tendons removed",
+                                "1 lb (454 g) of the fat of pared kidney of beef",
+                                "0.5 oz (14 g) of salt",
+                                "A little pepper and nutmeg",
+                                "2 whole eggs",
+                                "2 egg yolks",
+                                "1.5 pints (710 ml) of cream"
+                            ],
+                            "instructions": [
+                                "Chop the veal and the beef fat finely and separately.",
+                                "Combine them in the mortar, and pound until they form a fine and even paste.",
+                                "Season with salt, pepper, and nutmeg.",
+                                "Add consecutively the whole eggs and egg yolks, as in the preceding recipe. (Recipe 198)",
+                                "Strain through a sieve, spread the forcemeat on a dish, and keep it on ice until the next day.",
+                                "The next day, pound the forcemeat again for a few minutes, and add to it, little by little, the cream.",
+                                "Test as before, and rectify if necessary by adding cream or thickening with the white of an egg."
+                            ]
+                        },
+                        {
+                            "number": 200,
+                            "title": "CHICKEN FORCEMEAT FOR GALANTINES, PIES AND TERRINES",
+                            "type": "recipe",
+                            "introduction": "The exact weight of chicken-meat used as the base of this forcemeat determines the quantities of its other ingredients. Thus the weight of meat afforded by a fowl weighing four lbs is estimated at twenty oz after deducting the fillets which are always reserved.",
+                            "ingredients": [
+                                "20 oz (567 g) Chicken-meat",
+                                "8 oz (227 g) lean pork",
+                                "8 oz (227 g) fillet of veal",
+                                "30 oz (850 g) fresh, fat bacon",
+                                "5 whole eggs",
+                                "2 oz (57 g) spiced salt",
+                                "0.2 pint (95 ml) brandy"
+                            ],
+                            "instructions": [
+                                "Chop up, either together or apart, the chicken-meat, the veal, the pork, and the bacon.",
+                                "Put all these into the mortar, pound them very finely with the seasoning.",
+                                "Add the eggs consecutively, and, last of all, pour in the brandy."
+                            ],
+                            "notes": [
+                                "1. The quantity of spiced salt varies according as to whether the atmosphere be dry or damp.",
+                                "2. According to the purpose of the forcemeat, one may add a little raw trimmings of foie gras, not exceeding one-fifth of the forcemeat in weight.",
+                                "3. As a rule, forcemeat should always be rubbed through a sieve so as to ensure its being fine and even.",
+                                "4. Chicken forcemeat may always be completed with 2 or 3 oz (57-85 g) of chopped truffles per lb (454 g) of its volume."
+                            ]
+                        },
+                        {
+                            "number": 201,
+                            "title": "GAME FORCEMEAT FOR PIES AND TERRINES",
+                            "type": "recipe",
+                            "introduction": "This follows the same principles as the chicken forcemeat, i.e., the weight of the game-meat determines the quantities of the other ingredients. The proportions, procedure, and appended remarks are the same as for chicken forcemeat. (Recipe 200)"
+                        },
+                        {
+                            "number": 202,
+                            "title": "GRATIN FORCEMEAT FOR ORDINARY HOT, RAISED PIES",
+                            "type": "recipe",
+                            "ingredients": [
+                                "1 oz (28 g) of butter",
+                                "0.5 lb (227 g) of fresh, fat bacon",
+                                "0.5 lb (227 g) of fillet of veal",
+                                "0.5 lb (227 g) of pale, calf’s liver",
+                                "Salt and pepper",
+                                "2 oz (57 g) of mushroom parings",
+                                "1 oz (28 g) of truffle parings (raw if possible)",
+                                "Chopped shallots",
+                                "1 sprig of thyme",
+                                "1 fragment of bay leaf",
+                                "0.25 pint (118 ml) of Madeira",
+                                "6 oz (170 g) of butter",
+                                "6 egg yolks",
+                                "0.33 pint (156 ml) of cold, reduced Espagnole"
+                            ],
+                            "instructions": [
+                                "In a sautépan with very hot butter, quickly brown the bacon cut into large cubes, then drain on a dish.",
+                                "In the same butter, quickly brown the veal cut like the bacon, and drain.",
+                                "Rapidly brown the calf’s liver, also cut into large cubes.",
+                                "Return the veal and bacon to the sautépan with the liver. Add salt, pepper, mushroom parings, truffle parings, shallots, thyme, and bay. Put on the fire for two minutes.",
+                                "Drain the bacon, veal, and liver, and put the gravy aside.",
+                                "Swill the sautépan with the Madeira.",
+                                "Pound the bacon, veal, and liver quickly and finely, while adding consecutively 6 oz (170 g) of butter, the egg yolks, the reserved gravy, the cold Espagnole, and the Madeira.",
+                                "Strain through a sieve, place in a tureen, and smooth with a wooden spoon."
+                            ],
+                            "notes": [
+                                "To make a gratin forcemeat with game, substitute for the veal that game-meat which may happen to be required."
+                            ]
+                        },
+                        {
+                            "number": 203,
+                            "title": "PIKE FORCEMEAT FOR QUENELLES A LA LYONNAISE",
+                            "type": "recipe",
+                            "introduction": "Forcemeats prepared with the flesh of the pike are extremely delicate. Subject to circumstances, they may be prepared according to any one of the three formulæ (Recipe 193, 194, 195). There is another excellent method specially used for the preparation of pike forcemeat à la Lyonnaise.",
+                            "ingredients": [
+                                "1 lb (454 g) of the meat of a pike, without skin or bones",
+                                "0.5 lb (227 g) of stiff frangipan",
+                                "Salt and nutmeg",
+                                "0.5 lb (227 g) of melted beef-fat (or half beef-fat and half beef-marrow/butter)"
+                            ],
+                            "instructions": [
+                                "Pound the pike meat in a mortar.",
+                                "Combine with the stiff frangipan, season with salt and nutmeg, pass through a sieve, and return to the mortar.",
+                                "Vigorously work the forcemeat to make it cohere.",
+                                "Gradually add the melted beef-fat (or fat/marrow/butter mixture).",
+                                "When the forcemeat is very fine and smooth, withdraw it from the mortar and place it in a bowl surrounded with ice until wanted."
+                            ]
+                        },
+                        {
+                            "number": 204,
+                            "title": "SPECIAL STUFFINGS FOR FISH",
+                            "type": "recipe",
+                            "introduction": "These preparations are used to stuff fish such as mackerel, herring, shad, &c., lending a condimentary touch that makes them more agreeable and digestible.",
+                            "instructions": [
+                                {
+                                    "First Method": {
+                                        "ingredients": [
+                                            "4 oz (113 g) of raw, chopped milt",
+                                            "2 oz (57 g) of bread-crumb, steeped in milk and pressed",
+                                            "1.5 oz (43 g) of mixed fine herbs (chives, parsley, chervil, shallots, sweet basil), finely chopped",
+                                            "0.5 garlic clove, crushed",
+                                            "2 whole eggs",
+                                            "Salt, pepper, and nutmeg"
+                                        ],
+                                        "instructions": [
+                                            "Put all ingredients into a bowl and chop them together to mix thoroughly."
+                                        ]
+                                    },
+                                    "Second Method": {
+                                        "ingredients": [
+                                            "4 oz (113 g) of bread-crumb steeped in milk and pressed",
+                                            "0.5 oz (14 g) of onion, slightly cooked in butter, and cold",
+                                            "0.5 oz (14 g) of chopped shallots, slightly cooked in butter, and cold",
+                                            "1 oz (28 g) of raw mushrooms, chopped and pressed",
+                                            "1 tbsp (15 ml) of chopped parsley",
+                                            "A piece of garlic the size of a pea, crushed",
+                                            "Salt, pepper, and nutmeg",
+                                            "2 eggs"
+                                        ],
+                                        "instructions": [
+                                            "Mix all ingredients in a bowl as above."
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "number": 205,
+                            "title": "FORCEMEAT BALLS OR QUENELLES",
+                            "type": "technique",
+                            "introduction": "Whatever be the required size or shape of quenelles there are four ways of making them: (1) By rolling them; (2) by moulding them with a spoon; (3) by forming them with a piping-bag; (4) by moulding them by hand into the shape of a kidney.",
+                            "instructions": [
+                                {
+                                    "1. To roll quenelles": [
+                                        "This requires a stiff forcemeat. Place one-quarter lb (113 g) of forcemeat on a floured board.",
+                                        "With floured hands, roll the forcemeat into a sausage shape.",
+                                        "Cut the sausage laterally with a floured knife into sections.",
+                                        "Roll each section until its length is thrice its diameter.",
+                                        "Place on a floured tray.",
+                                        "To poach: Gently tilt the balls into a saucepan of boiling, salted water. Cover and keep on the side of the fire until the balls rise to the surface. Remove with a skimmer and place in cold water to cool. Drain on a cloth."
+                                    ],
+                                    "2. To Mould Quenelles with a Spoon": [
+                                        "Butter a sautépan or tray and let the butter cool.",
+                                        "Use two coffee-spoons. Keep one in hot water.",
+                                        "With the other spoon, take up enough forcemeat to fill it.",
+                                        "Use the hot, wet spoon to smooth the top surface and then scoop the quenelle out, placing it on the buttered tray. The quenelle will be shaped like a large olive.",
+                                        "To poach: Pour enough boiling, salted water over the quenelles to cover them. Leave them to poach until they have swollen and seem soft and firm. Drain and use immediately or cool as previously described."
+                                    ],
+                                    "3. To Form Quenelles with a Piping-bag": [
+                                        "This is recommended for small, fine soup garnishes. Butter a tray or sautépan.",
+                                        "Put the forcemeat into a piping bag fitted with a grooved or smooth pipe of the desired size.",
+                                        "Squeeze out the quenelles onto the tray, laying them very closely.",
+                                        "To poach: Poach in the same way as spoon-moulded ones.",
+                                        "To poach Godiveau quenelles: Pipe onto fine, buttered paper on a buttered tray. Push into a very moderate oven for a few minutes until a thin dew of grease glistens on their surfaces. Remove from oven, overturn the tray onto a marble slab, and when nearly cold, carefully remove the paper."
+                                    ],
+                                    "4. To Mould Forcemeat with the Fingers": [
+                                        "Place a saucepan three-quarters full of boiling, salted water on the edge of a table.",
+                                        "Tie a 2 lb (907 g) weight to a one-yard doubled string, creating a loop. Place the loop around the saucepan handle and draw the string diametrically across the opening, letting the weight pull it taut.",
+                                        "With the left hand, take some forcemeat. With the right index finger, remove a portion from the spoon.",
+                                        "Scrape the finger across the taut string, letting the ball of forcemeat fall into the boiling water.",
+                                        "When all stuffing is moulded, place the saucepan on the fire to complete poaching as in the preceding methods."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
