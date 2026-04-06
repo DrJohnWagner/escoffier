@@ -33,51 +33,68 @@ const ContentBlockList: React.FC<ContentBlockListProps> = ({
                     {title}
                 </h5>
             )}
-            <ListComponent className={`${listClasses} ${listItemClasses} ml-5`}>
-                {items.map((item, index) => (
-                    <li key={index}>
-                        {/* Your existing logic here is perfectly fine. */}
-                        {typeof item === "string" ? (
-                            <span>
-                                <EntryText text={item} />
-                            </span>
-                        ) : Array.isArray(item) ? (
-                            <div className="space-y-2">
-                                {item.map((paragraph, pIndex) => (
-                                    <p key={pIndex} className="!my-0">
-                                        <EntryText text={paragraph} />
-                                    </p>
-                                ))}
-                            </div>
-                        ) : (
-                            Object.entries(item).map(([subTitle, details]) => (
-                                <div key={subTitle}>
-                                    <strong>{subTitle}</strong>
-                                    <ul className="list-circle ml-5 mt-1 space-y-1">
-                                        {Array.isArray(details) ? (
-                                            details.map(
-                                                (detail, detailIndex) => (
-                                                    <li key={detailIndex}>
+            {items && Array.isArray(items) && (
+                <ListComponent
+                    className={`${listClasses} ${listItemClasses} ml-5`}
+                >
+                    {items.map((item, index) => (
+                        <li key={index}>
+                            {/* Your existing logic here is perfectly fine. */}
+                            {typeof item === "string" ? (
+                                <span>
+                                    <EntryText text={item} />
+                                </span>
+                            ) : Array.isArray(item) ? (
+                                <div className="space-y-2">
+                                    {item.map((paragraph, pIndex) => (
+                                        <p key={pIndex} className="!my-0">
+                                            <EntryText text={paragraph} />
+                                        </p>
+                                    ))}
+                                </div>
+                            ) : (
+                                Object.entries(item).map(
+                                    ([subTitle, details]) => (
+                                        <div key={subTitle}>
+                                            <strong>{subTitle}</strong>
+                                            <ul className="list-circle ml-5 mt-1 space-y-1">
+                                                {Array.isArray(details) ? (
+                                                    details.map(
+                                                        (
+                                                            detail,
+                                                            detailIndex
+                                                        ) => (
+                                                            <li
+                                                                key={
+                                                                    detailIndex
+                                                                }
+                                                            >
+                                                                <EntryText
+                                                                    text={
+                                                                        detail
+                                                                    }
+                                                                />
+                                                            </li>
+                                                        )
+                                                    )
+                                                ) : details ? (
+                                                    <li>
                                                         <EntryText
-                                                            text={detail}
+                                                            text={String(
+                                                                details
+                                                            )}
                                                         />
                                                     </li>
-                                                )
-                                            )
-                                        ) : details ? (
-                                            <li>
-                                                <EntryText
-                                                    text={String(details)}
-                                                />
-                                            </li>
-                                        ) : null}
-                                    </ul>
-                                </div>
-                            ))
-                        )}
-                    </li>
-                ))}
-            </ListComponent>
+                                                ) : null}
+                                            </ul>
+                                        </div>
+                                    )
+                                )
+                            )}
+                        </li>
+                    ))}
+                </ListComponent>
+            )}
         </div>
     )
 }

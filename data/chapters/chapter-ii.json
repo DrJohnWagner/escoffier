@@ -1,410 +1,361 @@
 {
-    "chapter": "II",
-    "id": "chapter-ii",
-    "title": "THE LEADING WARM SAUCES",
-    "introduction": [
-        "Listen up, you donkeys. Warm sauces come in two bloody camps: the big dogs — the “mother sauces” — and the little hangers-on that borrow their spine from the mothers. We’re focusing on the leaders, the proper foundations. The rest can queue up behind and mind their manners, because if you can’t nail these, you’ve no business near a stove.",
-        "Sauces aren’t just wet hats for food — they’re the swagger, the shine, the finish. They must flatter the palate, match the dish, and hit the plate with the right body — not sludge, not soup. In a well-run service, every course lands different to the last. If your sauces all taste the same, congratulations: you’ve cooked a parade of mediocrity. Fix it.",
-        "And for the love of all that’s holy, make them digestible. Rich doesn’t mean reckless. Cook clever, not stupid. Use what you need — no more, no less. You start free-pouring like a muppet and you’ll upset the balance and churn stomachs faster than last night’s staff meal.",
-        "Carême wasn’t faffing about when he kept things precise. He understood a simple truth: excess is lazy. Precision is power. These sauces demand discipline — exact quantities, exact technique — or they’ll spit in your face and separate right on the pass. You’ll cry, and I’ll say: “It’s fucking raw!” even when it’s not, because you didn’t listen.",
-        "A proper sauce is smooth, glossy, and confident. It clings without clagging; it’s light without being thin. Get the seasoning right — never a sledgehammer, always a spotlight. If I can taste the seasoning as a thing, you’ve overdone it, you plonker.",
-        "Each sauce should have its own voice — distinct, unmistakable — the combined character of its ingredients. Respect that or you’ll serve beige sadness. Do it right, and even a knackered guest will mop the plate clean with a grin. Do it wrong, and the health inspector will be the least of your problems.",
-        "Now stand up straight, wipe your station, and learn. We build from roux — the glue — and climb to Espagnole, Velouté, Béchamel, Tomato, Hollandaise, and the rest. Nail these, and your kitchen stops being a clown car and starts cooking like it gives a damn."
-    ],
-    "sections": [
+  "chapter": "II",
+  "id": "chapter-ii",
+  "title": "THE LEADING WARM SAUCES",
+  "introduction": [
+    "Warm sauces are of two kinds: the leading sauces, also called “mother sauces,” and the small sauces, which are usually derived from the first-named, and are generally only modified forms thereof. Cooking stock only includes the leading sauces, but I shall refer to the small hot sauces and the cold sauces at the end of the auxiliary stock.",
+    "Experience, which plays such an important part in culinary work, is nowhere so necessary as in the preparation of sauces, for not only must the latter flatter the palate, but they must also vary in savour, consistence and viscosity, in accordance with the dishes they accompany. By this means, in a well-ordered dinner, each dish differs from the preceding ones and from those that follow.",
+    "Furthermore, sauces must, through the perfection of their preparation, obey the general laws of a rational hygiene, wherefore they should be served and combined in such wise as to allow of easy digestion by the frequently disordered stomachs of their consumers.",
+    "Carême was quite justified in pluming himself upon the fact that during his stay at the English Court his master—the Prince Regent—had assured him that he (Carême) was the only one among those who had served his Highness whose cooking had been at all easy of digestion. Carême had grasped the essential truth that the richer the cooking is, the more speedily do the stomach and palate tire of it. And, indeed, it is a great mistake to suppose that, in order to do good cooking, it is necessary to be prodigal in one’s use of all things. In reality, practice dictates fixed and regular quantities, and from these one cannot diverge without upsetting the hygienic and sapid equilibrium on which the value of a sauce depends. The requisite quantities of each ingredient must, of course, be used, but neither more nor less, as there are objections to either extreme.",
+    "Any sauce whatsoever should be smooth, light (without being liquid), glossy to the eye, and decided in taste. When these conditions are fulfilled it is always easy to digest even for tired stomachs.",
+    "An essential point in the making of sauces is the seasoning, and it would be impossible for me to lay sufficient stress on the importance of not indulging in any excess in this respect. It too often happens that the insipidness of a badly-made sauce is corrected by excessive seasoning; this is an absolutely deplorable practice.",
+    "Seasoning should be so calculated as to be merely a complementary factor, which, though it must throw the savour of dishes into relief, may not form a recognisable part of them. If it be excessive, it modifies and even destroys the taste peculiar to every dish—to the great detriment of the latter and of the consumer’s health.",
+    "It is therefore desirable that each sauce should possess its own special flavour, well defined, the result of the combined flavours of all its ingredients.",
+    "If, in the making of sauces, one allowed oneself to be guided by those principles which are the very foundation of good cookery, the general denunciation of sauces by the medical faculty would be averted; and this denunciation no sauce deserves if it be carefully prepared, conformably with the laws prescribed by practice and its resulting experience."
+  ],
+  "sections": [
+    {
+      "title": "The Roux",
+      "introduction": [
+        "The roux being the cohering element of leading sauces, it is necessary to reveal its preparation and constituents before giving one’s attention to the latter.",
+        "Three kinds of roux are used—namely, brown roux, for brown sauces; pale roux, for veloutés, or cream sauces; and white roux, for white sauces and Béchamel."
+      ],
+      "entries": [
         {
-            "title": "The Roux",
-            "introduction": [
-                "Roux is the fixer — the backbone. Three kinds, three attitudes. Brown for brown sauces, pale for veloutés and cream numbers, white for white sauces and Béchamel. Make it careless and you’ll get bitter sand that won’t bind a thing. Make it right and it’ll drink six times its weight in liquid and hold your sauce like a champ.",
-                "Heat steady, stirring constant. We’re blooming starch, not cremating it. Burn the starch and you’ve murdered the glue, you absolute plank."
-            ],
-            "entries": [
-                {
-                    "number": 19,
-                    "title": "BROWN ROUX",
-                    "type": "recipe",
-                    "yield": "about 1 lb (454 g)",
-                    "introduction": [
-                        "This is your brown sauce anchor. Cook slow and even until you smell toasted hazelnut — not bonfire. Rush it and you’ll torch the starch, then you’ll need triple the roux and still end up with a bitter, muddy mess. Don’t be that muppet."
-                    ],
-                    "ingredients": [
-                        "8 oz (227 g) clarified butter",
-                        "9 oz (255 g) best-quality flour"
-                    ],
-                    "instructions": [
-                        "In a heavy, wide pan on low–medium heat, whisk together the clarified butter and flour until smooth. Keep the heat moderate — you’re coaxing, not scorching.",
-                        "Stir constantly with a flat-edged spatula, sweeping the corners like your job depends on it — because it bloody does. Cook until the mix turns a fine, light brown and smells like toasted hazelnut. If it goes dark or smells burnt, you’ve cocked it — start over.",
-                        "As soon as it hits that light brown, pull it off the heat. Use warm to hot liquids later; cold liquid into hot roux is how you make lumps that look like a donkey chewed them."
-                    ],
-                    "notes": [
-                        [
-                            "Cook too hot and you shrivel starch cells before they swell, destroying the binding power. Then your sauce won’t clear and it’ll taste bitter. Control the heat, you clown."
-                        ]
-                    ]
-                },
-                {
-                    "number": 20,
-                    "title": "PALE ROUX",
-                    "type": "recipe",
-                    "yield": "about 1 lb (454 g)",
-                    "introduction": [
-                        "For veloutés and cream sauces. Stop the moment the colour threatens to shift. We’re killing raw-flour taste without adding toastiness."
-                    ],
-                    "ingredients": [
-                        "8 oz (227 g) clarified butter",
-                        "9 oz (255 g) best-quality flour"
-                    ],
-                    "instructions": [
-                        "Combine butter and flour in a heavy pan over low heat. Stir constantly until the raw flour smell just disappears and the roux is pale straw — no visible browning.",
-                        "Get it off the heat. Use warm stock to make it behave. If it darkens, it’s not pale roux anymore, you berk."
-                    ],
-                    "notes": [
-                        [
-                            "Same starch rules as brown roux. Gentle heat, relentless stirring."
-                        ]
-                    ]
-                },
-                {
-                    "number": 21,
-                    "title": "WHITE ROUX",
-                    "type": "recipe",
-                    "yield": "about 1 lb (454 g)",
-                    "introduction": [
-                        "For white sauces and Béchamel. Quick cook, minimal colour. Raw flour taste? Out. Colour? Also out. Don’t be greedy."
-                    ],
-                    "ingredients": [
-                        "8 oz (227 g) clarified butter",
-                        "9 oz (255 g) best-quality flour"
-                    ],
-                    "instructions": [
-                        "Melt the butter over low heat, whisk in the flour, and cook just 2–3 minutes, stirring non-stop, until the paste loses its raw edge but stays white.",
-                        "Remove from heat immediately. You overcook and tint it? Then it’s not white roux anymore, you divvy."
-                    ],
-                    "notes": [
-                        [
-                            "Use promptly or cool quickly in a thin layer to avoid carryover browning."
-                        ]
-                    ]
-                }
+          "number": 19,
+          "title": "BROWN ROUX",
+          "type": "recipe",
+          "yield": "about 1 lb (454 g)",
+          "introduction": {
+            "The Science of Roux": [
+              "It is very important that brown roux should not be cooked too rapidly. As a matter of fact, among the various constituent elements of flour, the starch alone acts as the cohering principle. This starch is contained in little cells, which tightly constrain it, but which are sufficiently porous to permit the percolation of liquid and fatty substances. Under the influence of moderate heat and the infiltered butter, the cells burst through the swelling of the starch, and the latter thereupon completely combines with the butter to form a mass capable of absorbing six times its own weight of liquid when cooked.",
+              "When the cooking takes place with a very high initial heat the starch gets burned within its shrivelled cells, and swelling is then possible only in those parts which have been least burned.",
+              "The cohering principle is thus destroyed, and double or treble the quantity of roux becomes necessary in order to obtain the required consistency. But this excess of roux in the sauce chokes it up without binding it, and prevents it from despumating or becoming clear. At the same time, the cellulose and the burnt starch lend a bitterness to the sauce of which no subsequent treatment can rid it.",
+              "From the above it follows that, starch being the only one from among the different constituents of flour which really effects the coherence of sauces, there would be considerable advantage in preparing roux either from a pure form of it, or from substances with kindred properties, such as fecula, arrow-root, &c. It is only habit that causes flour to be still used as the cohering element of roux, and, indeed, the hour is not so far distant when the advantages of the changes I propose will be better understood—changes which have been already recommended by Favre in his dictionary.",
+              "With a roux well made from the purest starch—in which case the volume of starch and butter would equal about half that of the flour and butter of the old method—and with strong and succulent brown stock, a Spanish sauce or Espagnole may be made in one hour. And this sauce will be clearer, more brilliant, and better than that of the old processes, which needed three days at least to despumate."
             ]
+          },
+          "ingredients": [
+            "8 oz (227 g) of clarified butter",
+            "9 oz (255 g) of best-quality flour"
+          ],
+          "instructions": [
+            "Mix the flour and butter in a very thick stewpan, and put it on the side of the fire or in a moderate oven.",
+            "Stir the mixture repeatedly so that the heat may be evenly distributed throughout the whole of its volume. The time allowed for the cooking of brown roux cannot be precisely determined, as it depends upon the degree of heat employed. The more intense the latter, the speedier will be the cooking, while the stirring will of necessity be more rapid.",
+            "Brown roux is known to be cooked when it has acquired a fine, light brown colour, and when it exudes a scent resembling that of the hazel-nut, characteristic of baked flour."
+          ]
         },
         {
-            "title": "Brown Mother & Reductions",
-            "introduction": [
-                "Espagnole is the brown workhorse. Despumate — skim and simmer — like a pro. Then take it down to Half-Glaze and stop mucking about with flabby sauce. Precision, patience, and heat control — otherwise it’s a pot of sadness."
-            ],
-            "entries": [
-                {
-                    "number": 22,
-                    "title": "BROWN SAUCE OR ESPAGNOLE",
-                    "type": "recipe",
-                    "yield": "4 qt (3.79 L)",
-                    "introduction": [
-                        "The classic brown mother. If you don’t whisk, skim, and control the simmer, it’ll bite you on the arse. We’re going from roux and brown stock to glossy, clean, deeply savoury perfection. Fuck this up and your entire game collapses."
-                    ],
-                    "ingredients": [
-                        "1 lb (454 g) brown roux (Recipe 19)",
-                        "6 qt (5.68 L) strong brown stock (estouffade), plus 1 qt (0.95 L) extra to top up during despumation",
-                        "2 lb (907 g) fresh tomatoes, roughly chopped, or 1 qt (0.95 L) tomato purée",
-                        "1 lb (454 g) Mirepoix (carrot, onion, celery) — medium dice",
-                        "Fine salt to taste",
-                        "Optional: bouquet garni; freshly ground pepper to taste"
-                    ],
-                    "instructions": [
-                        "In a tall, heavy pot, whisk the brown roux (Recipe 19) with 6 qt (5.68 L) hot brown stock until smooth — no lumps, you muppet.",
-                        "Bring to a boil, whisking constantly so nothing catches. As soon as it boils, slide to a gentle simmer. Wedge the pot so it leans, letting scum and fat collect on one side like the lazy bastards they are. Skim relentlessly.",
-                        "After the first clear simmer, add tomatoes (or purée) and Mirepoix. Continue a low, steady despumation (skim + simmer) for hours — topping up with up to 1 qt (0.95 L) stock as needed — until the sauce tastes clean, looks glossy, and reduces toward 4 qt (3.79 L).",
-                        "Strain through fine mesh. Return to a clean pot; simmer gently to your final 4 qt (3.79 L). Season judiciously — seasoning should amplify, not shout.",
-                        "Cool quickly in a wide pan, stirring to keep the surface from forming a skin. Label like a pro — not like a clown scribbling in crayon."
-                    ],
-                    "notes": [
-                        [
-                            "Quality stock and a properly cooked roux are non-negotiable. If either is rubbish, your Espagnole will be, too. Don’t try to rescue it with salt — that’s the coward’s way."
-                        ]
-                    ]
-                },
-                {
-                    "number": 23,
-                    "title": "HALF GLAZE",
-                    "type": "recipe",
-                    "yield": "about 0.9 qt (0.85 L)",
-                    "introduction": [
-                        "This is Espagnole, perfected — polished, reduced, finished with sherry. It’s the sauce base that makes plates sing and chefs look competent. Screw it up and I’ll use it to glue your menu to the bin."
-                    ],
-                    "ingredients": [
-                        "1 qt (0.95 L) Espagnole (Recipe 22)",
-                        "1 qt (0.95 L) top-quality brown stock",
-                        "0.1 qt (0.09 L) excellent sherry (about 3.2 fl oz / 95 ml)"
-                    ],
-                    "instructions": [
-                        "Combine Espagnole (Recipe 22) and brown stock in a wide pan. Bring to a bare simmer and reduce, skimming like a hawk, until about 0.9 qt (0.85 L) remains — glossy, nappe consistency.",
-                        "Strain into a bain-marie, finish off the heat with the sherry, and cover (or lightly butter the surface) to prevent a skin.",
-                        "Hold warm, not boiling. Boiling now is vandalism. Don’t be a vandal."
-                    ],
-                    "notes": [
-                        [
-                            "This is the base of countless small brown sauces. Treat it like gold, not like dishwater."
-                        ]
-                    ]
-                },
-                {
-                    "number": 24,
-                    "title": "LENTEN ESPAGNOLE",
-                    "type": "recipe",
-                    "yield": "about 4 qt (3.79 L)",
-                    "introduction": [
-                        "Fish-based version when Lent is serious and bacon’s off the table. Light touch on the simmer — this one doesn’t need a marathon. No porky bits, you sausage."
-                    ],
-                    "ingredients": [
-                        "1 lb (454 g) brown roux (Recipe 19)",
-                        "6 qt (5.68 L) clear fish fumet, plus up to 1 qt (0.95 L) extra to top up",
-                        "1 lb (454 g) Mirepoix made with mushroom trimmings (no bacon), carrot, onion — medium dice",
-                        "2 lb (907 g) fresh tomatoes, roughly chopped, or 1 qt (0.95 L) tomato purée",
-                        "Fine salt and white pepper to taste"
-                    ],
-                    "instructions": [
-                        "Whisk the brown roux (Recipe 19) with the fish fumet. Bring to a boil while whisking, then immediately reduce to a gentle simmer.",
-                        "Add mushroom-forward Mirepoix and tomatoes. Despumate (skim and simmer) for about 1 hour — this isn’t the long slog of meat-based Espagnole.",
-                        "Strain, adjust to about 4 qt (3.79 L), and season carefully. Keep it bright, clean, and elegant — not muddy."
-                    ],
-                    "notes": [
-                        [
-                            "If you’re not bound by Lent but want fish character, you can spike regular Espagnole with fish fumet at finish. But if it must be truly meatless, make this one properly."
-                        ]
-                    ]
-                }
-            ]
+          "number": 20,
+          "title": "PALE ROUX",
+          "type": "recipe",
+        "yield": "about 1 lb (454 g)",
+        "ingredients": [
+            "8 oz (227 g) of clarified butter",
+            "9 oz (255 g) of best-quality flour"
+          ],
+          "instructions": [
+            "Mix the flour and butter in a very thick stewpan, and put it on the side of the fire or in a moderate oven.",
+            "Stir the mixture repeatedly so that the heat may be evenly distributed throughout the whole of its volume.",
+            "Cooking must cease as soon as the colour of the roux begins to change, and before the appearance of any colouring whatsoever."
+          ],
+          "notes": [
+            "The observations made relative to brown roux, concerning the cohering element, apply also to pale roux. (Recipe 19)"
+          ]
         },
         {
-            "title": "Veloutés & Derivatives",
-            "introduction": [
-                "Velouté is the white counterpart to Espagnole: pale roux + white stock, despumated to silk. Poultry and fish variants play the same tune with different instruments. Keep it clean, keep it bright, season like a sniper, not a shotgun."
-            ],
-            "entries": [
-                {
-                    "number": 25,
-                    "title": "ORDINARY VELOUTÉ SAUCE",
-                    "type": "recipe",
-                    "yield": "4 qt (3.79 L)",
-                    "introduction": [
-                        "Pale, silky, and civilised — unless you burn it, you absolute plank. We’re talking pale roux and white veal stock, skimmed to perfection. Mushroom trim optional but brilliant if you’ve got it."
-                    ],
-                    "ingredients": [
-                        "1 lb (454 g) pale roux (Recipe 20)",
-                        "5 qt (4.73 L) white veal stock, plus 1 pt (473 ml) extra to finish",
-                        "1 oz (28 g) table salt (or to taste)",
-                        "1 small pinch grated nutmeg",
-                        "White pepper to taste",
-                        "1/4 lb (113 g) white mushroom trimmings (optional)"
-                    ],
-                    "instructions": [
-                        "In a heavy pot, whisk the pale roux (Recipe 20) into the cold white veal stock until smooth — no lumps, you doughnut.",
-                        "Bring to a boil, stirring constantly so nothing sticks. Reduce to a gentle simmer and despumate for 1 1/2 hours, skimming and topping up with liquid as needed.",
-                        "Strain through muslin into a clean pot, add 1 pt (473 ml) white stock, and simmer another 30 minutes. Strain again into a wide pan and stir while cooling to prevent a skin.",
-                        "Season with salt, a whisper of nutmeg, and white pepper. Keep it light — seasoning should lift, not club."
-                    ],
-                    "notes": [
-                        [
-                            "Don’t load this with veg garnishes during cooking; let the stock speak. Mushroom liquor beats trimmings if you have it — just don’t blacken the stock."
-                        ]
-                    ]
-                },
-                {
-                    "number": 26,
-                    "title": "VELOUTÉ DE VOLAILLE",
-                    "type": "recipe",
-                    "yield": "4 qt (3.79 L)",
-                    "introduction": [
-                        "Same technique, different stock: white poultry stock instead of veal. Clean as a whistle and delicate as hell. Treat it gently or I’ll staple your ladle to the wall."
-                    ],
-                    "ingredients": [
-                        "1 lb (454 g) pale roux (Recipe 20)",
-                        "5 qt (4.73 L) white poultry stock, plus 1 pt (473 ml) extra to finish",
-                        "1 oz (28 g) table salt (or to taste)",
-                        "White pepper to taste",
-                        "1 small pinch grated nutmeg (optional)",
-                        "1/4 lb (113 g) white mushroom trimmings or 1/2 cup (120 ml) mushroom liquor (optional)"
-                    ],
-                    "instructions": [
-                        "Whisk pale roux (Recipe 20) into cold poultry stock until smooth. Bring to a boil, then simmer gently, skimming, for 1 1/2 hours.",
-                        "Strain, add 1 pt (473 ml) stock, and simmer 30 minutes more. Strain again and cool while stirring.",
-                        "Season lightly. Keep the profile bright and subtle — don’t drown it in nutmeg like an amateur."
-                    ],
-                    "notes": [
-                        [
-                            "If you’ve got quality mushroom liquor, use that and skip trimmings for a cleaner colour."
-                        ]
-                    ]
-                },
-                {
-                    "number": 26.1,
-                    "title": "FISH VELOUTÉ",
-                    "type": "recipe",
-                    "yield": "about 4 qt (3.79 L)",
-                    "introduction": [
-                        "Fish fumet meets pale roux for a fast, elegant velouté. Only a short despumation — blink and it’s done. Don’t boil it to death, you wally."
-                    ],
-                    "ingredients": [
-                        "1 lb (454 g) pale roux (Recipe 20)",
-                        "5 qt (4.73 L) clear fish fumet",
-                        "Fine salt and white pepper to taste"
-                    ],
-                    "instructions": [
-                        "Whisk pale roux (Recipe 20) into cold fish fumet until smooth. Bring just to a boil, then immediately reduce to a gentle simmer.",
-                        "Despumate for 20 minutes only. Strain, adjust seasoning, and cool quickly.",
-                        "Handle delicately. Over-reduction turns it claggy and fishy. Don’t be a plonker."
-                    ],
-                    "notes": [
-                        [
-                            "Use the freshest fumet you can make. Old fumet smells like low tide and shame."
-                        ]
-                    ]
-                },
-                {
-                    "number": 27,
-                    "title": "ALLEMANDE SAUCE (THICKENED VELOUTÉ)",
-                    "type": "recipe",
-                    "yield": "about 1 qt (0.95 L)",
-                    "introduction": [
-                        "Technically not a mother, but it behaves like one because everything wants a spoon of it. Egg-thickened velouté finished with cream — lush, delicate, and temperamental. Treat it right or it’ll split and laugh at you."
-                    ],
-                    "ingredients": [
-                        "5 egg yolks",
-                        "1 pt (473 ml) cold white stock",
-                        "1 qt (0.95 L) well-despumated Velouté (Recipe 25 or 26)",
-                        "Juice of 1/2 lemon (about 1 tbsp / 15 ml)",
-                        "1/4 pt (118 ml) mushroom liquor",
-                        "1/3 pt (157 ml) fresh cream, plus a little extra to finish (optional)",
-                        "Fine salt and white pepper to taste",
-                        "Optional at service: 2 oz (57 g) cold unsalted butter, in cubes"
-                    ],
-                    "instructions": [
-                        "In a heavy sauté pan, whisk yolks with cold white stock, velouté, lemon juice, and mushroom liquor until smooth. No heat yet, you impatient sausage.",
-                        "Set over medium-low heat and stir constantly with a flat spatula, scraping the bottom, until it thickens to coat the back of the spoon. Do not boil, you twit — 140–165°F (60–74°C) is your zone.",
-                        "Stir in 1/3 pt (157 ml) cream and reduce a few minutes more to tighten. Strain fine into a clean pan and cool with gentle stirring to prevent a skin if holding.",
-                        "At service, rewarm gently (never boil). Finish with a touch of cream and, off the heat, whisk in cold butter if desired. Season thoughtfully.",
-                        "If you split it by overheating, that’s on you. Don’t stare at me — fix your heat control or get out of my kitchen."
-                    ],
-                    "notes": [
-                        [
-                            "Once butter or extra cream are in, keep below ~140°F (60°C) to avoid breaking. Warm, not hot — think spa day, not sauna."
-                        ]
-                    ]
-                }
-            ]
-        },
-        {
-            "title": "Milk & White: Béchamel",
-            "introduction": [
-                "Béchamel is white roux married to milk, perfumed and strained. Gentle heat, patient stirring. Treat the milk like a diva — scorch it and it’ll never forgive you."
-            ],
-            "entries": [
-                {
-                    "number": 28,
-                    "title": "BÉCHAMEL SAUCE",
-                    "type": "recipe",
-                    "yield": "about 4 qt (3.79 L)",
-                    "introduction": [
-                        "Silky milk-based mother. Don’t brown it, don’t rush it, and absolutely don’t let it stick. One scorch mark and it tastes like burnt laundry. Don’t be that amateur."
-                    ],
-                    "ingredients": [
-                        "1 lb (454 g) white roux (Recipe 21)",
-                        "4.5 qt (4.26 L) boiling milk",
-                        "1/2 lb (227 g) lean veal, cut in small cubes (omit for Lenten prep)",
-                        "2/3 oz (19 g) fine salt",
-                        "1 small pinch mignonette (cracked pepper) and grated nutmeg",
-                        "1 small sprig thyme",
-                        "1 onion, finely minced",
-                        "Butter, as needed, to grease surface during holding"
-                    ],
-                    "instructions": [
-                        "Pour the boiling milk over the nearly cool white roux (Recipe 21) while whisking like you mean it. Bring to a gentle boil, then drop to a lazy simmer.",
-                        "Meanwhile, sweat the veal cubes and minced onion in a knob of butter until the veal just stiffens without colouring. Add this and all aromatics (salt, mignonette, nutmeg, thyme) to the sauce.",
-                        "Simmer about 1 hour, stirring often and scraping the pan bottom like a professional, not a lazy twit.",
-                        "Strain through a tammy or fine sieve into a clean pan. Lightly butter the surface to prevent a skin if holding.",
-                        "Alternate method: infuse aromatics directly in the milk after boiling, cover and steep on the side, then whisk into a separately prepared white roux and cook 15 minutes. Choose one method and execute — don’t mash them together like a clown."
-                    ],
-                    "notes": [
-                        [
-                            "For Lenten use, skip the veal entirely. Keep the sauce white — no browning, no burnt bits, or I’ll throw your pan out the window."
-                        ]
-                    ]
-                }
-            ]
-        },
-        {
-            "title": "Tomato & Emulsions",
-            "introduction": [
-                "Tomato sauce: robust, bright, and structured. Hollandaise: the diva of warm emulsions — yolks and butter in a tight, shiny marriage that breaks if you breathe wrong. Focus, taste, adjust. And if it splits, fix it — don’t cry on my pass, you absolute plank."
-            ],
-            "entries": [
-                {
-                    "number": 29,
-                    "title": "TOMATO SAUCE",
-                    "type": "recipe",
-                    "yield": "about 4 qt (3.79 L)",
-                    "introduction": [
-                        "Built like a proper sauce: rendered pork, sweated veg, roux, tomatoes, stock, and time. No shortcuts. You scorch it, you ruin it. You underseason, it sulks. Do it right and it slaps."
-                    ],
-                    "ingredients": [
-                        "5 oz (142 g) salted breast of pork, rather fatty, diced",
-                        "2 oz (57 g) unsalted butter",
-                        "6 oz (170 g) carrots, small dice",
-                        "6 oz (170 g) onions, small dice",
-                        "1 bay leaf",
-                        "1 small sprig thyme",
-                        "5 oz (142 g) flour",
-                        "1/2 oz (14 g) fine salt",
-                        "1 oz (28 g) sugar",
-                        "Pinch of black pepper",
-                        "10 lb (4.54 kg) raw tomatoes, chopped (or 4 qt / 3.79 L tomatoes, mashed)",
-                        "2 qt (1.89 L) white stock",
-                        "1 garlic clove, crushed"
-                    ],
-                    "instructions": [
-                        "In a tall, heavy pot, gently render the salted pork in the butter until most fat has melted — don’t brown to bitterness, you wally.",
-                        "Add carrots, onions, bay, and thyme. Sweat until the veg are softened and glistening. No colour.",
-                        "Stir in the flour and cook until it just begins to turn blonde–light brown — you’re building a light roux inside the pot.",
-                        "Add tomatoes and white stock. Stir thoroughly, bring to a simmer, and add salt, sugar, pepper, and crushed garlic.",
-                        "Cover and cook in a moderate oven (or covered simmer) for about 1 1/2 hours. Don’t let it catch. You let it burn, you start again.",
-                        "Pass through a sieve or tammy. Return to a boil while stirring to smooth the texture. Adjust seasoning. Finish by buttering the surface if holding."
-                    ],
-                    "notes": [
-                        [
-                            "For a tomato purée (not sauce), omit the flour and cut the white stock to 1 pt (473 ml). Reduce to desired thickness."
-                        ]
-                    ]
-                },
-                {
-                    "number": 30,
-                    "title": "HOLLANDAISE SAUCE",
-                    "type": "recipe",
-                    "yield": "about 1 qt (0.95 L)",
-                    "introduction": [
-                        "Queen of warm emulsions. Temper the yolks, feed in butter like a saint, and keep the heat as gentle as a love song. You rush, you split. You overheat, you scramble. Then I’ll call you a melt — because you are."
-                    ],
-                    "ingredients": [
-                        "1.5 lb (680 g) unsalted butter, melted and warm",
-                        "6 egg yolks",
-                        "3 tbsp (44 ml) good vinegar",
-                        "Pinch of mignonette (cracked pepper)",
-                        "1/4 oz (7 g) fine salt (or to taste)",
-                        "Water, as needed, to adjust consistency",
-                        "Few drops fresh lemon juice, to finish"
-                    ],
-                    "instructions": [
-                        "In a small saucepan, combine vinegar, mignonette, salt, and an equal volume of water. Reduce on the stove by about three-quarters to concentrate. Cool slightly.",
-                        "Set the pan over a bain-marie or the gentlest heat imaginable. Whisk in a spoonful of fresh water and the yolks. Cook, whisking constantly, until the yolks thicken to light cream. If you see steam surging or curds forming, you’re too hot — off the heat, you numpty.",
-                        "Remove to a tepid spot. Stream in the warm melted butter a little at a time, whisking like your life depends on it. When it comes together, adjust with splashes of warm water for a lighter, nappier consistency as needed.",
-                        "Finish with a few drops of lemon juice. Strain through a tammy for extra smoothness. Hold just warm — never hot — and never over direct flame, you absolute plank."
-                    ],
-                    "notes": [
-                        [
-                            "Thickness is adjustable: more yolks or cooler working temperature yield a thicker sauce. Master the heat and you master Hollandaise. Lose the heat, lose the sauce — and your dignity."
-                        ]
-                    ]
-                }
-            ]
+          "number": 21,
+          "title": "WHITE ROUX",
+          "type": "recipe",
+        "yield": "about 1 lb (454 g)",
+        "introduction": "White roux differs from pale roux in that the cooking is still more slighted, and that it is prepared in a different manner.",
+          "ingredients": [
+            "8 oz (227 g) of clarified butter",
+            "9 oz (255 g) of best-quality flour"
+          ],
+          "instructions": [
+            "Mix the flour and butter in a very thick stewpan and cook over low heat.",
+            "Stir constantly for a few minutes. The time of cooking is limited, as it is only needful, in this case, to do away with the disagreeable taste of raw flour which is typical of those sauces whose roux has not been sufficiently cooked.",
+            "Do not allow the roux to take on any color."
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "title": "The Leading Sauces",
+      "entries": [
+        {
+          "number": 22,
+          "title": "BROWN SAUCE OR ESPAGNOLE",
+          "type": "recipe",
+          "yield": "4 quarts (3.8 L)",
+          "ingredients": [
+            "1 lb (454 g) of brown roux (Recipe 19)",
+            "6 quarts (5.7 L) of brown stock or estouffade",
+            "2 lbs (907 g) of fresh tomatoes, roughly cut up, or an equivalent quantity of tomato purée",
+            "1 lb (454 g) of Mirepoix (Recipe 228)",
+            "1 quart (946 ml) of brown stock, for replacement"
+          ],
+          "instructions": [
+            "Dissolve the brown roux in a tall, thick saucepan with six quarts of brown stock.",
+            "Put the saucepan on an open fire, and stir the sauce with a spatula or a whisk, and do not leave it until it begins to boil.",
+            "Remove the spatula, and put the saucepan on a corner of the fire, letting it lean slightly to one side with the help of a wedge, so that boiling may only take place at one point, and the inert principles thrown out by the sauce during despumation may accumulate high up in the saucepan, whence they can be easily removed as they collect.",
+            "During despumation, change saucepans two or three times, straining every time, and adding a quart of brown stock to replace what has evaporated.",
+            "When the sauce begins to get lighter, and about two hours before finally straining it, add the fresh tomatoes and the Mirepoix.",
+            "Reduce the sauce so as to measure four quarts when strained.",
+            "After straining, pour it into a wide tureen, and stir until quite cool lest a skin should form on its surface."
+          ],
+          "notes": [
+            {
+              "Despumation Time": [
+                "The time required for the despumation of an Espagnole varies according to the quality of the stock and roux. With a concentrated stock and starch roux, one hour will suffice, in which case the Mirepoix and the tomato are inserted from the first. (Recipe 19) But much more time is required if one is dealing with a roux whose base is flour. In the latter case six hours should be allowed, provided one have excellent stock and well-made roux. More often than not this work is done in two stages, thus: after having despumated the Espagnole for six or eight hours the first day, it is put on the fire the next day with half its volume of stock, and it is left to despumate a few hours more before it is finally strained."
+              ]
+            },
+            {
+              "Keys to Success": [
+                "1. Only use strong, clear stock with a decided taste.",
+                "2. Be scrupulously careful of the roux, however it may be made. By following these two rules, a clear, brilliant, and consistent Espagnole will always be obtained in a fairly short time."
+              ]
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "title": "HALF GLAZE",
+          "type": "recipe",
+          "introduction": "This is the Espagnole sauce, having reached the limit of perfection by final despumation.",
+          "yield": "approx. 1 quart (946 ml)",
+          "ingredients": [
+            "1 quart (946 ml) of Espagnole sauce (Recipe 22)",
+            "1 quart (946 ml) of first-class brown stock",
+            "3.2 oz (90 ml) of excellent sherry"
+          ],
+          "instructions": [
+            "Combine one quart of Espagnole and one quart of first-class brown stock.",
+            "Reduce until its volume is reduced to nine-tenths of a quart (approx 900 ml).",
+            "Strain into a bain-marie of convenient dimensions.",
+            "Finish, away from the fire, with the excellent sherry.",
+            "Cover the bain-marie, or slightly butter the top to avoid the formation of a skin."
+          ],
+          "notes": [
+            "This sauce is the base of all the smaller brown sauces."
+          ]
+        },
+        {
+          "number": 24,
+          "title": "LENTEN ESPAGNOLE",
+          "type": "recipe",
+          "introduction": "Practical men are not agreed as to the need of Lenten Espagnole. The ordinary Espagnole being really a neutral sauce in flavour, it is quite simple to give it the necessary flavour by the addition of the required quantity of fish fumet. It is only, therefore, when one wishes to conform with the demands of a genuine Lent sauce that a fish Espagnole is needed. And, certainly in this case, nothing can take its place.",
+          "ingredients": [
+            "1 lb (454 g) of brown roux (Recipe 19)",
+            "6 quarts (5.7 L) of fish stock or fumet",
+            "2 lbs (907 g) of fresh tomatoes, roughly cut up",
+            "1 lb (454 g) of Mirepoix, prepared with mushroom parings instead of bacon"
+          ],
+          "instructions": [
+            "The preparation of this Espagnole does not differ from that of the ordinary kind, except that the bacon is replaced by mushroom parings in the Mirepoix, and that the sauce must be despumated for only one hour. (Recipe 22)"
+          ],
+          "notes": [
+            "This sauce takes the place of the ordinary Espagnole, for Lenten preparations, in every case where the latter is generally used, in Gratins, in the Genevoise sauce, &c. (Recipe 22)"
+          ]
+        },
+        {
+          "number": 25,
+          "title": "ORDINARY VELOUTÉ SAUCE",
+          "type": "recipe",
+          "yield": "4 quarts (3.8 L)",
+          "ingredients": [
+            "1 lb (454 g) of pale roux (Recipe 20)",
+            "5 quarts (4.7 L) of white veal stock (Recipe 10)",
+            "1 oz (28 g) of table-salt",
+            "1 pinch of nutmeg",
+            "1 pinch of white powdered pepper",
+            "0.25 lb (113 g) of nice white mushroom parings (optional)",
+            "1 pint (473 ml) of white stock"
+          ],
+          "instructions": [
+            "Dissolve the roux in the cold white veal stock and put the saucepan containing this mixture on an open fire.",
+            "Stir the sauce with a spatula or whisk, so as to avoid its burning at the bottom.",
+            "Add salt, nutmeg, pepper, and mushroom parings, if handy.",
+            "Bring to a boil and move to a corner of the fire to despumate slowly for one and a half hours, at the same time observing the precautions advised for ordinary Espagnole. (Recipe 22)",
+            "Strain through muslin into a smaller saucepan, add one pint of white stock, and despumate for another half hour.",
+            "Strain it again through a tammy or a sieve into a wide tureen, and stir with a spatula until it is quite cold."
+          ],
+          "notes": [
+            "I am not partial to garnishing Velouté Sauce with carrots, an onion with a clove stuck into it, and a faggot, as many do. The stock should be sufficiently fragrant of itself, without requiring the addition of anything beyond the usual condiments. The only exception I should make would be for mushroom parings, even though it is preferable, when possible, to replace these by mushroom liquor. But this is always scarce in kitchens where it is used for other purposes; wherefore it is often imperative to have recourse to parings in its stead. The latter may not, however, be added to the stock itself, as they would blacken it; hence I advise their addition to the Velouté during its preparation."
+          ]
+        },
+        {
+          "number": 26,
+          "title": "VELOUTÉ DE VOLAILLE",
+          "type": "recipe",
+          "introduction": "This is identical with ordinary Velouté, except that instead of having white veal stock for its liquor, it is diluted with white poultry stock. The mode of procedure and the time allowed for cooking are the same. (Recipe 25)",
+          "yield": "4 quarts (3.8 L)",
+          "ingredients": [
+            "1 lb (454 g) of pale roux (Recipe 20)",
+            "5 quarts (4.7 L) of white poultry stock",
+            "1 oz (28 g) of table-salt",
+            "1 pinch of nutmeg",
+            "1 pinch of white powdered pepper",
+            "0.25 lb (113 g) of nice white mushroom parings (optional)",
+            "1 pint (473 ml) of white stock"
+          ],
+          "instructions": [
+            "Dissolve the roux in the cold white poultry stock and put the saucepan containing this mixture on an open fire.",
+            "Stir the sauce with a spatula or whisk, so as to avoid its burning at the bottom.",
+            "Add salt, nutmeg, pepper, and mushroom parings, if handy.",
+            "Bring to a boil and move to a corner of the fire to despumate slowly for one and a half hours, at the same time observing the precautions advised for ordinary Espagnole. (Recipe 22)",
+            "Strain through muslin into a smaller saucepan, add one pint of white stock, and despumate for another half hour.",
+            "Strain it again through a tammy or a sieve into a wide tureen, and stir with a spatula until it is quite cold."
+          ]
+        },
+        {
+          "number": 26.1,
+          "title": "FISH VELOUTÉ",
+          "type": "recipe",
+          "introduction": "This Velouté is the base of various fish sauces.",
+          "yield": "4 quarts (3.8 L)",
+          "ingredients": [
+            "1 lb (454 g) of pale roux (Recipe 20)",
+            "5 quarts (4.7 L) of very clear fish fumet (Recipe 11)",
+            "1 oz (28 g) of table-salt",
+            "1 pinch of nutmeg",
+            "1 pinch of white powdered pepper",
+            "0.25 lb (113 g) of nice white mushroom parings (optional)",
+            "1 pint (473 ml) of fish fumet"
+          ],
+          "instructions": [
+            "Dissolve the roux in the cold fish fumet and put the saucepan containing this mixture on an open fire.",
+            "Stir the sauce with a spatula or whisk, so as to avoid its burning at the bottom.",
+            "Add salt, nutmeg, pepper, and mushroom parings, if handy.",
+            "Bring to a boil and move to a corner of the fire to despumate slowly for twenty minutes.",
+            "Strain through muslin into a smaller saucepan, add one pint of fish fumet, and despumate for another half hour.",
+            "Strain it again through a tammy or a sieve into a wide tureen, and stir with a spatula until it is quite cold."
+          ]
+        },
+        {
+          "number": 27,
+          "title": "ALLEMANDE SAUCE OR THICKENED VELOUTÉ",
+          "type": "recipe",
+          "introduction": "Allemande Sauce is not, strictly speaking, a basic sauce. However, it is so often resorted to in the preparation of other sauces that it is given here after the Veloutés, from which it is derived. (Recipe 25)",
+          "yield": "1 quart (946 ml)",
+          "ingredients": [
+            "The yolks of 5 eggs",
+            "1 pint (473 ml) of cold white stock",
+            "1 quart (946 ml) of Velouté, well despumated (Recipe 25)",
+            "Juice of ½ lemon",
+            "0.25 pint (118 ml) of mushroom liquor",
+            "1/3 pint (158 ml) of fresh cream"
+          ],
+          "instructions": [
+            "Put the egg yolks, cold stock, Velouté, lemon juice, and mushroom liquor in a thick-bottomed sauté-pan and mix them carefully.",
+            "Put the pan on an open fire, and stir the sauce with a metal spatula, lest it burn at the bottom.",
+            "When the sauce has been reduced to about one quart, add the fresh cream to it, and reduce further for a few minutes.",
+            "Pass it through a fine strainer into a tureen and stir until quite cold."
+          ],
+          "notes": [
+            "Prepared thus, the Allemande Sauce is ready for the preparation of the smaller sauces. Butter must only be added at the very last moment, for if it were buttered any earlier it would most surely turn. The same injunction holds good with this sauce when it is to be served in its original state; it should then receive a small addition of cream, and be buttered so that it may attain its required delicacy; but this addition of butter and cream ought only to be made at the last moment, and away from the fire. When a sauce thickened with egg yolks has any fat substance added to it, it cannot be exposed to a higher temperature than 140°F (60°C) without risking decomposition."
+          ]
+        },
+        {
+          "number": 28,
+          "title": "BÉCHAMEL SAUCE",
+          "type": "recipe",
+          "yield": "4 quarts (3.8 L)",
+          "ingredients": [
+            "1 lb (454 g) of white roux (Recipe 21)",
+            "4.5 quarts (4.3 L) of boiling milk",
+            "0.5 lb (227 g) of lean veal, cut into small cubes",
+            "1 onion, minced",
+            "Butter for frying",
+            "2/3 oz (19 g) of salt",
+            "1 pinch of mignonette pepper",
+            "1 pinch of grated nutmeg",
+            "1 small sprig of thyme"
+          ],
+          "instructions": [
+            "Pour the boiling milk on the roux, which should be almost cold, and whisk it well so as to avoid lumps. Let it boil, then cook on the side of the fire.",
+            "Meanwhile, fry the lean veal with butter in a saucepan, together with the minced onion. When the veal has stiffened without becoming coloured, add it to the Béchamel, together with salt and the other aromatics.",
+            "Let the sauce boil slowly for about one hour in all.",
+            "Pass it through a tammy into a tureen; butter the top, lest a crust should form."
+          ],
+          "notes": [
+            {
+              "Lenten Variation": [
+                "When Béchamel is intended for Lenten preparations, the veal must be omitted."
+              ]
+            },
+            {
+              "Alternate Method": [
+                "There is another way of making the sauce. After having boiled the milk, the seasoning and aromatics should be added; the saucepan is then covered and placed on a corner of the stove, so as to ensure a thorough infusion. The boiling milk must now be poured on to the roux which has been separately prepared, and the sauce should then cook for one quarter of an hour only."
+              ]
+            }
+          ]
+        },
+        {
+          "number": 29,
+          "title": "TOMATO SAUCE",
+          "type": "recipe",
+          "yield": "4 quarts (3.8 L)",
+          "ingredients": [
+            "5 oz (142 g) of salted breast of pork, rather fat",
+            "2 oz (57 g) of butter",
+            "6 oz (170 g) of carrots, cut into cubes",
+            "6 oz (170 g) of onions, cut into cubes",
+            "1 bay leaf",
+            "1 small sprig of thyme",
+            "1 clove of garlic, crushed",
+            "5 oz (142 g) of flour",
+            "10 lbs (4.5 kg) of raw tomatoes or 4 quarts (3.8 L) of same, mashed",
+            "2 quarts (1.9 L) of white stock",
+            "0.5 oz (14 g) of salt",
+            "1 oz (28 g) of sugar",
+            "1 pinch of pepper"
+          ],
+          "instructions": [
+            "Fry the pork with the butter in a tall, thick-bottomed saucepan. When the pork is nearly melted, add the carrots, onions, bay leaf and thyme.",
+            "Cook and stir the vegetables, then add the flour, which should be allowed to cook until it begins to brown.",
+            "Add the tomatoes and white stock, mix the whole well, and set to boil on an open fire.",
+            "Add the salt, sugar, pepper, and crushed garlic.",
+            "Cover the saucepan, and place in a moderate oven, where it may cook for one and one-half hours.",
+            "At the end of this time, pass the sauce through a sieve or tammy, and bring to a boil while stirring.",
+            "Finally, pour it into a tureen, and butter its surface to avoid the formation of a skin."
+          ],
+          "notes": [
+            {
+              "Tomato Purée": [
+                "A purée of tomatoes is also used in cookery; it is prepared in precisely the same fashion, except that the flour is omitted and only one pint of white stock is added."
+              ]
+            }
+          ]
+        },
+        {
+          "number": 30,
+          "title": "HOLLANDAISE SAUCE",
+          "type": "recipe",
+          "yield": "1 quart (946 ml)",
+          "ingredients": [
+            "1.5 lbs (680 g) of butter, melted",
+            "Yolks of 6 eggs",
+            "3 tablespoons (45 ml) of good vinegar",
+            "1 pinch of mignonette pepper",
+            "0.25 oz (7 g) of salt",
+            "4 tablespoons (60 ml) of water, divided",
+            "A drop of lemon juice"
+          ],
+          "instructions": [
+            "Put the salt, mignonette pepper, vinegar, and 3 tablespoons of water in a small saucepan, and reduce by three-quarters on the fire.",
+            "Move the saucepan to a corner of the fire or into a bain-marie, and add 1 spoonful of fresh water and the egg yolks.",
+            "Work the whole with a whisk until the yolks thicken and have the consistence of cream.",
+            "Remove the saucepan to a tepid place and gradually pour the melted butter on the yolks while briskly stirring the sauce.",
+            "When the butter is absorbed, the sauce ought to be thick and firm. It can be brought to the correct consistence with a little water, which also lightens it slightly, but this addition is optional.",
+            "Complete the sauce with a drop of lemon juice, and rub it through a tammy."
+          ],
+          "notes": [
+            "The consistence of sauces whose processes are identical with those of the Hollandaise may be varied at will; for instance, the number of yolks may be increased if a very thick sauce is desired, and it may be lessened in the reverse case. Also similar results may be obtained by cooking the eggs either more or less. As a rule, if a thick sauce be required, the yolks ought to be well cooked and the sauce kept almost cold in the making. Experience alone—the fruit of long practice—can teach the various devices which enable the skilled worker to obtain different results from the same kind and quality of material."
+          ]
+        }
+      ]
+    }
+  ]
 }

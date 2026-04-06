@@ -1,0 +1,751 @@
+{
+    "chapter": "IV",
+    "id": "chapter-iv",
+    "title": "COLD SAUCES AND COMPOUND BUTTERS",
+    "introduction": [],
+    "sections": [
+        {
+            "title": "Cold Sauces",
+            "introduction": [],
+            "entries": [
+                {
+                    "number": 121,
+                    "title": "AIOLI SAUCE, OR PROVENCE BUTTER",
+                    "type": "recipe",
+                    "ingredients": [
+                        "1 oz (28 g) garlic cloves",
+                        "1 raw egg yolk",
+                        "1 pinch salt",
+                        "0.5 pint (237 ml) oil",
+                        "A few drops of lemon juice",
+                        "A few drops of cold water"
+                    ],
+                    "instructions": [
+                        "Pound the garlic cloves as finely as possible in a mortar.",
+                        "Add the raw egg yolk and a pinch of salt.",
+                        "Gradually let the oil fall in a thread while wielding the pestle, so as to effect a complete amalgamation.",
+                        "Add a few drops of lemon juice and cold water to the sauce as it thickens to avoid it turning."
+                    ],
+                    "notes": [
+                        {
+                            "Note": [
+                                "Should it decompose while in the process of making or when made, the only thing to be done is to begin it again with the yolk of an egg."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "number": 122,
+                    "title": "ANDALOUSE SAUCE",
+                    "type": "recipe",
+                    "ingredients": [
+                        "Mayonnaise sauce",
+                        "Very red and concentrated tomato purée (1/4 volume of Mayonnaise)",
+                        "2 oz (57 g) capsicum, per pint of sauce"
+                    ],
+                    "instructions": [
+                        "Take the required quantity of Mayonnaise sauce and add to it the quarter of its volume of very red and concentrated tomato purée. (Recipe 126)",
+                        "Finally, add 2 oz (57 g) of capsicum cut finely, Julienne-fashion, per pint (473 ml) of sauce."
+                    ]
+                },
+                {
+                    "number": 123,
+                    "title": "BOHEMIAN SAUCE",
+                    "type": "recipe",
+                    "ingredients": [
+                        "0.25 pint (118 ml) cold Béchamel",
+                        "4 egg yolks",
+                        "Table salt",
+                        "White pepper",
+                        "1 quart (946 ml) oil",
+                        "3 tbsp (45 ml) tarragon vinegar",
+                        "1 tbsp (15 ml) mustard"
+                    ],
+                    "instructions": [
+                        "Put the cold Béchamel, egg yolks, a little table salt, and white pepper into a bowl.",
+                        "While whisking briskly, gradually add the tarragon vinegar. When the vinegar is absorbed, slowly add the oil in a thin, continuous stream, whisking constantly until the sauce is fully emulsified and thickened.",
+                        "Finish the sauce with the mustard."
+                    ]
+                },
+                {
+                    "number": 124,
+                    "title": "GENOA SAUCE",
+                    "type": "recipe",
+                    "yield": "Serves with cold fish.",
+                    "ingredients": [
+                        "1 oz (28 g) pistachios",
+                        "1 oz (28 g) fir-apple kernels (or sweet almonds)",
+                        "0.5 tbsp (7.5 ml) cold Béchamel",
+                        "6 egg yolks",
+                        "Salt",
+                        "Pepper",
+                        "1 quart (946 ml) oil",
+                        "Juice of 2 lemons",
+                        "3 tbsp (45 ml) purée of herbs (equal parts chervil, parsley, tarragon, fresh pimpernel)"
+                    ],
+                    "instructions": [
+                        "Pound the pistachios and fir-apple kernels (or almonds) in a mortar to a smooth, fine paste.",
+                        "Add the cold Béchamel and mix.",
+                        "Put this paste into a bowl, add the egg yolks, a little salt and pepper.",
+                        "While whisking briskly, gradually add the lemon juice. When the juice is absorbed, slowly add the oil in a thin, continuous stream, whisking constantly until the sauce is fully emulsified.",
+                        "To prepare the purée of herbs, take equal quantities of chervil, parsley, tarragon, and fresh pimpernel. Scald for one minute, cool quickly, press to expel water, and pass through a fine sieve.",
+                        "Complete the sauce with the prepared purée of herbs."
+                    ]
+                },
+                {
+                    "number": 125,
+                    "title": "GRIBICHE SAUCE",
+                    "type": "recipe",
+                    "yield": "Chiefly used with cold fish.",
+                    "ingredients": [
+                        "6 hard-boiled egg yolks",
+                        "1 large tbsp (15 ml) French mustard",
+                        "Salt",
+                        "Pepper",
+                        "1 pint (473 ml) oil",
+                        "1 dessertspoonful (10 ml) chopped parsley",
+                        "1 dessertspoonful (10 ml) chopped chervil",
+                        "1 dessertspoonful (10 ml) chopped tarragon",
+                        "1 dessertspoonful (10 ml) capers",
+                        "1 dessertspoonful (10 ml) gherkins",
+                        "3 hard-boiled egg whites"
+                    ],
+                    "instructions": [
+                        "In a basin, crush the yolks of the hard-boiled eggs and work them into a smooth paste with the French mustard, salt, and a little pepper.",
+                        "Make up the sauce by gradually adding the oil as if making a mayonnaise.",
+                        "Complete the sauce with the chopped parsley, chervil, tarragon, capers, and gherkins, all evenly mixed.",
+                        "Add the hard-boiled whites of the eggs, cut into a short Julienne."
+                    ]
+                },
+                {
+                    "number": 126,
+                    "title": "MAYONNAISE SAUCE",
+                    "type": "recipe",
+                    "ingredients": [
+                        "6 raw egg yolks, cores removed",
+                        "0.5 oz (14 g) table-salt",
+                        "Cayenne pepper",
+                        "0.2 pint (95 ml) vinegar",
+                        "1 quart (946 ml) oil",
+                        "Juice of 1 lemon",
+                        "3 tbsp (45 ml) boiling water"
+                    ],
+                    "instructions": [
+                        "Put the yolks in a basin. Season them with table-salt and a little cayenne pepper.",
+                        "Gradually pour the vinegar on the yolks while whisking them briskly.",
+                        "When the vinegar is absorbed, add the oil, letting it trickle down in a thread, constantly stirring the sauce meanwhile.",
+                        "Finish the sauce by adding the juice of a lemon and the boiling water. The water ensures the coherence of the sauce and prevents it from turning."
+                    ],
+                    "notes": [
+                        "Mayonnaise prepared in this way is rather liquid, but it need only be left to rest a few hours in order to thicken considerably. Unless it be exposed to too low a temperature, the Mayonnaise, prepared as above, never turns, and may be kept for several days. Merely cover it to keep the dust away.",
+                        {
+                            "Prejudices Refuted": [
+                                "1. If the sauce forms badly, or not at all, the reason is that the oil has been added too rapidly at first, before the addition of the vinegar, and that its assimilation by the yolks has not operated normally.",
+                                "2. It is quite an error to suppose that it is necessary to work over ice or in a cold room. Cold is rather deleterious to the Mayonnaise, and is invariably the cause of this sauce turning in winter. In the cold season the oil should be slightly warmed, or, at least, kept at the temperature of the kitchen, though it is best to make it in a moderately warm place.",
+                                "3. It is a further error to suppose that the seasoning interferes with the making of the sauce, for salt, in solution, rather provokes the cohering force of the yolks."
+                            ],
+                            "Causes of the Disintegration of the Mayonnaise": [
+                                "1. The too rapid addition of the oil at the start.",
+                                "2. The use of congealed, or too cold, an oil.",
+                                "3. Excess of oil in proportion to the number of yolks, the assimilating power of an egg being limited to 2.5 oz (71 g) of oil if the sauce be made some time in advance, and 3 oz (85 g) if it is to be used immediately."
+                            ],
+                            "Means of Bringing Turned Mayonnaise Back to its Normal State": [
+                                "Put the yolk of an egg into a basin with a few drops of vinegar, and mix the turned Mayonnaise in it, little by little. If it be a matter of only a small quantity of Mayonnaise, 0.5 coffeespoonful (1.25 ml) of mustard can take the place of the egg-yolk."
+                            ],
+                            "Acid Seasoning": [
+                                "A whiter sauce is obtained by the use of lemon juice instead of vinegar."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "number": 127,
+                    "title": "CLEARED MAYONNAISE SAUCE",
+                    "type": "recipe",
+                    "ingredients": [
+                        "1.5 pints (710 ml) Mayonnaise sauce",
+                        "0.5 pint (237 ml) cold, rather firm melting aspic jelly (Lenten or ordinary)"
+                    ],
+                    "instructions": [
+                        "Take the necessary quantity of Mayonnaise and gradually add to it, per 1.5 pints (710 ml) of the sauce, 0.5 pint (237 ml) of cold and rather firm melting aspic jelly. (Recipe 126)",
+                        "The type of aspic (Lenten or ordinary) should depend on the nature of the products for which the sauce is intended."
+                    ],
+                    "notes": [
+                        "It is this very Mayonnaise, formerly used almost exclusively for coating entrées and cold relevées of fish, filleted fish, escalopes of common and spiny-lobster, &c., which I have allowed the Lenten Chaud-froid to supersede. (Recipe 76)"
+                    ]
+                },
+                {
+                    "number": 128,
+                    "title": "WHISKED MAYONNAISE",
+                    "type": "recipe",
+                    "yield": "Used principally for vegetable salads.",
+                    "ingredients": [
+                        "0.75 pint (355 ml) melted jelly",
+                        "0.67 pint (315 ml) Mayonnaise",
+                        "1 tbsp (15 ml) tarragon vinegar",
+                        "1 tbsp (15 ml) rasped or finely-chopped horse-radish"
+                    ],
+                    "instructions": [
+                        "Put the melted jelly, Mayonnaise, tarragon vinegar, and horse-radish into a copper basin or other bowl. (Recipe 126)",
+                        "Mix the whole, place the utensil on ice, and whisk gently until the contents get very frothy.",
+                        "Stop whisking as soon as the sauce begins to solidify, for it must remain almost fluid so as to enable it to mix with the products for which it is intended."
+                    ]
+                },
+                {
+                    "number": 129,
+                    "title": "RAVIGOTE SAUCE, OR VINAIGRETTE",
+                    "type": "recipe",
+                    "yield": "Accompanies calf’s head or foot, sheep’s trotters, &c.",
+                    "ingredients": [
+                        "1 pint (473 ml) oil",
+                        "0.33 pint (156 ml) vinegar",
+                        "Salt",
+                        "Pepper",
+                        "2 oz (57 g) small capers",
+                        "3 tbsp (45 ml) fine herbs (finely chopped onion, parsley, and half as much chervil, tarragon, and chives)"
+                    ],
+                    "instructions": [
+                        "Put the oil, vinegar, a little salt, and pepper into a bowl.",
+                        "Add the small capers and the fine herbs, comprising some very finely chopped onion, as much parsley, and half as much chervil, tarragon, and chives.",
+                        "Mix thoroughly."
+                    ],
+                    "notes": [
+                        "Two or three tablespoonfuls of the liquor with which its accompanying solids have been cooked (e.g., calf’s head or sheep’s trotters liquor) are often added to this sauce when dishing up."
+                    ]
+                },
+                {
+                    "number": 130,
+                    "title": "REMOULADE SAUCE",
+                    "type": "recipe",
+                    "yield": "Accompanies cold meat and poultry, and, more particularly, common and spiny lobster.",
+                    "ingredients": [
+                        "1 pint (473 ml) Mayonnaise",
+                        "1 large tbsp (15 ml) mustard",
+                        "1 tbsp (15 ml) chopped and pressed capers",
+                        "1 tbsp (15 ml) gherkins",
+                        "1 tbsp (15 ml) fine herbs (chopped parsley, chervil, and tarragon)",
+                        "1 coffeespoonful (2.5 ml) anchovy essence"
+                    ],
+                    "instructions": [
+                        "To one pint (473 ml) of Mayonnaise, add the mustard, gherkins, chopped and pressed capers, fine herbs, and anchovy essence. (Recipe 126)"
+                    ]
+                },
+                {
+                    "number": 131,
+                    "title": "GREEN SAUCE",
+                    "type": "recipe",
+                    "yield": "Suitable for cold fish and shell fish.",
+                    "ingredients": [
+                        "1 pint (473 ml) thick, spicy Mayonnaise",
+                        "0.33 pint (156 ml) herb juice"
+                    ],
+                    "instructions": [
+                        "Take the necessary quantity of thick Mayonnaise with spicy seasoning, and add to it, per pint (473 ml) of sauce, one-third pint (156 ml) of herb juice. (Recipe 126, 132)"
+                    ]
+                },
+                {
+                    "number": 132,
+                    "title": "VINCENT SAUCE",
+                    "type": "recipe",
+                    "ingredients": [
+                        "1 oz (28 g) parsley",
+                        "1 oz (28 g) chervil",
+                        "1 oz (28 g) tarragon",
+                        "1 oz (28 g) chives",
+                        "1 oz (28 g) sorrel-leaves",
+                        "1 oz (28 g) fresh pimpernel",
+                        "2 oz (57 g) water-cress",
+                        "2 oz (57 g) spinach",
+                        "8 hard-boiled egg yolks",
+                        "1 pint (473 ml) very stiff Mayonnaise",
+                        "1 dessertspoonful (10 ml) Worcestershire sauce"
+                    ],
+                    "instructions": [
+                        "Prepare and carefully wash all the herbs: parsley, chervil, tarragon, chives, sorrel-leaves, fresh pimpernel, water-cress, and spinach.",
+                        "Put all these herbs into a copper bowl containing salted, boiling water. Boil for two minutes only.",
+                        "Drain the herbs in a sieve and immerse them in a basin of fresh water.",
+                        "When they are cold, drain them again until quite dry.",
+                        "Finely pound the herbs with the yolks of the hard-boiled eggs.",
+                        "Rub the purée thus obtained through a sieve first, then through a tammy.",
+                        "Add one pint (473 ml) of very stiff Mayonnaise to it and finish the sauce with a dessertspoonful (10 ml) of Worcestershire sauce. (Recipe 126)"
+                    ]
+                }
+            ],
+            "sections": [
+                {
+                    "title": "Cold English Sauces",
+                    "entries": [
+                        {
+                            "number": 133,
+                            "title": "CAMBRIDGE SAUCE",
+                            "type": "recipe",
+                            "yield": "Suited to cold meats in general.",
+                            "introduction": "An Anglicised version of Vincent Sauce. (Recipe 132)",
+                            "ingredients": [
+                                "6 hard-boiled egg yolks",
+                                "4 anchovy fillets, washed and dried",
+                                "1 tsp (5 ml) capers",
+                                "1 dessertspoonful (10 ml) mixed chervil, tarragon, and chives",
+                                "1 tbsp (15 ml) mustard",
+                                "0.2 pint (95 ml) oil",
+                                "1 tbsp (15 ml) vinegar",
+                                "Cayenne pepper",
+                                "1 tsp (5 ml) chopped parsley"
+                            ],
+                            "instructions": [
+                                "Pound together the hard-boiled egg yolks, washed and dried anchovy fillets, capers, and the mix of chervil, tarragon, and chives.",
+                                "When the whole forms a fine paste, add the mustard, oil, and vinegar, proceeding as for a Mayonnaise. (Recipe 126)",
+                                "Season with a little cayenne.",
+                                "Rub through a tammy, applying pressure with a spoon, and put the sauce in a bowl.",
+                                "Stir it awhile with a whisk to smooth it, and finish with the chopped parsley."
+                            ]
+                        },
+                        {
+                            "number": 134,
+                            "title": "CUMBERLAND SAUCE",
+                            "type": "recipe",
+                            "yield": "Serve with cold venison.",
+                            "ingredients": [
+                                "4 tbsp (60 ml) red-currant jelly",
+                                "0.2 pint (95 ml) port wine",
+                                "1 tsp (5 ml) finely-chopped shallots",
+                                "1 tsp (5 ml) orange rind, Julienne-cut",
+                                "1 tsp (5 ml) lemon rind, Julienne-cut",
+                                "Juice of 1 orange",
+                                "Juice of 0.5 lemon",
+                                "1 tsp (5 ml) mustard",
+                                "Cayenne pepper",
+                                "Powdered ginger"
+                            ],
+                            "instructions": [
+                                "Scald the finely-chopped shallots for a few seconds and press them.",
+                                "Cut the orange and lemon rind finely, Julienne-fashion, scald for two minutes, drain well, and cool.",
+                                "Dissolve the red-currant jelly, to which are added the port wine, scalded shallots, prepared orange and lemon rinds, orange juice, and lemon juice.",
+                                "Add the mustard, a little cayenne pepper, and as much powdered ginger.",
+                                "Mix the whole well."
+                            ]
+                        },
+                        {
+                            "number": 135,
+                            "title": "GLOUCESTER SAUCE",
+                            "type": "recipe",
+                            "yield": "Serve with all cold meats.",
+                            "ingredients": [
+                                "1 pint (473 ml) very thick Mayonnaise",
+                                "0.2 pint (95 ml) sour cream",
+                                "Juice of 1 lemon",
+                                "1 tsp (5 ml) chopped fennel",
+                                "1 tsp (5 ml) Worcester sauce"
+                            ],
+                            "instructions": [
+                                "Take one pint (473 ml) of very thick Mayonnaise. (Recipe 126)",
+                                "Add the juice of a lemon to the sour cream.",
+                                "Combine the sour cream with the Mayonnaise by degrees.",
+                                "Complete with the chopped fennel and Worcester sauce."
+                            ]
+                        },
+                        {
+                            "number": 136,
+                            "title": "MINT SAUCE",
+                            "type": "recipe",
+                            "yield": "Special sauce for hot or cold lamb.",
+                            "ingredients": [
+                                "2 oz (57 g) mint leaves",
+                                "Slightly less than 1 oz (28 g) white cassonade or castor sugar",
+                                "0.25 pint (118 ml) fresh vinegar",
+                                "4 tbsp (60 ml) water"
+                            ],
+                            "instructions": [
+                                "Cut the mint leaves finely, Julienne-fashion, or chop them.",
+                                "Put these in a bowl with the sugar, fresh vinegar, and water."
+                            ]
+                        },
+                        {
+                            "number": 137,
+                            "title": "OXFORD SAUCE",
+                            "type": "recipe",
+                            "instructions": [
+                                "Make a Cumberland sauce, with the difference that the Julienne of orange and lemon rinds should be replaced by rasped or finely-chopped rinds, and that the quantities of same should be less, i.e., two-thirds of a teaspoonful (3.3 ml) of each. (Recipe 134)"
+                            ]
+                        },
+                        {
+                            "number": 138,
+                            "title": "HORSE-RADISH SAUCE",
+                            "type": "recipe",
+                            "yield": "Accompanies boiled and roast joints of beef.",
+                            "ingredients": [
+                                "1 tbsp (15 ml) mustard",
+                                "2 tbsp (30 ml) vinegar",
+                                "1 lb (454 g) finely-rasped horse-radish",
+                                "2 oz (57 g) powdered sugar",
+                                "Salt",
+                                "1 pint (473 ml) cream",
+                                "1 lb (454 g) bread-crumb, steeped in milk and pressed"
+                            ],
+                            "instructions": [
+                                "Dilute the mustard with the vinegar in a basin.",
+                                "Add the finely-rasped horse-radish, powdered sugar, a little salt, cream, and the pressed bread-crumb.",
+                                "Serve this sauce very cold."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Compound Butters for Grills and for the Completion of Sauces",
+            "introduction": [
+                "With the exception of those of the shell-fish order, the butters, whose formulæ I am about to give, are not greatly used in kitchens. Nevertheless, in some cases, as, for instance, in accentuating the savour of sauces, they answer a real and useful purpose, and I therefore recommend them, since they enable one to give a flavour to the derivatives of the Velouté and Béchamel sauces which these could not acquire by any other means.",
+                "With regard to shell-fish butters, and particularly those of the common and spiny lobster and the crayfish, experience has shown that when they are prepared with heat (that is to say, by melting in a bain-marie a quantity of butter which has been previously pounded with shell-fish remains and afterwards strained through muslin into a basin of iced-water where it has solidified) they are of a finer colour than the other kind and quite free from shell particles. But the heat, besides dissipating a large proportion of their delicacy, involves considerable risk, for the slightest neglect gives the above preparation quite a disagreeable taste. To obviate these difficulties I have adopted a system of two distinct butters, one which is exclusively calorific and prepared with heat, and the other which is prepared with all the creamy parts, the trimmings and the remains of common and spiny lobsters, without the shells, pounded with the required quantity of fresh butter and passed through a sieve. The latter is used to complete sauces, particularly those with a Béchamel base to which it lends a perfect savour.",
+                "I follow the same procedure with shrimp and crayfish butters, sometimes substituting for the butter good cream, which, I find, absorbs the aromatic principles perhaps better than the former. With the above method it is advisable to pass the butter or the cream through a very fine sieve first and afterwards through tammy, so as to avoid small particles of the pounded shell being present in the sauce."
+            ],
+            "entries": [
+                {
+                    "number": 139,
+                    "title": "BERCY BUTTER",
+                    "type": "recipe",
+                    "yield": "Principally served with grilled beef.",
+                    "ingredients": [
+                        "0.25 pint (118 ml) white wine",
+                        "1 oz (28 g) finely-chopped shallots, scalded",
+                        "0.5 lb (227 g) butter, softened",
+                        "1 tsp (5 ml) chopped parsley",
+                        "2 oz (57 g) beef marrow, cubed and poached",
+                        "Table-salt",
+                        "Ground pepper",
+                        "A few drops of lemon-juice"
+                    ],
+                    "instructions": [
+                        "Put the white wine and finely-chopped, scalded shallots into a small stewpan.",
+                        "Reduce the wine by one-half.",
+                        "Add the butter softened into a cream, the chopped parsley, and the beef marrow (cut into cubes, poached in slightly salted water, and well drained).",
+                        "Add the necessary table-salt, and, when dishing up, a little ground pepper and a few drops of lemon-juice.",
+                        "This butter must not be completely melted."
+                    ]
+                },
+                {
+                    "number": 140,
+                    "title": "CHIVRY OR RAVIGOTE BUTTER",
+                    "type": "recipe",
+                    "yield": "Used to complete Chivry sauce and others containing herb juices, like Venetian.",
+                    "ingredients": [
+                        "6 oz (170 g) mixed herbs (equal parts chervil, parsley, tarragon, fresh pimpernel, chives)",
+                        "2 oz (57 g) chopped shallots",
+                        "0.5 lb (227 g) half-melted butter"
+                    ],
+                    "instructions": [
+                        "Put the mixed herbs and chopped shallots into a small saucepan of salted, boiling water.",
+                        "Boil quickly for two minutes, then drain and cool in cold water.",
+                        "Press in a towel to completely remove the water, and pound in a mortar.",
+                        "Add the half-melted butter, mix well with the purée of herbs, and pass through a tammy."
+                    ]
+                },
+                {
+                    "number": "140a",
+                    "title": "CHÂTEAUBRIAND BUTTER",
+                    "type": "recipe",
+                    "ingredients": [
+                        "0.8 pint (378 ml) white wine",
+                        "4 chopped shallots",
+                        "Fragments of thyme and bay",
+                        "4 oz (113 g) mushroom parings",
+                        "0.8 pint (378 ml) veal gravy",
+                        "8 oz (227 g) Maître d’Hôtel butter",
+                        "0.5 tbsp (7.5 ml) chopped tarragon"
+                    ],
+                    "instructions": [
+                        "Reduce by two-thirds the white wine containing the chopped shallots, fragments of thyme and bay, and mushroom parings.",
+                        "Add the veal gravy and reduce the whole to half.",
+                        "Rub it through a tammy.",
+                        "Finish it away from the fire with Maître d’Hôtel butter and the chopped tarragon. (Recipe 150)"
+                    ]
+                },
+                {
+                    "number": 141,
+                    "title": "COLBERT BUTTER",
+                    "type": "recipe",
+                    "yield": "Serve with fish prepared à la Colbert.",
+                    "ingredients": [
+                        "1 lb (454 g) Maître d’Hôtel butter",
+                        "6 tbsp (90 ml) dissolved, pale meat glaze",
+                        "1 tsp (5 ml) chopped tarragon"
+                    ],
+                    "instructions": [
+                        "Take 1 lb (454 g) of Maître d’Hôtel butter and add the dissolved meat glaze and chopped tarragon. (Recipe 150)"
+                    ]
+                },
+                {
+                    "number": 142,
+                    "title": "RED COLOURING BUTTER",
+                    "type": "technique",
+                    "introduction": "This butter is made from shell-fish remains to create a colored and flavored butter.",
+                    "ingredients": [
+                        "Available remains of shell-fish (e.g., lobster, crayfish shells)",
+                        "Butter (equal weight to shell-fish remains)"
+                    ],
+                    "instructions": [
+                        "Put any available remains of shell-fish onto a dish after having thoroughly emptied and well dried them in the oven.",
+                        "Pound them until they form a fine powder.",
+                        "Add their weight of butter.",
+                        "Put the whole into a saucepan and melt in a bain-marie, stirring frequently.",
+                        "When the butter is quite clarified, strain it through muslin, twisting the muslin over a tureen of iced-water in which the strained butter solidifies.",
+                        "Put the congealed butter in a towel, press it heavily to expel the water, and keep cool in a small bowl."
+                    ],
+                    "notes": [
+                        "A very fine and decided red colour is obtained by using paprika as a condiment for sauces intended for poultry and certain butcher’s meats, in accordance with the procedure I recommend for the Hongroise. But only the very best quality should be used—that which is mild and at the same time produces a nice pink colour without entailing any excess of the condiment. Among the various kinds of paprika on the market I can highly recommend that of Messrs. Kotangi, which I have invariably found satisfactory."
+                    ]
+                },
+                {
+                    "number": 143,
+                    "title": "GREEN COLOURING BUTTER",
+                    "type": "technique",
+                    "introduction": "This green butter should in all cases take the place of the liquid green found on the market.",
+                    "ingredients": [
+                        "2 lbs (907 g) spinach",
+                        "Butter (half the weight of the resulting spinach solids)"
+                    ],
+                    "instructions": [
+                        "Peel, wash, and thoroughly shake 2 lbs (907 g) of spinach to get rid of every drop of water.",
+                        "Pound it raw and then press it in a strong towel, twisting it to extract all the vegetable juice.",
+                        "Pour this juice into a sautépan, let it coagulate in a bain-marie.",
+                        "Pour the coagulated juice onto a serviette stretched over a bowl in order to drain away the water.",
+                        "Collect the remains of the colouring substance on the serviette using a palette-knife and put these into a mortar.",
+                        "Mix with half their weight of butter, strain through a sieve or tammy, and put aside to cool."
+                    ]
+                },
+                {
+                    "number": 144,
+                    "title": "VARIOUS CULLISES",
+                    "type": "technique",
+                    "yield": "Serves as a refining principle in certain fish sauces.",
+                    "introduction": "This cullis is prepared just in time for dishing up.",
+                    "ingredients": [
+                        "Shrimp and crayfish shells",
+                        "Creamy parts and spawn of common and spiny lobsters",
+                        "0.25 pint (118 ml) rich cream per 1 lb (454 g) of remains"
+                    ],
+                    "instructions": [
+                        "Finely pound shrimp and crayfish shells.",
+                        "Combine with these the available creamy parts and spawn of the common and spiny lobsters.",
+                        "Add 0.25 pint (118 ml) of rich cream per 1 lb (454 g) of the above remains.",
+                        "Strain, first through a fine sieve and then through a tammy."
+                    ]
+                },
+                {
+                    "number": 145,
+                    "title": "SHRIMP BUTTER",
+                    "type": "recipe",
+                    "ingredients": [
+                        "Available shrimp remains",
+                        "Butter (equal weight to remains)"
+                    ],
+                    "instructions": [
+                        "Finely pound any available shrimp remains.",
+                        "Add to these their weight of butter.",
+                        "Strain through a tammy, place in a bowl, and put aside in the cool."
+                    ]
+                },
+                {
+                    "number": 146,
+                    "title": "SHALLOT BUTTER",
+                    "type": "recipe",
+                    "yield": "Accentuates the savour of certain sauces, such as Bercy, Ravigote, &c. (Recipe 139, 129)",
+                    "ingredients": [
+                        "8 oz (227 g) roughly minced shallots",
+                        "8 oz (227 g) fresh butter"
+                    ],
+                    "instructions": [
+                        "Put the roughly minced shallots in the corner of a clean towel and wash them quickly in boiling water.",
+                        "Cool, and press them heavily.",
+                        "Then pound them finely with their own weight of fresh butter and strain through a tammy."
+                    ]
+                },
+                {
+                    "number": 147,
+                    "title": "CRAYFISH BUTTER",
+                    "type": "recipe",
+                    "ingredients": [
+                        "Remains and shells of crayfish cooked in Mirepoix",
+                        "Butter (equal weight to remains)"
+                    ],
+                    "instructions": [
+                        "Pound, very finely, the remains and shells of crayfish cooked in Mirepoix.",
+                        "Add their weight of butter.",
+                        "Strain through a fine sieve, and again through a tammy, to avoid the presence of any shell particles. This latter precaution applies to all shell-fish butters."
+                    ]
+                },
+                {
+                    "number": 148,
+                    "title": "TARRAGON BUTTER",
+                    "type": "recipe",
+                    "ingredients": [
+                        "8 oz (227 g) fresh tarragon",
+                        "1 lb (454 g) butter"
+                    ],
+                    "instructions": [
+                        "Quickly scald and cool the fresh tarragon.",
+                        "Drain, press in a towel, and pound in a mortar.",
+                        "Add the butter, strain through a tammy, and put aside in the cool if it is not to be used immediately."
+                    ]
+                },
+                {
+                    "number": 149,
+                    "title": "LOBSTER BUTTER",
+                    "type": "recipe",
+                    "ingredients": [
+                        "Spawn, shell, and creamy parts of lobster",
+                        "Butter (equal weight to lobster parts)"
+                    ],
+                    "instructions": [
+                        "Reduce to a paste in the mortar the spawn, shell, and creamy parts of lobster.",
+                        "Add their equal in weight of butter and strain through a tammy."
+                    ]
+                },
+                {
+                    "number": 150,
+                    "title": "BUTTER A LA MAÎTRE D’HÔTEL",
+                    "type": "recipe",
+                    "yield": "Serve with grills in general.",
+                    "ingredients": [
+                        "0.5 lb (227 g) butter",
+                        "1 tbsp (15 ml) chopped parsley",
+                        "Salt",
+                        "Pepper",
+                        "A few drops of lemon-juice"
+                    ],
+                    "instructions": [
+                        "First manie and then soften the butter into a cream.",
+                        "Add the chopped parsley, a little salt and pepper, and a few drops of lemon-juice."
+                    ]
+                },
+                {
+                    "number": 151,
+                    "title": "MANIED BUTTER",
+                    "type": "technique",
+                    "introduction": "This butter is made immediately before the time of dishing up and is used for quick liaisons like Matelotes, &c.",
+                    "ingredients": [
+                        "4 oz (113 g) butter",
+                        "3 oz (85 g) sifted flour"
+                    ],
+                    "instructions": [
+                        "Mix the butter and sifted flour until perfectly combined."
+                    ],
+                    "notes": [
+                        "The sauce to which manied butter has been added should not boil if this can possibly be avoided, as it would thereby acquire a very disagreeable taste of raw flour."
+                    ]
+                },
+                {
+                    "number": "151a",
+                    "title": "MELTED BUTTER",
+                    "type": "definition",
+                    "introduction": "This preparation, which is used principally as a fish sauce, should consist of butter, only just melted, and combined with a little table-salt and a few drops of lemon-juice. It should therefore be prepared only at the last minute; for, should it wait and be allowed to clarify, besides losing its flavour it will be found to disagree with certain people."
+                },
+                {
+                    "number": 152,
+                    "title": "BUTTER A LA MEUNIÈRE",
+                    "type": "technique",
+                    "introduction": "This butter is proper to fish “à la Meunière” and is always served on the fish.",
+                    "ingredients": [
+                        "Butter",
+                        "Lemon-juice",
+                        "Concassed parsley"
+                    ],
+                    "instructions": [
+                        "Put the necessary quantity of butter into a frying-pan and cook it gently until it has acquired a golden tint and exudes a slight smell of nut.",
+                        "Add a few drops of lemon-juice.",
+                        "Pour on the fish under treatment, which should have been previously sprinkled with concassed parsley."
+                    ]
+                },
+                {
+                    "number": 153,
+                    "title": "MONTPELLIER BUTTER",
+                    "type": "recipe",
+                    "yield": "Used to deck large fish, such as salmon and trout, but also for smaller pieces and slices.",
+                    "ingredients": [
+                        "6 oz (170 g) total mixed herbs (equal parts watercress leaves, parsley, chervil, chives, tarragon)",
+                        "1.5 oz (43 g) chopped shallots",
+                        "0.5 oz (14 g) spinach leaves",
+                        "1 tbsp (15 ml) pressed capers",
+                        "4 oz (113 g) gherkins",
+                        "1 garlic clove",
+                        "4 anchovy fillets, well washed",
+                        "1.5 lbs (680 g) butter",
+                        "3 hard-boiled egg yolks",
+                        "2 raw egg yolks",
+                        "0.4 pint (189 ml) oil",
+                        "Table-salt",
+                        "Cayenne pepper"
+                    ],
+                    "instructions": [
+                        "Put the mixed herbs, chopped shallots, and spinach leaves into a saucepan containing boiling water. Boil for two minutes.",
+                        "Drain, cool, and press in a towel to expel water.",
+                        "Pound in a mortar with the pressed capers, gherkins, garlic clove, and washed anchovy fillets.",
+                        "Mix this paste with the butter.",
+                        "Then add the yolks of three boiled eggs and two raw eggs.",
+                        "Finally pour in the oil by degrees.",
+                        "Strain through a fine sieve or through a tammy.",
+                        "Put the butter into a basin and stir it well with a wooden spoon so as to make it smooth.",
+                        "Season with table-salt and a little cayenne."
+                    ],
+                    "notes": [
+                        "When this butter is specially prepared to form a coat on fish, the oil and the egg yolks are omitted and only butter is used."
+                    ]
+                },
+                {
+                    "number": 154,
+                    "title": "BLACK BUTTER",
+                    "type": "technique",
+                    "ingredients": [
+                        "Butter",
+                        "Concassed parsley leaves"
+                    ],
+                    "instructions": [
+                        "Put the necessary amount of butter into a frying-pan and cook it until it has assumed a brown colour and begins to smoke.",
+                        "At this moment, add a large pinch of concassed parsley leaves and spread it immediately over the object to be treated."
+                    ]
+                },
+                {
+                    "number": 155,
+                    "title": "HAZEL-NUT BUTTER",
+                    "type": "recipe",
+                    "ingredients": [
+                        "8 oz (227 g) shelled hazel-nuts",
+                        "A few drops of cold water",
+                        "8 oz (227 g) butter"
+                    ],
+                    "instructions": [
+                        "Put the shelled hazel-nuts in the front of the oven for a moment to slightly grill their skins and make them easily removable.",
+                        "Crush the nuts in a mortar until they form a paste, adding a few drops of cold water to prevent their producing any oil.",
+                        "Add their equivalent in weight of butter and rub through a tammy."
+                    ]
+                },
+                {
+                    "number": 156,
+                    "title": "PISTACHIO BUTTER",
+                    "type": "recipe",
+                    "ingredients": [
+                        "8 oz (227 g) pistachios",
+                        "A few drops of water",
+                        "2 oz (57 g) butter"
+                    ],
+                    "instructions": [
+                        "Put the pistachios into boiling water and keep them on the side of the fire until the peel may be easily removed.",
+                        "Drain, cool in cold water, and clean the pistachios.",
+                        "Finely pound them while moistening with a few drops of water.",
+                        "Add the butter and pass through a tammy."
+                    ]
+                },
+                {
+                    "number": 157,
+                    "title": "PRINTANIER BUTTER",
+                    "type": "technique",
+                    "introduction": "These butters are made from all early-season vegetables, such as carrots, French beans, peas, and asparagus heads.",
+                    "instructions": [
+                        "For green vegetables: Cook quickly in boiling, salted water, drain, dry, pound with their weight of butter, and rub through a tammy.",
+                        "For carrots: Mince and cook with consommé, sugar, and butter until the diluent is quite reduced. After cooling, they are pounded with their own weight of butter and rubbed through a tammy."
+                    ]
+                }
+            ]
+        }
+    ]
+}
