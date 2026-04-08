@@ -1,20 +1,12 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
 import { useShoppingList } from "@/app/contexts/ShoppingListContext"
 import ContentBlockList from "@/components/ContentBlockList"
-import ShoppingListItemType from "@/types/ShoppingListItemType"
 
 export default function ShoppingListPage() {
     const { shoppingListItems, removeItem, removeAllItems } = useShoppingList()
-    const [isClient, setIsClient] = useState(false)
-
-    useEffect(() => {
-        setIsClient(true)
-    }, [])
 
     const handleRemoveAll = () => {
-        // Ask for confirmation before clearing the list
         const confirmed = window.confirm(
             "Are you sure you want to remove all items from your shopping list?"
         )
@@ -22,39 +14,38 @@ export default function ShoppingListPage() {
             removeAllItems()
         }
     }
+
     return (
-        <div className="max-w-4xl mx-auto py-12">
+        <main className="max-w-4xl mx-auto py-12">
             <header className="text-center mb-10">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">
                     Your Shopping List
                 </h1>
                 <p className="mt-2 text-lg text-gray-600">
-                    {!isClient
-                        ? "Loading..."
-                        : shoppingListItems.length === 0
-                          ? "Your list is currently empty."
-                          : `You have ${shoppingListItems.length} recipe(s) in your list.`}
+                    {shoppingListItems.length === 0
+                        ? "Your list is currently empty."
+                        : `You have ${shoppingListItems.length} recipe(s) in your list.`}
                 </p>
             </header>
 
-            {/* --- THIS IS THE NEW SECTION --- */}
-            {isClient && shoppingListItems.length > 0 && (
+            {shoppingListItems.length > 0 && (
                 <div className="text-center mb-8">
                     <button
+                        type="button"
                         onClick={handleRemoveAll}
+                        aria-label="Remove all recipes from the shopping list"
                         className="px-4 py-2 text-sm font-semibold text-red-600 bg-red-100 rounded-md hover:bg-red-200 hover:text-red-800 transition-colors"
                     >
                         Remove All Items
                     </button>
                 </div>
             )}
-            {/* --- END OF NEW SECTION --- */}
 
-            {isClient && shoppingListItems.length > 0 && (
+            {shoppingListItems.length > 0 && (
                 <div className="space-y-8">
-                    {shoppingListItems.map((item: ShoppingListItemType) => (
+                    {shoppingListItems.map((item) => (
                         <article
-                            key={item.number}
+                            key={`${item.number}-${item.title}`}
                             className="bg-white border border-gray-200 rounded-lg shadow-sm p-6"
                         >
                             <header className="flex justify-between items-start mb-4">
@@ -65,7 +56,9 @@ export default function ShoppingListPage() {
                                     —<span>{item.title}</span>
                                 </h2>
                                 <button
+                                    type="button"
                                     onClick={() => removeItem(item.number)}
+                                    aria-label={`Remove recipe ${item.number}: ${item.title}`}
                                     className="text-sm font-semibold text-red-600 hover:text-red-800"
                                 >
                                     Remove
@@ -79,6 +72,6 @@ export default function ShoppingListPage() {
                     ))}
                 </div>
             )}
-        </div>
+        </main>
     )
 }

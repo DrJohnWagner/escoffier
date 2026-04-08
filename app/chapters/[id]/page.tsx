@@ -1,43 +1,56 @@
 // app/chapters/[id]/page.tsx
 
+import type { Metadata } from "next"
+import { notFound } from "next/navigation"
 import Chapter from "@/components/Chapter"
-import getData from "@/functions/getData"
-import {
-    Cookbook,
-    PartEntry,
-    ChapterEntry,
-} from "@/types/generated.ts/cookbook-schema"
-import { CookbookChapter } from "@/types/generated.ts/chapter-schema"
-import "@/app/globals.css"
+import { getContents, getChapter } from "@/functions/apiClient"
 
-export async function generateStaticParams() {
-    const cookbook = (await getData(["cookbook.json"])) as Cookbook
-    const allChapterIds = cookbook.contents.flatMap((part: PartEntry) =>
-        part.chapters.map((chapter: ChapterEntry) => chapter.id)
+type ChapterRouteParams = { id: string }
+
+export async function generateStaticParams(): Promise<ChapterRouteParams[]> {
+    const contents = await getContents()
+    if (!contents) {
+        if (process.env.NODE_ENV !== "production") {
+            console.warn(
+                "generateStaticParams: /api/contents returned null; " +
+                    "no chapter routes will be statically generated"
+            )
+        }
+        return []
+    }
+    return contents.flatMap((part) =>
+        part.chapters.map((chapter) => ({ id: chapter.id }))
     )
-    return allChapterIds.map((id: string) => ({ id }))
+}
+
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<ChapterRouteParams>
+}): Promise<Metadata> {
+    const { id } = await params
+    const chapter = await getChapter(id)
+    if (!chapter) {
+        return {
+            title: "Chapter not found | Escoffier's Digital Guide",
+        }
+    }
+    return {
+        title: `Chapter ${chapter.chapter}: ${chapter.title} | Escoffier's Digital Guide`,
+    }
 }
 
 export default async function ChapterPage({
     params,
 }: {
-    params: { id: string }
+    params: Promise<ChapterRouteParams>
 }) {
     const { id } = await params
-    const chapter = (await getData([
-        "chapters",
-        `${id}.json`,
-    ])) as CookbookChapter
+    const chapter = await getChapter(id)
 
     if (!chapter) {
-        return (
-            <div>
-                Chapter not found! (Could not find a chapter with id: {id})
-            </div>
-        )
+        notFound()
     }
 
-    // The Chapter component now handles its own internal TOC.
-    // No need to render a separate TOC component here.
     return <Chapter data={chapter} />
 }

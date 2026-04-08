@@ -1,4 +1,4 @@
- import { ContentBlock } from "@/types/generated.ts/content-block-schema.d"
+import { ContentBlock } from "@/types/generated.ts/content-block-schema"
 
 export default interface ShoppingListItemType {
     /**
