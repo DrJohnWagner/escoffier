@@ -1,33 +1,24 @@
 // app/glossary/page.tsx
 
-import React from "react";
-import Glossary from "@/components/Glossary";
-import getData from "@/functions/getData";
-import { Cookbook } from "@/types/generated.ts/cookbook-schema";
-import "@/app/globals.css"; // Make sure to import your global styles
+import type { Metadata } from "next"
+import Glossary from "@/components/Glossary"
+import DataLoadError from "@/components/DataLoadError"
+import { getGlossary } from "@/functions/apiClient"
 
-// This is an async Server Component, which is the default in the App Router.
+export const metadata: Metadata = {
+    title: "Glossary | Escoffier's Digital Guide",
+}
+
 export default async function GlossaryPage() {
-	// 1. Fetch the entire cookbook data object on the server.
-	const cookbook = (await getData(["cookbook.json"])) as Cookbook;
+    const glossaryData = await getGlossary()
 
-	// 2. Extract just the glossary data.
-	const glossaryData = cookbook.glossary;
+    if (!glossaryData) {
+        return <DataLoadError resource="glossary" />
+    }
 
-	// 3. Add a robust check in case the glossary data is missing from the file.
-	if (!glossaryData) {
-		return (
-			<main className="text-center p-12">
-				<h1>Error: Glossary data could not be loaded.</h1>
-			</main>
-		);
-	}
-
-	// 4. Render the Glossary component, passing the extracted data as a prop.
-	//    The <main> tag provides a semantic container for the page content.
-	return (
-		<main>
-			<Glossary data={glossaryData} />
-		</main>
-	);
+    return (
+        <main>
+            <Glossary data={glossaryData} />
+        </main>
+    )
 }

@@ -47,3 +47,13 @@ data/sample/
 # Local artifacts not meant for version control
 /test.html
 /escoffier.zip
+
+# Python / FastAPI server
+server/.venv/
+__pycache__/
+*.pyc
+.ruff_cache/
+.pytest_cache/
+
+# Claude Code local settings (user-specific, never commit)
+.claude/
