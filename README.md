@@ -135,7 +135,7 @@ The script honours `MONGO_URI` (full override) as well as the same `MONGO_HOST`,
 
 ## API Server
 
-A lightweight read-only [FastAPI](https://fastapi.tiangolo.com/) server lives in `server/` and serves the cookbook data from MongoDB as JSON. It is intended to be used alongside the Dockerized database — no authentication is required at this stage.
+A [FastAPI](https://fastapi.tiangolo.com/) server lives in `server/` and serves the cookbook data from MongoDB as JSON. It supports both reading and editing entries. It is intended to be used alongside the Dockerized database — no authentication is required at this stage.
 
 ### Requirements
 
@@ -166,15 +166,16 @@ Interactive API docs are available at [http://127.0.0.1:8000/docs](http://127.0.
 
 ### Endpoints
 
-| Method | Path                          | Returns                                                               |
-| ------ | ----------------------------- | --------------------------------------------------------------------- |
-| GET    | `/`                           | Health probe (`{"status":"ok","service":"escoffier-api"}`)            |
-| GET    | `/api/cookbook`               | The single `cookbook` document                                        |
-| GET    | `/api/contents`               | All parts with their nested chapter listings                          |
-| GET    | `/api/glossary`               | All glossary entries, sorted by term                                  |
-| GET    | `/api/index`                  | All letter groups                                                     |
-| GET    | `/api/chapters`               | Chapter summaries (`_id`, `id`, `chapter`, `title`) in cookbook order |
-| GET    | `/api/chapters/{chapter_id}`  | A single chapter document (404 if unknown)                            |
+| Method | Path                                                  | Returns                                                               |
+| ------ | ----------------------------------------------------- | --------------------------------------------------------------------- |
+| GET    | `/`                                                   | Health probe (`{"status":"ok","service":"escoffier-api"}`)            |
+| GET    | `/api/cookbook`                                       | The single `cookbook` document                                        |
+| GET    | `/api/contents`                                       | All parts with their nested chapter listings                          |
+| GET    | `/api/glossary`                                       | All glossary entries, sorted by term                                  |
+| GET    | `/api/index`                                          | All letter groups                                                     |
+| GET    | `/api/chapters`                                       | Chapter summaries (`_id`, `id`, `chapter`, `title`) in cookbook order |
+| GET    | `/api/chapters/{chapter_id}`                          | A single chapter document (404 if unknown)                            |
+| PATCH  | `/api/chapters/{chapter_id}/entries/{entry_number}`   | Update a single entry; returns the updated chapter (404 if unknown)   |
 
 ### Configuration
 
@@ -192,7 +193,7 @@ make migrate-db        # (only needed once, or after editing data/)
 make test-server       # runs `uv run pytest` from inside server/
 ```
 
-If MongoDB is not reachable, the entire suite is **skipped** with a helpful message rather than failing — so you can run `make test-server` safely even when the DB is down. When the DB *is* up, the suite currently contains **8 tests** covering:
+If MongoDB is not reachable, the entire suite is **skipped** with a helpful message rather than failing — so you can run `make test-server` safely even when the DB is down. When the DB *is* up, the suite currently contains **11 tests** covering:
 
 - the `/` health probe
 - `/api/cookbook` — shape and known title/year
@@ -202,6 +203,7 @@ If MongoDB is not reachable, the entire suite is **skipped** with a helpful mess
 - `/api/chapters` — cookbook ordering (verifying e.g. `chapter-ix` lands *after* `chapter-v` rather than at the lexical position)
 - `/api/chapters/{id}` — fetching an individual chapter
 - `/api/chapters/{unknown}` — 404 behaviour
+- `PATCH /api/chapters/{id}/entries/{number}` — updating an entry, persistence, and 404 cases
 
 ## Learn More
 

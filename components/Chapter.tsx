@@ -43,7 +43,7 @@ const Chapter: React.FC<{ data: CookbookChapter }> = ({ data }) => {
 
             <div className="chapter-body">
                 {data.sections.map((section) => (
-                    <Section key={section.title} section={section} />
+                    <Section key={section.title} section={section} chapterId={data.id} />
                 ))}
             </div>
         </article>

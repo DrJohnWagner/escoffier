@@ -5,7 +5,12 @@ import Entry from "./Entry"
 import { ChapterSection } from "@/types/generated.ts/chapter-schema"
 import generateSlug from "@/functions/generateSlug" // Import the slug function
 
-const Section: React.FC<{ section: ChapterSection }> = ({ section }) => {
+interface SectionProps {
+    section: ChapterSection
+    chapterId: string
+}
+
+const Section: React.FC<SectionProps> = ({ section, chapterId }) => {
     const slug = generateSlug(section.title) // Generate the slug
 
     return (
@@ -26,13 +31,13 @@ const Section: React.FC<{ section: ChapterSection }> = ({ section }) => {
 
             {section.entries &&
                 section.entries.map((entry) => (
-                    <Entry key={entry.number} entry={entry} />
+                    <Entry key={entry.number} entry={entry} chapterId={chapterId} />
                 ))}
 
             {/* Recursive call for nested sections */}
             {section.sections &&
                 section.sections.map((subSection) => (
-                    <Section key={subSection.title} section={subSection} />
+                    <Section key={subSection.title} section={subSection} chapterId={chapterId} />
                 ))}
         </section>
     )

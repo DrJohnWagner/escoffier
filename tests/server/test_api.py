@@ -118,3 +118,64 @@ def test_get_missing_chapter_is_404(client: TestClient) -> None:
     response = client.get("/api/chapters/chapter-does-not-exist")
     assert response.status_code == 404
     assert response.json()["detail"] == "chapter 'chapter-does-not-exist' not found"
+
+
+# ---- PATCH /api/chapters/{chapter_id}/entries/{entry_number} ----
+
+
+def _find_entry(chapter: dict, number: int | float) -> dict | None:
+    """Walk the chapter's nested sections to locate an entry by number."""
+    for section in chapter.get("sections", []):
+        for entry in section.get("entries", []):
+            if entry.get("number") == number:
+                return entry
+        found = _find_entry({"sections": section.get("sections", [])}, number)
+        if found is not None:
+            return found
+    return None
+
+
+def test_patch_entry_updates_and_persists(client: TestClient) -> None:
+    # Capture the original title so we can restore it later.
+    original = client.get("/api/chapters/chapter-i").json()
+    entry = _find_entry(original, 1)
+    assert entry is not None
+    original_title = entry["title"]
+
+    # PATCH the entry with a new title.
+    response = client.patch(
+        "/api/chapters/chapter-i/entries/1",
+        json={"title": "UPDATED CONSOMMÉ"},
+    )
+    assert response.status_code == 200
+    patched_entry = _find_entry(response.json(), 1)
+    assert patched_entry is not None
+    assert patched_entry["title"] == "UPDATED CONSOMMÉ"
+
+    # Verify persistence via a fresh GET.
+    refetched = client.get("/api/chapters/chapter-i").json()
+    assert _find_entry(refetched, 1)["title"] == "UPDATED CONSOMMÉ"
+
+    # Restore the original title.
+    client.patch(
+        "/api/chapters/chapter-i/entries/1",
+        json={"title": original_title},
+    )
+
+
+def test_patch_entry_nonexistent_chapter_is_404(client: TestClient) -> None:
+    response = client.patch(
+        "/api/chapters/chapter-nonexistent/entries/1",
+        json={"title": "X"},
+    )
+    assert response.status_code == 404
+    assert "chapter-nonexistent" in response.json()["detail"]
+
+
+def test_patch_entry_nonexistent_entry_is_404(client: TestClient) -> None:
+    response = client.patch(
+        "/api/chapters/chapter-i/entries/99999",
+        json={"title": "X"},
+    )
+    assert response.status_code == 404
+    assert "99999" in response.json()["detail"]

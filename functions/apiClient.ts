@@ -65,3 +65,25 @@ export function getChapter(id: string): Promise<CookbookChapter | null> {
     const safeId = encodeURIComponent(id)
     return apiGet<CookbookChapter>(`/api/chapters/${safeId}`)
 }
+
+export async function updateEntry(
+    chapterId: string,
+    entryNumber: number,
+    data: Record<string, unknown>
+): Promise<CookbookChapter> {
+    const safeId = encodeURIComponent(chapterId)
+    const url = `${apiBase()}/api/chapters/${safeId}/entries/${entryNumber}`
+    const response = await fetch(url, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+    })
+    if (!response.ok) {
+        const detail = await response.json().catch(() => ({}))
+        throw new Error(
+            (detail as Record<string, string>).detail ??
+                `Failed to update entry: ${response.status}`
+        )
+    }
+    return (await response.json()) as CookbookChapter
+}

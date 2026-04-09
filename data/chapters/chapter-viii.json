@@ -1,0 +1,250 @@
+{
+    "chapter": "VIII",
+    "id": "chapter-viii",
+    "title": "The Various Garnishes for Soups",
+    "introduction": [],
+    "sections": [
+        {
+            "title": "ROYALES",
+            "introduction": [],
+            "entries": [
+                {
+                    "number": 206,
+                    "title": "ORDINARY ROYALE",
+                    "type": "recipe",
+                    "ingredients": [
+                        "1 oz (28 g) of chervil",
+                        "1 pint (473 ml) of boiling consommé",
+                        "2 eggs",
+                        "6 yolks"
+                    ],
+                    "instructions": [
+                        "Put the chervil into the boiling consommé, cover the saucepan, and let infuse away from the fire for twenty minutes.",
+                        "Pour this infusion over the eggs and yolks, beaten briskly in a basin, and mix with the whisk.",
+                        "Strain through muslin, and carefully remove the froth that has formed.",
+                        "Pour into buttered 'Charlotte' moulds (large or small).",
+                        "Poach in a bain-marie, ensuring the water does not boil.",
+                        "Allow 35-40 minutes for large moulds, and about 15 minutes for small moulds.",
+                        "Always let the royale cool in the moulds before turning out."
+                    ]
+                },
+                {
+                    "number": 207,
+                    "title": "DESLIGNAC OR CREAM ROYALE",
+                    "type": "recipe",
+                    "ingredients": [
+                        "1 pint (473 ml) of thin cream",
+                        "1 egg",
+                        "6 yolks",
+                        "A little salt and nutmeg"
+                    ],
+                    "instructions": [
+                        "Boil the thin cream and pour it, little by little, over the egg and yolks, well whisked in a basin.",
+                        "Season with a little salt and nutmeg.",
+                        "Strain through muslin.",
+                        "For the poaching, follow the directions given above. (Recipe 206)"
+                    ]
+                },
+                {
+                    "number": 208,
+                    "title": "CHICKEN ROYALE",
+                    "type": "recipe",
+                    "ingredients": [
+                        "3 oz (85 g) of cooked white chicken-meat",
+                        "3 tbsp (45 ml) of cold Béchamel",
+                        "A little salt",
+                        "A dash of nutmeg",
+                        "0.2 pint (95 ml) of cream",
+                        "1 egg",
+                        "3 yolks"
+                    ],
+                    "instructions": [
+                        "Finely pound the cooked white chicken-meat and add the cold Béchamel.",
+                        "Put this paste in a bowl, season with a little salt and a dash of nutmeg.",
+                        "Dilute with the cream, and strain through a tammy.",
+                        "Thicken this preparation with the egg and yolks.",
+                        "Poach in small or large moulds, in accordance with the procedure already described. (Recipe 206)"
+                    ]
+                },
+                {
+                    "number": 209,
+                    "title": "GAME ROYALE",
+                    "type": "recipe",
+                    "ingredients": [
+                        "3 oz (85 g) of cooked meat of the chosen game",
+                        "3 tbsp (45 ml) of cold Espagnole Sauce",
+                        "0.2 pint (95 ml) of rich cream",
+                        "A very little cayenne",
+                        "1 egg",
+                        "3 yolks"
+                    ],
+                    "instructions": [
+                        "Finely pound the cooked game meat and add the cold Espagnole Sauce and rich cream in small quantities at a time.",
+                        "Warm the seasoning with a very little cayenne.",
+                        "Strain through a tammy, thicken with the egg and yolks, and poach as before. (Recipe 206)"
+                    ]
+                },
+                {
+                    "number": 210,
+                    "title": "FISH ROYALE",
+                    "type": "recipe",
+                    "ingredients": [
+                        "4 oz (113 g) of fillet of sole (or other suitable fish)",
+                        "Butter",
+                        "2 tbsp (30 ml) of cold Béchamel",
+                        "0.25 pint (118 ml) of cream",
+                        "Salt",
+                        "A pinch of nutmeg",
+                        "5 egg yolks"
+                    ],
+                    "instructions": [
+                        "Stew the fish, cut into cubes, in butter. Cool.",
+                        "Pound finely, and add, little by little, the cold Béchamel and cream.",
+                        "Season with salt and a pinch of nutmeg, and strain through a tammy.",
+                        "Thicken by means of the egg yolks, and poach in large or small moulds. (Recipe 206)"
+                    ]
+                },
+                {
+                    "number": 211,
+                    "title": "CARROT OR CRÉCY ROYALE",
+                    "type": "recipe",
+                    "ingredients": [
+                        "5 oz (142 g) of the red part only of carrots",
+                        "Butter",
+                        "2 tbsp (30 ml) of Béchamel",
+                        "0.2 pint (95 ml) of rich cream",
+                        "Table-salt",
+                        "A pinch of castor sugar",
+                        "A few drops of vegetable red",
+                        "1 egg",
+                        "4 yolks"
+                    ],
+                    "instructions": [
+                        "Stew the carrots gently in butter. Cool.",
+                        "Crush in a mortar, and gradually add the Béchamel and rich cream.",
+                        "Season with table-salt and a pinch of castor sugar, and deepen the tint with a few drops of vegetable red.",
+                        "Strain through a tammy, thicken with the egg and yolks, put into moulds, and poach. (Recipe 206)"
+                    ]
+                },
+                {
+                    "number": 212,
+                    "title": "FRESH PEAS OR ST. GERMAIN ROYALE",
+                    "type": "recipe",
+                    "ingredients": [
+                        "0.5 lb (227 g) of fresh, small peas",
+                        "A bunch of chervil",
+                        "A few leaves of fresh mint",
+                        "The liquor the peas were cooked in",
+                        "Cream",
+                        "A little sugar",
+                        "Salt",
+                        "1 egg",
+                        "2 yolks"
+                    ],
+                    "instructions": [
+                        "Cook the peas in boiling water with the chervil and mint.",
+                        "Pass through a sieve.",
+                        "Dilute the resulting purée with two-fifths of its volume of the cooking liquor and one-fifth of cream.",
+                        "Add a little sugar and the necessary salt.",
+                        "Add the egg and yolks, pass through a fine strainer, and poach in well-buttered moulds. (Recipe 206)"
+                    ]
+                },
+                {
+                    "number": 213,
+                    "title": "VARIOUS ROYALES",
+                    "type": "technique",
+                    "introduction": "Royales may also be made with leeks, celery, &c.",
+                    "ingredients": [
+                        "6 or 7 oz (170-198 g) of the chosen vegetable",
+                        "Butter",
+                        "3 tbsp (45 ml) of Béchamel",
+                        "0.2 pint (95 ml) of cream",
+                        "2 eggs",
+                        "4 yolks"
+                    ],
+                    "instructions": [
+                        "Finely mince the chosen vegetable.",
+                        "Stew the same gently and thoroughly in butter, and strain through a tammy.",
+                        "Add to the resulting purée the Béchamel, cream, eggs, and yolks.",
+                        "Put into large or small moulds, and poach. (Recipe 206)"
+                    ],
+                    "notes": [
+                        "In order that these royales may have the required delicacy, I should urge the reader not to exceed the prescribed quantities of eggs and yolks, these being so calculated as to exactly produce the density required."
+                    ]
+                },
+                {
+                    "number": 214,
+                    "title": "THE DIVIDING-UP OF ROYALES",
+                    "type": "technique",
+                    "introduction": "When the poaching is done, take the mould or moulds out of water, and leave the royale to cool in them. Do not turn out the moulds whilst the preparation is hot, as it would surely scatter. It only assumes the necessary solidity for being divided up by means of the aggregation and contraction of its various constituents during the cooling process.",
+                    "instructions": [
+                        "If the royale has been poached in small moulds, slightly trim the cylinders of royale, divide them up laterally into discs, and stamp them uniformly with a plain or indented fancy cutter.",
+                        "If the royale has been poached in large moulds, withdraw it from these, and place it on a serviette; trim the tops, cut into half-inch (1.27 cm) slices, and stamp with small, fancy cutters of different shapes. These little divisions of royale must always be stamped very neatly and quite regularly."
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Other Soup Garnishes",
+            "entries": [
+                {
+                    "number": 215,
+                    "title": "CHIFFONADE",
+                    "type": "technique",
+                    "introduction": "The name “Chiffonade” is given to a mince of sorrel or lettuce, intended as a complement for such soups as “Potage de santé,” “le Germiny,” &c., or various clear consommés like “Julienne.”",
+                    "instructions": [
+                        "First carefully shred the sorrel or lettuce, and remove therefrom all the leaf-ribs.",
+                        "Carefully wash the leaves, and squeeze the latter tightly between the fingers of the left hand and the table.",
+                        "Now cut them into fine strips with a sharp knife.",
+                        "If the chiffonade be intended for a consommé, add it to the latter half an hour before dishing up; it is thus actually cooked in the soup itself.",
+                        "If, as is most often the case, it be intended for a thick soup, it is better to let it melt well in butter, to moisten it with a little consommé, and to let it boil for ten minutes before adding it to the soup."
+                    ],
+                    "notes": [
+                        "Whatever the purpose be for which it is made, chiffonade should always be prepared with very tender sorrel or lettuce."
+                    ]
+                },
+                {
+                    "number": 216,
+                    "title": "DIRECTIONS FOR SOUP WITH PASTES",
+                    "type": "technique",
+                    "instructions": [
+                        "Vermicelli and the various Italian pastes should measure about 3 oz (85 g) per quart (946 ml) of consommé. They should first be thrown into boiling, salted water, where they are left to poach for three minutes, whereupon they are drained, cooled, and their cooking is completed in the consommé. The parboiling is necessary to get rid of flour which would otherwise make the consommé cloudy.",
+                        "Tapioca, sago, salep, &c., should also be apportioned at about 3 oz (85 g) per quart (946 ml). These products need no parboiling; they are merely sprinkled into the boiling consommé while stirring, and are left to cook until the soup is quite clear. The boiling should be gentle, and the scum should be removed as often as it forms. The absolute transparency of the consommé is an infallible sign of its having been completed.",
+                        "Brazilian, Japanese, and other pearls are used in the same quantities, but they should poach for thirty minutes if required to be very transparent."
+                    ]
+                },
+                {
+                    "number": 217,
+                    "title": "THREADED EGGS",
+                    "type": "recipe",
+                    "ingredients": [
+                        "3 eggs",
+                        "Salt and pepper"
+                    ],
+                    "instructions": [
+                        "Beat up the eggs in a bowl, season with salt and pepper, and strain through a sieve.",
+                        "Pour the eggs into a fine strainer, hold same over a sautépan containing some boiling consommé.",
+                        "Shift it about in such wise as to let the egg fall in threads into the boiling liquid beneath, where it will immediately coagulate.",
+                        "Drain the egg-threads very carefully lest they break."
+                    ]
+                },
+                {
+                    "number": 218,
+                    "title": "PROFITEROLLES FOR SOUPS",
+                    "type": "recipe",
+                    "introduction": "These consist of little choux about the size of a large hazel-nut, stuffed with some kinds of purée, such as that of foie gras with cream, or of chicken, or of vegetables, &c. Four profiterolles should be allowed for each person.",
+                    "ingredients": [
+                        "“Pâte à choux” without sugar (Recipe 2374)",
+                        "Beaten egg for gilding"
+                    ],
+                    "instructions": [
+                        "Put a few tablespoonfuls of “pâte à choux” without sugar into a piping-bag fitted with a smooth pipe, whose orifice should be about one-quarter inch (0.64 cm) in diameter. (Recipe 2374)",
+                        "Squeeze out portions of the preparation on to a tray, so as to form balls about the size of a small hazel-nut.",
+                        "Gild by means of beaten egg applied with a fine brush, and cook in a moderate oven.",
+                        "Do not take the profiterolles from the oven until they are quite dry."
+                    ]
+                }
+            ]
+        }
+    ]
+}

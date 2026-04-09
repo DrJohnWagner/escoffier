@@ -45,7 +45,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_methods=["GET"],
+    allow_methods=["GET", "PATCH"],
     allow_headers=["*"],
 )
 
@@ -113,4 +113,58 @@ async def get_chapter(chapter_id: str) -> dict[str, Any]:
         raise HTTPException(
             status_code=404, detail=f"chapter {chapter_id!r} not found"
         )
+    return _serialize(doc)
+
+
+def _update_entry_in_sections(
+    sections: list[dict[str, Any]], entry_number: int | float, payload: dict[str, Any]
+) -> bool:
+    """Recursively find an entry by number in nested sections and update it.
+
+    Returns ``True`` if the entry was found and updated, ``False`` otherwise.
+    """
+    for section in sections:
+        for entry in section.get("entries", []):
+            if entry.get("number") == entry_number:
+                for key, value in payload.items():
+                    if key == "number":
+                        continue  # prevent renumbering
+                    entry[key] = value
+                return True
+        if _update_entry_in_sections(
+            section.get("sections", []), entry_number, payload
+        ):
+            return True
+    return False
+
+
+@app.patch("/api/chapters/{chapter_id}/entries/{entry_number}", tags=["chapters"])
+async def update_entry(
+    chapter_id: str,
+    entry_number: int | float,
+    payload: dict[str, Any],
+) -> dict[str, Any]:
+    """Update a single entry within a chapter document."""
+    db = get_database()
+
+    chapter = await db.chapters.find_one({"_id": chapter_id})
+    if chapter is None:
+        raise HTTPException(
+            status_code=404, detail=f"chapter {chapter_id!r} not found"
+        )
+
+    if not _update_entry_in_sections(
+        chapter["sections"], entry_number, payload
+    ):
+        raise HTTPException(
+            status_code=404,
+            detail=f"entry {entry_number} not found in chapter {chapter_id!r}",
+        )
+
+    await db.chapters.update_one(
+        {"_id": chapter_id},
+        {"$set": {"sections": chapter["sections"]}},
+    )
+
+    doc = await db.chapters.find_one({"_id": chapter_id})
     return _serialize(doc)
