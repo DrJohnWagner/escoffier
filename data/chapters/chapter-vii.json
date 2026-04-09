@@ -16,13 +16,15 @@
                     "title": "ANCHOVIES (FILLETS OF)",
                     "type": "technique",
                     "introduction": "Whether they be for hors d’œuvres or for culinary use, it is always best to have these handy.",
-                    "instructions": [
-                        "Wash and well wipe the anchovies to remove the white powder from their scales.",
-                        "Neatly trim them to the shape of extended oblongs.",
-                        "Detach the fillets from the bones by gentle pulling.",
-                        "Divide each fillet lengthwise into three or four smaller fillets.",
-                        "Put the smaller fillets into a small narrow dish or a little bowl, and cover them with oil.",
-                        "The fillets may also be kept whole with a view to rolling them into rings."
+                    "notes": [
+                        [
+                            "Wash and well wipe the anchovies to remove the white powder from their scales.",
+                            "Neatly trim them to the shape of extended oblongs.",
+                            "Detach the fillets from the bones by gentle pulling.",
+                            "Divide each fillet lengthwise into three or four smaller fillets.",
+                            "Put the smaller fillets into a small narrow dish or a little bowl, and cover them with oil.",
+                            "The fillets may also be kept whole with a view to rolling them into rings."
+                        ]
                     ]
                 },
                 {
@@ -112,11 +114,13 @@
                     "title": "CLARIFIED BUTTER",
                     "type": "technique",
                     "introduction": "A certain quantity of clarified butter should always be kept ready and handy.",
-                    "instructions": [
-                        "Put 1 lb (454 g) of butter to melt in a saucepan large enough to hold twice that amount.",
-                        "Place the saucepan on the side of the fire, over moderate heat.",
-                        "Remove all the scum which rises to the surface.",
-                        "When the butter looks quite clear and all foreign substances have dropped to the bottom, put the liquid carefully away and strain it through muslin."
+                    "notes": [
+                        [
+                            "Put 1 lb (454 g) of butter to melt in a saucepan large enough to hold twice that amount.",
+                            "Place the saucepan on the side of the fire, over moderate heat.",
+                            "Remove all the scum which rises to the surface.",
+                            "When the butter looks quite clear and all foreign substances have dropped to the bottom, put the liquid carefully away and strain it through muslin."
+                        ]
                     ]
                 },
                 {
@@ -138,19 +142,23 @@
                     "number": 177,
                     "title": "CHERVIL",
                     "type": "technique",
-                    "instructions": [
-                        "Chopped Chervil: Clean the chervil and remove the stalks; wash, dry it well while tossing it, then chop it finely and put it aside on a plate in the cool, if it is not for immediate use.",
-                        "Concassed Chervil: Proceed as above, except that, instead of chopping it, compress it between the fingers and slice it after the manner of a chaff-cutter. Concassed and chopped chervil are, if possible, only prepared at the last moment.",
-                        "Chervil Pluches: The pluches are the serrated portions only of the leaves, which are torn away to show no trace of the veinings. They are immersed in water, and at the last moment withdrawn, so as to be added, raw, to either soups or boiling consommés."
+                    "notes": [
+                        [
+                            "Chopped Chervil: Clean the chervil and remove the stalks; wash, dry it well while tossing it, then chop it finely and put it aside on a plate in the cool, if it is not for immediate use.",
+                            "Concassed Chervil: Proceed as above, except that, instead of chopping it, compress it between the fingers and slice it after the manner of a chaff-cutter. Concassed and chopped chervil are, if possible, only prepared at the last moment.",
+                            "Chervil Pluches: The pluches are the serrated portions only of the leaves, which are torn away to show no trace of the veinings. They are immersed in water, and at the last moment withdrawn, so as to be added, raw, to either soups or boiling consommés."
+                        ]
                     ]
                 },
                 {
                     "number": 178,
                     "title": "RASPINGS",
                     "type": "technique",
-                    "instructions": [
-                        "Golden raspings are obtained by pounding and passing through a fine sieve bread-crusts which have been previously well dried in the oven.",
-                        "White raspings are similarly prepared, except that very dry, white crumb is used."
+                    "notes": [
+                        [
+                            "Golden raspings are obtained by pounding and passing through a fine sieve bread-crusts which have been previously well dried in the oven.",
+                            "White raspings are similarly prepared, except that very dry, white crumb is used."
+                        ]
                     ]
                 },
                 {
@@ -158,13 +166,11 @@
                     "title": "PEELED, CHANNELLED, AND ZESTED LEMONS",
                     "type": "technique",
                     "introduction": "Lemons are greatly used in cookery, as dish and comestible garnish.",
-                    "instructions": [
+                    "notes": [
                         "Peeled: When a whole lemon is used for marinades or 'blancs', peel it to the pulp, removing the peel and all of the underlying white. The lemon is then cut into slices.",
                         "Zested: Flatten the removed rind, inside uppermost, and with a very sharp and flexible knife, remove all the white. Slice the remaining peel (zest) into strips about one inch (2.5 cm) wide, and cut these laterally in fine julienne-fashion. Scald the resulting bits for five minutes, cool, and drain them. Zest may also be finely chopped.",
                         "Channelled: Using a channel knife, excise parallel ribbons from the surface of the rind. A lemon channelled in this way is cut in two, lengthwise, its ends removed, and the two halves are cut laterally into thin, regular slices to look like serrated half-discs.",
-                        "For Garnish: The simplest way is to cut the lemon through the centre, after having trimmed the two ends quite straight, and then to remove the rind roughly from the edge."
-                    ],
-                    "notes": [
+                        "For Garnish: The simplest way is to cut the lemon through the centre, after having trimmed the two ends quite straight, and then to remove the rind roughly from the edge.",
                         "For whatever purpose the lemon be intended, it should be, as far as possible, only prepared at the last moment. If it must be prepared beforehand, it would be well to keep it in a bowl of fresh water."
                     ]
                 },
@@ -172,11 +178,9 @@
                     "number": 180,
                     "title": "SHALLOTS",
                     "type": "technique",
-                    "instructions": [
-                        "Chopped Shallots: Clean the shallots and, with a very sharp knife, cut them lengthwise into thin slices, letting them cling together at the root. Turn them half round and proceed in the same way at right angles. Finally, cut them laterally to produce very fine and regular, small cubes.",
-                        "Ciseled Shallots: These are merely laterally sliced shallots, resulting in a series of thin, regular discs."
-                    ],
                     "notes": [
+                        "Chopped Shallots: Clean the shallots and, with a very sharp knife, cut them lengthwise into thin slices, letting them cling together at the root. Turn them half round and proceed in the same way at right angles. Finally, cut them laterally to produce very fine and regular, small cubes.",
+                        "Ciseled Shallots: These are merely laterally sliced shallots, resulting in a series of thin, regular discs.",
                         "Ciseled or chopped shallots should, when possible, only be prepared when required; if, however, they must be treated in advance, they should be kept somewhere in the cool until wanted."
                     ]
                 },
@@ -237,42 +241,46 @@
                     "number": 184,
                     "title": "BREAD-CRUMBS",
                     "type": "technique",
-                    "instructions": [
-                        "Thoroughly rub some stale, well-broken-up bread-crumb in a closed towel.",
-                        "Pass it through a fine sieve or colander, according as to whether it is required very fine or not.",
-                        "Put it aside in a convenient receptacle."
+                    "notes": [
+                        [
+                            "Thoroughly rub some stale, well-broken-up bread-crumb in a closed towel.",
+                            "Pass it through a fine sieve or colander, according as to whether it is required very fine or not.",
+                            "Put it aside in a convenient receptacle."
+                        ]
                     ]
                 },
                 {
                     "number": 185,
                     "title": "CHOPPED ONION",
                     "type": "technique",
-                    "instructions": [
-                        "Cut the onion finely, like the shallots.",
-                        "If it is to be minced even finer, it should be freed of its pungent juice to prevent blackening.",
-                        "To do this, put the chopped onion in the corner of a towel, pour plenty of cold water over it, and twist the towel to express the water. By this means the onion remains quite white."
+                    "notes": [
+                        [
+                            "Cut the onion finely, like the shallots.",
+                            "If it is to be minced even finer, it should be freed of its pungent juice to prevent blackening.",
+                            "To do this, put the chopped onion in the corner of a towel, pour plenty of cold water over it, and twist the towel to express the water. By this means the onion remains quite white."
+                        ]
                     ]
                 },
                 {
                     "number": 186,
                     "title": "TURNED OR STONED OLIVES",
                     "type": "technique",
-                    "instructions": [
-                        "Using a special stoning instrument or the point of a small knife, cut the fruit spirally from the stone.",
-                        "Keep the olives in slightly salted water."
+                    "notes": [
+                        [
+                            "Using a special stoning instrument or the point of a small knife, cut the fruit spirally from the stone.",
+                            "Keep the olives in slightly salted water."
+                        ]
                     ]
                 },
                 {
                     "number": 187,
                     "title": "PARSLEY",
                     "type": "technique",
-                    "instructions": [
+                    "notes": [
                         "Chopped Parsley: If parsley is properly chopped, no juice should be produced. If the operation is performed badly, expressing juice, wash the choppings in fresh water and press in a towel to expel the water.",
                         "Concassed Parsley: This is roughly chopped parsley. When used, it should be added a few moments before serving to undergo a slight cooking process.",
                         "Parsley Sprays: Used for garnishing. Use the curled-leaf kind, after removing the long stalks. Keep the sprays in fresh water until required.",
-                        "Fried Parsley: Consists of sprays, well drained of water, immersed for an instant in very hot fat. The moment it is fried, carefully drain it, salt it, and place it in a clean towel to remove superfluous grease. It is used to dress fried viands."
-                    ],
-                    "notes": [
+                        "Fried Parsley: Consists of sprays, well drained of water, immersed for an instant in very hot fat. The moment it is fried, carefully drain it, salt it, and place it in a clean towel to remove superfluous grease. It is used to dress fried viands.",
                         "Parsley, when quite fresh and used in moderation, is an excellent thing; but, should it have remained too long in the heat, it becomes quite insufferable. It is wiser to discard it entirely than to use it when not fresh."
                     ]
                 },
@@ -281,10 +289,12 @@
                     "title": "SALT",
                     "type": "technique",
                     "introduction": "Two kinds of salt are used in cooking, viz., grey, or sea-salt, and rock-salt.",
-                    "instructions": [
-                        "Grey-salt: Used more especially for Brines and in the preparation of ices. For roasts and grills, it is crushed with a roller, without being pounded, so every grain is perceptible. This salt, in melting, imparts a supplementary flavour.",
-                        "Rock-salt: Found as cooking and table-salt. If using cooking salt, the required quantity should be dried, pounded in the mortar, passed through a fine sieve, and then put aside in a dry place. Even table-salt sometimes needs drying and sifting.",
-                        "Spiced Salt: This is obtained from a mixture of 1 lb (454 g) of table salt with 3.5 oz (99 g) of spices. (Recipe 181). This salt should be kept in a very dry place."
+                    "notes": [
+                        [
+                            "Grey-salt: Used more especially for Brines and in the preparation of ices. For roasts and grills, it is crushed with a roller, without being pounded, so every grain is perceptible. This salt, in melting, imparts a supplementary flavour.",
+                            "Rock-salt: Found as cooking and table-salt. If using cooking salt, the required quantity should be dried, pounded in the mortar, passed through a fine sieve, and then put aside in a dry place. Even table-salt sometimes needs drying and sifting.",
+                            "Spiced Salt: This is obtained from a mixture of 1 lb (454 g) of table salt with 3.5 oz (99 g) of spices. (Recipe 181). This salt should be kept in a very dry place."
+                        ]
                     ]
                 }
             ]
@@ -614,17 +624,19 @@
                             "title": "SPECIAL STUFFINGS FOR FISH",
                             "type": "technique",
                             "introduction": "These preparations are used to stuff fish such as mackerel, herring, shad, &c., lending a condimentary touch that makes them more agreeable and digestible.",
-                            "instructions": [
-                                {
-                                    "First Method": [
-                                        "ingredients: 4 oz (113 g) of raw, chopped milt 2 oz (57 g) of bread-crumb, steeped in milk and pressed 1.5 oz (43 g) of mixed fine herbs (chives, parsley, chervil, shallots, sweet basil), finely chopped 0.5 garlic clove, crushed 2 whole eggs Salt, pepper, and nutmeg",
-                                        "instructions: Put all ingredients into a bowl and chop them together to mix thoroughly."
-                                    ],
-                                    "Second Method": [
-                                        "ingredients: 4 oz (113 g) of bread-crumb steeped in milk and pressed 0.5 oz (14 g) of onion, slightly cooked in butter, and cold 0.5 oz (14 g) of chopped shallots, slightly cooked in butter, and cold 1 oz (28 g) of raw mushrooms, chopped and pressed 1 tbsp (15 ml) of chopped parsley A piece of garlic the size of a pea, crushed Salt, pepper, and nutmeg 2 eggs",
-                                        "instructions: Mix all ingredients in a bowl as above."
-                                    ]
-                                }
+                            "notes": [
+                                [
+                                    {
+                                        "First Method": [
+                                            "ingredients: 4 oz (113 g) of raw, chopped milt 2 oz (57 g) of bread-crumb, steeped in milk and pressed 1.5 oz (43 g) of mixed fine herbs (chives, parsley, chervil, shallots, sweet basil), finely chopped 0.5 garlic clove, crushed 2 whole eggs Salt, pepper, and nutmeg",
+                                            "instructions: Put all ingredients into a bowl and chop them together to mix thoroughly."
+                                        ],
+                                        "Second Method": [
+                                            "ingredients: 4 oz (113 g) of bread-crumb steeped in milk and pressed 0.5 oz (14 g) of onion, slightly cooked in butter, and cold 0.5 oz (14 g) of chopped shallots, slightly cooked in butter, and cold 1 oz (28 g) of raw mushrooms, chopped and pressed 1 tbsp (15 ml) of chopped parsley A piece of garlic the size of a pea, crushed Salt, pepper, and nutmeg 2 eggs",
+                                            "instructions: Mix all ingredients in a bowl as above."
+                                        ]
+                                    }
+                                ]
                             ]
                         },
                         {
@@ -632,38 +644,40 @@
                             "title": "FORCEMEAT BALLS OR QUENELLES",
                             "type": "technique",
                             "introduction": "Whatever be the required size or shape of quenelles there are four ways of making them: (1) By rolling them; (2) by moulding them with a spoon; (3) by forming them with a piping-bag; (4) by moulding them by hand into the shape of a kidney.",
-                            "instructions": [
-                                {
-                                    "1. To roll quenelles": [
-                                        "This requires a stiff forcemeat. Place one-quarter lb (113 g) of forcemeat on a floured board.",
-                                        "With floured hands, roll the forcemeat into a sausage shape.",
-                                        "Cut the sausage laterally with a floured knife into sections.",
-                                        "Roll each section until its length is thrice its diameter.",
-                                        "Place on a floured tray.",
-                                        "To poach: Gently tilt the balls into a saucepan of boiling, salted water. Cover and keep on the side of the fire until the balls rise to the surface. Remove with a skimmer and place in cold water to cool. Drain on a cloth."
-                                    ],
-                                    "2. To Mould Quenelles with a Spoon": [
-                                        "Butter a sautépan or tray and let the butter cool.",
-                                        "Use two coffee-spoons. Keep one in hot water.",
-                                        "With the other spoon, take up enough forcemeat to fill it.",
-                                        "Use the hot, wet spoon to smooth the top surface and then scoop the quenelle out, placing it on the buttered tray. The quenelle will be shaped like a large olive.",
-                                        "To poach: Pour enough boiling, salted water over the quenelles to cover them. Leave them to poach until they have swollen and seem soft and firm. Drain and use immediately or cool as previously described."
-                                    ],
-                                    "3. To Form Quenelles with a Piping-bag": [
-                                        "This is recommended for small, fine soup garnishes. Butter a tray or sautépan.",
-                                        "Put the forcemeat into a piping bag fitted with a grooved or smooth pipe of the desired size.",
-                                        "Squeeze out the quenelles onto the tray, laying them very closely.",
-                                        "To poach: Poach in the same way as spoon-moulded ones.",
-                                        "To poach Godiveau quenelles: Pipe onto fine, buttered paper on a buttered tray. Push into a very moderate oven for a few minutes until a thin dew of grease glistens on their surfaces. Remove from oven, overturn the tray onto a marble slab, and when nearly cold, carefully remove the paper."
-                                    ],
-                                    "4. To Mould Forcemeat with the Fingers": [
-                                        "Place a saucepan three-quarters full of boiling, salted water on the edge of a table.",
-                                        "Tie a 2 lb (907 g) weight to a one-yard doubled string, creating a loop. Place the loop around the saucepan handle and draw the string diametrically across the opening, letting the weight pull it taut.",
-                                        "With the left hand, take some forcemeat. With the right index finger, remove a portion from the spoon.",
-                                        "Scrape the finger across the taut string, letting the ball of forcemeat fall into the boiling water.",
-                                        "When all stuffing is moulded, place the saucepan on the fire to complete poaching as in the preceding methods."
-                                    ]
-                                }
+                            "notes": [
+                                [
+                                    {
+                                        "1. To roll quenelles": [
+                                            "This requires a stiff forcemeat. Place one-quarter lb (113 g) of forcemeat on a floured board.",
+                                            "With floured hands, roll the forcemeat into a sausage shape.",
+                                            "Cut the sausage laterally with a floured knife into sections.",
+                                            "Roll each section until its length is thrice its diameter.",
+                                            "Place on a floured tray.",
+                                            "To poach: Gently tilt the balls into a saucepan of boiling, salted water. Cover and keep on the side of the fire until the balls rise to the surface. Remove with a skimmer and place in cold water to cool. Drain on a cloth."
+                                        ],
+                                        "2. To Mould Quenelles with a Spoon": [
+                                            "Butter a sautépan or tray and let the butter cool.",
+                                            "Use two coffee-spoons. Keep one in hot water.",
+                                            "With the other spoon, take up enough forcemeat to fill it.",
+                                            "Use the hot, wet spoon to smooth the top surface and then scoop the quenelle out, placing it on the buttered tray. The quenelle will be shaped like a large olive.",
+                                            "To poach: Pour enough boiling, salted water over the quenelles to cover them. Leave them to poach until they have swollen and seem soft and firm. Drain and use immediately or cool as previously described."
+                                        ],
+                                        "3. To Form Quenelles with a Piping-bag": [
+                                            "This is recommended for small, fine soup garnishes. Butter a tray or sautépan.",
+                                            "Put the forcemeat into a piping bag fitted with a grooved or smooth pipe of the desired size.",
+                                            "Squeeze out the quenelles onto the tray, laying them very closely.",
+                                            "To poach: Poach in the same way as spoon-moulded ones.",
+                                            "To poach Godiveau quenelles: Pipe onto fine, buttered paper on a buttered tray. Push into a very moderate oven for a few minutes until a thin dew of grease glistens on their surfaces. Remove from oven, overturn the tray onto a marble slab, and when nearly cold, carefully remove the paper."
+                                        ],
+                                        "4. To Mould Forcemeat with the Fingers": [
+                                            "Place a saucepan three-quarters full of boiling, salted water on the edge of a table.",
+                                            "Tie a 2 lb (907 g) weight to a one-yard doubled string, creating a loop. Place the loop around the saucepan handle and draw the string diametrically across the opening, letting the weight pull it taut.",
+                                            "With the left hand, take some forcemeat. With the right index finger, remove a portion from the spoon.",
+                                            "Scrape the finger across the taut string, letting the ball of forcemeat fall into the boiling water.",
+                                            "When all stuffing is moulded, place the saucepan on the fire to complete poaching as in the preceding methods."
+                                        ]
+                                    }
+                                ]
                             ]
                         }
                     ]

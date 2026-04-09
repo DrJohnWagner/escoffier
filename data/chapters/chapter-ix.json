@@ -52,12 +52,14 @@
                     "title": "DUCHESSE POTATOES",
                     "type": "technique",
                     "introduction": "These are the same as the croquettes, though they are differently treated. (Recipe 219)",
-                    "instructions": [
-                        "Prepare the potato paste as for croquettes. (Recipe 219)",
-                        "Shape the paste on a floured board into diminutive cottage-loaves, little shuttle-shaped loaves, small quoits, lozenges, or rectangles.",
-                        "Gild with beaten egg.",
-                        "If shaped as quoits, rectangles, or lozenges, streak them with a small knife to prevent the gilding from blistering.",
-                        "Bake in the oven for a few minutes before using them to dress the dishes they accompany."
+                    "notes": [
+                        [
+                            "Prepare the potato paste as for croquettes. (Recipe 219)",
+                            "Shape the paste on a floured board into diminutive cottage-loaves, little shuttle-shaped loaves, small quoits, lozenges, or rectangles.",
+                            "Gild with beaten egg.",
+                            "If shaped as quoits, rectangles, or lozenges, streak them with a small knife to prevent the gilding from blistering.",
+                            "Bake in the oven for a few minutes before using them to dress the dishes they accompany."
+                        ]
                     ]
                 },
                 {

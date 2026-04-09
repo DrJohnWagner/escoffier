@@ -16,6 +16,11 @@ interface FoundIdentifier {
  * @returns An array of FoundIdentifier objects if a valid pattern is found, otherwise null.
  */
 function extractEntryIdentifiers(str: string): FoundIdentifier[] | null {
+    // Defensive check: ensure str is a string
+    if (typeof str !== "string") {
+        return null
+    }
+
     // Step 1: Define a regex to find the entire valid "Recipe..." list.
     // This is more robust as it validates the list structure in one go.
     // It looks for "Recipe", a space, one identifier, and then zero or more

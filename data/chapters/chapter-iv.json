@@ -364,8 +364,10 @@
                             "number": 137,
                             "title": "OXFORD SAUCE",
                             "type": "technique",
-                            "instructions": [
-                                "Make a Cumberland sauce, with the difference that the Julienne of orange and lemon rinds should be replaced by rasped or finely-chopped rinds, and that the quantities of same should be less, i.e., two-thirds of a teaspoonful (3.3 ml) of each. (Recipe 134)"
+                            "notes": [
+                                [
+                                    "Make a Cumberland sauce, with the difference that the Julienne of orange and lemon rinds should be replaced by rasped or finely-chopped rinds, and that the quantities of same should be less, i.e., two-thirds of a teaspoonful (3.3 ml) of each. (Recipe 134)"
+                                ]
                             ]
                         },
                         {
@@ -483,15 +485,13 @@
                         "Available remains of shell-fish (e.g., lobster, crayfish shells)",
                         "Butter (equal weight to shell-fish remains)"
                     ],
-                    "instructions": [
+                    "notes": [
                         "Put any available remains of shell-fish onto a dish after having thoroughly emptied and well dried them in the oven.",
                         "Pound them until they form a fine powder.",
                         "Add their weight of butter.",
                         "Put the whole into a saucepan and melt in a bain-marie, stirring frequently.",
                         "When the butter is quite clarified, strain it through muslin, twisting the muslin over a tureen of iced-water in which the strained butter solidifies.",
-                        "Put the congealed butter in a towel, press it heavily to expel the water, and keep cool in a small bowl."
-                    ],
-                    "notes": [
+                        "Put the congealed butter in a towel, press it heavily to expel the water, and keep cool in a small bowl.",
                         "A very fine and decided red colour is obtained by using paprika as a condiment for sauces intended for poultry and certain butcher’s meats, in accordance with the procedure I recommend for the Hongroise. But only the very best quality should be used—that which is mild and at the same time produces a nice pink colour without entailing any excess of the condiment. Among the various kinds of paprika on the market I can highly recommend that of Messrs. Kotangi, which I have invariably found satisfactory."
                     ]
                 },
@@ -504,13 +504,15 @@
                         "2 lbs (907 g) spinach",
                         "Butter (half the weight of the resulting spinach solids)"
                     ],
-                    "instructions": [
-                        "Peel, wash, and thoroughly shake 2 lbs (907 g) of spinach to get rid of every drop of water.",
-                        "Pound it raw and then press it in a strong towel, twisting it to extract all the vegetable juice.",
-                        "Pour this juice into a sautépan, let it coagulate in a bain-marie.",
-                        "Pour the coagulated juice onto a serviette stretched over a bowl in order to drain away the water.",
-                        "Collect the remains of the colouring substance on the serviette using a palette-knife and put these into a mortar.",
-                        "Mix with half their weight of butter, strain through a sieve or tammy, and put aside to cool."
+                    "notes": [
+                        [
+                            "Peel, wash, and thoroughly shake 2 lbs (907 g) of spinach to get rid of every drop of water.",
+                            "Pound it raw and then press it in a strong towel, twisting it to extract all the vegetable juice.",
+                            "Pour this juice into a sautépan, let it coagulate in a bain-marie.",
+                            "Pour the coagulated juice onto a serviette stretched over a bowl in order to drain away the water.",
+                            "Collect the remains of the colouring substance on the serviette using a palette-knife and put these into a mortar.",
+                            "Mix with half their weight of butter, strain through a sieve or tammy, and put aside to cool."
+                        ]
                     ]
                 },
                 {
@@ -524,11 +526,13 @@
                         "Creamy parts and spawn of common and spiny lobsters",
                         "0.25 pint (118 ml) rich cream per 1 lb (454 g) of remains"
                     ],
-                    "instructions": [
-                        "Finely pound shrimp and crayfish shells.",
-                        "Combine with these the available creamy parts and spawn of the common and spiny lobsters.",
-                        "Add 0.25 pint (118 ml) of rich cream per 1 lb (454 g) of the above remains.",
-                        "Strain, first through a fine sieve and then through a tammy."
+                    "notes": [
+                        [
+                            "Finely pound shrimp and crayfish shells.",
+                            "Combine with these the available creamy parts and spawn of the common and spiny lobsters.",
+                            "Add 0.25 pint (118 ml) of rich cream per 1 lb (454 g) of the above remains.",
+                            "Strain, first through a fine sieve and then through a tammy."
+                        ]
                     ]
                 },
                 {
@@ -627,10 +631,8 @@
                         "4 oz (113 g) butter",
                         "3 oz (85 g) sifted flour"
                     ],
-                    "instructions": [
-                        "Mix the butter and sifted flour until perfectly combined."
-                    ],
                     "notes": [
+                        "Mix the butter and sifted flour until perfectly combined.",
                         "The sauce to which manied butter has been added should not boil if this can possibly be avoided, as it would thereby acquire a very disagreeable taste of raw flour."
                     ]
                 },
@@ -650,10 +652,12 @@
                         "Lemon-juice",
                         "Concassed parsley"
                     ],
-                    "instructions": [
-                        "Put the necessary quantity of butter into a frying-pan and cook it gently until it has acquired a golden tint and exudes a slight smell of nut.",
-                        "Add a few drops of lemon-juice.",
-                        "Pour on the fish under treatment, which should have been previously sprinkled with concassed parsley."
+                    "notes": [
+                        [
+                            "Put the necessary quantity of butter into a frying-pan and cook it gently until it has acquired a golden tint and exudes a slight smell of nut.",
+                            "Add a few drops of lemon-juice.",
+                            "Pour on the fish under treatment, which should have been previously sprinkled with concassed parsley."
+                        ]
                     ]
                 },
                 {
@@ -699,9 +703,11 @@
                         "Butter",
                         "Concassed parsley leaves"
                     ],
-                    "instructions": [
-                        "Put the necessary amount of butter into a frying-pan and cook it until it has assumed a brown colour and begins to smoke.",
-                        "At this moment, add a large pinch of concassed parsley leaves and spread it immediately over the object to be treated."
+                    "notes": [
+                        [
+                            "Put the necessary amount of butter into a frying-pan and cook it until it has assumed a brown colour and begins to smoke.",
+                            "At this moment, add a large pinch of concassed parsley leaves and spread it immediately over the object to be treated."
+                        ]
                     ]
                 },
                 {
@@ -740,9 +746,11 @@
                     "title": "PRINTANIER BUTTER",
                     "type": "technique",
                     "introduction": "These butters are made from all early-season vegetables, such as carrots, French beans, peas, and asparagus heads.",
-                    "instructions": [
-                        "For green vegetables: Cook quickly in boiling, salted water, drain, dry, pound with their weight of butter, and rub through a tammy.",
-                        "For carrots: Mince and cook with consommé, sugar, and butter until the diluent is quite reduced. After cooling, they are pounded with their own weight of butter and rubbed through a tammy."
+                    "notes": [
+                        [
+                            "For green vegetables: Cook quickly in boiling, salted water, drain, dry, pound with their weight of butter, and rub through a tammy.",
+                            "For carrots: Mince and cook with consommé, sugar, and butter until the diluent is quite reduced. After cooling, they are pounded with their own weight of butter and rubbed through a tammy."
+                        ]
                     ]
                 }
             ]

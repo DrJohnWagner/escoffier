@@ -156,120 +156,102 @@
                     "number": 775,
                     "title": "DIVERS WAYS OF COOKING FISH",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "The divers ways of cooking fish are all derived from one or another of the following methods:—",
-                            "(1) Boiling in salted water, which may be applied equally well to large pieces and slices of fish. (2) Frying, particularly suited to small specimens and thin slices of larger ones. (3) Cooking in butter, otherwise “à la Meunière,” best suited to the same pieces as Recipe 2. (4) Poaching, with short moistening, especially suited to fillets or small specimens. (5) Braising, used particularly for large pieces. (6) Grilling, for small specimens and collops. (7) Cooking au Gratin, same as grilling."
-                        ]
+                    "instructions": [
+                        "The divers ways of cooking fish are all derived from one or another of the following methods:—",
+                        "(1) Boiling in salted water, which may be applied equally well to large pieces and slices of fish. (2) Frying, particularly suited to small specimens and thin slices of larger ones. (3) Cooking in butter, otherwise “à la Meunière,” best suited to the same pieces as Recipe 2. (4) Poaching, with short moistening, especially suited to fillets or small specimens. (5) Braising, used particularly for large pieces. (6) Grilling, for small specimens and collops. (7) Cooking au Gratin, same as grilling."
                     ]
                 },
                 {
                     "number": 776,
                     "title": "THE BOILING OF FISH IN SALTED WATER",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "The procedure changes according as to whether the fish is to be cooked whole or in slices. If whole, after having properly cleaned, washed, and trimmed it, lay it on the drainer of the utensil best suited to its shape; _i.e._, a fish-kettle. Cover it with water, salt it in the proportion of one-quarter oz. of salt per quart of water, cover the utensil, and bring the liquid to the boil. As soon as this is done skim and move the kettle to the side of the fire, where the cooking of the fish may be completed without boiling.",
-                            "If the fish is cut into slices, plunge these, which should never be cut too thin, into boiling salted water, and move the fish-kettle containing them to the side of the fire; complete their cooking slowly without allowing the water to boil.",
-                            "The object of this process is to concentrate, inside the fish, all the juices contained in its flesh, whereof a large portion escapes when the cut fish is plunged in cold water gradually brought to the boil. If this method is not applied to large fish, cooked whole, the reason is that the sudden immersion of these in boiling water would cause such a shrinking of their flesh that they would burst and thereby be spoiled.",
-                            "In the case of certain kinds of fish, such as Turbot and Brill, milk is added to the water in the proportion of one-eighth of the latter, the object being to increase the whiteness of the fish.",
-                            "For the various kinds of Salmon and Trout, the _court-bouillon_ (Recipe 163) is used in the place of salted water, but the general working process remains the same.",
-                            "The boiled fish is dished on a napkin and drainer; it is garnished with fresh parsley; and the sauce announced on the menu, together with some plain-boiled and floury potatoes, is sent to the table separately."
-                        ]
+                    "instructions": [
+                        "The procedure changes according as to whether the fish is to be cooked whole or in slices. If whole, after having properly cleaned, washed, and trimmed it, lay it on the drainer of the utensil best suited to its shape; _i.e._, a fish-kettle. Cover it with water, salt it in the proportion of one-quarter oz. of salt per quart of water, cover the utensil, and bring the liquid to the boil. As soon as this is done skim and move the kettle to the side of the fire, where the cooking of the fish may be completed without boiling.",
+                        "If the fish is cut into slices, plunge these, which should never be cut too thin, into boiling salted water, and move the fish-kettle containing them to the side of the fire; complete their cooking slowly without allowing the water to boil.",
+                        "The object of this process is to concentrate, inside the fish, all the juices contained in its flesh, whereof a large portion escapes when the cut fish is plunged in cold water gradually brought to the boil. If this method is not applied to large fish, cooked whole, the reason is that the sudden immersion of these in boiling water would cause such a shrinking of their flesh that they would burst and thereby be spoiled.",
+                        "In the case of certain kinds of fish, such as Turbot and Brill, milk is added to the water in the proportion of one-eighth of the latter, the object being to increase the whiteness of the fish.",
+                        "For the various kinds of Salmon and Trout, the _court-bouillon_ (Recipe 163) is used in the place of salted water, but the general working process remains the same.",
+                        "The boiled fish is dished on a napkin and drainer; it is garnished with fresh parsley; and the sauce announced on the menu, together with some plain-boiled and floury potatoes, is sent to the table separately."
                     ]
                 },
                 {
                     "number": 777,
                     "title": "THE FRYING OF FISH",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "In Part I. of this work I explained the general theory of frying (Chapter X., Recipe 262); I shall now, therefore, only concern myself with the details of the operation in its relation to fish.",
-                            "As a rule, frying should never be resorted to for very large fish or very thick slices of the latter, for, owing to the very high temperature that the operation enjoins, the outside of the fish would be dried up before the inside had even become affected.",
-                            "If the fish to be fried is somewhat thick, it is best to cut several gashes in it, lengthwise and across, these being deeper and closer together the thicker the fish may be. The object of this measure is to facilitate the cooking, but the measure itself is quite unnecessary when dealing with small fish. In the case of flat-fish, partly detach the two underlying fillets on either side of the back-bone instead of gashing them.",
-                            "All fish intended for frying (except _Blanchailles_ and Whitebait) should first be steeped in salted milk, then rolled in flour before being plunged into the hot fat. If they be “_panés à l’anglaise_,” however, as they generally are in England, the milk may be dispensed with, in which case, after they have been lightly coated with flour, they are completely dipped in an _anglaise_ (Recipe 174) and afterwards rolled in white bread-crumbs. They should then be patted with the blade of a knife so as to ensure the cohesion of the whole coating, and, finally, the latter should be criss-crossed with the back of a knife with the view of improving the appearance when fried.",
-                            "Fried fish are served either on a napkin, on a drainer, or on special dish-papers. They are garnished with fried parsley and properly trimmed half-lemons."
-                        ]
+                    "instructions": [
+                        "In Part I. of this work I explained the general theory of frying (Chapter X., Recipe 262); I shall now, therefore, only concern myself with the details of the operation in its relation to fish.",
+                        "As a rule, frying should never be resorted to for very large fish or very thick slices of the latter, for, owing to the very high temperature that the operation enjoins, the outside of the fish would be dried up before the inside had even become affected.",
+                        "If the fish to be fried is somewhat thick, it is best to cut several gashes in it, lengthwise and across, these being deeper and closer together the thicker the fish may be. The object of this measure is to facilitate the cooking, but the measure itself is quite unnecessary when dealing with small fish. In the case of flat-fish, partly detach the two underlying fillets on either side of the back-bone instead of gashing them.",
+                        "All fish intended for frying (except _Blanchailles_ and Whitebait) should first be steeped in salted milk, then rolled in flour before being plunged into the hot fat. If they be “_panés à l’anglaise_,” however, as they generally are in England, the milk may be dispensed with, in which case, after they have been lightly coated with flour, they are completely dipped in an _anglaise_ (Recipe 174) and afterwards rolled in white bread-crumbs. They should then be patted with the blade of a knife so as to ensure the cohesion of the whole coating, and, finally, the latter should be criss-crossed with the back of a knife with the view of improving the appearance when fried.",
+                        "Fried fish are served either on a napkin, on a drainer, or on special dish-papers. They are garnished with fried parsley and properly trimmed half-lemons."
                     ]
                 },
                 {
                     "number": 778,
                     "title": "THE COOKING OF FISH A LA MEUNIÈRE",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "This excellent mode of procedure is only suited to small fish or the slices of larger ones. Nevertheless, it may be resorted to for chicken-turbots, provided their weight do not exceed four lbs.",
-                            "The operation consists in cooking the fish (or slices or fillets of fish) in the frying-pan with very hot butter, after having seasoned them and sprinkled them with flour. If the fish are very small, ordinary butter is used; if, on the other hand, they are large, the procedure demands clarified butter. When the fish is sufficiently coloured on one side, it is turned over for the completion of the operation. This done, it is transferred, by means of a spatula, to a hot dish, whereon, after having been salted, it is sent to the table.",
-                            "It may be served as it is with a garnish of trimmed half-lemons.",
-                            "Fish prepared in this way are termed “dorés” (_gilded_), “Soles dorés,” “Turbotins dorés,” &c., in order to distinguish them from those prepared à la Meunière.",
-                            "If the fish is announced “à la Meunière,” a few drops of lemon should be sprinkled upon it; it should be seasoned with salt and pepper, and garnished with _concassed_, scalded parsley. At the last moment a piece of butter, in proportion to the size of the fish, is put in the frying-pan, and is heated until it begins to brown slightly. This is poured over the fish immediately, and the latter is sent to the table at once while still covered by the froth resulting from the contact of the butter with the parsley."
-                        ]
+                    "instructions": [
+                        "This excellent mode of procedure is only suited to small fish or the slices of larger ones. Nevertheless, it may be resorted to for chicken-turbots, provided their weight do not exceed four lbs.",
+                        "The operation consists in cooking the fish (or slices or fillets of fish) in the frying-pan with very hot butter, after having seasoned them and sprinkled them with flour. If the fish are very small, ordinary butter is used; if, on the other hand, they are large, the procedure demands clarified butter. When the fish is sufficiently coloured on one side, it is turned over for the completion of the operation. This done, it is transferred, by means of a spatula, to a hot dish, whereon, after having been salted, it is sent to the table.",
+                        "It may be served as it is with a garnish of trimmed half-lemons.",
+                        "Fish prepared in this way are termed “dorés” (_gilded_), “Soles dorés,” “Turbotins dorés,” &c., in order to distinguish them from those prepared à la Meunière.",
+                        "If the fish is announced “à la Meunière,” a few drops of lemon should be sprinkled upon it; it should be seasoned with salt and pepper, and garnished with _concassed_, scalded parsley. At the last moment a piece of butter, in proportion to the size of the fish, is put in the frying-pan, and is heated until it begins to brown slightly. This is poured over the fish immediately, and the latter is sent to the table at once while still covered by the froth resulting from the contact of the butter with the parsley."
                     ]
                 },
                 {
                     "number": 779,
                     "title": "THE POACHING OF FISH",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "This method is best suited to sole, chicken-turbots, and brill, as well as to the fillets of various fish.",
-                            "Having laid the fish to be poached in a baking-tray or a sautépan, either of which should have been previously buttered, season it moderately with salt and moisten with a little very white fish or mushroom _fumet_; very often the two latter are mixed. Cover the utensil, push it into a moderate oven, and baste from time to time, especially when a large fish is cooking. When the fish is done, drain it carefully, place it on a dish, and, as a rule, reduce the poaching-liquor and add it to the sauce. Poached fish are always served sauced; _i.e._, covered with the sauce which properly forms their accompaniment. More often than not they are garnished after the manner which will be described later.",
-                            "I most emphatically urge: (1) the use of very little fish _fumet_ for the poaching, but this _fumet_ should be perfect and should, above all, not be cooked for longer than the required time; (2) that the fish be not covered with buttered paper as is often done, for nowadays a suitable paper is very rarely found. All papers found on the market are, owing to the chemical products used in their manufacture, liable to impart a more or less pungent smell to the objects they enclose, which in either degree would prove seriously prejudicial to the preparation.",
-                            "These remarks not only apply to fish, but to all those objects with which paper was formerly used at some stage in their cooking process."
-                        ]
+                    "instructions": [
+                        "This method is best suited to sole, chicken-turbots, and brill, as well as to the fillets of various fish.",
+                        "Having laid the fish to be poached in a baking-tray or a sautépan, either of which should have been previously buttered, season it moderately with salt and moisten with a little very white fish or mushroom _fumet_; very often the two latter are mixed. Cover the utensil, push it into a moderate oven, and baste from time to time, especially when a large fish is cooking. When the fish is done, drain it carefully, place it on a dish, and, as a rule, reduce the poaching-liquor and add it to the sauce. Poached fish are always served sauced; _i.e._, covered with the sauce which properly forms their accompaniment. More often than not they are garnished after the manner which will be described later.",
+                        "I most emphatically urge: (1) the use of very little fish _fumet_ for the poaching, but this _fumet_ should be perfect and should, above all, not be cooked for longer than the required time; (2) that the fish be not covered with buttered paper as is often done, for nowadays a suitable paper is very rarely found. All papers found on the market are, owing to the chemical products used in their manufacture, liable to impart a more or less pungent smell to the objects they enclose, which in either degree would prove seriously prejudicial to the preparation.",
+                        "These remarks not only apply to fish, but to all those objects with which paper was formerly used at some stage in their cooking process."
                     ]
                 },
                 {
                     "number": 780,
                     "title": "THE BRAISING OF FISH",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "This method is generally applied to whole or sliced salmon, to trout, and to chicken-turbot. Sometimes the fish treated in this way is larded on one side with strips of bacon-fat, truffles, gherkins, or carrots. The mode of procedure is exactly the same as that described under the “Braising of White Meats” (Recipe 248). Moisten these braisings in the proportion of one-half with white wine or red wine (according as to how the fish is to be served), and for the other half use a light fish _fumet_. Place the fish on the drainer of a fish-kettle just large enough to hold the former, and moisten in such wise that the cooking-liquor at the beginning of the operation does not cover more than three-quarters of the depth of the fish. Unless it be for a Lenten dish, the fish may be covered with slices of bacon while cooking. In any case, baste it often. Take care not to close the lid down too tightly, in order that the liquor may be reduced simultaneously with the cooking of the fish.",
-                            "When the operation is almost completed, take the lid off the fish-kettle with the view of glazing the fish; then take the former off the fire. Now withdraw the drainer with the fish upon it, and lay it athwart the top of the fish-kettle, and let it drain; tilt the fish on to a dish, and cover the latter pending its despatch to the table. Strain the stock remaining in the fish-kettle through a strainer; let it stand for ten minutes, remove all the grease that has formed on its surface, and use it to complete the sauce as I directed above.",
-                            "Braised fish are generally accompanied by a garnish, the constituents of which I shall give in the particular recipes relating to braising."
-                        ]
+                    "instructions": [
+                        "This method is generally applied to whole or sliced salmon, to trout, and to chicken-turbot. Sometimes the fish treated in this way is larded on one side with strips of bacon-fat, truffles, gherkins, or carrots. The mode of procedure is exactly the same as that described under the “Braising of White Meats” (Recipe 248). Moisten these braisings in the proportion of one-half with white wine or red wine (according as to how the fish is to be served), and for the other half use a light fish _fumet_. Place the fish on the drainer of a fish-kettle just large enough to hold the former, and moisten in such wise that the cooking-liquor at the beginning of the operation does not cover more than three-quarters of the depth of the fish. Unless it be for a Lenten dish, the fish may be covered with slices of bacon while cooking. In any case, baste it often. Take care not to close the lid down too tightly, in order that the liquor may be reduced simultaneously with the cooking of the fish.",
+                        "When the operation is almost completed, take the lid off the fish-kettle with the view of glazing the fish; then take the former off the fire. Now withdraw the drainer with the fish upon it, and lay it athwart the top of the fish-kettle, and let it drain; tilt the fish on to a dish, and cover the latter pending its despatch to the table. Strain the stock remaining in the fish-kettle through a strainer; let it stand for ten minutes, remove all the grease that has formed on its surface, and use it to complete the sauce as I directed above.",
+                        "Braised fish are generally accompanied by a garnish, the constituents of which I shall give in the particular recipes relating to braising."
                     ]
                 },
                 {
                     "number": 781,
                     "title": "THE GRILLING OF FISH",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "This method is best suited to small fish, to medium-sized chicken-turbots, and to large-sectioned fish.",
-                            "Unless they are very small, it is best to gash both sides of fish intended for grilling; the reasons given above for this measure likewise apply here.",
-                            "All white and naturally dry fish should be rolled in flour and besprinkled with butter or very good oil before being placed on the grill to be exposed to the heat of the fire. The flour forms a crust around the fish, which keeps it from drying and gives it that golden colour quite peculiar to objects thus treated.",
-                            "Salmon, trout, red mullet, mackerel, and herrings, the flesh whereof is fatty, need not be floured, but only besprinkled with melted butter.",
-                            "Owing to the somewhat fragile texture of most fish, a special double gridiron is used, by means of which they may be turned without fear of damage. This gridiron is placed upon the ordinary grill. I have already given in Part I. of this work the radical principles of grilling (Nos. 257 and 260); to this, therefore, the reader is begged to refer.",
-                            "Grilled fish are served on a very hot dish, without paper or a napkin; they are garnished with fresh parsley and grooved slices of lemon.",
-                            "Butter à la Maître d’Hôtel, anchovy butter, devilled sauce, Roberts’ sauce Escoffier, and butter à la Ravigote constitute the best adjuncts to grilled fish."
-                        ]
+                    "instructions": [
+                        "This method is best suited to small fish, to medium-sized chicken-turbots, and to large-sectioned fish.",
+                        "Unless they are very small, it is best to gash both sides of fish intended for grilling; the reasons given above for this measure likewise apply here.",
+                        "All white and naturally dry fish should be rolled in flour and besprinkled with butter or very good oil before being placed on the grill to be exposed to the heat of the fire. The flour forms a crust around the fish, which keeps it from drying and gives it that golden colour quite peculiar to objects thus treated.",
+                        "Salmon, trout, red mullet, mackerel, and herrings, the flesh whereof is fatty, need not be floured, but only besprinkled with melted butter.",
+                        "Owing to the somewhat fragile texture of most fish, a special double gridiron is used, by means of which they may be turned without fear of damage. This gridiron is placed upon the ordinary grill. I have already given in Part I. of this work the radical principles of grilling (Nos. 257 and 260); to this, therefore, the reader is begged to refer.",
+                        "Grilled fish are served on a very hot dish, without paper or a napkin; they are garnished with fresh parsley and grooved slices of lemon.",
+                        "Butter à la Maître d’Hôtel, anchovy butter, devilled sauce, Roberts’ sauce Escoffier, and butter à la Ravigote constitute the best adjuncts to grilled fish."
                     ]
                 },
                 {
                     "number": 782,
                     "title": "THE COOKING OF FISH AU GRATIN",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "I described all the details of this method under Complete Gratin (Recipe 269), to which I must ask the reader to refer. This process is best suited to small fish, such as sole, whiting, red mullet, chicken-turbot, &c."
-                        ]
+                    "instructions": [
+                        "I described all the details of this method under Complete Gratin (Recipe 269), to which I must ask the reader to refer. This process is best suited to small fish, such as sole, whiting, red mullet, chicken-turbot, &c."
                     ]
                 },
                 {
                     "number": 783,
                     "title": "THE CRIMPING OF FISH",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "Crimped fish is quite an English speciality. This method of preparation is applied more particularly to salmon, fresh cod, haddock, and skate. The first three of these fish may be prepared whole or in slices, while skate is always cut into more or less large pieces after it has been skinned on both sides.",
-                            "In order to crimp a whole fish, it should be taken as it leaves the water. Lay it on something flat, and make deep lateral gashes on both its sides from head to tail. Allow a space of about one and one-half inches to two inches between each gash. This done, put the fish to soak in very cold water for an hour or so. When the fish is to be cooked sliced, divide it up as soon as it is caught, and put the slices to soak in very cold water, as in the case of the whole fish.",
-                            "But does this barbarous method, which stiffens and contracts the flesh of the fish, affect its quality so materially as connoisseurs would have us believe?",
-                            "It is very difficult to say, and opinions on the matter are divided. This, however, is certain, that fish prepared in the way above described is greatly relished by many.",
-                            "Whether whole or sliced, crimped fish is always boiled in salted water. Its cooking presents a real difficulty, in that it must be stopped at the precise moment when it is completed, any delay in this respect proving prejudicial to the quality of the dish.",
-                            "Crimped fish is served like the boiled kind, and all the sauces suited to the latter likewise obtain with the former. Besides the selected sauce, send a sauceboat to the table containing some of the cooking-liquor of the fish."
-                        ]
+                    "instructions": [
+                        "Crimped fish is quite an English speciality. This method of preparation is applied more particularly to salmon, fresh cod, haddock, and skate. The first three of these fish may be prepared whole or in slices, while skate is always cut into more or less large pieces after it has been skinned on both sides.",
+                        "In order to crimp a whole fish, it should be taken as it leaves the water. Lay it on something flat, and make deep lateral gashes on both its sides from head to tail. Allow a space of about one and one-half inches to two inches between each gash. This done, put the fish to soak in very cold water for an hour or so. When the fish is to be cooked sliced, divide it up as soon as it is caught, and put the slices to soak in very cold water, as in the case of the whole fish.",
+                        "But does this barbarous method, which stiffens and contracts the flesh of the fish, affect its quality so materially as connoisseurs would have us believe?",
+                        "It is very difficult to say, and opinions on the matter are divided. This, however, is certain, that fish prepared in the way above described is greatly relished by many.",
+                        "Whether whole or sliced, crimped fish is always boiled in salted water. Its cooking presents a real difficulty, in that it must be stopped at the precise moment when it is completed, any delay in this respect proving prejudicial to the quality of the dish.",
+                        "Crimped fish is served like the boiled kind, and all the sauces suited to the latter likewise obtain with the former. Besides the selected sauce, send a sauceboat to the table containing some of the cooking-liquor of the fish."
                     ]
                 }
             ]
@@ -447,10 +429,8 @@
                             "number": 797,
                             "title": "MOUSSELINE DE SAUMON",
                             "type": "technique",
-                            "notes": [
-                                [
-                                    "In Part I. I dealt with the preparation of _mousseline_ forcemeat (Recipe 195), and also the method of poaching spoon-moulded quenelles (Recipe 205). Now _mousselines_ are only large quenelles which derive their name from the very light forcemeat of which they are composed. These _mousseline_ quenelles are always moulded with the ordinary tablespoon, they are garnished on top with a fine, raw slice of the fish under treatment, and poached after the manner already described."
-                                ]
+                            "instructions": [
+                                "In Part I. I dealt with the preparation of _mousseline_ forcemeat (Recipe 195), and also the method of poaching spoon-moulded quenelles (Recipe 205). Now _mousselines_ are only large quenelles which derive their name from the very light forcemeat of which they are composed. These _mousseline_ quenelles are always moulded with the ordinary tablespoon, they are garnished on top with a fine, raw slice of the fish under treatment, and poached after the manner already described."
                             ]
                         },
                         {
@@ -481,15 +461,13 @@
                             "number": 800,
                             "title": "COLD SALMON",
                             "type": "technique",
-                            "notes": [
-                                [
-                                    "When salmon is to be served cold it should, as far as possible, be cooked, either whole or in large pieces, in the _court-bouillon_ given under Recipe 163 and cooled in the latter. Pieces cooked separately may seem better or may be more easily made to look sightly, but their meat is drier than that of the salmon cooked whole. And what is lost in appearance with the very large pieces is more than compensated for by their extra quality.",
-                                    "In dishing cold salmon the skin may be removed and the fillets bared, so that the fish may be more easily decorated, but the real gourmet will always prefer the salmon served in its natural silver vestment.",
-                                    "In decorating cold salmon use pieces of cucumber, anchovy fillets, capers, slices of tomato, curled-leaf parsley, &c.",
-                                    "I am not partial to the decorating of salmon with softened butter, coloured or not, laid on by means of the piping-bag. Apart from the fact that this method of decoration is rarely artistic, the butter used combines badly with the cold sauces and the meat of the salmon on the diner’s plate. Very green tarragon leaves, chervil, lobster coral, &c., afford a more natural and more delicate means of ornamentation. The only butter fit to be served with cold salmon is Montpellier butter (Recipe 153), though this, in fact, is but a cold sauce often resorted to for the coating of the cold fish in question.",
-                                    "Among the garnishes which suit cold salmon, I might mention small peeled, and emptied tomatoes garnished with some kind of salad; hard-boiled eggs, either wholly stuffed, or stuffed in halves or in quarters, _barquettes_, tartlets and _cassolettes_ made from cucumber or beetroot, parboiled until almost completely cooked and garnished with a purée of tunny, of sardines, of anchovies, &c.; small aspics of shrimps or of crayfishes’ tails; small slices of lobster, &c.",
-                                    "Almost all the cold sauces may accompany cold salmon."
-                                ]
+                            "instructions": [
+                                "When salmon is to be served cold it should, as far as possible, be cooked, either whole or in large pieces, in the _court-bouillon_ given under Recipe 163 and cooled in the latter. Pieces cooked separately may seem better or may be more easily made to look sightly, but their meat is drier than that of the salmon cooked whole. And what is lost in appearance with the very large pieces is more than compensated for by their extra quality.",
+                                "In dishing cold salmon the skin may be removed and the fillets bared, so that the fish may be more easily decorated, but the real gourmet will always prefer the salmon served in its natural silver vestment.",
+                                "In decorating cold salmon use pieces of cucumber, anchovy fillets, capers, slices of tomato, curled-leaf parsley, &c.",
+                                "I am not partial to the decorating of salmon with softened butter, coloured or not, laid on by means of the piping-bag. Apart from the fact that this method of decoration is rarely artistic, the butter used combines badly with the cold sauces and the meat of the salmon on the diner’s plate. Very green tarragon leaves, chervil, lobster coral, &c., afford a more natural and more delicate means of ornamentation. The only butter fit to be served with cold salmon is Montpellier butter (Recipe 153), though this, in fact, is but a cold sauce often resorted to for the coating of the cold fish in question.",
+                                "Among the garnishes which suit cold salmon, I might mention small peeled, and emptied tomatoes garnished with some kind of salad; hard-boiled eggs, either wholly stuffed, or stuffed in halves or in quarters, _barquettes_, tartlets and _cassolettes_ made from cucumber or beetroot, parboiled until almost completely cooked and garnished with a purée of tunny, of sardines, of anchovies, &c.; small aspics of shrimps or of crayfishes’ tails; small slices of lobster, &c.",
+                                "Almost all the cold sauces may accompany cold salmon."
                             ]
                         },
                         {
@@ -624,12 +602,10 @@
                     "number": 811,
                     "title": "TRUITE SAUMONÉE (Salmon Trout)",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "In its many preparations, salmon-trout may be replaced by salmon, and all the recipes relating to the former may be adapted to the latter.",
-                            "In any case, however, as its size is less than that of salmon, it is very rarely cut into darnes, being more generally served whole.",
-                            "The few recipes that follow are proper to salmon-trout."
-                        ]
+                    "instructions": [
+                        "In its many preparations, salmon-trout may be replaced by salmon, and all the recipes relating to the former may be adapted to the latter.",
+                        "In any case, however, as its size is less than that of salmon, it is very rarely cut into darnes, being more generally served whole.",
+                        "The few recipes that follow are proper to salmon-trout."
                     ]
                 },
                 {
@@ -709,12 +685,10 @@
                     "number": 816,
                     "title": "FRESH-WATER TROUT",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "The best are those procured in mountainous districts, where the clear water they inhabit is constantly refreshed by strong currents.",
-                            "The two leading methods of preparing them are called, respectively, “Au bleu” and “à la Meunière.” Having already described the latter, I shall now give my attention to “Truite au bleu.”",
-                            "This preparation is held in very high esteem in Switzerland and Germany, where fresh-water trout are not only plentiful, but of excellent quality."
-                        ]
+                    "instructions": [
+                        "The best are those procured in mountainous districts, where the clear water they inhabit is constantly refreshed by strong currents.",
+                        "The two leading methods of preparing them are called, respectively, “Au bleu” and “à la Meunière.” Having already described the latter, I shall now give my attention to “Truite au bleu.”",
+                        "This preparation is held in very high esteem in Switzerland and Germany, where fresh-water trout are not only plentiful, but of excellent quality."
                     ]
                 },
                 {
@@ -931,10 +905,8 @@
                     "number": 835,
                     "title": "Remarks concerning “SOLES AUX GRANDS VINS”",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "Taking recipe Recipe 834 as a model, and putting into requisition all the good wines of Burgundy and Bordeaux, the following varieties are obtained, viz.:—Soles au Volnay, au Pommard, au Romanée, au Clos-Vougeot, or soles au Saint-Estèphe, au Château-Larose, au Saint-Émilion, &c., &c."
-                        ]
+                    "instructions": [
+                        "Taking recipe Recipe 834 as a model, and putting into requisition all the good wines of Burgundy and Bordeaux, the following varieties are obtained, viz.:—Soles au Volnay, au Pommard, au Romanée, au Clos-Vougeot, or soles au Saint-Estèphe, au Château-Larose, au Saint-Émilion, &c., &c."
                     ]
                 },
                 {
@@ -1702,10 +1674,8 @@
                             "number": 906,
                             "title": "MOUSSELINES DE SOLES",
                             "type": "technique",
-                            "notes": [
-                                [
-                                    "The directions given under “_Mousselines de_ Saumon” (Recipe 797) apply in all circumstances to _Mousselines_ of Sole. I shall therefore refrain from repeating the recipe, since, the quantities remaining the same, all that is needed is the substitution of the meat of sole for that of salmon. Thus, I shall only state here, by way of reminding the reader, that these excellent preparations admit of all the fish sauces and garnishes, and that they may also be accompanied by all purées of fresh vegetables."
-                                ]
+                            "instructions": [
+                                "The directions given under “_Mousselines de_ Saumon” (Recipe 797) apply in all circumstances to _Mousselines_ of Sole. I shall therefore refrain from repeating the recipe, since, the quantities remaining the same, all that is needed is the substitution of the meat of sole for that of salmon. Thus, I shall only state here, by way of reminding the reader, that these excellent preparations admit of all the fish sauces and garnishes, and that they may also be accompanied by all purées of fresh vegetables."
                             ]
                         },
                         {
@@ -1803,15 +1773,13 @@
                             "number": 914,
                             "title": "The Preparation of PAUPIETTES OF FILLETS OF SOLE SALMON, &c.",
                             "type": "technique",
-                            "notes": [
-                                [
-                                    "The _paupiettes_ (or fillets rolled after the manner of a scroll) are served either as entrées like fillets of sole, of which they are but a special kind, or as a garnish. For the second purpose, not only should they be smaller than for the first, but very small fillets are generally selected for the preparation of the _paupiettes_.",
-                                    "In order to make _paupiettes_, first remove the nervous film from the outside surfaces of the fillets, and then slightly flatten the latter with the blade of a large knife; trim them on both sides, and coat them on their flayed side with a thin layer of fish forcemeat, truffled or not, in accordance with the requirements.",
-                                    "Now roll them into scroll-form; smooth the forcemeat that projects from the top end, and the _paupiettes_ are done.",
-                                    "Stand them upright in a buttered sautépan to poach, and take care to place them snugly together lest they lose their shape while the operation is in progress. Moisten them with sufficient fish _fumet_ (Recipe 11) to cover them; poach them in a moderate oven, and remember, as in the case of fillets of sole, not to let the poaching-liquor boil.",
-                                    "All the garnishes and sauces suited to fillets of sole likewise obtain with _paupiettes_, provided the difference in their shape be taken into account when dishing up.",
-                                    "For salmon _paupiettes_, cut slices two-thirds inch wide, one-half inch thick, and the length of a fillet of sole, from a skinned fillet of salmon. In view of the unusual fragility of salmon’s flesh, the slices of fillets should be carefully flattened in order to give them the width and thickness of a fillet of sole. This done, spread forcemeat on them, and roll them as explained above."
-                                ]
+                            "instructions": [
+                                "The _paupiettes_ (or fillets rolled after the manner of a scroll) are served either as entrées like fillets of sole, of which they are but a special kind, or as a garnish. For the second purpose, not only should they be smaller than for the first, but very small fillets are generally selected for the preparation of the _paupiettes_.",
+                                "In order to make _paupiettes_, first remove the nervous film from the outside surfaces of the fillets, and then slightly flatten the latter with the blade of a large knife; trim them on both sides, and coat them on their flayed side with a thin layer of fish forcemeat, truffled or not, in accordance with the requirements.",
+                                "Now roll them into scroll-form; smooth the forcemeat that projects from the top end, and the _paupiettes_ are done.",
+                                "Stand them upright in a buttered sautépan to poach, and take care to place them snugly together lest they lose their shape while the operation is in progress. Moisten them with sufficient fish _fumet_ (Recipe 11) to cover them; poach them in a moderate oven, and remember, as in the case of fillets of sole, not to let the poaching-liquor boil.",
+                                "All the garnishes and sauces suited to fillets of sole likewise obtain with _paupiettes_, provided the difference in their shape be taken into account when dishing up.",
+                                "For salmon _paupiettes_, cut slices two-thirds inch wide, one-half inch thick, and the length of a fillet of sole, from a skinned fillet of salmon. In view of the unusual fragility of salmon’s flesh, the slices of fillets should be carefully flattened in order to give them the width and thickness of a fillet of sole. This done, spread forcemeat on them, and roll them as explained above."
                             ]
                         }
                     ]
@@ -1911,47 +1879,39 @@
                             "number": 922,
                             "title": "FILETS DE SOLES FROIDS DRESSÉS SUR MOUSSES",
                             "type": "technique",
-                            "notes": [
-                                [
-                                    "What I pointed out above, I repeat here for the reader’s guidance—namely, that fillets of sole may be prepared after all the recipes given for trout (Recipe 813).",
-                                    "As the fillets of sole in this dish remain very conspicuous, it is advisable to keep them very white in the poaching. Set them to cool under a light weight, and decorate them in a way that will be in keeping with the _mousse_ on which they are dished. This _mousse_ is set on a special dish, as already explained, and the decorated fillets are laid upon it and covered with melted jelly.",
-                                    "For the variation of _mousses_, see the table given under Recipe 815."
-                                ]
+                            "instructions": [
+                                "What I pointed out above, I repeat here for the reader’s guidance—namely, that fillets of sole may be prepared after all the recipes given for trout (Recipe 813).",
+                                "As the fillets of sole in this dish remain very conspicuous, it is advisable to keep them very white in the poaching. Set them to cool under a light weight, and decorate them in a way that will be in keeping with the _mousse_ on which they are dished. This _mousse_ is set on a special dish, as already explained, and the decorated fillets are laid upon it and covered with melted jelly.",
+                                "For the variation of _mousses_, see the table given under Recipe 815."
                             ]
                         },
                         {
                             "number": 923,
                             "title": "TURBOT",
                             "type": "technique",
-                            "notes": [
-                                [
-                                    "Turbot is generally served boiled, accompanied by freshly cooked, floury potatoes, and the cases are exceptional when, cooked in this way, it is dished with any other garnish.",
-                                    "All fish sauces may be served with turbot. When, for the sake of variety, or in pursuance of the consumer’s wishes, turbot has to be braised or garnished, it is best to select a medium-sized fish, _i.e._, one weighing from eight to twelve lbs., thick, very fleshy, and white.",
-                                    "Unless expressly ordered, it is best to avoid surrounding the piece with its garnish. Preferably, send the latter to the table in a separate dish, as also the sauce. By this means the service is expedited, and, more important still, the fish is quite hot when it reaches the table. It is granted that the sight of a dish containing a fine, richly garnished and tastefully arranged piece is flattering to the host, but it would be a pity that the quality of the fish should thereby suffer, more particularly as the gourmet is not satisfied with sightliness alone.",
-                                    "I explained at the beginning of this chapter, under “Boiled Fish” (Recipe 776 and 779), the details relating to this method of cooking, especially with regard to its application to turbot. For the braising and garnishing of turbot, the reader is begged to refer to the recipes concerned with chicken-turbot. These recipes may be applied to turbot, provided the difference in the size of the fish be taken into account in reference to the time allowed for braising and the quantities of the garnishing ingredients."
-                                ]
+                            "instructions": [
+                                "Turbot is generally served boiled, accompanied by freshly cooked, floury potatoes, and the cases are exceptional when, cooked in this way, it is dished with any other garnish.",
+                                "All fish sauces may be served with turbot. When, for the sake of variety, or in pursuance of the consumer’s wishes, turbot has to be braised or garnished, it is best to select a medium-sized fish, _i.e._, one weighing from eight to twelve lbs., thick, very fleshy, and white.",
+                                "Unless expressly ordered, it is best to avoid surrounding the piece with its garnish. Preferably, send the latter to the table in a separate dish, as also the sauce. By this means the service is expedited, and, more important still, the fish is quite hot when it reaches the table. It is granted that the sight of a dish containing a fine, richly garnished and tastefully arranged piece is flattering to the host, but it would be a pity that the quality of the fish should thereby suffer, more particularly as the gourmet is not satisfied with sightliness alone.",
+                                "I explained at the beginning of this chapter, under “Boiled Fish” (Recipe 776 and 779), the details relating to this method of cooking, especially with regard to its application to turbot. For the braising and garnishing of turbot, the reader is begged to refer to the recipes concerned with chicken-turbot. These recipes may be applied to turbot, provided the difference in the size of the fish be taken into account in reference to the time allowed for braising and the quantities of the garnishing ingredients."
                             ]
                         },
                         {
                             "number": 924,
                             "title": "COLD TURBOT",
                             "type": "technique",
-                            "notes": [
-                                [
-                                    "Whether whole or sliced, cold turbot makes an excellent dish, if the fish have not been cooked too long beforehand. It will be found that turbot, especially when sliced, tends to harden, crumple, and lose its flavour while cooling. It is therefore of the greatest importance that the fish should have just cooled after cooking, and that the cooking-liquor should have barely time to set; otherwise the evil effects of cooling, mentioned above, will surely ensue. When served, just cooled, with one of the cold sauces suited to fish, turbot can vie in delicacy even with such fish as salmon or trout, which are usually served cold."
-                                ]
+                            "instructions": [
+                                "Whether whole or sliced, cold turbot makes an excellent dish, if the fish have not been cooked too long beforehand. It will be found that turbot, especially when sliced, tends to harden, crumple, and lose its flavour while cooling. It is therefore of the greatest importance that the fish should have just cooled after cooking, and that the cooking-liquor should have barely time to set; otherwise the evil effects of cooling, mentioned above, will surely ensue. When served, just cooled, with one of the cold sauces suited to fish, turbot can vie in delicacy even with such fish as salmon or trout, which are usually served cold."
                             ]
                         },
                         {
                             "number": 925,
                             "title": "TURBOTINS (CHICKEN-TURBOTS)",
                             "type": "technique",
-                            "notes": [
-                                [
-                                    "Turbotins (chicken-turbots) may rank among the most delicate and nicest of fish. Their varying sizes allow of their being served either for three, four, or ten, or twelve people; they are, moreover, tender and white, and they lend themselves to quite a vast number of culinary preparations.",
-                                    "They may be served boiled, like the turbot; grilled; à la Meunière; fried; _au gratin_, like the soles; or braised, like the salmon and the trout. They are most often served whole, garnished and with sauce; but, in order to simplify the process, they may be filleted, the fillets being poached and dished with a garnish and the selected sauce.",
-                                    "Whatever be the method of preparing the chicken-turbot, whether it be boiled, poached, or braised, the spine should always be cut in one or two places. The gash should be just in the middle of the back where the flesh is thickest, and the fillets on either side of the gash should be partly separated from the bone. The object of this measure is to prevent deformation during the cooking process and, also, to precipitate the latter."
-                                ]
+                            "instructions": [
+                                "Turbotins (chicken-turbots) may rank among the most delicate and nicest of fish. Their varying sizes allow of their being served either for three, four, or ten, or twelve people; they are, moreover, tender and white, and they lend themselves to quite a vast number of culinary preparations.",
+                                "They may be served boiled, like the turbot; grilled; à la Meunière; fried; _au gratin_, like the soles; or braised, like the salmon and the trout. They are most often served whole, garnished and with sauce; but, in order to simplify the process, they may be filleted, the fillets being poached and dished with a garnish and the selected sauce.",
+                                "Whatever be the method of preparing the chicken-turbot, whether it be boiled, poached, or braised, the spine should always be cut in one or two places. The gash should be just in the middle of the back where the flesh is thickest, and the fillets on either side of the gash should be partly separated from the bone. The object of this measure is to prevent deformation during the cooking process and, also, to precipitate the latter."
                             ]
                         },
                         {
@@ -2096,12 +2056,10 @@
                             "number": 938,
                             "title": "COLD CHICKEN-TURBOT",
                             "type": "technique",
-                            "notes": [
-                                [
-                                    "My remarks relative to cold turbot apply here with even greater force, for chicken-turbots are particularly well suited to cold dishing.",
-                                    "The chicken-turbots to be served cold should not be too small; the best for the purpose would be those weighing four lbs. or more.",
-                                    "In dismissing the subject I can but recommend cold chicken-turbot as a dish admitting of the most tasteful arrangement and decoration."
-                                ]
+                            "instructions": [
+                                "My remarks relative to cold turbot apply here with even greater force, for chicken-turbots are particularly well suited to cold dishing.",
+                                "The chicken-turbots to be served cold should not be too small; the best for the purpose would be those weighing four lbs. or more.",
+                                "In dismissing the subject I can but recommend cold chicken-turbot as a dish admitting of the most tasteful arrangement and decoration."
                             ]
                         }
                     ]
@@ -2270,15 +2228,13 @@
                             "number": 951,
                             "title": "MOUSSELINES DE HOMARD",
                             "type": "technique",
-                            "notes": [
-                                [
-                                    "In the matter of crustaceans, the term _mousse_ stands, as a rule, for a cold preparation, whereas the term _mousseline_ is only applied to warm dishes. The special _mousselines_ or quenelles of lobster are made with a _mousseline_ forcemeat, the recipe for which I gave under Recipe 195. This forcemeat is prepared with the raw meat of the lobster.",
-                                    "As with the other crustaceans, their meat produces forcemeat which is somewhat too flimsy to be spoon-moulded, and it is preferable to poach it in special well-buttered quenelle- or _dariole-moulds_.",
-                                    "_Mousselines_ are poached under cover in a moderate oven.",
-                                    "All the garnishes and sauces given in respect of salmon _mousselines_ may be applied here. The reader will therefore refer to:—",
-                                    "Mousselines de Saumon Alexandra (Recipe 798).",
-                                    "Mousselines de Saumon à la Tosca (Recipe 799)."
-                                ]
+                            "instructions": [
+                                "In the matter of crustaceans, the term _mousse_ stands, as a rule, for a cold preparation, whereas the term _mousseline_ is only applied to warm dishes. The special _mousselines_ or quenelles of lobster are made with a _mousseline_ forcemeat, the recipe for which I gave under Recipe 195. This forcemeat is prepared with the raw meat of the lobster.",
+                                "As with the other crustaceans, their meat produces forcemeat which is somewhat too flimsy to be spoon-moulded, and it is preferable to poach it in special well-buttered quenelle- or _dariole-moulds_.",
+                                "_Mousselines_ are poached under cover in a moderate oven.",
+                                "All the garnishes and sauces given in respect of salmon _mousselines_ may be applied here. The reader will therefore refer to:—",
+                                "Mousselines de Saumon Alexandra (Recipe 798).",
+                                "Mousselines de Saumon à la Tosca (Recipe 799)."
                             ]
                         },
                         {
@@ -2336,35 +2292,29 @@
                             "number": 956,
                             "title": "MOUSSE DE HOMARD",
                             "type": "technique",
-                            "notes": [
-                                [
-                                    "Cook the lobster in a few tablespoonfuls of previously-prepared fine _mirepoix_, one half-bottle of white wine, and a small glass of burnt brandy. Leave to cool in the cooking-liquor. Now split the lobster in two, with the view of withdrawing its meat. Finely pound the latter while adding thereto, little by little, one-third pint of cold fish velouté per lb. of meat. Rub through a sieve; put the resulting purée in a vegetable-pan lying on ice, and stir for a few minutes. This done, add a little good fish jelly, melted and cold, and one-third pint of barely-whipped cream. Taste; rectify the seasoning, and warm it slightly with cayenne."
-                                ]
+                            "instructions": [
+                                "Cook the lobster in a few tablespoonfuls of previously-prepared fine _mirepoix_, one half-bottle of white wine, and a small glass of burnt brandy. Leave to cool in the cooking-liquor. Now split the lobster in two, with the view of withdrawing its meat. Finely pound the latter while adding thereto, little by little, one-third pint of cold fish velouté per lb. of meat. Rub through a sieve; put the resulting purée in a vegetable-pan lying on ice, and stir for a few minutes. This done, add a little good fish jelly, melted and cold, and one-third pint of barely-whipped cream. Taste; rectify the seasoning, and warm it slightly with cayenne."
                             ]
                         },
                         {
                             "number": 957,
                             "title": "MOUSSE DE HOMARD MOULÉE",
                             "type": "technique",
-                            "notes": [
-                                [
-                                    "When the _mousse_ is intended for moulding, it is well to decorate and “clothe” the mould with fish jelly some time in advance. I have already explained that to “clothe” a mould with jelly, all that is needed is to pour therein a few tablespoonfuls of melted jelly, and then to rock the utensil on ice. By this means a thin even coating sets on the bottom and sides of the mould, which, when the moulding is turned out, swathes the latter in a transparent film.",
-                                    "This “clothing” of jelly may be made more or less thick, according to the requirements, by simply using more or less jelly, and by proportionately lengthening or shortening the time for rocking the mould.",
-                                    "When the mould is clothed, decorate the sides with large slices of very black truffle dipped in melted jelly, that they may stick.",
-                                    "This done, fill the receptacle with the prepared _mousse_ (see the preceding recipe), and leave to set in the cool.",
-                                    "For the turning out of the mould and the dishing of the moulding, proceed as for the aspic."
-                                ]
+                            "instructions": [
+                                "When the _mousse_ is intended for moulding, it is well to decorate and “clothe” the mould with fish jelly some time in advance. I have already explained that to “clothe” a mould with jelly, all that is needed is to pour therein a few tablespoonfuls of melted jelly, and then to rock the utensil on ice. By this means a thin even coating sets on the bottom and sides of the mould, which, when the moulding is turned out, swathes the latter in a transparent film.",
+                                "This “clothing” of jelly may be made more or less thick, according to the requirements, by simply using more or less jelly, and by proportionately lengthening or shortening the time for rocking the mould.",
+                                "When the mould is clothed, decorate the sides with large slices of very black truffle dipped in melted jelly, that they may stick.",
+                                "This done, fill the receptacle with the prepared _mousse_ (see the preceding recipe), and leave to set in the cool.",
+                                "For the turning out of the mould and the dishing of the moulding, proceed as for the aspic."
                             ]
                         },
                         {
                             "number": 958,
                             "title": "PETITES MOUSSES DE HOMARD",
                             "type": "technique",
-                            "notes": [
-                                [
-                                    "For these small _mousses_, use little _cassolettes_ or silver timbales. First let a thin layer of jelly (one or two tablespoonfuls, according to their size) set on the bottom of each utensil, and then surround the latter with bands of white paper, the ends of which should be stuck together, and should reach one inch above the brims of the _cassolettes_. The preparation of _mousse_ may now be placed in the _cassolettes_ in a sufficient quantity to overflow the brims, so that, when the paper is removed, their appearance is that of small _soufflés_.",
-                                    "When the _cassolettes_ have been garnished, put them aside on ice or in a refrigerator until they are served."
-                                ]
+                            "instructions": [
+                                "For these small _mousses_, use little _cassolettes_ or silver timbales. First let a thin layer of jelly (one or two tablespoonfuls, according to their size) set on the bottom of each utensil, and then surround the latter with bands of white paper, the ends of which should be stuck together, and should reach one inch above the brims of the _cassolettes_. The preparation of _mousse_ may now be placed in the _cassolettes_ in a sufficient quantity to overflow the brims, so that, when the paper is removed, their appearance is that of small _soufflés_.",
+                                "When the _cassolettes_ have been garnished, put them aside on ice or in a refrigerator until they are served."
                             ]
                         },
                         {
@@ -2519,10 +2469,8 @@
                             "number": 970,
                             "title": "MOUSSELINES D’ÉCREVISSES",
                             "type": "technique",
-                            "notes": [
-                                [
-                                    "What I said with reference to “Mousseline de Homard” (Recipe 951) applies perfectly here, and my remarks relative to the variation of the garnishing ingredients, which are the same as those in Recipe 951, also hold good."
-                                ]
+                            "instructions": [
+                                "What I said with reference to “Mousseline de Homard” (Recipe 951) applies perfectly here, and my remarks relative to the variation of the garnishing ingredients, which are the same as those in Recipe 951, also hold good."
                             ]
                         },
                         {
@@ -2580,11 +2528,13 @@
                             "number": 976,
                             "title": "MOUSSE D’ÉCREVISSES",
                             "type": "technique",
-                            "notes": [
+                            "instructions": [
                                 "For ten people cook thirty crayfish as for potage Bisque. This done, remove the tails, and reserve a dozen fine carapaces. Finely pound the remainder, together with the _mirepoix_ in which the crayfish have cooked, and add thereto one-half oz. of butter, one oz. of red butter (Recipe 142), one-quarter pint of cold fish velouté, and six tablespoonfuls of melted fish jelly. Rub through tammy, and put the resulting purée in a saucepan; stir it over ice for two or three minutes; add three-quarters pint of half-beaten cream, and the crayfish tails cut into dice or finely sliced.",
                                 "Before beginning to prepare the _mousse_, line the bottom and side of a _Charlotte-mould_ with paper, that the _mousse_ may be moulded as soon as ready.",
                                 "Pour the preparation into the mould, taking care to reserve enough for the twelve carapaces already put aside, and put the _mousse_ on ice or in a refrigerator until dishing it. Fill the twelve trimmed carapaces with the reserved _mousse_, and decorate each with a round slice of truffle. When about to serve, turn out the _mousse_ on a small, round cushion of semolina or rice, one-half inch thick, lying on a dish. Remove all the paper, and decorate the top of the _mousse_ with a crown of fine slices of truffle dipped in melted jelly, that they may be glossy.",
-                                "Surround the semolina or rice cushion with a border of chopped jelly, and arrange the garnished carapaces upon this jelly, setting them almost upright.",
+                                "Surround the semolina or rice cushion with a border of chopped jelly, and arrange the garnished carapaces upon this jelly, setting them almost upright."
+                            ],
+                            "notes": [
                                 "N.B.—(1) Instead of being served on a cushion, the crayfish _mousse_ may be sent to the table in a deep silver dish with a border of chopped jelly, and surrounded by the garnished carapaces. The utensil is then laid on a flat dish in a bed of broken ice, or it is incrusted direct in a block of carved ice.",
                                 "(2) For the moulding of crayfish _mousse_, the mould may be “_clothed_” with fish jelly and decorated with slices of truffle, as directed under “Mousse de Homard moulée” (Recipe 957).",
                                 "A _mousse_ prepared in this way may be either dished on a semolina or rice cushion, or in a deep silver entrée dish, as described above."
@@ -2605,12 +2555,10 @@
                             "number": 977,
                             "title": "MOUSSE D’ÉCREVISSES CARDINAL",
                             "type": "technique",
-                            "notes": [
-                                [
-                                    "For ten people cook the crayfish as explained in Recipe 976, but take forty instead of thirty. Shell the tails; trim them and cut them into dice. Prepare the _mousse_ in the same way, but use twice as much red butter. Garnish twelve carapaces after the same manner, and decorate each with a slice of truffle.",
-                                    "_Clothe_ a dome- or Charlotte-mould somewhat thickly with jelly; garnish its bottom and sides with crayfish tails, previously dipped in half-melted jelly, and arranged in superposed rows; and place the crayfish so that the tails of the first row lie to the left, those of the second row to the right, and so on. As often as possible, do this work before preparing the _mousse_, in order that the latter may be put into the mould as soon as ready.",
-                                    "When about to fill the mould, add twenty fine slices of truffle to the _mousse_. Dish after one of the two methods directed in the appended note to Recipe 970, and take care to dip the mould quickly into hot water before attempting to turn out its contents."
-                                ]
+                            "instructions": [
+                                "For ten people cook the crayfish as explained in Recipe 976, but take forty instead of thirty. Shell the tails; trim them and cut them into dice. Prepare the _mousse_ in the same way, but use twice as much red butter. Garnish twelve carapaces after the same manner, and decorate each with a slice of truffle.",
+                                "_Clothe_ a dome- or Charlotte-mould somewhat thickly with jelly; garnish its bottom and sides with crayfish tails, previously dipped in half-melted jelly, and arranged in superposed rows; and place the crayfish so that the tails of the first row lie to the left, those of the second row to the right, and so on. As often as possible, do this work before preparing the _mousse_, in order that the latter may be put into the mould as soon as ready.",
+                                "When about to fill the mould, add twenty fine slices of truffle to the _mousse_. Dish after one of the two methods directed in the appended note to Recipe 970, and take care to dip the mould quickly into hot water before attempting to turn out its contents."
                             ]
                         },
                         {

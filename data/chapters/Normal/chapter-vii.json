@@ -46,12 +46,14 @@
                                 "This combination of egg with bread-crumbs or raspings results in a kind of coat which, at the moment of contact with the hot fat, is immediately converted into a resisting crust. In croquettes this crust checks the escape, into the fat, of the substances it encloses.",
                                 "A solid prepared à l’anglaise and cooked in fat should always be put into the latter when this is very hot, so as to ensure the instantaneous solidification of the egg and bread-crumbs."
                             ],
-                            "N.B.": "Objects to be treated à l’anglaise are generally rolled in flour before being immersed in the anglaise, for the flour helps the foregoing to adhere to the object. The crust formed over the solid thus acquires a density which is indispensable."
+                            "N.B.": [
+                                "Objects to be treated à l’anglaise are generally rolled in flour before being immersed in the anglaise, for the flour helps the foregoing to adhere to the object. The crust formed over the solid thus acquires a density which is indispensable."
+                            ]
                         }
                     ]
                 },
                 {
-                    "number": "174a",
+                    "number": 174.1,
                     "title": "AROMATICS",
                     "type": "definition",
                     "introduction": [
@@ -72,20 +74,36 @@
                     ]
                 },
                 {
-                    "number": "174b",
+                    "number": 174.2,
                     "title": "SEASONING AND CONDIMENTS",
                     "type": "definition",
                     "introduction": "Seasonings are divided into several classes, which comprise:",
                     "notes": [
                         {
-                            "Saline seasonings": "Salt, spiced salt, saltpetre.",
-                            "Acid seasonings": "Plain vinegar, or the same aromatised with tarragon; verjuice, lemon juice, and common- or Seville-orange juices.",
-                            "Hot seasonings": "Peppercorns, ground or concassed pepper, or mignonette; paprika, curry, cayenne, and compound spices.",
-                            "Saccharine seasonings": "Sugar and honey.",
-                            "The pungents": "Onions, shallots, garlic, chives, and horseradish.",
-                            "Hot condiments": "Mustard, gherkins, capers, English sauces, such as Worcester, Harvey, Ketchup, Escoffier’s sauces, &c.; the wines used in reductions and braisings; the finishing elements of sauces and soups.",
-                            "Fatty substances": "Most animal fats, butter, vegetable greases (edible oils and cocoanut butter).",
-                            "Remarks": "In cookery it should be borne in mind that both excellence and eatableness depend entirely upon a judicious use and a rational blending of the aromatics, seasonings, and condiments. And, according as the latter have been used and apportioned, their action will be either beneficial or injurious to the health of the consumer. In the matter of seasoning there can be no question of approximation or half measures; the quantities must be exact, allowing only of slight elasticity in respect of the various tastes to be satisfied."
+                            "Saline seasonings": [
+                                "Salt, spiced salt, saltpetre."
+                            ],
+                            "Acid seasonings": [
+                                "Plain vinegar, or the same aromatised with tarragon; verjuice, lemon juice, and common- or Seville-orange juices."
+                            ],
+                            "Hot seasonings": [
+                                "Peppercorns, ground or concassed pepper, or mignonette; paprika, curry, cayenne, and compound spices."
+                            ],
+                            "Saccharine seasonings": [
+                                "Sugar and honey."
+                            ],
+                            "The pungents": [
+                                "Onions, shallots, garlic, chives, and horseradish."
+                            ],
+                            "Hot condiments": [
+                                "Mustard, gherkins, capers, English sauces, such as Worcester, Harvey, Ketchup, Escoffier’s sauces, &c.; the wines used in reductions and braisings; the finishing elements of sauces and soups."
+                            ],
+                            "Fatty substances": [
+                                "Most animal fats, butter, vegetable greases (edible oils and cocoanut butter)."
+                            ],
+                            "Remarks": [
+                                "In cookery it should be borne in mind that both excellence and eatableness depend entirely upon a judicious use and a rational blending of the aromatics, seasonings, and condiments. And, according as the latter have been used and apportioned, their action will be either beneficial or injurious to the health of the consumer. In the matter of seasoning there can be no question of approximation or half measures; the quantities must be exact, allowing only of slight elasticity in respect of the various tastes to be satisfied."
+                            ]
                         }
                     ]
                 },
@@ -413,7 +431,9 @@
                                         "This, like the preceding forcemeats, may be prepared from any kind of meat. The addition of the white of egg is not essential if the meats used already possess a certain quantity of albumen; but without the white of egg the forcemeat absorbs much less cream.",
                                         "This forcemeat is particularly suited to preparations with a shell-fish base. Incomparably delicate results are obtained by the process, while it also furnishes ideal quenelles for the purpose of garnishing soup. In a word, it may be said of mousseline forcemeat that, whereas it can replace all other kinds, none of these can replace it."
                                     ],
-                                    "N.B.": "Mousseline forcemeats of all kinds, with meat, poultry, game, fish, or shell-fish, may be made according to the principles and quantities given above."
+                                    "N.B.": [
+                                        "Mousseline forcemeats of all kinds, with meat, poultry, game, fish, or shell-fish, may be made according to the principles and quantities given above."
+                                    ]
                                 }
                             ]
                         },
@@ -533,7 +553,7 @@
                         {
                             "number": 201,
                             "title": "GAME FORCEMEAT FOR PIES AND TERRINES",
-                            "type": "recipe",
+                            "type": "principle",
                             "introduction": "This follows the same principles as the chicken forcemeat, i.e., the weight of the game-meat determines the quantities of the other ingredients. The proportions, procedure, and appended remarks are the same as for chicken forcemeat. (Recipe 200)"
                         },
                         {
@@ -592,38 +612,18 @@
                         {
                             "number": 204,
                             "title": "SPECIAL STUFFINGS FOR FISH",
-                            "type": "recipe",
+                            "type": "technique",
                             "introduction": "These preparations are used to stuff fish such as mackerel, herring, shad, &c., lending a condimentary touch that makes them more agreeable and digestible.",
                             "instructions": [
                                 {
-                                    "First Method": {
-                                        "ingredients": [
-                                            "4 oz (113 g) of raw, chopped milt",
-                                            "2 oz (57 g) of bread-crumb, steeped in milk and pressed",
-                                            "1.5 oz (43 g) of mixed fine herbs (chives, parsley, chervil, shallots, sweet basil), finely chopped",
-                                            "0.5 garlic clove, crushed",
-                                            "2 whole eggs",
-                                            "Salt, pepper, and nutmeg"
-                                        ],
-                                        "instructions": [
-                                            "Put all ingredients into a bowl and chop them together to mix thoroughly."
-                                        ]
-                                    },
-                                    "Second Method": {
-                                        "ingredients": [
-                                            "4 oz (113 g) of bread-crumb steeped in milk and pressed",
-                                            "0.5 oz (14 g) of onion, slightly cooked in butter, and cold",
-                                            "0.5 oz (14 g) of chopped shallots, slightly cooked in butter, and cold",
-                                            "1 oz (28 g) of raw mushrooms, chopped and pressed",
-                                            "1 tbsp (15 ml) of chopped parsley",
-                                            "A piece of garlic the size of a pea, crushed",
-                                            "Salt, pepper, and nutmeg",
-                                            "2 eggs"
-                                        ],
-                                        "instructions": [
-                                            "Mix all ingredients in a bowl as above."
-                                        ]
-                                    }
+                                    "First Method": [
+                                        "ingredients: 4 oz (113 g) of raw, chopped milt 2 oz (57 g) of bread-crumb, steeped in milk and pressed 1.5 oz (43 g) of mixed fine herbs (chives, parsley, chervil, shallots, sweet basil), finely chopped 0.5 garlic clove, crushed 2 whole eggs Salt, pepper, and nutmeg",
+                                        "instructions: Put all ingredients into a bowl and chop them together to mix thoroughly."
+                                    ],
+                                    "Second Method": [
+                                        "ingredients: 4 oz (113 g) of bread-crumb steeped in milk and pressed 0.5 oz (14 g) of onion, slightly cooked in butter, and cold 0.5 oz (14 g) of chopped shallots, slightly cooked in butter, and cold 1 oz (28 g) of raw mushrooms, chopped and pressed 1 tbsp (15 ml) of chopped parsley A piece of garlic the size of a pea, crushed Salt, pepper, and nutmeg 2 eggs",
+                                        "instructions: Mix all ingredients in a bowl as above."
+                                    ]
                                 }
                             ]
                         },

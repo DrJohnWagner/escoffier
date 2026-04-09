@@ -162,13 +162,11 @@
                         "2 eggs",
                         "4 yolks"
                     ],
-                    "instructions": [
+                    "notes": [
                         "Finely mince the chosen vegetable.",
                         "Stew the same gently and thoroughly in butter, and strain through a tammy.",
                         "Add to the resulting purée the Béchamel, cream, eggs, and yolks.",
-                        "Put into large or small moulds, and poach. (Recipe 206)"
-                    ],
-                    "notes": [
+                        "Put into large or small moulds, and poach. (Recipe 206)",
                         "In order that these royales may have the required delicacy, I should urge the reader not to exceed the prescribed quantities of eggs and yolks, these being so calculated as to exactly produce the density required."
                     ]
                 },
@@ -177,9 +175,11 @@
                     "title": "THE DIVIDING-UP OF ROYALES",
                     "type": "technique",
                     "introduction": "When the poaching is done, take the mould or moulds out of water, and leave the royale to cool in them. Do not turn out the moulds whilst the preparation is hot, as it would surely scatter. It only assumes the necessary solidity for being divided up by means of the aggregation and contraction of its various constituents during the cooling process.",
-                    "instructions": [
-                        "If the royale has been poached in small moulds, slightly trim the cylinders of royale, divide them up laterally into discs, and stamp them uniformly with a plain or indented fancy cutter.",
-                        "If the royale has been poached in large moulds, withdraw it from these, and place it on a serviette; trim the tops, cut into half-inch (1.27 cm) slices, and stamp with small, fancy cutters of different shapes. These little divisions of royale must always be stamped very neatly and quite regularly."
+                    "notes": [
+                        [
+                            "If the royale has been poached in small moulds, slightly trim the cylinders of royale, divide them up laterally into discs, and stamp them uniformly with a plain or indented fancy cutter.",
+                            "If the royale has been poached in large moulds, withdraw it from these, and place it on a serviette; trim the tops, cut into half-inch (1.27 cm) slices, and stamp with small, fancy cutters of different shapes. These little divisions of royale must always be stamped very neatly and quite regularly."
+                        ]
                     ]
                 }
             ]
@@ -192,14 +192,12 @@
                     "title": "CHIFFONADE",
                     "type": "technique",
                     "introduction": "The name “Chiffonade” is given to a mince of sorrel or lettuce, intended as a complement for such soups as “Potage de santé,” “le Germiny,” &c., or various clear consommés like “Julienne.”",
-                    "instructions": [
+                    "notes": [
                         "First carefully shred the sorrel or lettuce, and remove therefrom all the leaf-ribs.",
                         "Carefully wash the leaves, and squeeze the latter tightly between the fingers of the left hand and the table.",
                         "Now cut them into fine strips with a sharp knife.",
                         "If the chiffonade be intended for a consommé, add it to the latter half an hour before dishing up; it is thus actually cooked in the soup itself.",
-                        "If, as is most often the case, it be intended for a thick soup, it is better to let it melt well in butter, to moisten it with a little consommé, and to let it boil for ten minutes before adding it to the soup."
-                    ],
-                    "notes": [
+                        "If, as is most often the case, it be intended for a thick soup, it is better to let it melt well in butter, to moisten it with a little consommé, and to let it boil for ten minutes before adding it to the soup.",
                         "Whatever the purpose be for which it is made, chiffonade should always be prepared with very tender sorrel or lettuce."
                     ]
                 },
@@ -207,10 +205,12 @@
                     "number": 216,
                     "title": "DIRECTIONS FOR SOUP WITH PASTES",
                     "type": "technique",
-                    "instructions": [
-                        "Vermicelli and the various Italian pastes should measure about 3 oz (85 g) per quart (946 ml) of consommé. They should first be thrown into boiling, salted water, where they are left to poach for three minutes, whereupon they are drained, cooled, and their cooking is completed in the consommé. The parboiling is necessary to get rid of flour which would otherwise make the consommé cloudy.",
-                        "Tapioca, sago, salep, &c., should also be apportioned at about 3 oz (85 g) per quart (946 ml). These products need no parboiling; they are merely sprinkled into the boiling consommé while stirring, and are left to cook until the soup is quite clear. The boiling should be gentle, and the scum should be removed as often as it forms. The absolute transparency of the consommé is an infallible sign of its having been completed.",
-                        "Brazilian, Japanese, and other pearls are used in the same quantities, but they should poach for thirty minutes if required to be very transparent."
+                    "notes": [
+                        [
+                            "Vermicelli and the various Italian pastes should measure about 3 oz (85 g) per quart (946 ml) of consommé. They should first be thrown into boiling, salted water, where they are left to poach for three minutes, whereupon they are drained, cooled, and their cooking is completed in the consommé. The parboiling is necessary to get rid of flour which would otherwise make the consommé cloudy.",
+                            "Tapioca, sago, salep, &c., should also be apportioned at about 3 oz (85 g) per quart (946 ml). These products need no parboiling; they are merely sprinkled into the boiling consommé while stirring, and are left to cook until the soup is quite clear. The boiling should be gentle, and the scum should be removed as often as it forms. The absolute transparency of the consommé is an infallible sign of its having been completed.",
+                            "Brazilian, Japanese, and other pearls are used in the same quantities, but they should poach for thirty minutes if required to be very transparent."
+                        ]
                     ]
                 },
                 {

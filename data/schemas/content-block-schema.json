@@ -2,25 +2,18 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "https://example.com/schemas/content-block.json",
     "title": "Content Block",
-    "description": "Represents a piece of information that can be a simple string, an array of strings for paragraphs, or a titled object with a list of detail strings.",
+    "description": "Represents a piece of information that can be a simple string, an array of strings for paragraphs, a titled object with a list of detail strings, or complex nested structures.",
     "oneOf": [
         {
             "type": "string"
         },
         {
             "type": "object",
-            "additionalProperties": {
-                "type": "array",
-                "items": {
-                    "type": "string"
-                }
-            }
+            "additionalProperties": true
         },
         {
             "type": "array",
-            "items": {
-                "type": "string"
-            }
+            "items": true
         }
     ]
 }

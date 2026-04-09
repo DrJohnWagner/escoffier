@@ -15,13 +15,11 @@
                     "number": 395,
                     "title": "EGGS ON THE DISH",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "Eggs cooked in this way derive all their quality from the way in which the cooking process is conducted. They must be evenly cooked, on top and underneath, and should remain soft. An important condition of the process is that the eggs should be exceedingly fresh. After having heated sufficient butter in the dish to cover the whole of the bottom, break two eggs into it, baste the yolks with a little very hot butter, salt them slightly, and push them into the oven. As soon as the white of the eggs assumes a milky-white colour, they are cooked and should be withdrawn from the oven to be served immediately.",
-                            "Great attention should be bestowed upon the cooking process, a few seconds more or less than the required time being sufficient to spoil the eggs. Special care ought to be taken that they do not cook either too much or too quickly, for it should be remembered that, even were the cooking checked before the proper time, the heat of the dish does, to a certain extent, make good the deficiency.",
-                            "Eggs _à la poêle_, which, in England, are called “fried eggs,” are a variety of eggs on the dish, very often served on toast, or accompanied by sausages or fried bacon. They are cooked in an omelet-pan, trimmed neatly with a fancy-cutter, and placed, by means of a spatula, upon the prepared toast.",
-                            "About one-half oz. of butter should be allowed for every two eggs, which number constitutes the working-base of the following recipes."
-                        ]
+                    "instructions": [
+                        "Eggs cooked in this way derive all their quality from the way in which the cooking process is conducted. They must be evenly cooked, on top and underneath, and should remain soft. An important condition of the process is that the eggs should be exceedingly fresh. After having heated sufficient butter in the dish to cover the whole of the bottom, break two eggs into it, baste the yolks with a little very hot butter, salt them slightly, and push them into the oven. As soon as the white of the eggs assumes a milky-white colour, they are cooked and should be withdrawn from the oven to be served immediately.",
+                        "Great attention should be bestowed upon the cooking process, a few seconds more or less than the required time being sufficient to spoil the eggs. Special care ought to be taken that they do not cook either too much or too quickly, for it should be remembered that, even were the cooking checked before the proper time, the heat of the dish does, to a certain extent, make good the deficiency.",
+                        "Eggs _à la poêle_, which, in England, are called “fried eggs,” are a variety of eggs on the dish, very often served on toast, or accompanied by sausages or fried bacon. They are cooked in an omelet-pan, trimmed neatly with a fancy-cutter, and placed, by means of a spatula, upon the prepared toast.",
+                        "About one-half oz. of butter should be allowed for every two eggs, which number constitutes the working-base of the following recipes."
                     ]
                 },
                 {
@@ -242,36 +240,34 @@
                     "number": 411,
                     "title": "PROCEDURE FOR POACHED EGGS",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "The one and only essential condition in this case is the use of perfectly fresh eggs, for it is quite impossible to expect an even poaching if this condition is not fulfilled.",
-                            "(1) Have ready a sauté-pan containing boiling salted water (one-third oz. of salt per quart of water), slightly acidulated with vinegar. Break the eggs over that part of the water which is actually boiling.",
-                            "(2) In order that the eggs may poach freely, do not put more than eight or ten at a time into the same sauté-pan; better even poach them six at a time, for then the poaching will be effected more equally.",
-                            "(3) As soon as the eggs are in the water, let the latter simmer. The egg is poached when the white has enveloped the yolk, reassuming, as it were, the form of a raw egg, and when it may be touched without breaking. The usual time allowed for poaching is three minutes.",
-                            "(4) Withdraw the eggs by means of a slice; dip them into cold water, trim their whites, and put them back into moderately warm water until ready to serve."
-                        ]
+                    "instructions": [
+                        "The one and only essential condition in this case is the use of perfectly fresh eggs, for it is quite impossible to expect an even poaching if this condition is not fulfilled.",
+                        "(1) Have ready a sauté-pan containing boiling salted water (one-third oz. of salt per quart of water), slightly acidulated with vinegar. Break the eggs over that part of the water which is actually boiling.",
+                        "(2) In order that the eggs may poach freely, do not put more than eight or ten at a time into the same sauté-pan; better even poach them six at a time, for then the poaching will be effected more equally.",
+                        "(3) As soon as the eggs are in the water, let the latter simmer. The egg is poached when the white has enveloped the yolk, reassuming, as it were, the form of a raw egg, and when it may be touched without breaking. The usual time allowed for poaching is three minutes.",
+                        "(4) Withdraw the eggs by means of a slice; dip them into cold water, trim their whites, and put them back into moderately warm water until ready to serve."
                     ]
                 },
                 {
                     "number": 412,
                     "title": "THE COOKING OF SOFT-BOILED EGGS",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "These ought to be very fresh, as in the case of poached eggs. With a view to equalising their cooking, it is a good plan to put them in a colander perforated with large holes, whereby they may be plunged into and withdrawn from the water together. Keep the water boiling; plunge the eggs therein as directed; leave them to cook for six minutes from the time the water has regained the boiling-point; drain, steep for a moment in a bowl of cold water, and shell the eggs carefully. Keep them in moderately-salted hot water until ready to serve."
-                        ]
+                    "instructions": [
+                        "These ought to be very fresh, as in the case of poached eggs. With a view to equalising their cooking, it is a good plan to put them in a colander perforated with large holes, whereby they may be plunged into and withdrawn from the water together. Keep the water boiling; plunge the eggs therein as directed; leave them to cook for six minutes from the time the water has regained the boiling-point; drain, steep for a moment in a bowl of cold water, and shell the eggs carefully. Keep them in moderately-salted hot water until ready to serve."
                     ]
                 },
                 {
                     "number": 413,
                     "title": "THE DISHING OF POACHED AND SOFT-BOILED EGGS",
                     "type": "technique",
-                    "notes": [
+                    "instructions": [
                         "There are many ways of doing this, viz.:—",
                         "(1) On rusks of bread-crumb, slightly hollowed, ornamented according to taste (_i.e._, indented by means of the point of a small knife) and fried in clarified butter. Their shape is oval for poached eggs, and round for soft-boiled eggs, the latter being generally dished upright.",
                         "(2) On little, oval _feuilletés_ for poached eggs, on _feuilletés_ in the shape of indented crowns, or in small patties for soft-boiled eggs.",
                         "(3) In borders of forcemeat or other preparations, the kind of which is indicated by the name of the particular egg-preparation. These borders are laid on the dish by means of a piping-bag or by hand; they are either oval or round, plain or indented, poached or oven-browned, according to the nature of the preparation used.",
-                        "(4) On tartlet-crusts which are garnished so as to be in keeping with the method of dressing the eggs.",
+                        "(4) On tartlet-crusts which are garnished so as to be in keeping with the method of dressing the eggs."
+                    ],
+                    "notes": [
                         "_Remarks._—(1) Poached or soft-boiled eggs, when dished upon fried rusks, _feuilletés_, or tartlets, should, before being placed on the latter, be covered with sauce. Also before being treated with sauce they should be well drained.",
                         "(2) Having given the general outlines of the procedure, I shall now pass on to the particular recipes, stating them briefly, and reminding the reader that all of them apply equally to poached and soft-boiled eggs. Thus “Poached Eggs Mireille” stands for “Poached or Soft-boiled Eggs Mireille.”"
                     ]
@@ -575,10 +571,8 @@
                     "number": 433,
                     "title": "HARD-BOILED EGGS",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "Boiling eggs hard may seem an insignificant matter, but, like the other modes of procedure, it is, in reality, of some importance, and should be effected in a given period of time. If, for a special purpose, they have to be just done, it is pointless and even harmful to boil them beyond a certain time-limit, seeing that any excess in the boiling only makes them tough, and the whites particularly so, owing to their albuminous nature. In order to boil eggs uniformly, they should be put into a colander with large holes, whereby they may be plunged at the same moment of time into the boiling water. From the time the water regains the boiling point, eight minutes should be allowed in the case of medium-sized eggs, and ten minutes in the case of larger ones; but these times should never be exceeded. As soon as they are done drain the eggs and dip them in cold water, and then shell them carefully."
-                        ]
+                    "instructions": [
+                        "Boiling eggs hard may seem an insignificant matter, but, like the other modes of procedure, it is, in reality, of some importance, and should be effected in a given period of time. If, for a special purpose, they have to be just done, it is pointless and even harmful to boil them beyond a certain time-limit, seeing that any excess in the boiling only makes them tough, and the whites particularly so, owing to their albuminous nature. In order to boil eggs uniformly, they should be put into a colander with large holes, whereby they may be plunged at the same moment of time into the boiling water. From the time the water regains the boiling point, eight minutes should be allowed in the case of medium-sized eggs, and ten minutes in the case of larger ones; but these times should never be exceeded. As soon as they are done drain the eggs and dip them in cold water, and then shell them carefully."
                     ]
                 },
                 {
@@ -693,13 +687,11 @@
                     "number": 440,
                     "title": "EGGS EN COCOTTE",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "The poaching of eggs _en cocotte_ is done in the _bain-marie_.",
-                            "_Cocottes_ for eggs, which may be replaced by little china or plaited cases, are a kind of small saucepan in earthenware, in porcelain, or in silver, provided with a little handle. The time generally allowed for the cooking or poaching of eggs in this way is ten minutes, but this time is subject to variations either way. In order to accelerate the process I should advise the warming of the _cocottes_ before the insertion of the eggs.",
-                            "_Mode of Procedure._—Having garnished the _cocottes_ and broken the eggs into them, as directed in the recipes given hereafter, set them in a sauté-pan and pour therein enough boiling water to reach within one-half inch of the brims of the _cocottes_. Place in the oven and cover, just leaving sufficient opening for the steam to escape.",
-                            "The eggs are done when the whites are almost set and the yolks are glossy. After having properly wiped the _cocottes_, dish them on a napkin or on a fancy dish-paper."
-                        ]
+                    "instructions": [
+                        "The poaching of eggs _en cocotte_ is done in the _bain-marie_.",
+                        "_Cocottes_ for eggs, which may be replaced by little china or plaited cases, are a kind of small saucepan in earthenware, in porcelain, or in silver, provided with a little handle. The time generally allowed for the cooking or poaching of eggs in this way is ten minutes, but this time is subject to variations either way. In order to accelerate the process I should advise the warming of the _cocottes_ before the insertion of the eggs.",
+                        "_Mode of Procedure._—Having garnished the _cocottes_ and broken the eggs into them, as directed in the recipes given hereafter, set them in a sauté-pan and pour therein enough boiling water to reach within one-half inch of the brims of the _cocottes_. Place in the oven and cover, just leaving sufficient opening for the steam to escape.",
+                        "The eggs are done when the whites are almost set and the yolks are glossy. After having properly wiped the _cocottes_, dish them on a napkin or on a fancy dish-paper."
                     ]
                 },
                 {
@@ -821,12 +813,10 @@
                     "number": 449,
                     "title": "MOULDED EGGS",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "These form a very ornamental dish, but the time required to prepare them being comparatively long, poached, soft-boiled, and other kinds of eggs are generally preferred in their stead. They are made in variously shaped moulds, ornamented according to the nature of the preparation, and the eggs are broken into them direct, or they may be inserted in the form of scrambled eggs, together with raw eggs poached in a _bain-marie_.",
-                            "Whatever be the mode of preparation, the moulds should always be liberally buttered. The usual time allowed for the poaching of the eggs in moulds is from ten to twelve minutes, but when withdrawn from the _bain-marie_ it is well to let the moulds stand awhile with the view of promoting a settling of their contents, which action facilitates the ultimate turning out of the latter.",
-                            "Empty the moulds on small pieces of toast or tartlets, and arrange these in a circle round the dish."
-                        ]
+                    "instructions": [
+                        "These form a very ornamental dish, but the time required to prepare them being comparatively long, poached, soft-boiled, and other kinds of eggs are generally preferred in their stead. They are made in variously shaped moulds, ornamented according to the nature of the preparation, and the eggs are broken into them direct, or they may be inserted in the form of scrambled eggs, together with raw eggs poached in a _bain-marie_.",
+                        "Whatever be the mode of preparation, the moulds should always be liberally buttered. The usual time allowed for the poaching of the eggs in moulds is from ten to twelve minutes, but when withdrawn from the _bain-marie_ it is well to let the moulds stand awhile with the view of promoting a settling of their contents, which action facilitates the ultimate turning out of the latter.",
+                        "Empty the moulds on small pieces of toast or tartlets, and arrange these in a circle round the dish."
                     ]
                 },
                 {
@@ -997,20 +987,20 @@
                     "number": 459,
                     "title": "SCRAMBLED EGGS",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "This dish is undoubtedly the finest of all egg-preparations, provided the eggs be not over-cooked, and they be kept soft and creamy.",
-                            "Scrambled eggs are mostly served in silver timbales, but, in certain cases, they may also be dished in special little _croustades_, in little receptacles made from hollowed brioches, or in tartlet-crusts. Formerly, it was customary to garnish scrambled eggs served in a silver timbale with small, variously-shaped pieces of toast, or with small scraps of puff-paste, cooked without colouration, and shaped like crescents, lozenges, rings, _palmettes_, &c. This method has something to recommend it, and may always be adopted. In old cookery, scrambled eggs were sanctioned only when cooked in a _bain-marie_. This measure certainly ensured their being properly cooked, but it considerably lengthened the procedure. The latter may therefore be shortened by cooking the eggs in the usual way, _i.e._, in a utensil in direct contact with the fire; but in this case the heat must be moderate, in order that, the process of cooking being progressive and gradual, perfect homogeneity of the particles of the eggs (effecting the smoothness of the preparation) may result."
-                        ]
+                    "instructions": [
+                        "This dish is undoubtedly the finest of all egg-preparations, provided the eggs be not over-cooked, and they be kept soft and creamy.",
+                        "Scrambled eggs are mostly served in silver timbales, but, in certain cases, they may also be dished in special little _croustades_, in little receptacles made from hollowed brioches, or in tartlet-crusts. Formerly, it was customary to garnish scrambled eggs served in a silver timbale with small, variously-shaped pieces of toast, or with small scraps of puff-paste, cooked without colouration, and shaped like crescents, lozenges, rings, _palmettes_, &c. This method has something to recommend it, and may always be adopted. In old cookery, scrambled eggs were sanctioned only when cooked in a _bain-marie_. This measure certainly ensured their being properly cooked, but it considerably lengthened the procedure. The latter may therefore be shortened by cooking the eggs in the usual way, _i.e._, in a utensil in direct contact with the fire; but in this case the heat must be moderate, in order that, the process of cooking being progressive and gradual, perfect homogeneity of the particles of the eggs (effecting the smoothness of the preparation) may result."
                     ]
                 },
                 {
                     "number": 460,
                     "title": "METHOD OF SCRAMBLING EGGS",
                     "type": "technique",
-                    "notes": [
+                    "instructions": [
                         "For six eggs, slightly heat one oz. of butter in a thick-bottomed sauté-pan. Add the six eggs, beaten moderately, together with a large pinch of salt and a little pepper; place the pan on a moderate fire, and stir constantly with a wooden spoon, taking care to avoid anything in the way of sudden, fierce heat, which, by instantaneously solidifying the egg-molecules, would cause lumps to form in the mass—a thing which, above all, should be guarded against.",
-                        "When, by cooking, the eggs have acquired the proper consistence, and are still smooth and creamy, take the sauté-pan off the fire, and finish the preparation by means of one and one-half oz. of butter (divided into small quantities) and three tablespoonfuls of cream. Only whisk the eggs to be scrambled when absolutely necessary.",
+                        "When, by cooking, the eggs have acquired the proper consistence, and are still smooth and creamy, take the sauté-pan off the fire, and finish the preparation by means of one and one-half oz. of butter (divided into small quantities) and three tablespoonfuls of cream. Only whisk the eggs to be scrambled when absolutely necessary."
+                    ],
+                    "notes": [
                         "N.B.—Having given the mode of procedure, which is unalterable for scrambled eggs, I shall now pass on, in the following recipes, to the various garnishes suited to this kind of dish. The quantities I give are those required for six scrambled eggs."
                     ]
                 },
@@ -1306,22 +1296,18 @@
                     "number": 482,
                     "title": "FRIED EGGS",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "In the long series of egg-preparations, fried eggs are those which hold the least important place, for the fried eggs which are so commonly served at breakfasts in England and America are really eggs _à la poêle_. The real fried egg is almost unknown in England and America. As a rule, the garnish given to this kind of eggs is served apart, while the latter are dished, either on a napkin or on pieces of toast, with a little fried parsley laid in the middle of the dish."
-                        ]
+                    "instructions": [
+                        "In the long series of egg-preparations, fried eggs are those which hold the least important place, for the fried eggs which are so commonly served at breakfasts in England and America are really eggs _à la poêle_. The real fried egg is almost unknown in England and America. As a rule, the garnish given to this kind of eggs is served apart, while the latter are dished, either on a napkin or on pieces of toast, with a little fried parsley laid in the middle of the dish."
                     ]
                 },
                 {
                     "number": 483,
                     "title": "THE PREPARATION OF FRIED EGGS",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "Any fat, provided it be well purified, may be used for these eggs, but oil is the more customary frying medium. To do these eggs properly, only one should be dealt with at a time.",
-                            "Heat some oil in an omelet-pan until it begins to smoke slightly; break the egg on a plate; season it, and let it slide into the pan. Then, with a wooden spoon, quickly cover up the yolk with the solidified portions of the white, in order to keep the former soft.",
-                            "Drain the egg on a piece of stretched linen, and proceed in the same way with the other eggs until the required quantity has been treated."
-                        ]
+                    "instructions": [
+                        "Any fat, provided it be well purified, may be used for these eggs, but oil is the more customary frying medium. To do these eggs properly, only one should be dealt with at a time.",
+                        "Heat some oil in an omelet-pan until it begins to smoke slightly; break the egg on a plate; season it, and let it slide into the pan. Then, with a wooden spoon, quickly cover up the yolk with the solidified portions of the white, in order to keep the former soft.",
+                        "Drain the egg on a piece of stretched linen, and proceed in the same way with the other eggs until the required quantity has been treated."
                     ]
                 },
                 {
@@ -1463,12 +1449,10 @@
                     "number": 492,
                     "title": "THE PREPARATION OF OMELETS",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "Heat the butter in the omelet-pan, until it exhales the characteristic nutty smell. This will not only lend an exquisite taste to the omelet, but the degree of heat reached in order to produce the aroma will be found to ensure the perfect setting of the eggs.",
-                            "Pour in the beaten and seasoned eggs, and stir briskly with a fork, in order to heat the whole mass evenly. If the omelet is to be garnished inside, this ought to be done at the present stage, and then the omelet should be speedily rolled up and transferred to a dish, to be finished in accordance with the nature of its designation.",
-                            "When the omelet is on the dish, a piece of butter may be quickly drawn across its surface, to make it glossy."
-                        ]
+                    "instructions": [
+                        "Heat the butter in the omelet-pan, until it exhales the characteristic nutty smell. This will not only lend an exquisite taste to the omelet, but the degree of heat reached in order to produce the aroma will be found to ensure the perfect setting of the eggs.",
+                        "Pour in the beaten and seasoned eggs, and stir briskly with a fork, in order to heat the whole mass evenly. If the omelet is to be garnished inside, this ought to be done at the present stage, and then the omelet should be speedily rolled up and transferred to a dish, to be finished in accordance with the nature of its designation.",
+                        "When the omelet is on the dish, a piece of butter may be quickly drawn across its surface, to make it glossy."
                     ]
                 },
                 {
@@ -1858,10 +1842,8 @@
                     "number": 520,
                     "title": "SCRAMBLED LAPWINGS’ EGGS",
                     "type": "technique",
-                    "notes": [
-                        [
-                            "Proceed as for ordinary scrambled eggs, all the recipes given for the latter being perfectly applicable to lapwings’ eggs. They require, however, very great care in their preparation, and it should be borne in mind that one ordinary hen’s egg is equal to about three lapwings’ eggs."
-                        ]
+                    "instructions": [
+                        "Proceed as for ordinary scrambled eggs, all the recipes given for the latter being perfectly applicable to lapwings’ eggs. They require, however, very great care in their preparation, and it should be borne in mind that one ordinary hen’s egg is equal to about three lapwings’ eggs."
                     ]
                 },
                 {

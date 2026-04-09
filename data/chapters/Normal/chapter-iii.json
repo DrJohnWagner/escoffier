@@ -13,7 +13,7 @@
                 {
                     "number": 31,
                     "title": "SAUCE BIGARRADE",
-                    "type": "recipe",
+                    "type": "technique",
                     "yield": "This sauce is principally used to accompany braised and poëled ducklings.",
                     "instructions": [
                         "For braised ducklings: After having strained the braising sauce, completely remove its grease, and reduce it until it is very dense. Strain it once more through muslin, twisting the latter; then, in order to bring the sauce to its normal consistence, add the juice of six oranges and one lemon per quart (946 ml) of sauce. Finish with a small piece of lemon and orange rind cut regularly and finely, Julienne-fashion, and scalded for five minutes.",
@@ -164,7 +164,7 @@
                     ]
                 },
                 {
-                    "number": "38a",
+                    "number": 38.1,
                     "title": "REMARKS ON RED-WINE SAUCES",
                     "type": "definition",
                     "introduction": [
@@ -813,7 +813,7 @@
                 {
                     "number": 74,
                     "title": "CHAUD-FROID SAUCE, A L’AURORE",
-                    "type": "recipe",
+                    "type": "technique",
                     "instructions": [
                         "Prepare a white Chaud-Froid. (Recipe 72)",
                         "The sauce may be coloured by the addition of fine red tomato purée—more or less to match the desired shade—or by an infusion of paprika, according to the use for which it is intended. Paprika is preferable when not too deep a shade is required."
@@ -1395,7 +1395,7 @@
                     ]
                 },
                 {
-                    "number": "106a",
+                    "number": 106.1,
                     "title": "SUPRÊME SAUCE",
                     "type": "recipe",
                     "introduction": "The salient characteristics of Suprême Sauce are its perfect whiteness and consummate delicacy. It is generally prepared in small quantities only.",
@@ -1468,7 +1468,7 @@
                 {
                     "number": 110,
                     "title": "VILLEROY TOMATÉE SAUCE",
-                    "type": "recipe",
+                    "type": "technique",
                     "instructions": [
                         "Prepare the sauce as explained under Recipe 108, and add to it the third of its volume of very fine tomato purée. Reduce in the same way."
                     ],
@@ -1484,7 +1484,7 @@
                 {
                     "number": 111,
                     "title": "WHITE WINE SAUCE",
-                    "type": "recipe",
+                    "type": "technique",
                     "instructions": [
                         "Method 1 (For glazed fish): Add one-quarter pint (118 ml) of fish fumet to one pint (473 ml) of thickened Velouté, and reduce by half. Finish the sauce, away from the fire, with four oz (113 g) of butter.",
                         "Method 2: Almost entirely reduce one-quarter pint (118 ml) of fish fumet. To this reduction add the yolks of four eggs, mixing them well in it, and follow with one lb (454 g) of butter, added by degrees, paying heed to the precautions indicated under sauce Hollandaise. (Recipe 30)",
@@ -1645,7 +1645,7 @@
                     ]
                 },
                 {
-                    "number": "119a",
+                    "number": 119.1,
                     "title": "PARSLEY SAUCE",
                     "type": "recipe",
                     "ingredients": [

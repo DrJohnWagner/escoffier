@@ -36,7 +36,9 @@
                             "number": 237,
                             "title": "CLEAR SOUPS",
                             "type": "definition",
-                            "introduction": "Clear soups, of whatever nature the base thereof may be, whether butcher’s meat, poultry, game, fish, shell-fish, or turtle, &c., are made according to one method only. They are always clear consommés to which has been added a slight garnish in keeping with the nature of the consommé."
+                            "introduction": [
+                                "Clear soups, of whatever nature the base thereof may be, whether butcher’s meat, poultry, game, fish, shell-fish, or turtle, &c., are made according to one method only. They are always clear consommés to which has been added a slight garnish in keeping with the nature of the consommé."
+                            ]
                         },
                         {
                             "number": 238,
@@ -61,10 +63,18 @@
                             ],
                             "instructions": [
                                 {
-                                    "Cohering or Thickening Elements; their Quantities": "In order to effect the coherence of vegetable purées, either rice, potato, or bread-crumb cut into dice and fried in butter may be used. The proportion of these per pound (454 g) of vegetables should be respectively 3 oz (85 g), 10 oz (283 g), and 10 oz (283 g).",
-                                    "The Dilution of Purées": "Generally this is done by means of ordinary white consommé, though in certain cases, as, for instance, if the soup is a Lenten one, milk is used.",
-                                    "The Finishing": "When the purées have been strained and brought to the required consistence they should be boiled and stirred. Then they are placed on the side of the fire to simmer for twenty-five or thirty minutes. It is at this stage that they are purified by means of the careful removal of all the scum that forms on their surface. When dishing up complete them, away from the fire, with 3 oz (85 g) of butter per quart (946 ml) of soup, and pass them once more through a strainer.",
-                                    "Purée Garnishes": "These are usually either small fried crusts, small dice of potato fried in butter, a chiffonade, some kind of little brunoise, or, more generally, chervil pluches."
+                                    "Cohering or Thickening Elements; their Quantities": [
+                                        "In order to effect the coherence of vegetable purées, either rice, potato, or bread-crumb cut into dice and fried in butter may be used. The proportion of these per pound (454 g) of vegetables should be respectively 3 oz (85 g), 10 oz (283 g), and 10 oz (283 g)."
+                                    ],
+                                    "The Dilution of Purées": [
+                                        "Generally this is done by means of ordinary white consommé, though in certain cases, as, for instance, if the soup is a Lenten one, milk is used."
+                                    ],
+                                    "The Finishing": [
+                                        "When the purées have been strained and brought to the required consistence they should be boiled and stirred. Then they are placed on the side of the fire to simmer for twenty-five or thirty minutes. It is at this stage that they are purified by means of the careful removal of all the scum that forms on their surface. When dishing up complete them, away from the fire, with 3 oz (85 g) of butter per quart (946 ml) of soup, and pass them once more through a strainer."
+                                    ],
+                                    "Purée Garnishes": [
+                                        "These are usually either small fried crusts, small dice of potato fried in butter, a chiffonade, some kind of little brunoise, or, more generally, chervil pluches."
+                                    ]
                                 }
                             ]
                         },
@@ -72,7 +82,9 @@
                             "number": 240,
                             "title": "CULLISES",
                             "type": "technique",
-                            "introduction": "Cullises have for their base either poultry, game, or fish.",
+                            "introduction": [
+                                "Cullises have for their base either poultry, game, or fish."
+                            ],
                             "instructions": [
                                 {
                                     "Thickening Ingredients": [
@@ -80,7 +92,9 @@
                                         "For game, 3 or 4 oz (85-113 g) of lentils, or 0.75 pint (355 ml) of game Espagnole per lb (454 g) of game.",
                                         "For fish, a clear panada made up of French bread soaked in boiling salted milk. Use 5 oz (142 g) of bread and 1 good pint (473 ml) of milk per lb (454 g) of fish."
                                     ],
-                                    "Finishing": "Having strained and made up the Cullises, boil them while stirring (except in the case of fish cullises, which must not boil, and must be served as soon as they are made), then place them in a bain-marie and butter their surfaces lest a skin should form. At the last moment complete them with 2 or 3 oz (57-85 g) of butter per quart (946 ml).",
+                                    "Finishing": [
+                                        "Having strained and made up the Cullises, boil them while stirring (except in the case of fish cullises, which must not boil, and must be served as soon as they are made), then place them in a bain-marie and butter their surfaces lest a skin should form. At the last moment complete them with 2 or 3 oz (57-85 g) of butter per quart (946 ml)."
+                                    ],
                                     "Garnish": [
                                         "The garnish of poultry or game cullises consists of either small dice of game or fowl-fillets, which should be kept aside for the purpose; a fine julienne of these fillets, or small quenelles made from the latter, raw.",
                                         "The garnish of fish cullis is generally fish-fillets poached in butter and cut up into small dice or in julienne-fashion."
@@ -103,11 +117,17 @@
                             "number": 242,
                             "title": "THE VELOUTÉS",
                             "type": "technique",
-                            "introduction": "These differ from the purées, cullises, and bisques in that their invariable thickening element is a velouté whose preparation is in harmony with the nature of the ingredients of the soup, these being either vegetables, poultry, game, fish, or shell-fish.",
+                            "introduction": [
+                                "These differ from the purées, cullises, and bisques in that their invariable thickening element is a velouté whose preparation is in harmony with the nature of the ingredients of the soup, these being either vegetables, poultry, game, fish, or shell-fish."
+                            ],
                             "instructions": [
                                 {
-                                    "The Preparation of the Velouté": "Allow 3.5 oz (99 g) of white roux per quart (946 ml) of the diluent. This diluent should be ordinary consommé for a velouté of vegetables or herbs, chicken consommé for a poultry velouté, or very clear fish fumet for a fish or shell-fish velouté. The procedure is exactly the same as that described under Recipe 25 of the leading sauces.",
-                                    "The Apportionment of the Ingredients": "In general, the quantities of each constituent are in the following proportion:—Velouté, one-half; the purée of the substance which characterises the soup, one-quarter; the consommé used to bring the soup to its proper consistence, one-quarter. In respect of finishing ingredients, use, for thickening, the yolks of 3 eggs and 0.2 pint (95 ml) of cream per quart (946 ml) of soup.",
+                                    "The Preparation of the Velouté": [
+                                        "Allow 3.5 oz (99 g) of white roux per quart (946 ml) of the diluent. This diluent should be ordinary consommé for a velouté of vegetables or herbs, chicken consommé for a poultry velouté, or very clear fish fumet for a fish or shell-fish velouté. The procedure is exactly the same as that described under Recipe 25 of the leading sauces."
+                                    ],
+                                    "The Apportionment of the Ingredients": [
+                                        "In general, the quantities of each constituent are in the following proportion:—Velouté, one-half; the purée of the substance which characterises the soup, one-quarter; the consommé used to bring the soup to its proper consistence, one-quarter. In respect of finishing ingredients, use, for thickening, the yolks of 3 eggs and 0.2 pint (95 ml) of cream per quart (946 ml) of soup."
+                                    ],
                                     "Rules Relative to the Preparation": [
                                         "If the velouté is to be of lettuce, chicory, celery, or mixed herbs, these ingredients are scalded for five minutes, drained, gently stewed in butter, and added to the prepared velouté in which their cooking is completed.",
                                         "If carrots, turnips, onions, &c., are to be treated, finely mince them, stew them in butter without allowing them to acquire any colour, and add them to the velouté.",
@@ -116,7 +136,9 @@
                                         "For game, roast or sauté the selected piece, bone it, finely pound the meat, and combine the latter with the velouté, which should then be rubbed through tammy.",
                                         "For shell-fish, cook these in a mirepoix, finely pound them together with the latter, add to the velouté, and pass the whole through tammy."
                                     ],
-                                    "The Completing of Velouté": "Having passed the soup through tammy, bring it to its proper degree of consistence with the necessary quantity of consommé, boil while stirring, and place in a bain-marie. At the last moment finish the soup with the leason and 2 oz (57 g) of butter per quart (946 ml) of liquid.",
+                                    "The Completing of Velouté": [
+                                        "Having passed the soup through tammy, bring it to its proper degree of consistence with the necessary quantity of consommé, boil while stirring, and place in a bain-marie. At the last moment finish the soup with the leason and 2 oz (57 g) of butter per quart (946 ml) of liquid."
+                                    ],
                                     "Garnish for Velouté": [
                                         "For vegetables: Chiffonade, fine printaniers, or brunoise.",
                                         "For fowl and game: The fillets of one or the other, poached and cut into small dice or in julienne-fashion; little quenelles made with the raw fillets, or either fowl or game royales.",
@@ -133,7 +155,9 @@
                             "number": 243,
                             "title": "THE CREAMS",
                             "type": "technique",
-                            "introduction": "Practically speaking, the preparation of the creams is the same as that of the veloutés, but for the following exceptions:",
+                            "introduction": [
+                                "Practically speaking, the preparation of the creams is the same as that of the veloutés, but for the following exceptions:"
+                            ],
                             "instructions": [
                                 "1. In all circumstances, clear Béchamel is substituted for velouté.",
                                 "2. The correct consistence of the soup is got by means of milk instead of consommé.",
@@ -146,7 +170,9 @@
                             "number": 244,
                             "title": "SPECIAL SOUPS AND THICKENED CONSOMMÉS",
                             "type": "definition",
-                            "introduction": "These are of different kinds, though their preparation remains the same, and they do not lend themselves to the requirements of veloutés or creams. I should quote as types of this class the Ambassador, à l’Américaine, Darblay, Faubonne, &c. The same holds good with thickened consommés, such as “Germiny,” “Coquelin,” &c."
+                            "introduction": [
+                                "These are of different kinds, though their preparation remains the same, and they do not lend themselves to the requirements of veloutés or creams. I should quote as types of this class the Ambassador, à l’Américaine, Darblay, Faubonne, &c. The same holds good with thickened consommés, such as “Germiny,” “Coquelin,” &c."
+                            ]
                         },
                         {
                             "number": 245,
@@ -162,7 +188,9 @@
                             "number": 246,
                             "title": "FOREIGN SOUPS",
                             "type": "principle",
-                            "introduction": "In the course of Part II. of this work I shall allude to certain soups which have a foreign origin, and whose use, although it may not be general, is yet sufficiently common. If only for the sake of novelty or variety, it is occasionally permissible to poach upon the preserves of foreign nations; but apart from this there exist among the recipes of foreigners many which can but enrich their adopter, besides being generally appreciated."
+                            "introduction": [
+                                "In the course of Part II. of this work I shall allude to certain soups which have a foreign origin, and whose use, although it may not be general, is yet sufficiently common. If only for the sake of novelty or variety, it is occasionally permissible to poach upon the preserves of foreign nations; but apart from this there exist among the recipes of foreigners many which can but enrich their adopter, besides being generally appreciated."
+                            ]
                         }
                     ]
                 }
@@ -180,13 +208,23 @@
                     "number": 247,
                     "title": "ORDINARY BRAISINGS",
                     "type": "technique",
-                    "introduction": "Of all the various culinary operations, braisings are the most expensive and the most difficult. Long and assiduous practice alone can teach the many difficulties that this mode of procedure entails, for it is one which demands extraordinary care and the most constant attention. Over and above the question of care and that of the quality of meat used, there are also these conditions to be fulfilled in order that a good braising may be obtained, namely, that excellent stock should be used in moistening, and that the braising base be well prepared.",
+                    "introduction": [
+                        "Of all the various culinary operations, braisings are the most expensive and the most difficult. Long and assiduous practice alone can teach the many difficulties that this mode of procedure entails, for it is one which demands extraordinary care and the most constant attention. Over and above the question of care and that of the quality of meat used, there are also these conditions to be fulfilled in order that a good braising may be obtained, namely, that excellent stock should be used in moistening, and that the braising base be well prepared."
+                    ],
                     "instructions": [
                         {
-                            "Meats that are Braised": "Mutton and beef are braised in the ordinary way. The best for the purpose is that derived from an animal of 3 to 6 years of age in the case of beef, and 1 to 2 years in the case of mutton.",
-                            "The Larding of Meats for Braising": "Meats like rumps or leg of mutton that are not sufficiently fat are larded with square strips of bacon fat (about 0.5 inch or 1.27 cm thick). These strips are seasoned with pepper, nutmeg, spices, parsley, and marinaded for two hours in brandy. Insert them into the meat equidistantly using larding needles. The proportion of fat to meat should be about 3 oz (85 g) per lb (454 g).",
-                            "To Marinade Braisings": "Season meats with salt, pepper, and spices. Place them in a receptacle between two litters of aromatics, cover them with white or red 'vin ordinaire' in the proportion of 0.25 pint (118 ml) per lb (454 g) of meat, and leave them to marinade for about six hours, turning them three or four times.",
-                            "The Aromatics or Base of the Braising": "These are thickly sliced and fried carrots and onions, in the proportion of 1 oz (28 g) per lb (454 g) of meat, one faggot, including one garlic clove and 1.5 oz (43 g) of fresh, blanched bacon-rind.",
+                            "Meats that are Braised": [
+                                "Mutton and beef are braised in the ordinary way. The best for the purpose is that derived from an animal of 3 to 6 years of age in the case of beef, and 1 to 2 years in the case of mutton."
+                            ],
+                            "The Larding of Meats for Braising": [
+                                "Meats like rumps or leg of mutton that are not sufficiently fat are larded with square strips of bacon fat (about 0.5 inch or 1.27 cm thick). These strips are seasoned with pepper, nutmeg, spices, parsley, and marinaded for two hours in brandy. Insert them into the meat equidistantly using larding needles. The proportion of fat to meat should be about 3 oz (85 g) per lb (454 g)."
+                            ],
+                            "To Marinade Braisings": [
+                                "Season meats with salt, pepper, and spices. Place them in a receptacle between two litters of aromatics, cover them with white or red 'vin ordinaire' in the proportion of 0.25 pint (118 ml) per lb (454 g) of meat, and leave them to marinade for about six hours, turning them three or four times."
+                            ],
+                            "The Aromatics or Base of the Braising": [
+                                "These are thickly sliced and fried carrots and onions, in the proportion of 1 oz (28 g) per lb (454 g) of meat, one faggot, including one garlic clove and 1.5 oz (43 g) of fresh, blanched bacon-rind."
+                            ],
                             "To Fry, Prepare, and Cook Braised Meat": [
                                 "Drain the marinaded meat and wipe it dry. Heat clarified fat in a thick saucepan and, when hot, put the meat in to acquire colour on all sides.",
                                 "Withdraw the meat, cover it with slices of larding-bacon if it is lean, and string it.",
@@ -196,7 +234,9 @@
                                 "1. For a clear liquor: Strain the liquor over the meat through muslin. Place the pan in the oven to complete cooking, basting from time to time. Thicken the liquor with arrow-root as for an ordinary thickened gravy. (Recipe 41)",
                                 "2. For a sauce: Reduce the liquor to half before returning to the meat. Restore its volume by means of two-thirds of its quantity of Espagnole sauce and one-third of tomato purée. Complete the cooking in this sauce, basting as before. When cooked, withdraw the meat, strain the sauce, let the grease settle, and carefully remove it. Rectify the sauce's consistency if necessary."
                             ],
-                            "The Glazing of Braised Meat": "Place the cooked meat in the front of the oven, sprinkle it slightly with its cooking liquor, and push it into the oven so this liquor may dry and form a glaze. Repeat this operation eight or ten times."
+                            "The Glazing of Braised Meat": [
+                                "Place the cooked meat in the front of the oven, sprinkle it slightly with its cooking liquor, and push it into the oven so this liquor may dry and form a glaze. Repeat this operation eight or ten times."
+                            ]
                         }
                     ],
                     "notes": [
@@ -207,7 +247,9 @@
                     "number": 248,
                     "title": "BRAISING OF WHITE MEATS",
                     "type": "technique",
-                    "introduction": "White braisings are made with the neck, the saddle, the loin, the fillets, the fricandeaus, and the sweet-bread of veal, young turkeys and fat pullets, and sometimes, relevés of lamb. The procedure is the same for all these meats; the time of cooking alone varies. The aromatics are the same as those of the brown braisings, but the frying of them is optional. The moistening liquor is brown veal stock. (Recipe 9)",
+                    "introduction": [
+                        "White braisings are made with the neck, the saddle, the loin, the fillets, the fricandeaus, and the sweet-bread of veal, young turkeys and fat pullets, and sometimes, relevés of lamb. The procedure is the same for all these meats; the time of cooking alone varies. The aromatics are the same as those of the brown braisings, but the frying of them is optional. The moistening liquor is brown veal stock. (Recipe 9)"
+                    ],
                     "instructions": [
                         "Except for veal sweet-bread, which is always blanched, the meats may be slightly stiffened and browned in butter. This is not essential.",
                         "Place them in a utensil just large enough to hold them, with aromatics underneath.",
@@ -246,7 +288,9 @@
                     "number": 250,
                     "title": "POËLINGS",
                     "type": "technique",
-                    "introduction": "Poëlings are, practically speaking, roasts, for the cooking periods of each are the same, except that the former are cooked entirely or almost entirely with butter.",
+                    "introduction": [
+                        "Poëlings are, practically speaking, roasts, for the cooking periods of each are the same, except that the former are cooked entirely or almost entirely with butter."
+                    ],
                     "instructions": [
                         {
                             "Preparation of Poëled Meats": [
@@ -273,13 +317,23 @@
                     "number": 251,
                     "title": "THE SAUTÉS",
                     "type": "technique",
-                    "introduction": "What characterises the process we call “sauté” is that the object treated is cooked dry—that is to say, solely by means of a fatty substance such as butter, oil, or grease. All products treated in this way must be frizzled—that is to say, they must be put into the fat when it is very hot in order that a hardened coating may form around them which will keep their juices within.",
+                    "introduction": [
+                        "What characterises the process we call “sauté” is that the object treated is cooked dry—that is to say, solely by means of a fatty substance such as butter, oil, or grease. All products treated in this way must be frizzled—that is to say, they must be put into the fat when it is very hot in order that a hardened coating may form around them which will keep their juices within."
+                    ],
                     "instructions": [
                         {
-                            "Fowl and Game Sautés": "After frizzling, complete cooking on the stove or in the oven with the lid off, basting with butter like a roast. Withdraw the pieces to swill the utensil, then return them to the sauce or garnish just to warm through.",
-                            "Red Meat Sautés (tournedos, cutlets, etc.)": "Always effected on the stove in a small quantity of clarified butter. The thinner the piece, the more rapid the frizzling. When blood appears on the raw side, turn it over. When drops of blood appear on the second side, it is cooked.",
-                            "White Meat Sautés (veal, lamb)": "Must also be frizzled in hot fat, but their cooking must be completed gently on the side of the fire, often with the lid on.",
-                            "Swilling the Utensil": "After removing the product, remove the grease and pour a condimentary liquid (like wine) into the saucepan. Set to boil to dissolve the solidified gravy, and add this liquid to the prepared sauce or garnish."
+                            "Fowl and Game Sautés": [
+                                "After frizzling, complete cooking on the stove or in the oven with the lid off, basting with butter like a roast. Withdraw the pieces to swill the utensil, then return them to the sauce or garnish just to warm through."
+                            ],
+                            "Red Meat Sautés (tournedos, cutlets, etc.)": [
+                                "Always effected on the stove in a small quantity of clarified butter. The thinner the piece, the more rapid the frizzling. When blood appears on the raw side, turn it over. When drops of blood appear on the second side, it is cooked."
+                            ],
+                            "White Meat Sautés (veal, lamb)": [
+                                "Must also be frizzled in hot fat, but their cooking must be completed gently on the side of the fire, often with the lid on."
+                            ],
+                            "Swilling the Utensil": [
+                                "After removing the product, remove the grease and pour a condimentary liquid (like wine) into the saucepan. Set to boil to dissolve the solidified gravy, and add this liquid to the prepared sauce or garnish."
+                            ]
                         }
                     ]
                 }
@@ -342,7 +396,9 @@
                                 "The real and most natural gravy for roasts is made from the swilling of the baking- or dripping-pan. To obtain this, neither the utensils nor the gravy ought to have burned.",
                                 "When a greater quantity is required, prepare a stock beforehand from bones and trimmings of a similar nature to the roast. Place these in a pan with fat and roast them. Transfer to a saucepan, moisten to cover with tepid, salted water, add the swillings of the roasting pan, boil, skim, and cook gently for 3-4 hours. Strain and put aside for swilling.",
                                 {
-                                    "Swilling": "Having removed the roast, take off a portion of the grease from the pan, and pour into it the required quantity of prepared gravy. Reduce by half, strain, and almost entirely remove grease."
+                                    "Swilling": [
+                                        "Having removed the roast, take off a portion of the grease from the pan, and pour into it the required quantity of prepared gravy. Reduce by half, strain, and almost entirely remove grease."
+                                    ]
                                 }
                             ],
                             "notes": [
@@ -378,9 +434,15 @@
                             "type": "technique",
                             "instructions": [
                                 {
-                                    "Fuel for Grills": "The best is live coal or small pieces of charcoal. It is essential that it produce no smoke.",
-                                    "The Bed of Charcoal": "The arrangement must be regulated according to the size and kind of the products. It should be set in equal layers in the centre, and slightly raised on the sides.",
-                                    "The Grill": "The grill must always be placed over the glowing fuel in advance, and it should be very hot when the objects to be grilled are placed upon it, otherwise they would stick."
+                                    "Fuel for Grills": [
+                                        "The best is live coal or small pieces of charcoal. It is essential that it produce no smoke."
+                                    ],
+                                    "The Bed of Charcoal": [
+                                        "The arrangement must be regulated according to the size and kind of the products. It should be set in equal layers in the centre, and slightly raised on the sides."
+                                    ],
+                                    "The Grill": [
+                                        "The grill must always be placed over the glowing fuel in advance, and it should be very hot when the objects to be grilled are placed upon it, otherwise they would stick."
+                                    ]
                                 }
                             ]
                         },
@@ -388,7 +450,9 @@
                             "number": 258,
                             "title": "RED MEAT GRILLS",
                             "type": "technique",
-                            "introduction": "I submit as a principle that the golden rule in grills is to strictly observe the correct degree of heat which is proper to each treated object, never forgetting that the larger and richer in nutrition the piece of meat, the quicker and more thorough must be its initial setting.",
+                            "introduction": [
+                                "I submit as a principle that the golden rule in grills is to strictly observe the correct degree of heat which is proper to each treated object, never forgetting that the larger and richer in nutrition the piece of meat, the quicker and more thorough must be its initial setting."
+                            ],
                             "instructions": [
                                 "For large pieces of meat (beef or mutton), the better the quality, the more resisting must be the rissoled coating they receive. The fierceness of the fire should be proportionately abated the moment the initial rissoling has been effected.",
                                 "For thinner pieces, a quick rissoling of their surfaces over a fierce fire, and a few minutes of subsequent cooking will be all they need.",
@@ -401,7 +465,9 @@
                             "number": 259,
                             "title": "WHITE-MEAT GRILLS",
                             "type": "technique",
-                            "introduction": "Superficial rissoling is not as necessary as with red meats. For this kind of grills keep a moderate fire, so that the cooking and colouring of the meat may take place simultaneously.",
+                            "introduction": [
+                                "Superficial rissoling is not as necessary as with red meats. For this kind of grills keep a moderate fire, so that the cooking and colouring of the meat may take place simultaneously."
+                            ],
                             "instructions": [
                                 "Baste fairly often with clarified butter while cooking, lest their outsides dry.",
                                 "They are known to be cooked when the juice issuing from them is quite white."
@@ -421,7 +487,9 @@
                             "number": 261,
                             "title": "THE GRILLING OF PRODUCTS COATED WITH BUTTER AND BREAD-CRUMBS",
                             "type": "technique",
-                            "introduction": "These grills generally consist of only small objects; they must be effected on a very moderate fire, with the view of enabling them to cook and acquire colour simultaneously. They should also be frequently besprinkled with clarified butter, and turned with care, so as not to break their coating, the object of which is to withhold their contained juices."
+                            "introduction": [
+                                "These grills generally consist of only small objects; they must be effected on a very moderate fire, with the view of enabling them to cook and acquire colour simultaneously. They should also be frequently besprinkled with clarified butter, and turned with care, so as not to break their coating, the object of which is to withhold their contained juices."
+                            ]
                         }
                     ]
                 },
@@ -457,13 +525,23 @@
                             "number": 264,
                             "title": "THE VARIOUS DEGREES OF HEAT REACHED BY THE FRYING MEDIUM, AND THEIR APPLICATION",
                             "type": "technique",
-                            "introduction": "The temperature reached by a frying medium depends upon its constituents and purity. The various degrees may be classified as moderately hot, hot, very hot.",
+                            "introduction": [
+                                "The temperature reached by a frying medium depends upon its constituents and purity. The various degrees may be classified as moderately hot, hot, very hot."
+                            ],
                             "instructions": [
                                 {
-                                    "Testing Temperature": "It is moderately hot when a sprig of parsley begins to bubble immediately; it is hot if it crackles when a slightly moist object is thrust into it; it is very hot when it gives off a thin white smoke.",
-                                    "Moderately Hot (275°-284°F / 135°-140°C)": "Used for all products containing vegetable water and for fish that require cooking by penetration before concentration.",
-                                    "Hot (320°F / 160°C)": "Used for all products that have undergone initial cooking, and for products that must be set immediately, such as those panés à l’anglaise or covered with batter (croquettes, fritters, etc.).",
-                                    "Very Hot (356°F / 180°C)": "Used for all objects that need a sharp and firm setting, and for all small objects whose cooking is effected in a few minutes, as in the case of whitebait."
+                                    "Testing Temperature": [
+                                        "It is moderately hot when a sprig of parsley begins to bubble immediately; it is hot if it crackles when a slightly moist object is thrust into it; it is very hot when it gives off a thin white smoke."
+                                    ],
+                                    "Moderately Hot (275°-284°F / 135°-140°C)": [
+                                        "Used for all products containing vegetable water and for fish that require cooking by penetration before concentration."
+                                    ],
+                                    "Hot (320°F / 160°C)": [
+                                        "Used for all products that have undergone initial cooking, and for products that must be set immediately, such as those panés à l’anglaise or covered with batter (croquettes, fritters, etc.)."
+                                    ],
+                                    "Very Hot (356°F / 180°C)": [
+                                        "Used for all objects that need a sharp and firm setting, and for all small objects whose cooking is effected in a few minutes, as in the case of whitebait."
+                                    ]
                                 }
                             ]
                         },
@@ -482,13 +560,17 @@
                             "number": 266,
                             "title": "THE QUANTITY OF THE FRYING MEDIUM",
                             "type": "principle",
-                            "introduction": "This should always be in proportion to the quantity or size of the objects to be fried, bearing in mind that these must always be entirely submerged. The greater the amount of fat, the higher the temperature reached, and the less one need fear a sudden cooling of the fat when the objects are immersed."
+                            "introduction": [
+                                "This should always be in proportion to the quantity or size of the objects to be fried, bearing in mind that these must always be entirely submerged. The greater the amount of fat, the higher the temperature reached, and the less one need fear a sudden cooling of the fat when the objects are immersed."
+                            ]
                         },
                         {
                             "number": 267,
                             "title": "THE CARE OF THE FRYING MEDIUM",
                             "type": "principle",
-                            "introduction": "Every time a frying fat is used it should, after having been melted, be strained through a towel, for the majority of objects which it has served to cook must have left some particles behind them which might prove prejudicial to the objects that are to follow. Not only do these foreign substances disturb the clearness of the fat and render it liable to burn, but they are exceedingly detrimental to the objects that are treated later."
+                            "introduction": [
+                                "Every time a frying fat is used it should, after having been melted, be strained through a towel, for the majority of objects which it has served to cook must have left some particles behind them which might prove prejudicial to the objects that are to follow. Not only do these foreign substances disturb the clearness of the fat and render it liable to burn, but they are exceedingly detrimental to the objects that are treated later."
+                            ]
                         }
                     ]
                 },
@@ -499,13 +581,17 @@
                             "number": 268,
                             "title": "GRATINS",
                             "type": "definition",
-                            "introduction": "The various kinds of the order 'Gratins' are (1) the Complete Gratin; (2) the Rapid Gratin; (3) the Light Gratin; (4) Glazing, which is a form of Rapid Gratin."
+                            "introduction": [
+                                "The various kinds of the order 'Gratins' are (1) the Complete Gratin; (2) the Rapid Gratin; (3) the Light Gratin; (4) Glazing, which is a form of Rapid Gratin."
+                            ]
                         },
                         {
                             "number": 269,
                             "title": "COMPLETE GRATIN",
                             "type": "technique",
-                            "introduction": "This is the first example of the series; its principal constituent must be completely cooked, and its cooking must be coincident with the reduction of the sauce and the formation of the gratin proper.",
+                            "introduction": [
+                                "This is the first example of the series; its principal constituent must be completely cooked, and its cooking must be coincident with the reduction of the sauce and the formation of the gratin proper."
+                            ],
                             "instructions": [
                                 "The base is almost invariably ordinary or Lenten duxelle sauce. (Recipe 223)",
                                 "The object to be treated is laid on a buttered dish, surrounded with slices of raw mushrooms and chopped shallots, and covered with duxelle sauce.",
@@ -531,13 +617,17 @@
                             "number": 271,
                             "title": "LIGHT GRATIN",
                             "type": "technique",
-                            "introduction": "This is proper to farinaceous products, such as macaroni, lazagnes, noodles, gnocchi, &c., and consists of a combination of grated cheese, raspings, and butter. A moderate heat is all that is wanted. Also considered as light gratins are those which serve as the complement of stuffed vegetables such as tomatoes, mushrooms, egg-plant, and cucumber."
+                            "introduction": [
+                                "This is proper to farinaceous products, such as macaroni, lazagnes, noodles, gnocchi, &c., and consists of a combination of grated cheese, raspings, and butter. A moderate heat is all that is wanted. Also considered as light gratins are those which serve as the complement of stuffed vegetables such as tomatoes, mushrooms, egg-plant, and cucumber."
+                            ]
                         },
                         {
                             "number": 272,
                             "title": "GLAZINGS",
                             "type": "technique",
-                            "introduction": "These are of two kinds—they either consist of a heavily buttered sauce, or they form from a sprinkling of cheese upon the sauce.",
+                            "introduction": [
+                                "These are of two kinds—they either consist of a heavily buttered sauce, or they form from a sprinkling of cheese upon the sauce."
+                            ],
                             "instructions": [
                                 "In the first case, after pouring sauce over the object, place the dish on another dish containing a little water. The greater the quantity of butter used, the more intense the heat required, in order that a slight golden film may form almost instantaneously.",
                                 "In the second case, the sauce used is always a Mornay. (Recipe 91) Cover the object with the sauce, besprinkle with grated cheese and melted butter, and place in fairly intense heat, so that a slight golden crust may form."
@@ -552,12 +642,20 @@
                             "number": 273,
                             "title": "BLANCHINGS",
                             "type": "technique",
-                            "introduction": "The term blanchings is applied to three classes of operations:",
+                            "introduction": [
+                                "The term blanchings is applied to three classes of operations:"
+                            ],
                             "instructions": [
                                 {
-                                    "1. The blanching of meats": "This obtains mostly in the case of calf’s head and foot, sweet-bread, and trotters. These meats are first set to soak in cold, running water. They are then placed on the fire in a saucepan with enough cold water to cover, and the water is gradually brought to the boil. Boiling time varies by item. As soon as blanched, the meats are cooled in fresh water.",
-                                    "2. The blanching, or parboiling of certain vegetables": "This term is wrongly applied to the cooking of green vegetables like French beans, which is more correctly termed 'à l’anglaise'.",
-                                    "3. The blanching of certain other vegetables": "This consists in partly cooking vegetables in plenty of water to rid them of any bitter or pungent flavour. This is chiefly resorted to for lettuce, chicory, endives, celery, artichokes, cabbages, and out-of-season root vegetables. After blanching, these vegetables are always cooled in cold water."
+                                    "1. The blanching of meats": [
+                                        "This obtains mostly in the case of calf’s head and foot, sweet-bread, and trotters. These meats are first set to soak in cold, running water. They are then placed on the fire in a saucepan with enough cold water to cover, and the water is gradually brought to the boil. Boiling time varies by item. As soon as blanched, the meats are cooled in fresh water."
+                                    ],
+                                    "2. The blanching, or parboiling of certain vegetables": [
+                                        "This term is wrongly applied to the cooking of green vegetables like French beans, which is more correctly termed 'à l’anglaise'."
+                                    ],
+                                    "3. The blanching of certain other vegetables": [
+                                        "This consists in partly cooking vegetables in plenty of water to rid them of any bitter or pungent flavour. This is chiefly resorted to for lettuce, chicory, endives, celery, artichokes, cabbages, and out-of-season root vegetables. After blanching, these vegetables are always cooled in cold water."
+                                    ]
                                 }
                             ]
                         }
@@ -565,7 +663,9 @@
                 },
                 {
                     "title": "6. Vegetables and Garnishes",
-                    "introduction": "Various Preparations.",
+                    "introduction": [
+                        "Various Preparations."
+                    ],
                     "entries": [
                         {
                             "number": 274,

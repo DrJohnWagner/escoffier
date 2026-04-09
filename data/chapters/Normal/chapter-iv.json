@@ -363,7 +363,7 @@
                         {
                             "number": 137,
                             "title": "OXFORD SAUCE",
-                            "type": "recipe",
+                            "type": "technique",
                             "instructions": [
                                 "Make a Cumberland sauce, with the difference that the Julienne of orange and lemon rinds should be replaced by rasped or finely-chopped rinds, and that the quantities of same should be less, i.e., two-thirds of a teaspoonful (3.3 ml) of each. (Recipe 134)"
                             ]
@@ -441,7 +441,7 @@
                     ]
                 },
                 {
-                    "number": "140a",
+                    "number": 140.1,
                     "title": "CHÂTEAUBRIAND BUTTER",
                     "type": "recipe",
                     "ingredients": [
@@ -635,7 +635,7 @@
                     ]
                 },
                 {
-                    "number": "151a",
+                    "number": 151.1,
                     "title": "MELTED BUTTER",
                     "type": "definition",
                     "introduction": "This preparation, which is used principally as a fish sauce, should consist of butter, only just melted, and combined with a little table-salt and a few drops of lemon-juice. It should therefore be prepared only at the last minute; for, should it wait and be allowed to clarify, besides losing its flavour it will be found to disagree with certain people."

@@ -15,9 +15,11 @@
                     "title": "SAUCE BIGARRADE",
                     "type": "technique",
                     "yield": "This sauce is principally used to accompany braised and poëled ducklings.",
-                    "instructions": [
-                        "For braised ducklings: After having strained the braising sauce, completely remove its grease, and reduce it until it is very dense. Strain it once more through muslin, twisting the latter; then, in order to bring the sauce to its normal consistence, add the juice of six oranges and one lemon per quart (946 ml) of sauce. Finish with a small piece of lemon and orange rind cut regularly and finely, Julienne-fashion, and scalded for five minutes.",
-                        "For poëled ducklings: Strain the poëling stock for ducklings or wild ducks through linen; entirely remove the grease, and add four pieces of caramel sugar dissolved in one tablespoonful (15 ml) of vinegar per one-half pint (237 ml) of stock, the juice of the oranges and the lemon and the Julienne of rinds, as for the braised-ducklings sauce indicated above."
+                    "notes": [
+                        [
+                            "For braised ducklings: After having strained the braising sauce, completely remove its grease, and reduce it until it is very dense. Strain it once more through muslin, twisting the latter; then, in order to bring the sauce to its normal consistence, add the juice of six oranges and one lemon per quart (946 ml) of sauce. Finish with a small piece of lemon and orange rind cut regularly and finely, Julienne-fashion, and scalded for five minutes.",
+                            "For poëled ducklings: Strain the poëling stock for ducklings or wild ducks through linen; entirely remove the grease, and add four pieces of caramel sugar dissolved in one tablespoonful (15 ml) of vinegar per one-half pint (237 ml) of stock, the juice of the oranges and the lemon and the Julienne of rinds, as for the braised-ducklings sauce indicated above."
+                        ]
                     ]
                 },
                 {
@@ -97,12 +99,10 @@
                     "title": "VARIETIES OF THE CHAUD-FROID SAUCE",
                     "type": "technique",
                     "introduction": "The following are variations on the Brown Chaud-Froid Sauce. (Recipe 34)",
-                    "instructions": [
+                    "notes": [
                         "For Ducks: Prepare the sauce as above (Recipe 34), adding to it (for the prescribed quantity) one-half pint (237 ml) of duck fumet obtained from the carcases and remains of roast duckling, and finish it, away from the fire, with the juice of four oranges and a heaped tablespoonful (15 ml) of orange rind, cut finely, Julienne-fashion, and scalded for five minutes.",
                         "For Feathered Game: Treat the Chaud-Froid sauce as indicated in Recipe 34, adding one-half pint (237 ml) of the fumet of the game constituting the dish in order to lend it that game’s characteristic taste. Observe the same precaution for the cooling.",
-                        "For Fish: Proceed as in Recipe 34, but (1) substitute the Espagnole of fish for the half glaze; (2) intensify the first Espagnole with one-half pint (237 ml) of very clear fish essence; (3) use Lenten jelly instead of meat jelly."
-                    ],
-                    "notes": [
+                        "For Fish: Proceed as in Recipe 34, but (1) substitute the Espagnole of fish for the half glaze; (2) intensify the first Espagnole with one-half pint (237 ml) of very clear fish essence; (3) use Lenten jelly instead of meat jelly.",
                         {
                             "Remarks upon the Use of Chaud-Froid Sauces": [
                                 "The chaud-froid sauce may be prepared beforehand, and when it is wanted it need only be gently melted without heating it too much. It ought simply to be made sufficiently liquid to give a good coating to substances immersed in it."
@@ -195,9 +195,11 @@
                     "number": 40,
                     "title": "ITALIAN SAUCE",
                     "type": "technique",
-                    "instructions": [
-                        "Ordinary Italian Sauce: Put into a stewpan six tablespoonfuls (90 ml) of Duxelles (Recipe 223), two oz (57 g) of very lean, cooked ham, cut very finely, brunoise-fashion, and one pint (473 ml) of half-glaze tomatée. Boil for ten minutes, and complete, at the moment of dishing up, with one teaspoonful (5 ml) of parsley, chervil, and tarragon, minced and mixed.",
-                        "Lenten Italian Sauce: Same preparation, only (1) omit the Ham, and (2) substitute Lent Espagnole (combined with fish fumet made from the fish for which the sauce is intended) for half glaze with tomatoes."
+                    "notes": [
+                        [
+                            "Ordinary Italian Sauce: Put into a stewpan six tablespoonfuls (90 ml) of Duxelles (Recipe 223), two oz (57 g) of very lean, cooked ham, cut very finely, brunoise-fashion, and one pint (473 ml) of half-glaze tomatée. Boil for ten minutes, and complete, at the moment of dishing up, with one teaspoonful (5 ml) of parsley, chervil, and tarragon, minced and mixed.",
+                            "Lenten Italian Sauce: Same preparation, only (1) omit the Ham, and (2) substitute Lent Espagnole (combined with fish fumet made from the fish for which the sauce is intended) for half glaze with tomatoes."
+                        ]
                     ]
                 },
                 {
@@ -752,10 +754,12 @@
                     "number": 70,
                     "title": "MUSHROOM SAUCE",
                     "type": "technique",
-                    "instructions": [
-                        "If this be intended for poultry, add one-fifth pint (95 ml) of mushroom liquor and eight oz (227 g) of button-mushroom heads turned or channelled and cooked, to one pint (473 ml) of very stiff Allemande Sauce.",
-                        "If it be intended for fish, take one pint (473 ml) of fish velouté, thickened with the yolks of four eggs, and finish it with mushroom liquor, as above.",
-                        "The sauce suggested for poultry may also be used for fish, after adding the necessary quantity of fish fumet."
+                    "notes": [
+                        [
+                            "If this be intended for poultry, add one-fifth pint (95 ml) of mushroom liquor and eight oz (227 g) of button-mushroom heads turned or channelled and cooked, to one pint (473 ml) of very stiff Allemande Sauce.",
+                            "If it be intended for fish, take one pint (473 ml) of fish velouté, thickened with the yolks of four eggs, and finish it with mushroom liquor, as above.",
+                            "The sauce suggested for poultry may also be used for fish, after adding the necessary quantity of fish fumet."
+                        ]
                     ]
                 },
                 {
@@ -814,9 +818,11 @@
                     "number": 74,
                     "title": "CHAUD-FROID SAUCE, A L’AURORE",
                     "type": "technique",
-                    "instructions": [
-                        "Prepare a white Chaud-Froid. (Recipe 72)",
-                        "The sauce may be coloured by the addition of fine red tomato purée—more or less to match the desired shade—or by an infusion of paprika, according to the use for which it is intended. Paprika is preferable when not too deep a shade is required."
+                    "notes": [
+                        [
+                            "Prepare a white Chaud-Froid. (Recipe 72)",
+                            "The sauce may be coloured by the addition of fine red tomato purée—more or less to match the desired shade—or by an infusion of paprika, according to the use for which it is intended. Paprika is preferable when not too deep a shade is required."
+                        ]
                     ]
                 },
                 {
@@ -1325,9 +1331,11 @@
                     "number": 103,
                     "title": "REGENCY SAUCE",
                     "type": "technique",
-                    "instructions": [
-                        "If this sauce is to garnish poultry: boil one pint (473 ml) of Allemande Sauce with six tablespoonfuls (90 ml) of mushroom essence and two tablespoonfuls (30 ml) of truffle essence. Finish with four tablespoonfuls (60 ml) of poultry glaze.",
-                        "If it is to garnish fish: substitute for the Allemande Sauce some fish velouté thickened with egg-yolks and the essences of mushroom and truffle as above. Complete with some fish essence."
+                    "notes": [
+                        [
+                            "If this sauce is to garnish poultry: boil one pint (473 ml) of Allemande Sauce with six tablespoonfuls (90 ml) of mushroom essence and two tablespoonfuls (30 ml) of truffle essence. Finish with four tablespoonfuls (60 ml) of poultry glaze.",
+                            "If it is to garnish fish: substitute for the Allemande Sauce some fish velouté thickened with egg-yolks and the essences of mushroom and truffle as above. Complete with some fish essence."
+                        ]
                     ]
                 },
                 {
@@ -1469,10 +1477,8 @@
                     "number": 110,
                     "title": "VILLEROY TOMATÉE SAUCE",
                     "type": "technique",
-                    "instructions": [
-                        "Prepare the sauce as explained under Recipe 108, and add to it the third of its volume of very fine tomato purée. Reduce in the same way."
-                    ],
                     "notes": [
+                        "Prepare the sauce as explained under Recipe 108, and add to it the third of its volume of very fine tomato purée. Reduce in the same way.",
                         {
                             "Remarks": [
                                 "1. Villeroy sauce, of whatsoever kind, is solely used for the coating of preparations said to be “à la Villeroy.”",
@@ -1485,10 +1491,12 @@
                     "number": 111,
                     "title": "WHITE WINE SAUCE",
                     "type": "technique",
-                    "instructions": [
-                        "Method 1 (For glazed fish): Add one-quarter pint (118 ml) of fish fumet to one pint (473 ml) of thickened Velouté, and reduce by half. Finish the sauce, away from the fire, with four oz (113 g) of butter.",
-                        "Method 2: Almost entirely reduce one-quarter pint (118 ml) of fish fumet. To this reduction add the yolks of four eggs, mixing them well in it, and follow with one lb (454 g) of butter, added by degrees, paying heed to the precautions indicated under sauce Hollandaise. (Recipe 30)",
-                        "Method 3: Put the yolks of five eggs into a small stewpan and mix them with one tablespoonful (15 ml) of cold fish-stock. Put the stewpan in a bain-marie and finish the sauce with one lb (454 g) of butter, meanwhile adding from time to time, and in small quantities, six tablespoonfuls (90 ml) of excellent fish fumet. The procedure is exactly that of the Hollandaise, with fish fumet taking the place of water. (Recipe 30)"
+                    "notes": [
+                        [
+                            "Method 1 (For glazed fish): Add one-quarter pint (118 ml) of fish fumet to one pint (473 ml) of thickened Velouté, and reduce by half. Finish the sauce, away from the fire, with four oz (113 g) of butter.",
+                            "Method 2: Almost entirely reduce one-quarter pint (118 ml) of fish fumet. To this reduction add the yolks of four eggs, mixing them well in it, and follow with one lb (454 g) of butter, added by degrees, paying heed to the precautions indicated under sauce Hollandaise. (Recipe 30)",
+                            "Method 3: Put the yolks of five eggs into a small stewpan and mix them with one tablespoonful (15 ml) of cold fish-stock. Put the stewpan in a bain-marie and finish the sauce with one lb (454 g) of butter, meanwhile adding from time to time, and in small quantities, six tablespoonfuls (90 ml) of excellent fish fumet. The procedure is exactly that of the Hollandaise, with fish fumet taking the place of water. (Recipe 30)"
+                        ]
                     ]
                 }
             ]
