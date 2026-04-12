@@ -189,6 +189,12 @@ The server reads the same `MONGO_*` environment variables as the migration scrip
 
 Integration tests for the API live at [`tests/server/`](tests/server/) and are run with [pytest](https://docs.pytest.org/). They exercise the FastAPI app in-process through `fastapi.testclient.TestClient` and talk to a real MongoDB — so the database must be running and populated first.
 
+There is also a separate Jest-based data validation suite at [`tests/data/`](tests/data/) that validates `data/JSON/cookbook.json` and `data/JSON/entries.json` against their JSON Schemas and checks structural invariants and cross-file consistency. It does **not** require MongoDB. Run it with:
+
+```bash
+npm run test:data
+```
+
 Pytest is added as a dev dependency in `server/pyproject.toml` (under the `dev` dependency group) and is installed automatically by `make install-server` / `uv sync`.
 
 ```bash
@@ -197,7 +203,7 @@ make migrate-db        # (only needed once, or after editing data/JSON/)
 make test-server       # runs `uv run pytest` from inside server/
 ```
 
-If MongoDB is not reachable, the entire suite is **skipped** with a helpful message rather than failing — so you can run `make test-server` safely even when the DB is down. When the DB *is* up, the suite currently contains **16 tests** covering:
+If MongoDB is not reachable, the entire suite is **skipped** with a helpful message rather than failing — so you can run `make test-server` safely even when the DB is down. When the DB *is* up, the suite currently contains **33 tests** covering:
 
 - the `/` health probe
 - `/api/cookbook` — shape, known title/year, and new `press`/`preface` front-matter fields
