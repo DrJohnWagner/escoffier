@@ -1,0 +1,36 @@
+{
+    "_id": "chapter-xxii",
+    "chapter": "XXII",
+    "title": "DRINKS AND REFRESHMENTS",
+    "introduction": [
+        "The quantities given below are calculated to be sufficient for fifteen glassfuls."
+    ],
+    "sections": [
+        {
+            "_id": "chapter-xxii/section-1",
+            "title": "Drinks and Refreshments",
+            "introduction": [],
+            "entryIDs": [
+                "2934",
+                "2935",
+                "2936",
+                "2937",
+                "2938",
+                "2939",
+                "2940",
+                "2941",
+                "2942",
+                "2943",
+                "2944",
+                "2945",
+                "2946",
+                "2947",
+                "2948",
+                "2949",
+                "2950",
+                "2951"
+            ],
+            "sections": []
+        }
+    ]
+}

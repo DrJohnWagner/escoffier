@@ -1,0 +1,50 @@
+{
+    "_id": "chapter-ii",
+    "chapter": "II",
+    "title": "THE LEADING WARM SAUCES",
+    "introduction": [
+        "Warm sauces are of two kinds: the leading sauces, also called “mother sauces,” and the small sauces, which are usually derived from the first-named, and are generally only modified forms thereof. Cooking stock only includes the leading sauces, but I shall refer to the small hot sauces and the cold sauces at the end of the auxiliary stock.",
+        "Experience, which plays such an important part in culinary work, is nowhere so necessary as in the preparation of sauces, for not only must the latter flatter the palate, but they must also vary in savour, consistence and viscosity, in accordance with the dishes they accompany. By this means, in a well-ordered dinner, each dish differs from the preceding ones and from those that follow.",
+        "Furthermore, sauces must, through the perfection of their preparation, obey the general laws of a rational hygiene, wherefore they should be served and combined in such wise as to allow of easy digestion by the frequently disordered stomachs of their consumers.",
+        "Carême was quite justified in pluming himself upon the fact that during his stay at the English Court his master—the Prince Regent—had assured him that he (Carême) was the only one among those who had served his Highness whose cooking had been at all easy of digestion. Carême had grasped the essential truth that the richer the cooking is, the more speedily do the stomach and palate tire of it. And, indeed, it is a great mistake to suppose that, in order to do good cooking, it is necessary to be prodigal in one’s use of all things. In reality, practice dictates fixed and regular quantities, and from these one cannot diverge without upsetting the hygienic and sapid equilibrium on which the value of a sauce depends. The requisite quantities of each ingredient must, of course, be used, but neither more nor less, as there are objections to either extreme.",
+        "Any sauce whatsoever should be smooth, light (without being liquid), glossy to the eye, and decided in taste. When these conditions are fulfilled it is always easy to digest even for tired stomachs.",
+        "An essential point in the making of sauces is the seasoning, and it would be impossible for me to lay sufficient stress on the importance of not indulging in any excess in this respect. It too often happens that the insipidness of a badly-made sauce is corrected by excessive seasoning; this is an absolutely deplorable practice.",
+        "Seasoning should be so calculated as to be merely a complementary factor, which, though it must throw the savour of dishes into relief, may not form a recognisable part of them. If it be excessive, it modifies and even destroys the taste peculiar to every dish—to the great detriment of the latter and of the consumer’s health.",
+        "It is therefore desirable that each sauce should possess its own special flavour, well defined, the result of the combined flavours of all its ingredients.",
+        "If, in the making of sauces, one allowed oneself to be guided by those principles which are the very foundation of good cookery, the general denunciation of sauces by the medical faculty would be averted; and this denunciation no sauce deserves if it be carefully prepared, conformably with the laws prescribed by practice and its resulting experience."
+    ],
+    "sections": [
+        {
+            "_id": "chapter-ii/section-1",
+            "title": "The Roux",
+            "introduction": [
+                "The roux being the cohering element of leading sauces, it is necessary to reveal its preparation and constituents before giving one’s attention to the latter.",
+                "Three kinds of roux are used—namely, brown roux, for brown sauces; pale roux, for veloutés, or cream sauces; and white roux, for white sauces and Béchamel."
+            ],
+            "entryIDs": [
+                "19",
+                "20",
+                "21"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-ii/section-2",
+            "title": "The Leading Sauces",
+            "introduction": [],
+            "entryIDs": [
+                "22",
+                "23",
+                "24",
+                "25",
+                "26",
+                "26.1",
+                "27",
+                "28",
+                "29",
+                "30"
+            ],
+            "sections": []
+        }
+    ]
+}

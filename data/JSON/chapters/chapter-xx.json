@@ -1,0 +1,857 @@
+{
+    "_id": "chapter-xx",
+    "chapter": "XX",
+    "title": "ENTREMETS (SWEETS)",
+    "introduction": [
+        "Pastry, Confectionery, and Ices are so closely allied to Cookery, and they are so surely its complements, that it is impossible to omit them when dealing with Entremets, even though the latter be limited to the kind proper to the kitchen.",
+        "However, these subjects, which could supply matter for voluminous works, are too complex for it to be possible to cope thoroughly with them here.",
+        "I shall therefore confine myself to the expounding of their fundamental principles and the essential operations relating thereto, a knowledge of which is absolutely necessary for the successful preparation of Kitchen Entremets and Ices. The directions given hereafter are certainly too inadequate to convert an ordinary cook into a pastry-cook, a confectioner, or a “glacier”; but they will at least admit of his carrying out a complete dinner, if the necessity so to do should occur."
+    ],
+    "sections": [
+        {
+            "_id": "chapter-xx/section-1",
+            "title": "Elementary Preparations of Pastry which may be Applied to Entremets",
+            "introduction": [],
+            "entryIDs": [
+                "2338",
+                "2339",
+                "2340",
+                "2341",
+                "2342",
+                "2343",
+                "2344",
+                "2345",
+                "2346",
+                "2346.1",
+                "2347",
+                "2348",
+                "2349",
+                "2350",
+                "2351",
+                "2352",
+                "2353",
+                "2354",
+                "2355"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-xx/section-2",
+            "title": "The Pastes",
+            "introduction": [],
+            "entryIDs": [
+                "2356",
+                "2357",
+                "2358",
+                "2359",
+                "2360",
+                "2361",
+                "2362",
+                "2363",
+                "2364",
+                "2365",
+                "2366",
+                "2367",
+                "2368",
+                "2369",
+                "2370",
+                "2371",
+                "2372",
+                "2373",
+                "2374",
+                "2375",
+                "2376",
+                "2377",
+                "2378",
+                "2379",
+                "2380",
+                "2381",
+                "2382",
+                "2383",
+                "2384",
+                "2385",
+                "2386",
+                "2387",
+                "2388",
+                "2389"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-xx/section-3",
+            "title": "The Preparation and Cooking of Various Pastry Crusts used in Cookery",
+            "introduction": [],
+            "entryIDs": [
+                "2390",
+                "2391",
+                "2392",
+                "2393",
+                "2394",
+                "2395",
+                "2396"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-xx/section-4",
+            "title": "Various Custards",
+            "introduction": [],
+            "entryIDs": [],
+            "sections": [
+                {
+                    "_id": "chapter-xx/section-4/section-1",
+                    "title": "Hot Custards",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2397",
+                        "2398",
+                        "2399",
+                        "2400"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-4/section-2",
+                    "title": "Cold Custards",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2401",
+                        "2402"
+                    ],
+                    "sections": []
+                }
+            ]
+        },
+        {
+            "_id": "chapter-xx/section-5",
+            "title": "Various Preparations for Entremets",
+            "introduction": [],
+            "entryIDs": [
+                "2403",
+                "2404",
+                "2405"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-xx/section-6",
+            "title": "Hot Sauces for Entremets",
+            "introduction": [],
+            "entryIDs": [
+                "2406",
+                "2407",
+                "2408",
+                "2409",
+                "2410",
+                "2411",
+                "2412",
+                "2413",
+                "2414",
+                "2415",
+                "2416",
+                "2417",
+                "2418"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-xx/section-7",
+            "title": "Hot Sweets",
+            "introduction": [],
+            "entryIDs": [],
+            "sections": [
+                {
+                    "_id": "chapter-xx/section-7/section-1",
+                    "title": "Fritters",
+                    "introduction": [
+                        "The numerous fritter recipes for sweets may all be grouped into five leading classes, viz.:—",
+                        "(1) Fruit fritters. (2) Custard fritters. (3) Viennese fritters. (4) Souffléd fritters. (5) Sundry other fritters which are more or less like the four former ones without entirely resembling them."
+                    ],
+                    "entryIDs": [
+                        "2419",
+                        "2420",
+                        "2421",
+                        "2422",
+                        "2423",
+                        "2424",
+                        "2425",
+                        "2426"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-2",
+                    "title": "Souffléd Fritters",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2427",
+                        "2428"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-3",
+                    "title": "Various Fritters",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2429",
+                        "2430",
+                        "2431",
+                        "2432",
+                        "2433",
+                        "2434",
+                        "2435"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-4",
+                    "title": "Charlottes",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2436",
+                        "2437",
+                        "2438",
+                        "2439",
+                        "2440",
+                        "2441",
+                        "2442"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-5",
+                    "title": "Pancakes",
+                    "introduction": [
+                        "(See preparations Recipe 2403.)"
+                    ],
+                    "entryIDs": [
+                        "2443",
+                        "2444",
+                        "2445",
+                        "2446",
+                        "2447",
+                        "2448",
+                        "2449",
+                        "2450"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-6",
+                    "title": "Croquettes",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2451",
+                        "2452",
+                        "2453"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-7",
+                    "title": "Crusts",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2454",
+                        "2455",
+                        "2456",
+                        "2457",
+                        "2458",
+                        "2459",
+                        "2460",
+                        "2461"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-8",
+                    "title": "Omelets",
+                    "introduction": [
+                        "Sweet omelets may be divided into four distinct classes, which are:—",
+                        "1. Liqueur omelets. 2. Jam omelets. 3. Souffléd omelets. 4. Surprise omelets."
+                    ],
+                    "entryIDs": [],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-9",
+                    "title": "Omelets with Liqueur",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2462"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-10",
+                    "title": "Jam Omelets",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2463",
+                        "2464"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-11",
+                    "title": "Souffléd Omelets",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2465"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-12",
+                    "title": "Surprise Omelets",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2466",
+                        "2467",
+                        "2468",
+                        "2469",
+                        "2470",
+                        "2471",
+                        "2472",
+                        "2473",
+                        "2474",
+                        "2475"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-13",
+                    "title": "Pannequets",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2476",
+                        "2477",
+                        "2478",
+                        "2479"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-14",
+                    "title": "Puddings with Cream",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2480",
+                        "2481",
+                        "2482",
+                        "2483",
+                        "2484"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-15",
+                    "title": "English Fruit Puddings",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2485",
+                        "2486",
+                        "2487",
+                        "2488"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-16",
+                    "title": "Bread Puddings",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2489",
+                        "2490",
+                        "2491",
+                        "2492"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-17",
+                    "title": "Paste Puddings",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2493",
+                        "2494",
+                        "2495",
+                        "2496",
+                        "2497",
+                        "2498",
+                        "2499",
+                        "2500",
+                        "2501",
+                        "2502",
+                        "2503"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-18",
+                    "title": "Souffléd Puddings",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2504",
+                        "2505",
+                        "2506",
+                        "2507",
+                        "2508",
+                        "2509",
+                        "2510",
+                        "2511",
+                        "2512",
+                        "2513",
+                        "2514",
+                        "2515",
+                        "2516",
+                        "2517",
+                        "2518",
+                        "2519",
+                        "2520",
+                        "2521",
+                        "2522",
+                        "2523",
+                        "2524",
+                        "2525",
+                        "2526",
+                        "2527",
+                        "2528",
+                        "2529",
+                        "2530",
+                        "2531",
+                        "2532",
+                        "2533",
+                        "2534",
+                        "2535",
+                        "2536",
+                        "2537",
+                        "2538",
+                        "2539",
+                        "2540",
+                        "2541"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-19",
+                    "title": "Timbales",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2542",
+                        "2543",
+                        "2544",
+                        "2545",
+                        "2546",
+                        "2547"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-20",
+                    "title": "Hot Fruit Entremets",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2548",
+                        "2549",
+                        "2550",
+                        "2551",
+                        "2552",
+                        "2553",
+                        "2554",
+                        "2555",
+                        "2556",
+                        "2557"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-21",
+                    "title": "Pine-apple (Ananas)",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2558",
+                        "2559",
+                        "2560"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-22",
+                    "title": "Bananas (Bananes)",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2561",
+                        "2562",
+                        "2563",
+                        "2564",
+                        "2565"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-23",
+                    "title": "Cherries (Cerises)",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2566",
+                        "2567",
+                        "2568",
+                        "2569"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-24",
+                    "title": "Oranges and Tangerines (Oranges et Mandarines)",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2570",
+                        "2571",
+                        "2572"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-25",
+                    "title": "Peaches (Pêches)",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2573",
+                        "2574",
+                        "2575",
+                        "2576",
+                        "2577",
+                        "2578",
+                        "2579",
+                        "2580"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-26",
+                    "title": "Pears (Poires)",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2581",
+                        "2582",
+                        "2583",
+                        "2584",
+                        "2585",
+                        "2586",
+                        "2587"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-27",
+                    "title": "Apples (Pommes)",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2588",
+                        "2589",
+                        "2590",
+                        "2591",
+                        "2592",
+                        "2593",
+                        "2594",
+                        "2595",
+                        "2596",
+                        "2597",
+                        "2598",
+                        "2599",
+                        "2600",
+                        "2601",
+                        "2602",
+                        "2603",
+                        "2604"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-7/section-28",
+                    "title": "Various Hot Entremets",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2605",
+                        "2606",
+                        "2607",
+                        "2608",
+                        "2609",
+                        "2610",
+                        "2611"
+                    ],
+                    "sections": []
+                }
+            ]
+        },
+        {
+            "_id": "chapter-xx/section-8",
+            "title": "Cold Sweets",
+            "introduction": [],
+            "entryIDs": [
+                "2612",
+                "2613"
+            ],
+            "sections": [
+                {
+                    "_id": "chapter-xx/section-8/section-1",
+                    "title": "Bavarois",
+                    "introduction": [
+                        "These are of two kinds:—",
+                        "(1) Bavarois with cream, and (2) Bavarois with fruit."
+                    ],
+                    "entryIDs": [
+                        "2614",
+                        "2615",
+                        "2616",
+                        "2617",
+                        "2618",
+                        "2619",
+                        "2620",
+                        "2621",
+                        "2622",
+                        "2623",
+                        "2624",
+                        "2625",
+                        "2626",
+                        "2627",
+                        "2628"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-8/section-2",
+                    "title": "Charlottes",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2629",
+                        "2630",
+                        "2631",
+                        "2632",
+                        "2633",
+                        "2634",
+                        "2635",
+                        "2636",
+                        "2637",
+                        "2638",
+                        "2639",
+                        "2640",
+                        "2641",
+                        "2642",
+                        "2643"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-8/section-3",
+                    "title": "Cold Creams with a Whisked-Cream Base",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2644",
+                        "2645",
+                        "2646",
+                        "2647",
+                        "2648",
+                        "2649",
+                        "2650",
+                        "2651",
+                        "2652",
+                        "2653",
+                        "2654",
+                        "2655",
+                        "2656",
+                        "2657",
+                        "2658",
+                        "2659",
+                        "2660",
+                        "2661",
+                        "2662",
+                        "2663",
+                        "2664",
+                        "2665"
+                    ],
+                    "sections": []
+                }
+            ]
+        },
+        {
+            "_id": "chapter-xx/section-9",
+            "title": "Cold Fruit Entremets",
+            "introduction": [],
+            "entryIDs": [],
+            "sections": [
+                {
+                    "_id": "chapter-xx/section-9/section-1",
+                    "title": "Apricots (Abricots)",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2666",
+                        "2667"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-9/section-2",
+                    "title": "Pine-apple (Ananas)",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2668",
+                        "2669",
+                        "2670",
+                        "2670.1"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-9/section-3",
+                    "title": "Cherries (Cerises)",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2671",
+                        "2672"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-9/section-4",
+                    "title": "Strawberries (Fraises)",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2673",
+                        "2674",
+                        "2675",
+                        "2676",
+                        "2677",
+                        "2678",
+                        "2679",
+                        "2680",
+                        "2681",
+                        "2682",
+                        "2683",
+                        "2684",
+                        "2685"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-9/section-5",
+                    "title": "Gooseberries (Groseilles vertes)",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2686"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-9/section-6",
+                    "title": "Tangerines (Mandarines)",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2687",
+                        "2688",
+                        "2689"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-9/section-7",
+                    "title": "Oranges",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2690",
+                        "2691",
+                        "2692",
+                        "2693"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-9/section-8",
+                    "title": "Peaches and Nectarines (Pêches et Nectarines)",
+                    "introduction": [
+                        "As nectarines may be prepared after the same recipes as peaches, there is no need to give special recipes for the former."
+                    ],
+                    "entryIDs": [
+                        "2694",
+                        "2695",
+                        "2696",
+                        "2697",
+                        "2698",
+                        "2699",
+                        "2700",
+                        "2701",
+                        "2702",
+                        "2703",
+                        "2704",
+                        "2705"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-9/section-9",
+                    "title": "Pears (Poires)",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2706",
+                        "2707",
+                        "2708",
+                        "2709",
+                        "2710",
+                        "2711",
+                        "2712",
+                        "2713",
+                        "2714",
+                        "2715",
+                        "2716",
+                        "2717",
+                        "2718"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-9/section-10",
+                    "title": "Apples",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2719"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xx/section-9/section-11",
+                    "title": "Various Cold Sweets (Entremets)",
+                    "introduction": [],
+                    "entryIDs": [
+                        "2720",
+                        "2721",
+                        "2722",
+                        "2723",
+                        "2724",
+                        "2725",
+                        "2726",
+                        "2727",
+                        "2728",
+                        "2729",
+                        "2730",
+                        "2731",
+                        "2732",
+                        "2733",
+                        "2734",
+                        "2735",
+                        "2736",
+                        "2737",
+                        "2738",
+                        "2739",
+                        "2740",
+                        "2741",
+                        "2742",
+                        "2743"
+                    ],
+                    "sections": []
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,236 @@
+{
+    "_id": "chapter-xii",
+    "chapter": "XII",
+    "title": "EGGS",
+    "introduction": [
+        "Of all the products put into requisition by the art of cookery, not one is so fruitful of variety, so universally liked, and so complete in itself as the egg. There are very few culinary recipes that do not include eggs, either as a principal constituent or as an ingredient.",
+        "The many and various egg-preparations constitute chiefly breakfast or luncheon dishes; nevertheless, at a Lenten dinner they may be served as entrées with advantage, for, at a time when fish, shell-fish and water-game are the only resources in this respect, eggs form a pleasant and welcome change."
+    ],
+    "sections": [
+        {
+            "_id": "chapter-xii/section-1",
+            "title": "Eggs on the Dish",
+            "introduction": [],
+            "entryIDs": [
+                "395",
+                "396",
+                "397",
+                "398",
+                "399",
+                "400",
+                "401",
+                "402",
+                "403",
+                "404",
+                "405",
+                "406",
+                "407",
+                "408",
+                "409",
+                "410"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-xii/section-2",
+            "title": "Poached and Soft-boiled Eggs",
+            "introduction": [
+                "All the recipes given hereafter apply equally to poached and soft-boiled eggs, wherefore I shall only mention “poached” in the titles, leaving soft-boiled to be understood."
+            ],
+            "entryIDs": [
+                "411",
+                "412",
+                "413",
+                "414",
+                "415",
+                "416",
+                "417",
+                "418",
+                "419",
+                "420",
+                "421",
+                "422",
+                "423",
+                "424",
+                "425",
+                "426",
+                "427",
+                "428",
+                "429",
+                "430",
+                "431",
+                "432"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-xii/section-3",
+            "title": "Hard-Boiled Eggs",
+            "introduction": [],
+            "entryIDs": [
+                "433",
+                "434",
+                "435",
+                "436",
+                "437",
+                "438",
+                "439"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-xii/section-4",
+            "title": "Eggs en Cocotte",
+            "introduction": [],
+            "entryIDs": [
+                "440",
+                "441",
+                "442",
+                "443",
+                "444",
+                "445",
+                "446",
+                "447",
+                "448"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-xii/section-5",
+            "title": "Moulded Eggs",
+            "introduction": [],
+            "entryIDs": [
+                "449",
+                "450",
+                "451",
+                "452",
+                "453",
+                "454",
+                "455",
+                "456",
+                "457",
+                "458"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-xii/section-6",
+            "title": "Scrambled Eggs",
+            "introduction": [],
+            "entryIDs": [
+                "459",
+                "460",
+                "461",
+                "462",
+                "463",
+                "464",
+                "465",
+                "466",
+                "467",
+                "468",
+                "469",
+                "470",
+                "471",
+                "472",
+                "473",
+                "474",
+                "475",
+                "476",
+                "477",
+                "478",
+                "480",
+                "481"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-xii/section-7",
+            "title": "Fried Eggs",
+            "introduction": [],
+            "entryIDs": [
+                "482",
+                "483",
+                "484",
+                "485",
+                "486",
+                "487",
+                "488",
+                "489",
+                "490",
+                "491"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-xii/section-8",
+            "title": "Omelets",
+            "introduction": [
+                "The procedure for omelets is at once very simple and very difficult, for tastes differ considerably in respect of their preparation. Some like them well done, others insist upon their being just done, while there are yet others who only enjoy them when they are almost liquid.",
+                "Nevertheless, the following conditions apply to all—namely, that there should be homogeneity of the egg-molecules; that the whole mass should be smooth and soft; and that it should be borne in mind that an omelet is in reality scrambled eggs enclosed in a coat composed of coagulated egg.",
+                "I take as my standard an omelet consisting of three eggs, the seasoning of which comprises a small pinch of table-salt and a little pepper, and which requires one-half oz. of butter for its preparation. The quantities of garnishing ingredients given below, therefore, are based upon this standard."
+            ],
+            "entryIDs": [
+                "492",
+                "493",
+                "494",
+                "495",
+                "496",
+                "497",
+                "498",
+                "499",
+                "500",
+                "501",
+                "502",
+                "503",
+                "504",
+                "505",
+                "506",
+                "507",
+                "508",
+                "509",
+                "510",
+                "510.1",
+                "511",
+                "512",
+                "513",
+                "514",
+                "515",
+                "516",
+                "517",
+                "518",
+                "519",
+                "520",
+                "521",
+                "522",
+                "523",
+                "524"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-xii/section-9",
+            "title": "Cold Eggs",
+            "introduction": [
+                "The preparation of cold eggs is not limited by classical rules; it rests with the skill and artistic imagination of the operator, and, since fancifulness and originality are always closely allied to artistic imagination, it follows that the varieties evolved may be infinite.",
+                "Indeed, so various and numerous are the recipes dealing with this kind of egg-preparations that I must limit myself to a selection only of the more customary ones, culled as far as possible from my own repertory."
+            ],
+            "entryIDs": [
+                "525",
+                "526",
+                "527",
+                "528",
+                "529",
+                "530",
+                "531",
+                "532",
+                "533",
+                "534",
+                "535",
+                "536",
+                "537",
+                "538"
+            ],
+            "sections": []
+        }
+    ]
+}

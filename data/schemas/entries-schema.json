@@ -1,0 +1,11 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://example.com/schemas/entries-schema.json",
+    "title": "Cookbook Entries",
+    "description": "The flat collection of all instructional entries across the cookbook, used as the canonical data source for the entries database collection.",
+    "type": "array",
+    "items": {
+        "$ref": "./entry-schema.json"
+    },
+    "minItems": 1
+}

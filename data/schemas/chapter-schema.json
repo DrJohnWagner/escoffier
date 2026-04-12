@@ -1,158 +1,76 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://example.com/schemas/chapter.json",
+    "$id": "https://example.com/schemas/chapter-schema.json",
     "title": "Cookbook Chapter",
+    "description": "A single chapter of the cookbook, containing a hierarchical tree of sections whose leaves reference entry identifiers.",
     "$defs": {
-        "EntryBase": {
-            "title": "Base for all Entries",
-            "type": "object",
-            "properties": {
-                "number": {
-                    "type": "number"
-                },
-                "title": {
-                    "type": "string"
-                },
-                "type": {
-                    "type": "string"
-                },
-                "introduction": {
-                    "$ref": "./content-block-schema.json"
-                },
-                "notes": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "./content-block-schema.json"
-                    }
-                }
-            },
-            "required": ["number", "title", "type"]
-        },
-        "Principle": {
-            "title": "Principle",
-            "type": "object",
-            "properties": {
-                "type": {
-                    "const": "principle"
-                }
-            }
-        },
-        "Technique": {
-            "title": "Technique",
-            "type": "object",
-            "properties": {
-                "type": {
-                    "const": "technique"
-                }
-            }
-        },
-        "Definition": {
-            "title": "Definition",
-            "type": "object",
-            "properties": {
-                "type": {
-                    "const": "definition"
-                }
-            }
-        },
-        "Entry": {
-            "title": "Instructional Entry",
-            "oneOf": [
-                {
-                    "allOf": [
-                        {
-                            "$ref": "#/$defs/EntryBase"
-                        },
-                        {
-                            "$ref": "./recipe-schema.json"
-                        }
-                    ]
-                },
-                {
-                    "allOf": [
-                        {
-                            "$ref": "#/$defs/EntryBase"
-                        },
-                        {
-                            "$ref": "#/$defs/Principle"
-                        }
-                    ]
-                },
-                {
-                    "allOf": [
-                        {
-                            "$ref": "#/$defs/EntryBase"
-                        },
-                        {
-                            "$ref": "#/$defs/Technique"
-                        }
-                    ]
-                },
-                {
-                    "allOf": [
-                        {
-                            "$ref": "#/$defs/EntryBase"
-                        },
-                        {
-                            "$ref": "#/$defs/Definition"
-                        }
-                    ]
-                }
-            ]
-        },
         "Section": {
             "title": "Chapter Section",
+            "description": "A named subdivision of a chapter or another section. Sections may be nested arbitrarily deep. Leaf sections carry a list of entry identifiers in the order they appear in the text.",
             "type": "object",
             "properties": {
+                "_id": {
+                    "type": "string",
+                    "description": "Machine-readable identifier for the section (e.g., 'chapter-i/section-1')."
+                },
                 "title": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "The display title of the section."
                 },
                 "introduction": {
                     "type": "array",
+                    "description": "Introductory paragraphs for this section.",
                     "items": {
                         "type": "string"
                     }
                 },
-                "entries": {
+                "entryIDs": {
                     "type": "array",
+                    "description": "Ordered list of entry identifiers belonging directly to this section.",
                     "items": {
-                        "$ref": "#/$defs/Entry"
+                        "type": "string",
+                        "description": "An entry identifier matching the _id field in entries.json."
                     }
                 },
                 "sections": {
                     "type": "array",
+                    "description": "Nested sub-sections within this section.",
                     "items": {
                         "$ref": "#/$defs/Section"
                     }
                 }
             },
-            "required": ["title"]
+            "required": ["_id", "title", "introduction", "entryIDs", "sections"]
         }
     },
     "type": "object",
     "properties": {
-        "chapter": {
-            "type": "string"
-        },
-        "id": {
+        "_id": {
             "type": "string",
-            "description": "A unique, machine-readable identifier for the chapter, used for linking (e.g., 'chapter-i')."
+            "description": "Machine-readable identifier for the chapter (e.g., 'chapter-i')."
+        },
+        "chapter": {
+            "type": "string",
+            "description": "The chapter number expressed as a Roman numeral (e.g., 'I', 'XIV')."
         },
         "title": {
-            "type": "string"
+            "type": "string",
+            "description": "The display title of the chapter."
         },
         "introduction": {
             "type": "array",
+            "description": "Introductory paragraphs for the chapter as a whole.",
             "items": {
                 "type": "string"
             }
         },
         "sections": {
             "type": "array",
+            "description": "The top-level sections within this chapter.",
             "items": {
                 "$ref": "#/$defs/Section"
             }
         }
     },
-    "required": ["chapter", "id", "title", "sections"]
+    "required": ["_id", "chapter", "title", "introduction", "sections"]
 }

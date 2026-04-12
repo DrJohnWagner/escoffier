@@ -1,0 +1,177 @@
+{
+    "_id": "chapter-x",
+    "chapter": "X",
+    "title": "Leading Culinary Operations",
+    "introduction": [],
+    "sections": [
+        {
+            "_id": "chapter-x/section-1",
+            "title": "1. The Preparation of Soups",
+            "introduction": [
+                "The nutritious liquids known under the name of Soups are of comparatively recent origin. Indeed, as they are now served, they do not date any further back than the early years of the nineteenth century.",
+                "The soups of old cookery were, really, complete dishes, wherein the meats and vegetables used in their preparation were assembled. They, moreover, suffered from the effects of the general confusion which reigned in the menus of those days. These menus seem to have depended in no wise, for their items, upon the progressive satisfaction of the consumers’ appetites, and a long procession of dishes was far more characteristic of the meal than their judicious order and diversity.",
+                "In this respect, as in so many others, Carême was the reformer, and, if he were not, strictly speaking, the actual initiator of the changes which ushered in our present methods, he certainly had a large share in the establishment of the new theories.",
+                "Nevertheless, it took his followers almost a century to bring soups to the perfection of to-day, for modern cookery has replaced those stodgy dishes of yore by comparatively simple and savoury preparations which are veritable wonders of delicacy and taste. Now, my attention has been called to the desirability of drawing up some sort of classification of soups, if only with the view of obviating the absurdity of placing such preparations as are indiscriminately called Bisque, Purée, Cullis, or Cream under the same head. Logically, each preparation should have its own special formula, and it is impossible to admit that one and the same can apply to all.",
+                "It is generally admitted that the terms Veloutés and Creams, whose introduction into the vocabulary of cookery is comparatively recent, are peculiarly well suited to supplant those of Bisque and Cullis, which are steadily becoming obsolete, as well as that too vulgar term Purée. Considerations of this kind naturally led me to a new classification of soups, and this I shall disclose later.",
+                "I shall not make any lengthy attempt here to refute the arguments of certain autocrats of the dinner-table who, not so many years ago, urged the total abolition of soups. I shall only submit to their notice the following quotation from Grimod de la Reynière, one of our most illustrious gastronomists: “Soup is to a dinner what the porch or gateway is to a building,” that is to say, it must not only form the first portion thereof, but it must be so devised as to convey some idea of the whole to which it belongs; or, after the manner of an overture in a light opera, it should divulge what is to be the dominant phrase of the melody throughout.",
+                "I am at one with Grimod in this, and believe that soups have come to stay. Of all the items on a menu, soup is that which exacts the most delicate perfection and the strictest attention, for upon the first impression it gives to the diner the success of the latter part of the meal largely depends.",
+                "Soups should be served as hot as possible in very warm plates, especially in the case of consommés when these have been preceded by cold hors-d’œuvres.",
+                "Hors-d’œuvres are pointless in a dinner, and even when oysters stand as such they should only be allowed at meals which include no soup.",
+                "Those hors-d’œuvres which consist of various fish, smoked or in oil, and strongly seasoned salads, leave a disagreeable taste on the consumer’s palate and make the soup which follows seem flat and insipid if the latter be not served boiling hot."
+            ],
+            "entryIDs": [
+                "236"
+            ],
+            "sections": [
+                {
+                    "_id": "chapter-x/section-1/section-1",
+                    "title": "Classification of Soups",
+                    "introduction": [
+                        "This includes (1) clear soups, (2) thick soups, (3) special soups of various kinds, (4) classical vegetable soups, including some local preparations."
+                    ],
+                    "entryIDs": [
+                        "237",
+                        "238",
+                        "239",
+                        "240",
+                        "241",
+                        "242",
+                        "243",
+                        "244",
+                        "245",
+                        "246"
+                    ],
+                    "sections": []
+                }
+            ]
+        },
+        {
+            "_id": "chapter-x/section-2",
+            "title": "2. Braising, Poaching, Sautés, and Poëling",
+            "introduction": [
+                "Except for the roasts, grills, and fryings, which will be discussed later, all culinary operations dealing with meat are related to one of the four following methods: Braising, poëling, poaching, and sautés.",
+                "These four methods of cooking belong, however, to the sauces, and this explains how it is that the latter hold such a pre-eminent position in French cookery.",
+                "Before devoting any attention to particular formulæ, which will be given in the second part of this work, it seemed desirable to me to recapitulate in a general way the theory of each of these cooking methods. These theories are of paramount importance, since it is only with a complete knowledge of them that good results may be obtained by the culinary operator."
+            ],
+            "entryIDs": [
+                "247",
+                "248",
+                "249",
+                "250",
+                "251"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-x/section-3",
+            "title": "3. Roasts, Grills, Fryings",
+            "introduction": [],
+            "entryIDs": [],
+            "sections": [
+                {
+                    "_id": "chapter-x/section-3/section-1",
+                    "title": "Roasts",
+                    "introduction": [
+                        "Of the two usual methods of roasting, the spit will always be used in preference to the oven, if only on account of the conditions under which the operation is effected, and whatever be the kind of fuel used—wood, coal, or gas.",
+                        "The reason of this preference is clear if it be remembered that, in spite of every possible precaution during the progress of an oven roast, it is impossible to avoid an accumulation of vapour around the cooking object in a closed oven. And this steam is more particularly objectionable inasmuch as it is excessive in the case of delicately flavoured meats, which latter are almost if not entirely impaired thereby.",
+                        "The spitted roast, on the contrary, cooks in the open in a dry atmosphere, and by this means retains its own peculiar flavour. Hence the unquestionable superiority of spitted roasts over the oven kind, especially in respect of small feathered game.",
+                        "In certain circumstances and places there is no choice of means, and, nolens volens, the oven has to be used; but, in this case at least, all possible precautions should be observed in order to counteract the effects of the steam above mentioned."
+                    ],
+                    "entryIDs": [
+                        "252",
+                        "253",
+                        "254",
+                        "255",
+                        "256"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-x/section-3/section-2",
+                    "title": "Grills",
+                    "introduction": [
+                        "Those culinary preparations effected by means of grilling belong to the order called cooking by concentration. And, indeed, in almost all cases, the great object of these operations, I might even say the greatest object, is the concentration, in the centre, of the juices and essences which represent, most essentially, the nutritive principles of the products cooked.",
+                        "A grill, which is, in short, but a roast on an open fire, stands, in my opinion, as the remote starting-point, the very genesis of our art."
+                    ],
+                    "entryIDs": [
+                        "257",
+                        "258",
+                        "259",
+                        "260",
+                        "261"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-x/section-3/section-3",
+                    "title": "Fryings",
+                    "introduction": [],
+                    "entryIDs": [
+                        "262",
+                        "263",
+                        "264",
+                        "265",
+                        "266",
+                        "267"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-x/section-3/section-4",
+                    "title": "Gratins and Glazings",
+                    "introduction": [],
+                    "entryIDs": [
+                        "268",
+                        "269",
+                        "270",
+                        "271",
+                        "272"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-x/section-3/section-5",
+                    "title": "Blanchings",
+                    "introduction": [],
+                    "entryIDs": [
+                        "273"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-x/section-3/section-6",
+                    "title": "6. Vegetables and Garnishes",
+                    "introduction": [
+                        "Various Preparations."
+                    ],
+                    "entryIDs": [
+                        "274",
+                        "275",
+                        "276",
+                        "277",
+                        "278",
+                        "279"
+                    ],
+                    "sections": []
+                }
+            ]
+        },
+        {
+            "_id": "chapter-x/section-4",
+            "title": "PART II - RECIPES AND MODES OF PROCEDURE",
+            "introduction": [
+                "In Part I. of this work I treated of the general principles on which the science of cookery is founded, and the leading operations constituting the basis of the work.",
+                "In Part II. I shall proceed from the general to the particular—in other words, I shall set forth the recipes of every dish I touch upon, its method of preparation, and its constituent parts.",
+                "With the view of making reference as easy as possible, without departing from a certain logical order, I have adopted the method of classifying these recipes in accordance with the position the dishes they represent hold in the ordinary menu, and thus, starting with the hors-d’œuvres, I go straight on to the dessert. I was compelled, however, to alter my plan in the case of eggs, which never appear on the menu of a dinner save in Lent.",
+                "These I have therefore placed immediately after the hors-d’œuvres, which, like eggs, should only be served at luncheons, for reasons I shall explain later.",
+                "It will be seen that I have placed the Savouries before the Entremets, instead of after the Ices, as is customary in England. My reason for this apparent anomaly is that I consider it a positive gastronomical heresy to eat fish, meats, fowl-remains, &c., after delicate Entremets and Ices, the subtle flavour of the latter, which form such an agreeable item in a dinner, being quite destroyed by the violent seasoning of the former.",
+                "Moreover, the very pretext brought forward in support of this practice, so erroneous from the gastronomical standpoint, namely, “that after a good dinner it is necessary to serve something strange and highly seasoned, in order to whet the diner’s thirst,” is its own condemnation.",
+                "For, if appetite is satiated and thirst is quenched, it follows that the consumer has taken all that is necessary. Therefore, anything more that he may be stimulated to take will only amount to excess, and excess in gastronomy, as in everything else, is a fault that can find no excuse.",
+                "At all events, I could agree to no more than the placing of the Savouries before mild Entremets, and, even so, the former would have to consist of light, dry preparations, very moderately seasoned, such as Paillettes with Parmesan, various kinds of dry biscuits, and small tartlets garnished with cheese soufflé.",
+                "In short, if I expressed my plain opinion on the matter, I should advise the total suppression of Savouries in a dinner."
+            ],
+            "entryIDs": [],
+            "sections": []
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "_id": "chapter-xxiii",
+    "chapter": "XXIII",
+    "title": "FRUIT-STEWS AND JAMS",
+    "introduction": [],
+    "sections": [
+        {
+            "_id": "chapter-xxiii/section-1",
+            "title": "Stewed Fruit",
+            "introduction": [],
+            "entryIDs": [
+                "2952",
+                "2953"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-xxiii/section-2",
+            "title": "Jams",
+            "introduction": [],
+            "entryIDs": [
+                "2954",
+                "2955",
+                "2956",
+                "2957",
+                "2958",
+                "2959",
+                "2960",
+                "2961",
+                "2962"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-xxiii/section-3",
+            "title": "Jellies",
+            "introduction": [],
+            "entryIDs": [
+                "2963",
+                "2964",
+                "2965",
+                "2966",
+                "2967",
+                "2968",
+                "2969",
+                "2970",
+                "2971",
+                "2972",
+                "2973"
+            ],
+            "sections": []
+        }
+    ]
+}

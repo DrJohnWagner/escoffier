@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://example.com/schemas/glossary.json",
+    "$id": "https://example.com/schemas/glossary-schema.json",
     "title": "Cookbook Glossary",
-    "description": "A list of culinary terms and their definitions or cross-references.",
+    "description": "A list of culinary terms with definitions or cross-references to other terms or recipe numbers.",
     "$defs": {
         "GlossaryEntry": {
             "title": "Glossary Entry",
@@ -10,23 +10,23 @@
             "properties": {
                 "term": {
                     "type": "string",
-                    "description": "The term being defined."
+                    "description": "The culinary term being defined or cross-referenced."
                 },
                 "definition": {
                     "type": "string",
-                    "description": "The textual definition of the term."
+                    "description": "A textual definition of the term."
                 },
                 "see_recipe": {
                     "type": "string",
-                    "description": "A cross-reference to a recipe number (e.g., '1755')."
+                    "description": "Cross-reference to a recipe by its entry identifier (e.g., '1755')."
                 },
                 "see_term": {
                     "type": "string",
-                    "description": "A cross-reference to another glossary term (e.g., 'Cut')."
+                    "description": "Cross-reference to another glossary term (e.g., 'Cut')."
                 },
                 "sub_terms": {
                     "type": "array",
-                    "description": "A list of sub-terms that fall under this main term, often sharing a common cross-reference.",
+                    "description": "Related sub-terms that share this entry's cross-reference.",
                     "items": {
                         "type": "string"
                     }

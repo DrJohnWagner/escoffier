@@ -1,19 +1,30 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://example.com/schemas/content-block.json",
+    "$id": "https://example.com/schemas/content-block-schema.json",
     "title": "Content Block",
-    "description": "Represents a piece of information that can be a simple string, an array of strings for paragraphs, a titled object with a list of detail strings, or complex nested structures.",
+    "description": "A unit of content within an entry: either a plain string or a titled section with a list of paragraph strings.",
     "oneOf": [
         {
             "type": "string"
         },
         {
             "type": "object",
-            "additionalProperties": true
-        },
-        {
-            "type": "array",
-            "items": true
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "description": "The heading for this content section."
+                },
+                "content": {
+                    "type": "array",
+                    "description": "Paragraphs of text under this heading.",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1
+                }
+            },
+            "required": ["title", "content"],
+            "additionalProperties": false
         }
     ]
 }

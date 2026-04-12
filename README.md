@@ -19,9 +19,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
     - `ContentBlockList.tsx` is a key reusable component designed to handle the flexible `ContentBlock` schema, intelligently rendering simple lists, titled lists, and nested lists.
     - `Glossary.tsx` and `Index.tsx` are client components (`"use client"`) that use React's `useState` hook to provide interactive filtering by letter.
 - **`data/`**: The original source-of-truth JSON content. These files are loaded into MongoDB by `make migrate-db` and are then served to the Next.js app through the FastAPI backend (see the Database and API Server sections below).
-    - `cookbook.json` is the cookbook's metadata and a copy of its table of contents, glossary, and index.
-    - `chapters/*.json`: Individual JSON files for each chapter's content.
-    - `contents.json`, `glossary.json`, `index.json`: Standalone data sources for the respective pages.
+    - `JSON/cookbook.json`: Master document containing metadata, table of contents, glossary, index, menus, and the full chapter/section tree (with sections referencing entries by ID rather than embedding them).
+    - `JSON/entries.json`: Flat list of all instructional entries (recipes, techniques, principles, definitions) across every chapter.
     - `schemas/*.json`: The JSON Schema definitions that act as the single source of truth for the data's structure.
 - **`functions/`**: Utility modules for Server Components, notably `apiClient.ts`, which provides typed `getCookbook` / `getContents` / `getGlossary` / `getIndexData` / `getChapter` helpers that call the FastAPI backend.
 - **`server/`**: The Python FastAPI backend that reads from MongoDB and exposes `/api/*` JSON endpoints. See the API Server section.
@@ -51,7 +50,7 @@ Then, in order:
 
 ```bash
 make start-db          # launch MongoDB in Docker (port 27018 on the host)
-make migrate-db        # load data/*.json and data/chapters/*.json into MongoDB
+make migrate-db        # load data/JSON/cookbook.json and data/JSON/entries.json into MongoDB
 make start-server      # FastAPI dev server on http://127.0.0.1:8000
 npm run dev            # Next.js dev server on http://127.0.0.1:3000
 ```
@@ -117,17 +116,20 @@ Database files are stored in the named Docker volumes `mongodb_data` and `mongod
 
 ### Migrating the JSON data into MongoDB
 
-The source-of-truth JSON files under `data/` can be loaded into MongoDB with `make migrate-db` (equivalent to `npm run db:migrate`). The script lives at `scripts/migrate-to-mongo.mjs` and requires the container to be running (`make start-db`).
+The source-of-truth JSON files under `data/JSON/` can be loaded into MongoDB with `make migrate-db` (equivalent to `npm run db:migrate`). The script lives at `scripts/migrate-to-mongo.mjs` and requires the container to be running (`make start-db`).
 
 The migration creates/replaces the following collections in the `escoffier` database:
 
-| Collection  | Source file(s)                       | `_id` strategy                           |
-| ----------- | ------------------------------------ | ---------------------------------------- |
-| `cookbook`  | `data/cookbook.json`                 | fixed `"cookbook"` (single document)     |
-| `contents`  | `data/contents.json`                 | the `part` value (e.g. `"I"`)            |
-| `glossary`  | `data/glossary.json`                 | auto-generated (terms are not unique)    |
-| `index`     | `data/index.json`                    | the `letter` value                       |
-| `chapters`  | `data/chapters/chapter-*.json`       | the chapter `id` (e.g. `"chapter-i"`)    |
+| Collection  | Source                                          | `_id` strategy                                    |
+| ----------- | ----------------------------------------------- | ------------------------------------------------- |
+| `cookbook`  | `data/JSON/cookbook.json` (top-level fields)    | fixed `"cookbook"` (single document)              |
+| `contents`  | `data/JSON/cookbook.json` → `contents` array    | the `part` value (e.g. `"I"`)                     |
+| `glossary`  | `data/JSON/cookbook.json` → `glossary` array    | auto-generated (terms are not unique)             |
+| `index`     | `data/JSON/cookbook.json` → `index` array       | the `letter` value (e.g. `"A"`)                   |
+| `chapters`  | `data/JSON/cookbook.json` → `chapters` array    | the chapter `_id` (e.g. `"chapter-i"`)            |
+| `entries`   | `data/JSON/entries.json`                        | the entry number as a string (e.g. `"1"`, `"42"`) |
+
+The `cookbook` document stored in Mongo omits the `chapters` array (which lives in its own collection) but retains all other top-level fields: `contents`, `glossary`, `index`, `menus`, `press`, `preface`, and `source`.
 
 Each collection is emptied before being re-populated, so running the migration multiple times is safe and produces the same result.
 
@@ -156,7 +158,7 @@ This runs `uv sync` inside `server/`, which creates `server/.venv` using the pye
 
 ```bash
 make start-db          # make sure MongoDB is up
-make migrate-db        # (only needed the first time or after editing data/)
+make migrate-db        # (only needed the first time or after editing data/JSON/)
 make start-server      # starts FastAPI dev server on http://127.0.0.1:8000
 ```
 
@@ -166,16 +168,18 @@ Interactive API docs are available at [http://127.0.0.1:8000/docs](http://127.0.
 
 ### Endpoints
 
-| Method | Path                                                  | Returns                                                               |
-| ------ | ----------------------------------------------------- | --------------------------------------------------------------------- |
-| GET    | `/`                                                   | Health probe (`{"status":"ok","service":"escoffier-api"}`)            |
-| GET    | `/api/cookbook`                                       | The single `cookbook` document                                        |
-| GET    | `/api/contents`                                       | All parts with their nested chapter listings                          |
-| GET    | `/api/glossary`                                       | All glossary entries, sorted by term                                  |
-| GET    | `/api/index`                                          | All letter groups                                                     |
-| GET    | `/api/chapters`                                       | Chapter summaries (`_id`, `id`, `chapter`, `title`) in cookbook order |
-| GET    | `/api/chapters/{chapter_id}`                          | A single chapter document (404 if unknown)                            |
-| PATCH  | `/api/chapters/{chapter_id}/entries/{entry_number}`   | Update a single entry; returns the updated chapter (404 if unknown)   |
+| Method | Path                              | Returns                                                                          |
+| ------ | --------------------------------- | -------------------------------------------------------------------------------- |
+| GET    | `/`                               | Health probe (`{"status":"ok","service":"escoffier-api"}`)                       |
+| GET    | `/api/cookbook`                   | The single `cookbook` document (metadata, contents, glossary, index)             |
+| GET    | `/api/contents`                   | All parts with their nested chapter listings                                     |
+| GET    | `/api/glossary`                   | All glossary entries, sorted by term                                             |
+| GET    | `/api/index`                      | All letter groups                                                                |
+| GET    | `/api/chapters`                   | Chapter summaries (`_id`, `chapter`, `title`) in cookbook order                  |
+| GET    | `/api/chapters/{chapter_id}`      | A single chapter with its section tree and `entryIDs` (404 if unknown)           |
+| GET    | `/api/entries`                    | All entries; filterable via `?chapter_id=` and/or `?section_id=` query params    |
+| GET    | `/api/entries/{entry_id}`         | A single entry by its string ID (404 if unknown)                                 |
+| PATCH  | `/api/entries/{entry_id}`         | Update fields on a single entry; returns the updated entry (404 if unknown)      |
 
 ### Configuration
 
@@ -189,21 +193,23 @@ Pytest is added as a dev dependency in `server/pyproject.toml` (under the `dev` 
 
 ```bash
 make start-db          # start MongoDB
-make migrate-db        # (only needed once, or after editing data/)
+make migrate-db        # (only needed once, or after editing data/JSON/)
 make test-server       # runs `uv run pytest` from inside server/
 ```
 
-If MongoDB is not reachable, the entire suite is **skipped** with a helpful message rather than failing — so you can run `make test-server` safely even when the DB is down. When the DB *is* up, the suite currently contains **11 tests** covering:
+If MongoDB is not reachable, the entire suite is **skipped** with a helpful message rather than failing — so you can run `make test-server` safely even when the DB is down. When the DB *is* up, the suite currently contains **16 tests** covering:
 
 - the `/` health probe
-- `/api/cookbook` — shape and known title/year
+- `/api/cookbook` — shape, known title/year, and new `press`/`preface` front-matter fields
 - `/api/contents` — the two parts and their nested chapters
 - `/api/glossary` — alphabetical ordering and that `_id` is serialized to a string (so the response is JSON-round-trippable even for auto-generated `ObjectId`s)
 - `/api/index` — letter groups
 - `/api/chapters` — cookbook ordering (verifying e.g. `chapter-ix` lands *after* `chapter-v` rather than at the lexical position)
-- `/api/chapters/{id}` — fetching an individual chapter
+- `/api/chapters/{id}` — fetching an individual chapter; sections have `entryIDs` not embedded entries
 - `/api/chapters/{unknown}` — 404 behaviour
-- `PATCH /api/chapters/{id}/entries/{number}` — updating an entry, persistence, and 404 cases
+- `/api/entries` — listing all entries and filtering by `chapter_id` / `section_id`
+- `/api/entries/{id}` — fetching a single entry and 404 behaviour
+- `PATCH /api/entries/{id}` — updating an entry, persistence, `_id` immutability, and 404 behaviour
 
 ## Learn More
 

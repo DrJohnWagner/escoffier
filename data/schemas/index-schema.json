@@ -1,11 +1,12 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://example.com/schemas/index.json",
+    "$id": "https://example.com/schemas/index-schema.json",
     "title": "Cookbook Index",
-    "description": "An index for the cookbook, grouped alphabetically.",
+    "description": "An alphabetically grouped index of terms and their associated entry identifiers or cross-references.",
     "$defs": {
         "TermEntry": {
             "title": "Index Term",
+            "description": "A term linked to one or more entry identifiers.",
             "type": "object",
             "properties": {
                 "term": {
@@ -14,51 +15,50 @@
                 },
                 "recipe_number": {
                     "type": "string",
-                    "description": "The associated recipe number or range (e.g., '1652' or '2104-6')."
+                    "description": "The associated entry identifier or range (e.g., '1652' or '2104-6')."
                 }
             },
             "required": ["term"]
         },
         "CrossReferenceEntry": {
             "title": "Index Cross-Reference",
+            "description": "A term that redirects the reader to another index term.",
             "type": "object",
             "properties": {
                 "term": {
                     "type": "string",
-                    "description": "The term to be redirected."
+                    "description": "The term being redirected."
                 },
                 "see": {
                     "type": "string",
-                    "description": "The term to which the user is redirected (e.g., 'Apricots')."
+                    "description": "The preferred term to look up instead (e.g., 'Apricots')."
                 }
             },
             "required": ["term", "see"]
         },
         "IndexEntry": {
             "title": "Index Entry",
-            "description": "Can be either a standard term or a cross-reference.",
-            "oneOf": [
-                {
-                    "$ref": "#/$defs/TermEntry"
-                },
-                {
-                    "$ref": "#/$defs/CrossReferenceEntry"
-                }
+            "description": "A standard term entry, a cross-reference, or both (some entries carry a recipe number and a see-also redirect simultaneously).",
+            "anyOf": [
+                { "$ref": "#/$defs/TermEntry" },
+                { "$ref": "#/$defs/CrossReferenceEntry" }
             ]
         },
         "IndexGroup": {
             "title": "Index Group",
-            "description": "A group of index entries under a specific letter of the alphabet.",
+            "description": "All index entries that begin with a given letter of the alphabet.",
             "type": "object",
             "properties": {
                 "letter": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "The single uppercase letter heading this group."
                 },
                 "entries": {
                     "type": "array",
                     "items": {
                         "$ref": "#/$defs/IndexEntry"
-                    }
+                    },
+                    "minItems": 1
                 }
             },
             "required": ["letter", "entries"]

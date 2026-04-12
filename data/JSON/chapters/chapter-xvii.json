@@ -1,0 +1,164 @@
+{
+    "_id": "chapter-xvii",
+    "chapter": "XVII",
+    "title": "Roasts and Salads",
+    "introduction": [
+        "In the first part of this work I explained the fundamental principles governing the treatment of Roasts, and I now have to add only a few words to what has already been said. Recipes may be consummate in detail and in accuracy, and still they will be found wanting in the matter of Roasts; for experience alone can tell the operator whether the joint he is treating be old or young, fresh or stale; whether it must be cooked quickly or slowly, and all the theories that I might advance on this subject, though perhaps they might not be useless, would at least prove impracticable nine times out of ten.",
+        "I shall not prescribe any limit of time for Roasts, except in very special cases, and even so that limit will only be approximate.",
+        "Nothing can be made precise in the matter; long practice alone, away from books, will teach it; for book-rules can only be understood when the light of practical knowledge is focussed upon them."
+    ],
+    "sections": [
+        {
+            "_id": "chapter-xvii/section-1",
+            "title": "Accompaniments and Preparations",
+            "introduction": [],
+            "entryIDs": [
+                "1942",
+                "1943",
+                "1944",
+                "1945",
+                "1946"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-xvii/section-2",
+            "title": "Beef Roasts",
+            "introduction": [],
+            "entryIDs": [
+                "1947",
+                "1948",
+                "1949",
+                "1950",
+                "1951",
+                "1952",
+                "1953",
+                "1954"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-xvii/section-3",
+            "title": "Fowl Roasts",
+            "introduction": [],
+            "entryIDs": [
+                "1955",
+                "1956",
+                "1957",
+                "1958",
+                "1959",
+                "1960",
+                "1961",
+                "1962",
+                "1963",
+                "1964",
+                "1965",
+                "1966"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-xvii/section-4",
+            "title": "Ground-Game Roasts",
+            "introduction": [],
+            "entryIDs": [
+                "1967",
+                "1968"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-xvii/section-5",
+            "title": "Feathered-Game Roasts",
+            "introduction": [],
+            "entryIDs": [
+                "1969",
+                "1970",
+                "1971",
+                "1972",
+                "1973",
+                "1974",
+                "1975",
+                "1976",
+                "1977",
+                "1978",
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-xvii/section-6",
+            "title": "Salads",
+            "introduction": [
+                "Salads are of two kinds: simple, or compound. Simple, or raw salads always accompany hot roasts; compound salads, which generally consist of cooked vegetables, accompany cold roasts."
+            ],
+            "entryIDs": [],
+            "sections": [
+                {
+                    "_id": "chapter-xvii/section-6/section-1",
+                    "title": "Simple Salads",
+                    "introduction": [],
+                    "entryIDs": [
+                        "1984",
+                        "1985",
+                        "1986",
+                        "1987",
+                        "1988",
+                        "1989",
+                        "1990",
+                        "1991",
+                        "1992",
+                        "1993",
+                        "1994",
+                        "1995"
+                    ],
+                    "sections": []
+                },
+                {
+                    "_id": "chapter-xvii/section-6/section-2",
+                    "title": "Compound Salads",
+                    "introduction": [],
+                    "entryIDs": [
+                        "1996",
+                        "1997",
+                        "1998",
+                        "1999",
+                        "2000",
+                        "2001",
+                        "2002",
+                        "2003",
+                        "2004",
+                        "2005",
+                        "2006",
+                        "2007",
+                        "2008",
+                        "2009",
+                        "2010",
+                        "2011",
+                        "2012",
+                        "2013",
+                        "2014",
+                        "2015",
+                        "2016",
+                        "2017",
+                        "2018",
+                        "2019",
+                        "2020",
+                        "2021",
+                        "2022",
+                        "2023",
+                        "2024",
+                        "2025",
+                        "2026",
+                        "2027"
+                    ],
+                    "sections": []
+                }
+            ]
+        }
+    ]
+}

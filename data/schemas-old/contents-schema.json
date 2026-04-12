@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://example.com/schemas/contents.json",
+    "title": "Cookbook Table of Contents",
+    "description": "The table of contents for the cookbook, organized into parts and chapters.",
+    "$defs": {
+        "ContentChapter": {
+            "title": "Chapter Entry",
+            "type": "object",
+            "properties": {
+                "chapter": {
+                    "type": "string",
+                    "description": "The chapter number, expressed as a Roman numeral."
+                },
+                "id": {
+                    "type": "string",
+                    "description": "A machine-readable identifier for building hyperlinks (e.g., 'chapter-i')."
+                },
+                "title": {
+                    "type": "string",
+                    "description": "The title of the chapter."
+                }
+            },
+            "required": ["chapter", "id", "title"]
+        },
+        "ContentPart": {
+            "title": "Part Entry",
+            "description": "A major part of the cookbook, containing a title and a list of chapters.",
+            "type": "object",
+            "properties": {
+                "part": {
+                    "type": "string",
+                    "description": "The part number, expressed as a Roman numeral."
+                },
+                "title": {
+                    "type": "string",
+                    "description": "The title of the part."
+                },
+                "chapters": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/ContentChapter"
+                    }
+                }
+            },
+            "required": ["part", "title", "chapters"]
+        }
+    },
+    "type": "array",
+    "items": {
+        "$ref": "#/$defs/ContentPart"
+    }
+}

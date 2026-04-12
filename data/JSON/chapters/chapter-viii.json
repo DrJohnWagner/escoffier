@@ -1,0 +1,37 @@
+{
+    "_id": "chapter-viii",
+    "chapter": "VIII",
+    "title": "The Various Garnishes for Soups",
+    "introduction": [],
+    "sections": [
+        {
+            "_id": "chapter-viii/section-1",
+            "title": "ROYALES",
+            "introduction": [],
+            "entryIDs": [
+                "206",
+                "207",
+                "208",
+                "209",
+                "210",
+                "211",
+                "212",
+                "213",
+                "214"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-viii/section-2",
+            "title": "Other Soup Garnishes",
+            "introduction": [],
+            "entryIDs": [
+                "215",
+                "216",
+                "217",
+                "218"
+            ],
+            "sections": []
+        }
+    ]
+}

@@ -1,12 +1,12 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://example.com/schemas/menus.json",
+    "$id": "https://example.com/schemas/menus-schema.json",
     "title": "Cookbook Menus",
-    "description": "A collection of menus, which can be grouped into sets.",
+    "description": "A collection of menu sets, each grouping related menus under a common title.",
     "$defs": {
         "MenuItem": {
             "title": "Menu Item",
-            "description": "Represents a single course in a menu, which can be a simple string or a choice between multiple options.",
+            "description": "A single course in a menu: either a string naming the dish, or a choice object listing two or more alternatives.",
             "oneOf": [
                 {
                     "type": "string"
@@ -16,47 +16,56 @@
                     "properties": {
                         "choice": {
                             "type": "array",
+                            "description": "Two or more alternative dishes for this course.",
                             "items": {
                                 "type": "string"
                             },
                             "minItems": 2
                         }
                     },
-                    "required": ["choice"]
+                    "required": ["choice"],
+                    "additionalProperties": false
                 }
             ]
         },
         "Menu": {
             "title": "Menu",
-            "description": "A single menu, containing a list of food items, an optional wine list, and optional metadata.",
+            "description": "A single menu with an ordered list of courses, an optional wine pairing list, and optional occasion metadata.",
             "type": "object",
             "properties": {
                 "title": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "The title or label for this specific menu."
                 },
                 "items": {
                     "type": "array",
+                    "description": "The courses of the menu in serving order.",
                     "items": {
                         "$ref": "#/$defs/MenuItem"
                     }
                 },
                 "wines": {
                     "type": "array",
+                    "description": "Suggested wine pairings for the menu.",
                     "items": {
                         "type": "string"
                     }
                 },
                 "metadata": {
                     "type": "object",
+                    "description": "Optional occasion details for historical or special menus.",
                     "properties": {
                         "date": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "The date on which the menu was served."
                         },
                         "location": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "The venue or establishment where the menu was served."
                         },
                         "occasion": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "The event or occasion the menu was prepared for."
                         }
                     }
                 }
@@ -64,17 +73,19 @@
         },
         "MenuCollection": {
             "title": "Menu Collection",
-            "description": "A titled group of menus, like 'Menus for Luncheons'.",
+            "description": "A titled group of related menus (e.g., 'Menus for Luncheons').",
             "type": "object",
             "properties": {
                 "title": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "The heading for this collection of menus."
                 },
                 "menus": {
                     "type": "array",
                     "items": {
                         "$ref": "#/$defs/Menu"
-                    }
+                    },
+                    "minItems": 1
                 }
             },
             "required": ["title", "menus"]
