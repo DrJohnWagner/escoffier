@@ -11,8 +11,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 - **`app/`**: This directory contains the core routing and page structure.
     - `layout.tsx`: The root layout defining the global HTML structure and applying the Geist font.
-    - `page.tsx`: The homepage, which fetches `cookbook.json` to display the title, author information, and the main table of contents.
-    - `chapters/[id]/page.tsx`: A dynamic route that statically generates pages for each chapter at build time using `generateStaticParams`. This is excellent for performance.
+    - `page.tsx`: The homepage, which calls `/api/cookbook` to display the title, author information, and the main table of contents.
+    - `chapters/[id]/page.tsx`: A dynamic route that uses `generateStaticParams` to register valid chapter slugs. Each request fetches the chapter and its entries in parallel from `/api/chapters/{id}` and `/api/entries?chapter_id={id}` — fresh on every request because `apiClient.ts` uses `cache: "no-store"`.
     - `glossary/page.tsx` & `index/page.tsx`: Static pages for displaying the glossary and index, respectively.
 - **`components/`**: A well-organized set of React components responsible for rendering different parts of the UI.
     - `Chapter.tsx`, `Section.tsx`, and `Entry.tsx` work together to render the hierarchical structure of a chapter's content.

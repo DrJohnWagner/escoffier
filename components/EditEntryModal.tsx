@@ -26,9 +26,6 @@ interface EditEntryModalProps {
     onSave: (updatedEntry: InstructionalEntry) => void
 }
 
-/**
- * Recursively processes content blocks into a string format.
- */
 const processBlocks = (
     items: ContentBlock[],
     format: "text" | "markdown",
@@ -44,39 +41,20 @@ const processBlocks = (
                       : "  - "
                 return prefix + item
             }
-            if (Array.isArray(item)) {
-                return item
-                    .map((subItem, i) => {
-                        const prefix = isOrdered
-                            ? `${i + 1}. `
-                            : format === "markdown"
-                              ? "- "
-                              : "  - "
-                        return prefix + subItem
-                    })
-                    .join("\n")
-            }
-            // Object type { [key: string]: string[] }
-            if (typeof item === "object" && item !== null) {
-                return Object.entries(item)
-                    .map(([key, values]) => {
-                        const header =
-                            format === "markdown" ? `**${key}**` : `${key}:`
-                        const listItems = (values as string[])
-                            .map((v, i) => {
-                                const prefix = isOrdered
-                                    ? `${i + 1}. `
-                                    : format === "markdown"
-                                      ? "- "
-                                      : "  - "
-                                return prefix + v
-                            })
-                            .join("\n")
-                        return `${header}\n${listItems}`
-                    })
-                    .join("\n\n")
-            }
-            return ""
+            // Titled section: { title: string; content: string[] }
+            const header =
+                format === "markdown" ? `**${item.title}**` : `${item.title}:`
+            const listItems = item.content
+                .map((v, i) => {
+                    const prefix = isOrdered
+                        ? `${i + 1}. `
+                        : format === "markdown"
+                          ? "- "
+                          : "  - "
+                    return prefix + v
+                })
+                .join("\n")
+            return `${header}\n${listItems}`
         })
         .join("\n")
 }
