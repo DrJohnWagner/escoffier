@@ -3,41 +3,41 @@
 import React, { useState, useCallback } from "react"
 import {
     InstructionalEntry,
-    BaseForAllEntries,
     Recipe,
-} from "@/types/generated.ts/chapter-schema"
+    ContentBlock,
+} from "@/types/generated.ts/entry-schema"
 import CopyIcon from "./CopyIcon"
 
-const isRecipe = (
-    entry: InstructionalEntry
-): entry is BaseForAllEntries & Recipe => entry.type === "recipe"
+const isRecipe = (entry: InstructionalEntry): entry is Recipe =>
+    entry.type === "recipe"
+
+const blockToText = (block: ContentBlock): string => {
+    if (typeof block === "string") return block
+    return `${block.title}\n${block.content.join("\n")}`
+}
 
 const generateFormattedText = (
     entry: InstructionalEntry,
     format: "text" | "markdown"
 ): string => {
-    const title = `${format === "markdown" ? "####" : ""} ${entry.number} — ${
+    const title = `${format === "markdown" ? "####" : ""} ${entry._id} — ${
         entry.title
     }`
     const intro = entry.introduction
-        ? Array.isArray(entry.introduction)
-            ? entry.introduction.join("\n\n")
-            : typeof entry.introduction === "string"
-              ? entry.introduction
-              : ""
+        ? entry.introduction.map(blockToText).join("\n\n")
         : ""
 
     const ingredients =
         isRecipe(entry) && entry.ingredients
-            ? `\n${format === "markdown" ? "**Ingredients**" : "Ingredients"}\n${entry.ingredients.map((i) => `- ${i}`).join("\n")}`
+            ? `\n${format === "markdown" ? "**Ingredients**" : "Ingredients"}\n${entry.ingredients.map((i: ContentBlock) => `- ${blockToText(i)}`).join("\n")}`
             : ""
     const instructions =
         isRecipe(entry) && entry.instructions
-            ? `\n${format === "markdown" ? "**Instructions**" : "Instructions"}\n${entry.instructions.map((i, idx) => `${idx + 1}. ${i}`).join("\n")}`
+            ? `\n${format === "markdown" ? "**Instructions**" : "Instructions"}\n${entry.instructions.map((i: ContentBlock, idx: number) => `${idx + 1}. ${blockToText(i)}`).join("\n")}`
             : ""
 
     const notes = entry.notes
-        ? `\n${format === "markdown" ? "> " : "Notes:\n"}${entry.notes.map((n) => `- ${n}`).join("\n")}`
+        ? `\n${format === "markdown" ? "> " : "Notes:\n"}${entry.notes.map((n: ContentBlock) => `- ${blockToText(n)}`).join("\n")}`
         : ""
 
     return [title, intro, ingredients, instructions, notes]

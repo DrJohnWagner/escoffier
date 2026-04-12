@@ -6,7 +6,7 @@ from contextlib import asynccontextmanager
 from typing import Any
 
 from bson import ObjectId
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 
 from .db import close_client, get_database
@@ -34,10 +34,10 @@ async def lifespan(_: FastAPI):
 app = FastAPI(
     title="Escoffier Cookbook API",
     description=(
-        "Read-only JSON API serving cookbook, contents, glossary, index, and "
-        "chapter data from MongoDB."
+        "Read-only JSON API serving cookbook, contents, glossary, index, "
+        "chapter, and entry data from MongoDB."
     ),
-    version="0.1.0",
+    version="0.2.0",
     lifespan=lifespan,
 )
 
@@ -89,19 +89,19 @@ async def get_index() -> list[dict[str, Any]]:
 
 @app.get("/api/chapters", tags=["chapters"])
 async def list_chapters() -> list[dict[str, Any]]:
-    """Return chapter summaries (id, chapter numeral, title)."""
+    """Return chapter summaries (_id, chapter numeral, title) in cookbook order."""
     db = get_database()
-    projection = {"_id": 1, "id": 1, "chapter": 1, "title": 1}
+    projection = {"_id": 1, "chapter": 1, "title": 1}
     docs = await db.chapters.find({}, projection).to_list(length=None)
     # Sort in the order the cookbook lists them (contents), not by _id which
-    # is a string that sorts lexically (chapter-i, chapter-ii, chapter-iv, chapter-ix, ...).
+    # is a string that sorts lexically (chapter-i, chapter-ii, chapter-iv, ...).
     contents_doc = await db.contents.find({}).sort("_id", 1).to_list(length=None)
     ordering: list[str] = []
     for part in contents_doc:
         for ch in part.get("chapters", []):
             ordering.append(ch["id"])
     position = {cid: i for i, cid in enumerate(ordering)}
-    docs.sort(key=lambda d: position.get(d.get("id", d["_id"]), 10**6))
+    docs.sort(key=lambda d: position.get(d["_id"], 10**6))
     return _serialize(docs)
 
 
@@ -116,55 +116,48 @@ async def get_chapter(chapter_id: str) -> dict[str, Any]:
     return _serialize(doc)
 
 
-def _update_entry_in_sections(
-    sections: list[dict[str, Any]], entry_number: int | float, payload: dict[str, Any]
-) -> bool:
-    """Recursively find an entry by number in nested sections and update it.
-
-    Returns ``True`` if the entry was found and updated, ``False`` otherwise.
-    """
-    for section in sections:
-        for entry in section.get("entries", []):
-            if entry.get("number") == entry_number:
-                for key, value in payload.items():
-                    if key == "number":
-                        continue  # prevent renumbering
-                    entry[key] = value
-                return True
-        if _update_entry_in_sections(
-            section.get("sections", []), entry_number, payload
-        ):
-            return True
-    return False
+@app.get("/api/entries", tags=["entries"])
+async def list_entries(
+    chapter_id: str | None = Query(default=None, description="Filter by chapter _id"),
+    section_id: str | None = Query(default=None, description="Filter by section _id"),
+) -> list[dict[str, Any]]:
+    """Return all entries, optionally filtered by chapter or section."""
+    db = get_database()
+    query: dict[str, Any] = {}
+    if chapter_id is not None:
+        query["chapter_id"] = chapter_id
+    if section_id is not None:
+        query["section_id"] = section_id
+    docs = await db.entries.find(query).to_list(length=None)
+    return _serialize(docs)
 
 
-@app.patch("/api/chapters/{chapter_id}/entries/{entry_number}", tags=["chapters"])
+@app.get("/api/entries/{entry_id}", tags=["entries"])
+async def get_entry(entry_id: str) -> dict[str, Any]:
+    """Return a single entry by its string identifier."""
+    db = get_database()
+    doc = await db.entries.find_one({"_id": entry_id})
+    if doc is None:
+        raise HTTPException(
+            status_code=404, detail=f"entry {entry_id!r} not found"
+        )
+    return _serialize(doc)
+
+
+@app.patch("/api/entries/{entry_id}", tags=["entries"])
 async def update_entry(
-    chapter_id: str,
-    entry_number: int | float,
+    entry_id: str,
     payload: dict[str, Any],
 ) -> dict[str, Any]:
-    """Update a single entry within a chapter document."""
+    """Update fields on a single entry; returns the updated document."""
     db = get_database()
-
-    chapter = await db.chapters.find_one({"_id": chapter_id})
-    if chapter is None:
+    doc = await db.entries.find_one({"_id": entry_id})
+    if doc is None:
         raise HTTPException(
-            status_code=404, detail=f"chapter {chapter_id!r} not found"
+            status_code=404, detail=f"entry {entry_id!r} not found"
         )
-
-    if not _update_entry_in_sections(
-        chapter["sections"], entry_number, payload
-    ):
-        raise HTTPException(
-            status_code=404,
-            detail=f"entry {entry_number} not found in chapter {chapter_id!r}",
-        )
-
-    await db.chapters.update_one(
-        {"_id": chapter_id},
-        {"$set": {"sections": chapter["sections"]}},
-    )
-
-    doc = await db.chapters.find_one({"_id": chapter_id})
-    return _serialize(doc)
+    # Prevent renaming the primary key.
+    payload.pop("_id", None)
+    await db.entries.update_one({"_id": entry_id}, {"$set": payload})
+    updated = await db.entries.find_one({"_id": entry_id})
+    return _serialize(updated)

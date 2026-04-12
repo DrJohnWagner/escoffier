@@ -1,0 +1,76 @@
+{
+    "_id": "chapter-iv",
+    "chapter": "IV",
+    "title": "COLD SAUCES AND COMPOUND BUTTERS",
+    "introduction": [],
+    "sections": [
+        {
+            "_id": "chapter-iv/section-1",
+            "title": "Cold Sauces",
+            "introduction": [],
+            "entryIDs": [
+                "121",
+                "122",
+                "123",
+                "124",
+                "125",
+                "126",
+                "127",
+                "128",
+                "129",
+                "130",
+                "131",
+                "132"
+            ],
+            "sections": [
+                {
+                    "_id": "chapter-iv/section-1/section-1",
+                    "title": "Cold English Sauces",
+                    "introduction": [],
+                    "entryIDs": [
+                        "133",
+                        "134",
+                        "135",
+                        "136",
+                        "137",
+                        "138"
+                    ],
+                    "sections": []
+                }
+            ]
+        },
+        {
+            "_id": "chapter-iv/section-2",
+            "title": "Compound Butters for Grills and for the Completion of Sauces",
+            "introduction": [
+                "With the exception of those of the shell-fish order, the butters, whose formulæ I am about to give, are not greatly used in kitchens. Nevertheless, in some cases, as, for instance, in accentuating the savour of sauces, they answer a real and useful purpose, and I therefore recommend them, since they enable one to give a flavour to the derivatives of the Velouté and Béchamel sauces which these could not acquire by any other means.",
+                "With regard to shell-fish butters, and particularly those of the common and spiny lobster and the crayfish, experience has shown that when they are prepared with heat (that is to say, by melting in a bain-marie a quantity of butter which has been previously pounded with shell-fish remains and afterwards strained through muslin into a basin of iced-water where it has solidified) they are of a finer colour than the other kind and quite free from shell particles. But the heat, besides dissipating a large proportion of their delicacy, involves considerable risk, for the slightest neglect gives the above preparation quite a disagreeable taste. To obviate these difficulties I have adopted a system of two distinct butters, one which is exclusively calorific and prepared with heat, and the other which is prepared with all the creamy parts, the trimmings and the remains of common and spiny lobsters, without the shells, pounded with the required quantity of fresh butter and passed through a sieve. The latter is used to complete sauces, particularly those with a Béchamel base to which it lends a perfect savour.",
+                "I follow the same procedure with shrimp and crayfish butters, sometimes substituting for the butter good cream, which, I find, absorbs the aromatic principles perhaps better than the former. With the above method it is advisable to pass the butter or the cream through a very fine sieve first and afterwards through tammy, so as to avoid small particles of the pounded shell being present in the sauce."
+            ],
+            "entryIDs": [
+                "139",
+                "140",
+                "140.1",
+                "141",
+                "142",
+                "143",
+                "144",
+                "145",
+                "146",
+                "147",
+                "148",
+                "149",
+                "150",
+                "151",
+                "151.1",
+                "152",
+                "153",
+                "154",
+                "155",
+                "156",
+                "157"
+            ],
+            "sections": []
+        }
+    ]
+}

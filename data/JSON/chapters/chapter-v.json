@@ -1,0 +1,36 @@
+{
+    "_id": "chapter-v",
+    "chapter": "V",
+    "title": "SAVOURY JELLIES OR ASPICS",
+    "introduction": [
+        "Jellies are to cold cookery what consommés and stock are to hot. If anything, the former are perhaps more important, for a cold entrée—however perfect it may be in itself—is nothing without its accompanying jelly.",
+        "In the recipes which I give hereafter I have made a point of showing how melting jellies may be obtained, i.e., served in a sauce-boat simultaneously with the cold comestible, or actually poured over it when the latter lies in a deep dish—a common custom nowadays.",
+        "This method of serving cold entrées, which I inaugurated at the Savoy Hotel with the “Suprême de Volaille Jeannette,” is the only one which allows of serving a jelly in a state of absolute perfection.",
+        "Nevertheless, if a more solid jelly were required, either for the decking of cold dishes or for a moulded entrée, there need only be added to the following formulæ a few gelatine leaves—more or less—according to the required firmness of the jelly.",
+        "But it should not be forgotten that the greater the viscosity of the jelly the less value will the same possess.",
+        "The various uses of jellies are dealt with in Part II. of this work, where the formulæ of their divers accompanying dishes will also appear."
+    ],
+    "sections": [
+        {
+            "_id": "chapter-v/section-1",
+            "title": "Meat and Game Aspics",
+            "introduction": [],
+            "entryIDs": [
+                "158",
+                "159",
+                "160"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-v/section-2",
+            "title": "LENTEN ASPICS",
+            "introduction": [],
+            "entryIDs": [
+                "161",
+                "162"
+            ],
+            "sections": []
+        }
+    ]
+}

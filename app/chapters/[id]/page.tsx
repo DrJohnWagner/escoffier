@@ -3,7 +3,8 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Chapter from "@/components/Chapter"
-import { getContents, getChapter } from "@/functions/apiClient"
+import { getContents, getChapter, getEntries } from "@/functions/apiClient"
+import { InstructionalEntry } from "@/types/generated.ts/entry-schema"
 
 type ChapterRouteParams = { id: string }
 
@@ -46,11 +47,18 @@ export default async function ChapterPage({
     params: Promise<ChapterRouteParams>
 }) {
     const { id } = await params
-    const chapter = await getChapter(id)
+    const [chapter, entriesArray] = await Promise.all([
+        getChapter(id),
+        getEntries(id),
+    ])
 
     if (!chapter) {
         notFound()
     }
 
-    return <Chapter data={chapter} />
+    const entries = new Map<string, InstructionalEntry>(
+        (entriesArray ?? []).map((e) => [e._id, e])
+    )
+
+    return <Chapter data={chapter} entries={entries} />
 }

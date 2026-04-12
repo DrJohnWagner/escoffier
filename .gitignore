@@ -41,8 +41,9 @@ yarn-error.log*
 next-env.d.ts
 
 # Project raw data and samples
-data/RawData/
-data/sample/
+data/chapters/
+data/JSON-OLD/
+data/schemas-old/
 
 # Local artifacts not meant for version control
 /test.html

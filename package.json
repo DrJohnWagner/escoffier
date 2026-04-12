@@ -8,11 +8,12 @@
         "build": "next build",
         "start": "next start",
         "lint": "eslint",
-        "test": "jest",
-        "test:data": "jest tests/data",
+        "test": "NODE_OPTIONS='--experimental-vm-modules' jest",
+        "test:data": "NODE_OPTIONS='--experimental-vm-modules' jest tests/data",
         "types:generate": "json2ts -i data/schemas/ --cwd data/schemas/ -o types/generated.ts",
         "types:watch": "json2ts -i data/schemas/ --cwd data/schemas/ -o types/generated.ts --watch",
-        "validate:chapters": "for file in data/chapters/chapter-*.json; do echo \"--- Validating '$file' ---\"; cat \"$file\" | node scripts/validate-chapter.mjs; done",
+        "validate:chapters": "for file in data/JSON/chapters/chapter-*.json; do echo \"--- Validating '$file' ---\"; cat \"$file\" | node scripts/validate-chapter.mjs; done",
+        "validate:data": "node scripts/validate-data.mjs",
         "db:migrate": "node scripts/migrate-to-mongo.mjs"
     },
     "dependencies": {

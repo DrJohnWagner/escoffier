@@ -1,0 +1,80 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://example.com/schemas/cookbook.json",
+    "title": "Cookbook",
+    "description": "The master schema for an entire cookbook, assembling all component parts.",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string",
+            "description": "The main title of this digital cookbook project."
+        },
+        "authors": {
+            "type": "array",
+            "description": "The author or editors of this digital cookbook project.",
+            "items": {
+                "type": "string"
+            }
+        },
+        "language": {
+            "type": "string",
+            "description": "The language of the cookbook text."
+        },
+        "source": {
+            "type": "object",
+            "description": "Details of the original source publication.",
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "description": "The original title of the work."
+                },
+                "authors": {
+                    "type": "array",
+                    "description": "The original author or authors of the work.",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "edition": {
+                    "type": "string",
+                    "description": "The specific edition of the original work (e.g., 'New and Revised Edition')."
+                },
+                "year": {
+                    "type": "number"
+                },
+                "publisher": {
+                    "type": "string"
+                },
+                "location": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "The URL of the source text (e.g., the Project Gutenberg page)."
+                }
+            },
+            "required": ["title", "authors"]
+        },
+        "introduction": {
+            "type": "array",
+            "description": "The foreword or introduction to the cookbook, as an array of ContentBlocks.",
+            "items": {
+                "$ref": "./content-block-schema.json"
+            }
+        },
+        "contents": {
+            "$ref": "./contents-schema.json"
+        },
+        "menus": {
+            "$ref": "./menus-schema.json"
+        },
+        "glossary": {
+            "$ref": "./glossary-schema.json"
+        },
+        "index": {
+            "$ref": "./index-schema.json"
+        }
+    },
+    "required": ["title", "authors", "source", "contents"]
+}

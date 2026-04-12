@@ -3,15 +3,11 @@
 "use client"
 
 import React, { useState, useCallback } from "react"
-import { InstructionalEntry, BaseForAllEntries, Recipe, ContentBlock } from "@/types/generated.ts/chapter-schema"
+import { InstructionalEntry, Recipe, ContentBlock } from "@/types/generated.ts/entry-schema"
 import { updateEntry } from "@/functions/apiClient"
 
-// Type guard to check if an entry is a Recipe
-const isRecipe = (
-    entry: InstructionalEntry
-): entry is BaseForAllEntries & Recipe => {
-    return entry.type === "recipe"
-}
+const isRecipe = (entry: InstructionalEntry): entry is Recipe =>
+    entry.type === "recipe"
 
 interface EditFormState {
     title: string
@@ -25,34 +21,11 @@ interface EditFormState {
 
 interface EditEntryModalProps {
     entry: InstructionalEntry
-    chapterId: string
     isOpen: boolean
     onClose: () => void
     onSave: (updatedEntry: InstructionalEntry) => void
 }
 
-function findEntryInChapter(
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    chapter: Record<string, any>,
-    entryNumber: number
-): InstructionalEntry | null {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    function walk(sections: any[]): InstructionalEntry | null {
-        for (const section of sections) {
-            for (const entry of section.entries ?? []) {
-                if (entry.number === entryNumber) return entry
-            }
-            const found = walk(section.sections ?? [])
-            if (found) return found
-        }
-        return null
-    }
-    return walk(chapter.sections ?? [])
-}
-
-/**
- * Recursively processes content blocks into a string format.
- */
 const processBlocks = (
     items: ContentBlock[],
     format: "text" | "markdown",
@@ -68,39 +41,20 @@ const processBlocks = (
                       : "  - "
                 return prefix + item
             }
-            if (Array.isArray(item)) {
-                return item
-                    .map((subItem, i) => {
-                        const prefix = isOrdered
-                            ? `${i + 1}. `
-                            : format === "markdown"
-                              ? "- "
-                              : "  - "
-                        return prefix + subItem
-                    })
-                    .join("\n")
-            }
-            // Object type { [key: string]: string[] }
-            if (typeof item === "object" && item !== null) {
-                return Object.entries(item)
-                    .map(([key, values]) => {
-                        const header =
-                            format === "markdown" ? `**${key}**` : `${key}:`
-                        const listItems = (values as string[])
-                            .map((v, i) => {
-                                const prefix = isOrdered
-                                    ? `${i + 1}. `
-                                    : format === "markdown"
-                                      ? "- "
-                                      : "  - "
-                                return prefix + v
-                            })
-                            .join("\n")
-                        return `${header}\n${listItems}`
-                    })
-                    .join("\n\n")
-            }
-            return ""
+            // Titled section: { title: string; content: string[] }
+            const header =
+                format === "markdown" ? `**${item.title}**` : `${item.title}:`
+            const listItems = item.content
+                .map((v, i) => {
+                    const prefix = isOrdered
+                        ? `${i + 1}. `
+                        : format === "markdown"
+                          ? "- "
+                          : "  - "
+                    return prefix + v
+                })
+                .join("\n")
+            return `${header}\n${listItems}`
         })
         .join("\n")
 }
@@ -118,23 +72,13 @@ const textToBlocks = (text: string): ContentBlock[] => {
         .filter((line) => line.length > 0)
 }
 
-const introToText = (intro?: ContentBlock): string => {
-    if (!intro) return ""
-    if (typeof intro === "string") return intro
-    if (Array.isArray(intro)) return intro.join("\n\n")
-    return blocksToText([intro])
-}
-
-const textToIntro = (text: string): ContentBlock | undefined => {
-    if (!text.trim()) return undefined
-    const lines = text.split("\n").filter((line) => line.trim())
-    if (lines.length === 1) return lines[0]
-    return lines
+const introToText = (intro?: ContentBlock[]): string => {
+    if (!intro || intro.length === 0) return ""
+    return blocksToText(intro)
 }
 
 const EditEntryModal: React.FC<EditEntryModalProps> = ({
     entry,
-    chapterId,
     isOpen,
     onClose,
     onSave,
@@ -183,9 +127,9 @@ const EditEntryModal: React.FC<EditEntryModalProps> = ({
                 type: formState.type,
             }
 
-            const intro = textToIntro(formState.introduction)
-            if (intro !== undefined) {
-                payload.introduction = intro
+            const introBlocks = textToBlocks(formState.introduction)
+            if (introBlocks.length > 0) {
+                payload.introduction = introBlocks
             }
 
             if (formState.notes.trim()) {
@@ -200,18 +144,8 @@ const EditEntryModal: React.FC<EditEntryModalProps> = ({
                 payload.instructions = textToBlocks(formState.instructions)
             }
 
-            const updatedChapter = await updateEntry(
-                chapterId,
-                entry.number,
-                payload
-            )
-            const updatedEntry = findEntryInChapter(
-                updatedChapter as unknown as Record<string, unknown>,
-                entry.number
-            )
-            if (updatedEntry) {
-                onSave(updatedEntry)
-            }
+            const updatedEntry = await updateEntry(entry._id, payload)
+            onSave(updatedEntry)
             onClose()
         } catch (err) {
             setSaveError(
@@ -238,7 +172,7 @@ const EditEntryModal: React.FC<EditEntryModalProps> = ({
         >
             <div className="bg-white rounded-lg shadow-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto mx-4 p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
-                    Edit Entry {entry.number}
+                    Edit Entry {entry._id}
                 </h3>
 
                 {saveError && (

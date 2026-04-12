@@ -1,167 +1,140 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://example.com/schemas/entry.json",
+    "$id": "https://example.com/schemas/entry-schema.json",
     "title": "Instructional Entry",
-    "description": "Defines an instructional entry, which can be a recipe, principle, technique, or definition.",
+    "description": "A single instructional entry — a recipe, principle, technique, or definition — together with its location within the cookbook.",
     "$defs": {
-        "ContentBlock": {
-            "title": "Content Block",
-            "description": "Represents a piece of information that can be a simple string, an array of strings for paragraphs, or a titled object with a list of detail strings.",
-            "oneOf": [
-                {
-                    "type": "string"
+        "EntryBase": {
+            "title": "Base Entry Fields",
+            "description": "Fields shared by all entry types.",
+            "type": "object",
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "description": "The entry's unique numeric identifier, stored as a string (e.g., '1', '42')."
                 },
-                {
-                    "type": "object",
-                    "additionalProperties": {
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        }
+                "title": {
+                    "type": "string",
+                    "description": "The display title of the entry."
+                },
+                "type": {
+                    "type": "string",
+                    "enum": ["recipe", "principle", "technique", "definition"],
+                    "description": "The classification of the entry."
+                },
+                "introduction": {
+                    "type": "array",
+                    "description": "Introductory paragraphs for the entry, each either a plain string or a titled content block.",
+                    "items": {
+                        "$ref": "./content-block-schema.json"
                     }
                 },
-                {
+                "notes": {
                     "type": "array",
+                    "description": "Supplementary notes appended after the main content, each either a plain string or a titled content block.",
+                    "items": {
+                        "$ref": "./content-block-schema.json"
+                    }
+                },
+                "chapter_id": {
+                    "type": "string",
+                    "description": "The machine-readable identifier of the chapter this entry belongs to (e.g., 'chapter-i')."
+                },
+                "section_id": {
+                    "type": "string",
+                    "description": "The machine-readable identifier of the section this entry belongs to (e.g., 'chapter-i/section-1')."
+                },
+                "section_path": {
+                    "type": "array",
+                    "description": "The ordered list of section titles forming the breadcrumb path to this entry.",
                     "items": {
                         "type": "string"
                     }
                 }
-            ]
-        },
-        "EntryBase": {
-            "title": "Base for all Entries",
-            "type": "object",
-            "properties": {
-                "number": {
-                    "type": "number"
-                },
-                "title": {
-                    "type": "string"
-                },
-                "type": {
-                    "type": "string",
-                    "enum": [
-                        "recipe",
-                        "principle",
-                        "technique",
-                        "definition"
-                    ]
-                },
-                "introduction": {
-                    "$ref": "#/$defs/ContentBlock"
-                },
-                "notes": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/$defs/ContentBlock"
-                    }
-                }
             },
-            "required": [
-                "number",
-                "title",
-                "type"
-            ]
+            "required": ["_id", "title", "type", "chapter_id", "section_id", "section_path"]
         },
-        "Recipe": {
-            "title": "Recipe Specifics",
+        "RecipeEntry": {
+            "title": "Recipe Entry",
+            "description": "Additional fields required when the entry type is 'recipe'.",
             "type": "object",
             "properties": {
                 "type": {
                     "const": "recipe"
                 },
                 "yield": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "The expected output quantity or serving size (e.g., 'Four Quarts (3.79 L)')."
                 },
                 "ingredients": {
                     "type": "array",
+                    "description": "The list of ingredients. Most are plain strings, but grouped recipes may use titled content blocks to separate ingredient sets by sub-recipe.",
                     "items": {
-                        "$ref": "#/$defs/ContentBlock"
+                        "$ref": "./content-block-schema.json"
                     }
                 },
                 "instructions": {
                     "type": "array",
+                    "description": "The ordered preparation steps, each either a plain string or a titled content block.",
                     "items": {
-                        "$ref": "#/$defs/ContentBlock"
+                        "$ref": "./content-block-schema.json"
                     }
                 }
             },
-            "required": [
-                "ingredients",
-                "instructions"
-            ]
+            "required": ["ingredients", "instructions"]
         },
-        "Principle": {
-            "title": "Principle",
+        "PrincipleEntry": {
+            "title": "Principle Entry",
+            "description": "Constrains the type discriminator for principle entries.",
             "type": "object",
             "properties": {
-                "type": {
-                    "const": "principle"
-                }
+                "type": { "const": "principle" }
             }
         },
-        "Technique": {
-            "title": "Technique",
+        "TechniqueEntry": {
+            "title": "Technique Entry",
+            "description": "Constrains the type discriminator for technique entries.",
             "type": "object",
             "properties": {
-                "type": {
-                    "const": "technique"
-                }
+                "type": { "const": "technique" }
             }
         },
-        "Definition": {
-            "title": "Definition",
+        "DefinitionEntry": {
+            "title": "Definition Entry",
+            "description": "Constrains the type discriminator for definition entries.",
             "type": "object",
             "properties": {
-                "type": {
-                    "const": "definition"
-                }
+                "type": { "const": "definition" }
             }
         }
     },
     "oneOf": [
         {
-            "title": "Recipe Entry",
+            "title": "Recipe",
             "allOf": [
-                {
-                    "$ref": "#/$defs/EntryBase"
-                },
-                {
-                    "$ref": "#/$defs/Recipe"
-                }
+                { "$ref": "#/$defs/EntryBase" },
+                { "$ref": "#/$defs/RecipeEntry" }
             ]
         },
         {
-            "title": "Principle Entry",
+            "title": "Principle",
             "allOf": [
-                {
-                    "$ref": "#/$defs/EntryBase"
-                },
-                {
-                    "$ref": "#/$defs/Principle"
-                }
+                { "$ref": "#/$defs/EntryBase" },
+                { "$ref": "#/$defs/PrincipleEntry" }
             ]
         },
         {
-            "title": "Technique Entry",
+            "title": "Technique",
             "allOf": [
-                {
-                    "$ref": "#/$defs/EntryBase"
-                },
-                {
-                    "$ref": "#/$defs/Technique"
-                }
+                { "$ref": "#/$defs/EntryBase" },
+                { "$ref": "#/$defs/TechniqueEntry" }
             ]
         },
         {
-            "title": "Definition Entry",
+            "title": "Definition",
             "allOf": [
-                {
-                    "$ref": "#/$defs/EntryBase"
-                },
-                {
-                    "$ref": "#/$defs/Definition"
-                }
+                { "$ref": "#/$defs/EntryBase" },
+                { "$ref": "#/$defs/DefinitionEntry" }
             ]
         }
     ]

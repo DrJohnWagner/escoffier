@@ -6,11 +6,19 @@
  */
 
 /**
- * Represents a piece of information that can be a simple string, an array of strings for paragraphs, or a titled object with a list of detail strings.
+ * A unit of content within an entry: either a plain string or a titled section with a list of paragraph strings.
  */
 export type ContentBlock =
   | string
   | {
-      [k: string]: string[];
-    }
-  | string[];
+      /**
+       * The heading for this content section.
+       */
+      title: string;
+      /**
+       * Paragraphs of text under this heading.
+       *
+       * @minItems 1
+       */
+      content: [string, ...string[]];
+    };

@@ -6,65 +6,65 @@
  */
 
 /**
- * Represents a piece of information that can be a simple string, an array of strings for paragraphs, or a titled object with a list of detail strings.
+ * The table of contents for the cookbook, organized into named parts each containing an ordered list of chapters.
+ *
+ * @minItems 1
  */
-export type ContentBlock =
-  | string
-  | {
-      [k: string]: string[];
-    }
-  | string[];
+export type CookbookTableOfContents = [PartEntry, ...PartEntry[]];
 /**
- * The table of contents for the cookbook, organized into parts and chapters.
- */
-export type CookbookTableOfContents = PartEntry[];
-/**
- * Represents a single course in a menu, which can be a simple string or a choice between multiple options.
+ * A single course in a menu: either a string naming the dish, or a choice object listing two or more alternatives.
  */
 export type MenuItem =
   | string
   | {
       /**
+       * Two or more alternative dishes for this course.
+       *
        * @minItems 2
        */
       choice: [string, string, ...string[]];
-      [k: string]: unknown;
     };
 /**
- * A collection of menus, which can be grouped into sets.
+ * A collection of menu sets, each grouping related menus under a common title.
  */
 export type CookbookMenus = MenuCollection[];
 /**
- * A list of culinary terms and their definitions or cross-references.
+ * A list of culinary terms with definitions or cross-references to other terms or recipe numbers.
  */
 export type CookbookGlossary = GlossaryEntry[];
 /**
- * Can be either a standard term or a cross-reference.
+ * A standard term entry, a cross-reference, or both (some entries carry a recipe number and a see-also redirect simultaneously).
  */
 export type IndexEntry = IndexTerm | IndexCrossReference;
 /**
- * An index for the cookbook, grouped alphabetically.
+ * An alphabetically grouped index of terms and their associated entry identifiers or cross-references.
  */
 export type CookbookIndex = IndexGroup[];
 
 /**
- * The master schema for an entire cookbook, assembling all component parts.
+ * The master document for the entire cookbook, assembling bibliographic metadata, front matter, structured content, and back matter.
  */
 export interface Cookbook {
+  /**
+   * The unique database identifier for this document (e.g., 'cookbook').
+   */
+  _id: string;
   /**
    * The main title of this digital cookbook project.
    */
   title: string;
   /**
-   * The author or editors of this digital cookbook project.
+   * The editors or authors responsible for this digital edition.
+   *
+   * @minItems 1
    */
-  authors: string[];
+  authors: [string, ...string[]];
   /**
-   * The language of the cookbook text.
+   * The language of the cookbook text (e.g., 'English').
    */
   language?: string;
   /**
-   * Details of the original source publication.
+   * Bibliographic details of the original source publication.
    */
   source: {
     /**
@@ -73,49 +73,101 @@ export interface Cookbook {
     title: string;
     /**
      * The original author or authors of the work.
+     *
+     * @minItems 1
      */
-    authors: string[];
+    authors: [string, ...string[]];
     /**
-     * The specific edition of the original work (e.g., 'New and Revised Edition').
+     * The specific edition of the source (e.g., 'New and Revised Edition').
      */
     edition?: string;
+    /**
+     * The year of first publication.
+     */
     year?: number;
+    /**
+     * The name of the original publisher.
+     */
     publisher?: string;
+    /**
+     * The city where the original work was published.
+     */
     location?: string;
     /**
-     * The URL of the source text (e.g., the Project Gutenberg page).
+     * URL of the source text (e.g., the Project Gutenberg page).
      */
     url?: string;
     [k: string]: unknown;
   };
   /**
-   * The foreword or introduction to the cookbook, as an array of ContentBlocks.
+   * Contemporary press opinions about the original work.
    */
-  introduction?: ContentBlock[];
+  press?: {
+    /**
+     * The heading under which the press quotes are presented (e.g., 'Some Press Opinions').
+     */
+    title: string;
+    /**
+     * One or more press quotes.
+     *
+     * @minItems 1
+     */
+    quotes: [PressQuote, ...PressQuote[]];
+    [k: string]: unknown;
+  };
+  /**
+   * The author's preface, as an ordered list of paragraph strings.
+   */
+  preface?: string[];
   contents: CookbookTableOfContents;
   menus?: CookbookMenus;
   glossary?: CookbookGlossary;
   index?: CookbookIndex;
+  /**
+   * The full text of the cookbook organized as chapters, each broken into sections that reference entries by identifier.
+   *
+   * @minItems 1
+   */
+  chapters: [CookbookChapter, ...CookbookChapter[]];
   [k: string]: unknown;
 }
 /**
- * A major part of the cookbook, containing a title and a list of chapters.
+ * A single critical quotation about the cookbook from a named publication.
+ */
+export interface PressQuote {
+  /**
+   * The full text of the quoted review.
+   */
+  text: string;
+  /**
+   * The name of the publication the quote is drawn from.
+   */
+  source: string;
+  [k: string]: unknown;
+}
+/**
+ * A major part of the cookbook, grouping related chapters under a common title.
  */
 export interface PartEntry {
   /**
-   * The part number, expressed as a Roman numeral.
+   * The part number expressed as a Roman numeral (e.g., 'I', 'II').
    */
   part: string;
   /**
-   * The title of the part.
+   * The display title of the part.
    */
   title: string;
-  chapters: ChapterEntry[];
+  /**
+   * The chapters belonging to this part, in reading order.
+   *
+   * @minItems 1
+   */
+  chapters: [ChapterEntry, ...ChapterEntry[]];
   [k: string]: unknown;
 }
 export interface ChapterEntry {
   /**
-   * The chapter number, expressed as a Roman numeral.
+   * The chapter number expressed as a Roman numeral (e.g., 'I', 'XIV').
    */
   chapter: string;
   /**
@@ -123,29 +175,56 @@ export interface ChapterEntry {
    */
   id: string;
   /**
-   * The title of the chapter.
+   * The display title of the chapter.
    */
   title: string;
   [k: string]: unknown;
 }
 /**
- * A titled group of menus, like 'Menus for Luncheons'.
+ * A titled group of related menus (e.g., 'Menus for Luncheons').
  */
 export interface MenuCollection {
+  /**
+   * The heading for this collection of menus.
+   */
   title: string;
-  menus: Menu[];
+  /**
+   * @minItems 1
+   */
+  menus: [Menu, ...Menu[]];
   [k: string]: unknown;
 }
 /**
- * A single menu, containing a list of food items, an optional wine list, and optional metadata.
+ * A single menu with an ordered list of courses, an optional wine pairing list, and optional occasion metadata.
  */
 export interface Menu {
+  /**
+   * The title or label for this specific menu.
+   */
   title?: string;
+  /**
+   * The courses of the menu in serving order.
+   */
   items?: MenuItem[];
+  /**
+   * Suggested wine pairings for the menu.
+   */
   wines?: string[];
+  /**
+   * Optional occasion details for historical or special menus.
+   */
   metadata?: {
+    /**
+     * The date on which the menu was served.
+     */
     date?: string;
+    /**
+     * The venue or establishment where the menu was served.
+     */
     location?: string;
+    /**
+     * The event or occasion the menu was prepared for.
+     */
     occasion?: string;
     [k: string]: unknown;
   };
@@ -153,54 +232,118 @@ export interface Menu {
 }
 export interface GlossaryEntry {
   /**
-   * The term being defined.
+   * The culinary term being defined or cross-referenced.
    */
   term: string;
   /**
-   * The textual definition of the term.
+   * A textual definition of the term.
    */
   definition?: string;
   /**
-   * A cross-reference to a recipe number (e.g., '1755').
+   * Cross-reference to a recipe by its entry identifier (e.g., '1755').
    */
   see_recipe?: string;
   /**
-   * A cross-reference to another glossary term (e.g., 'Cut').
+   * Cross-reference to another glossary term (e.g., 'Cut').
    */
   see_term?: string;
   /**
-   * A list of sub-terms that fall under this main term, often sharing a common cross-reference.
+   * Related sub-terms that share this entry's cross-reference.
    */
   sub_terms?: string[];
   [k: string]: unknown;
 }
 /**
- * A group of index entries under a specific letter of the alphabet.
+ * All index entries that begin with a given letter of the alphabet.
  */
 export interface IndexGroup {
+  /**
+   * The single uppercase letter heading this group.
+   */
   letter: string;
-  entries: IndexEntry[];
+  /**
+   * @minItems 1
+   */
+  entries: [IndexEntry, ...IndexEntry[]];
   [k: string]: unknown;
 }
+/**
+ * A term linked to one or more entry identifiers.
+ */
 export interface IndexTerm {
   /**
    * The indexed term or phrase.
    */
   term: string;
   /**
-   * The associated recipe number or range (e.g., '1652' or '2104-6').
+   * The associated entry identifier or range (e.g., '1652' or '2104-6').
    */
   recipe_number?: string;
   [k: string]: unknown;
 }
+/**
+ * A term that redirects the reader to another index term.
+ */
 export interface IndexCrossReference {
   /**
-   * The term to be redirected.
+   * The term being redirected.
    */
   term: string;
   /**
-   * The term to which the user is redirected (e.g., 'Apricots').
+   * The preferred term to look up instead (e.g., 'Apricots').
    */
   see: string;
+  [k: string]: unknown;
+}
+/**
+ * A single chapter of the cookbook, containing a hierarchical tree of sections whose leaves reference entry identifiers.
+ */
+export interface CookbookChapter {
+  /**
+   * Machine-readable identifier for the chapter (e.g., 'chapter-i').
+   */
+  _id: string;
+  /**
+   * The chapter number expressed as a Roman numeral (e.g., 'I', 'XIV').
+   */
+  chapter: string;
+  /**
+   * The display title of the chapter.
+   */
+  title: string;
+  /**
+   * Introductory paragraphs for the chapter as a whole.
+   */
+  introduction: string[];
+  /**
+   * The top-level sections within this chapter.
+   */
+  sections: ChapterSection[];
+  [k: string]: unknown;
+}
+/**
+ * A named subdivision of a chapter or another section. Sections may be nested arbitrarily deep. Leaf sections carry a list of entry identifiers in the order they appear in the text.
+ */
+export interface ChapterSection {
+  /**
+   * Machine-readable identifier for the section (e.g., 'chapter-i/section-1').
+   */
+  _id: string;
+  /**
+   * The display title of the section.
+   */
+  title: string;
+  /**
+   * Introductory paragraphs for this section.
+   */
+  introduction: string[];
+  /**
+   * Ordered list of entry identifiers belonging directly to this section.
+   */
+  entryIDs: string[];
+  /**
+   * Nested sub-sections within this section.
+   */
+  sections: ChapterSection[];
   [k: string]: unknown;
 }

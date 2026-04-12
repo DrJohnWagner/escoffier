@@ -1,28 +1,51 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://example.com/schemas/cookbook.json",
+    "$id": "https://example.com/schemas/cookbook-schema.json",
     "title": "Cookbook",
-    "description": "The master schema for an entire cookbook, assembling all component parts.",
+    "description": "The master document for the entire cookbook, assembling bibliographic metadata, front matter, structured content, and back matter.",
+    "$defs": {
+        "PressQuote": {
+            "title": "Press Quote",
+            "description": "A single critical quotation about the cookbook from a named publication.",
+            "type": "object",
+            "properties": {
+                "text": {
+                    "type": "string",
+                    "description": "The full text of the quoted review."
+                },
+                "source": {
+                    "type": "string",
+                    "description": "The name of the publication the quote is drawn from."
+                }
+            },
+            "required": ["text", "source"]
+        }
+    },
     "type": "object",
     "properties": {
+        "_id": {
+            "type": "string",
+            "description": "The unique database identifier for this document (e.g., 'cookbook')."
+        },
         "title": {
             "type": "string",
             "description": "The main title of this digital cookbook project."
         },
         "authors": {
             "type": "array",
-            "description": "The author or editors of this digital cookbook project.",
+            "description": "The editors or authors responsible for this digital edition.",
             "items": {
                 "type": "string"
-            }
+            },
+            "minItems": 1
         },
         "language": {
             "type": "string",
-            "description": "The language of the cookbook text."
+            "description": "The language of the cookbook text (e.g., 'English')."
         },
         "source": {
             "type": "object",
-            "description": "Details of the original source publication.",
+            "description": "Bibliographic details of the original source publication.",
             "properties": {
                 "title": {
                     "type": "string",
@@ -33,34 +56,57 @@
                     "description": "The original author or authors of the work.",
                     "items": {
                         "type": "string"
-                    }
+                    },
+                    "minItems": 1
                 },
                 "edition": {
                     "type": "string",
-                    "description": "The specific edition of the original work (e.g., 'New and Revised Edition')."
+                    "description": "The specific edition of the source (e.g., 'New and Revised Edition')."
                 },
                 "year": {
-                    "type": "number"
+                    "type": "number",
+                    "description": "The year of first publication."
                 },
                 "publisher": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "The name of the original publisher."
                 },
                 "location": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "The city where the original work was published."
                 },
                 "url": {
                     "type": "string",
                     "format": "uri",
-                    "description": "The URL of the source text (e.g., the Project Gutenberg page)."
+                    "description": "URL of the source text (e.g., the Project Gutenberg page)."
                 }
             },
             "required": ["title", "authors"]
         },
-        "introduction": {
+        "press": {
+            "type": "object",
+            "description": "Contemporary press opinions about the original work.",
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "description": "The heading under which the press quotes are presented (e.g., 'Some Press Opinions')."
+                },
+                "quotes": {
+                    "type": "array",
+                    "description": "One or more press quotes.",
+                    "items": {
+                        "$ref": "#/$defs/PressQuote"
+                    },
+                    "minItems": 1
+                }
+            },
+            "required": ["title", "quotes"]
+        },
+        "preface": {
             "type": "array",
-            "description": "The foreword or introduction to the cookbook, as an array of ContentBlocks.",
+            "description": "The author's preface, as an ordered list of paragraph strings.",
             "items": {
-                "$ref": "./content-block-schema.json"
+                "type": "string"
             }
         },
         "contents": {
@@ -74,7 +120,15 @@
         },
         "index": {
             "$ref": "./index-schema.json"
+        },
+        "chapters": {
+            "type": "array",
+            "description": "The full text of the cookbook organized as chapters, each broken into sections that reference entries by identifier.",
+            "items": {
+                "$ref": "./chapter-schema.json"
+            },
+            "minItems": 1
         }
     },
-    "required": ["title", "authors", "source", "contents"]
+    "required": ["_id", "title", "authors", "source", "contents", "chapters"]
 }

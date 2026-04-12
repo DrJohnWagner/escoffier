@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://example.com/schemas/contents.json",
+    "$id": "https://example.com/schemas/contents-schema.json",
     "title": "Cookbook Table of Contents",
-    "description": "The table of contents for the cookbook, organized into parts and chapters.",
+    "description": "The table of contents for the cookbook, organized into named parts each containing an ordered list of chapters.",
     "$defs": {
         "ContentChapter": {
             "title": "Chapter Entry",
@@ -10,7 +10,7 @@
             "properties": {
                 "chapter": {
                     "type": "string",
-                    "description": "The chapter number, expressed as a Roman numeral."
+                    "description": "The chapter number expressed as a Roman numeral (e.g., 'I', 'XIV')."
                 },
                 "id": {
                     "type": "string",
@@ -18,29 +18,31 @@
                 },
                 "title": {
                     "type": "string",
-                    "description": "The title of the chapter."
+                    "description": "The display title of the chapter."
                 }
             },
             "required": ["chapter", "id", "title"]
         },
         "ContentPart": {
             "title": "Part Entry",
-            "description": "A major part of the cookbook, containing a title and a list of chapters.",
+            "description": "A major part of the cookbook, grouping related chapters under a common title.",
             "type": "object",
             "properties": {
                 "part": {
                     "type": "string",
-                    "description": "The part number, expressed as a Roman numeral."
+                    "description": "The part number expressed as a Roman numeral (e.g., 'I', 'II')."
                 },
                 "title": {
                     "type": "string",
-                    "description": "The title of the part."
+                    "description": "The display title of the part."
                 },
                 "chapters": {
                     "type": "array",
+                    "description": "The chapters belonging to this part, in reading order.",
                     "items": {
                         "$ref": "#/$defs/ContentChapter"
-                    }
+                    },
+                    "minItems": 1
                 }
             },
             "required": ["part", "title", "chapters"]
@@ -49,5 +51,6 @@
     "type": "array",
     "items": {
         "$ref": "#/$defs/ContentPart"
-    }
+    },
+    "minItems": 1
 }

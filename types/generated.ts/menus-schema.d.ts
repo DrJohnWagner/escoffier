@@ -6,40 +6,68 @@
  */
 
 /**
- * Represents a single course in a menu, which can be a simple string or a choice between multiple options.
+ * A single course in a menu: either a string naming the dish, or a choice object listing two or more alternatives.
  */
 export type MenuItem =
   | string
   | {
       /**
+       * Two or more alternative dishes for this course.
+       *
        * @minItems 2
        */
       choice: [string, string, ...string[]];
-      [k: string]: unknown;
     };
 /**
- * A collection of menus, which can be grouped into sets.
+ * A collection of menu sets, each grouping related menus under a common title.
  */
 export type CookbookMenus = MenuCollection[];
 
 /**
- * A titled group of menus, like 'Menus for Luncheons'.
+ * A titled group of related menus (e.g., 'Menus for Luncheons').
  */
 export interface MenuCollection {
+  /**
+   * The heading for this collection of menus.
+   */
   title: string;
-  menus: Menu[];
+  /**
+   * @minItems 1
+   */
+  menus: [Menu, ...Menu[]];
   [k: string]: unknown;
 }
 /**
- * A single menu, containing a list of food items, an optional wine list, and optional metadata.
+ * A single menu with an ordered list of courses, an optional wine pairing list, and optional occasion metadata.
  */
 export interface Menu {
+  /**
+   * The title or label for this specific menu.
+   */
   title?: string;
+  /**
+   * The courses of the menu in serving order.
+   */
   items?: MenuItem[];
+  /**
+   * Suggested wine pairings for the menu.
+   */
   wines?: string[];
+  /**
+   * Optional occasion details for historical or special menus.
+   */
   metadata?: {
+    /**
+     * The date on which the menu was served.
+     */
     date?: string;
+    /**
+     * The venue or establishment where the menu was served.
+     */
     location?: string;
+    /**
+     * The event or occasion the menu was prepared for.
+     */
     occasion?: string;
     [k: string]: unknown;
   };

@@ -1,0 +1,57 @@
+{
+    "_id": "chapter-ix",
+    "chapter": "IX",
+    "title": "Garnishing Preparations for Relevés and Entrées",
+    "introduction": [],
+    "sections": [
+        {
+            "_id": "chapter-ix/section-1",
+            "title": "Potato Preparations",
+            "introduction": [],
+            "entryIDs": [
+                "219",
+                "220",
+                "221",
+                "222"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-ix/section-2",
+            "title": "Stuffings and Compound Garnishes",
+            "introduction": [],
+            "entryIDs": [
+                "223",
+                "224",
+                "225",
+                "226",
+                "227",
+                "228",
+                "229",
+                "230"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-ix/section-3",
+            "title": "Batters",
+            "introduction": [],
+            "entryIDs": [
+                "231",
+                "232",
+                "233",
+                "234"
+            ],
+            "sections": []
+        },
+        {
+            "_id": "chapter-ix/section-4",
+            "title": "Other Preparations",
+            "introduction": [],
+            "entryIDs": [
+                "235"
+            ],
+            "sections": []
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://example.com/schemas/index.json",
+    "title": "Cookbook Index",
+    "description": "An index for the cookbook, grouped alphabetically.",
+    "$defs": {
+        "TermEntry": {
+            "title": "Index Term",
+            "type": "object",
+            "properties": {
+                "term": {
+                    "type": "string",
+                    "description": "The indexed term or phrase."
+                },
+                "recipe_number": {
+                    "type": "string",
+                    "description": "The associated recipe number or range (e.g., '1652' or '2104-6')."
+                }
+            },
+            "required": ["term"]
+        },
+        "CrossReferenceEntry": {
+            "title": "Index Cross-Reference",
+            "type": "object",
+            "properties": {
+                "term": {
+                    "type": "string",
+                    "description": "The term to be redirected."
+                },
+                "see": {
+                    "type": "string",
+                    "description": "The term to which the user is redirected (e.g., 'Apricots')."
+                }
+            },
+            "required": ["term", "see"]
+        },
+        "IndexEntry": {
+            "title": "Index Entry",
+            "description": "Can be either a standard term or a cross-reference.",
+            "oneOf": [
+                {
+                    "$ref": "#/$defs/TermEntry"
+                },
+                {
+                    "$ref": "#/$defs/CrossReferenceEntry"
+                }
+            ]
+        },
+        "IndexGroup": {
+            "title": "Index Group",
+            "description": "A group of index entries under a specific letter of the alphabet.",
+            "type": "object",
+            "properties": {
+                "letter": {
+                    "type": "string"
+                },
+                "entries": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/IndexEntry"
+                    }
+                }
+            },
+            "required": ["letter", "entries"]
+        }
+    },
+    "type": "array",
+    "items": {
+        "$ref": "#/$defs/IndexGroup"
+    }
+}
