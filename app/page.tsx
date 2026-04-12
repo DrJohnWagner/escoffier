@@ -57,9 +57,9 @@ export default async function HomePage() {
                 )}
             </section>
 
-            {cookbook.introduction && cookbook.introduction.length > 0 && (
+            {cookbook.preface && cookbook.preface.length > 0 && (
                 <section className="introduction-section prose prose-lg max-w-none mb-12">
-                    <ContentBlockList items={cookbook.introduction} />
+                    <ContentBlockList items={cookbook.preface} />
                 </section>
             )}
 

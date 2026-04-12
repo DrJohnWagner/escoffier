@@ -1,6 +1,4 @@
-import { RecipeDictionaryMap } from "@/types/generated.ts/chapter-entry-schema";
-
-const dictionary: RecipeDictionaryMap = {
+const dictionary: Record<string, string> = {
     "1": "chapter-i",
     "2": "chapter-i",
     "3": "chapter-i",

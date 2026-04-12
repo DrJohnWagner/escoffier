@@ -15,8 +15,8 @@ interface ShoppingListContextType {
     shoppingListItems: ShoppingListItemType[]
     addItem: (item: ShoppingListItemType) => void
     removeAllItems: () => void
-    removeItem: (itemNumber: number) => void
-    isItemInList: (itemNumber: number) => boolean
+    removeItem: (itemId: string) => void
+    isItemInList: (itemId: string) => boolean
 }
 
 const ShoppingListContext = createContext<ShoppingListContextType | undefined>(
@@ -28,7 +28,7 @@ const STORAGE_KEY = "shoppingList"
 function isShoppingListItem(value: unknown): value is ShoppingListItemType {
     if (typeof value !== "object" || value === null) return false
     const v = value as Record<string, unknown>
-    return typeof v.number === "number" && typeof v.title === "string"
+    return typeof v._id === "string" && typeof v.title === "string"
 }
 
 function readFromStorage(): ShoppingListItemType[] {
@@ -86,15 +86,15 @@ export function ShoppingListProvider({ children }: { children: ReactNode }) {
         // Duplicate check lives inside the functional updater so two rapid
         // addItem calls can't both pass a stale isItemInList check.
         setShoppingListItems((prev) =>
-            prev.some((existing) => existing.number === item.number)
+            prev.some((existing) => existing._id === item._id)
                 ? prev
                 : [...prev, item]
         )
     }, [])
 
-    const removeItem = useCallback((itemNumber: number) => {
+    const removeItem = useCallback((itemId: string) => {
         setShoppingListItems((prev) =>
-            prev.filter((item) => item.number !== itemNumber)
+            prev.filter((item) => item._id !== itemId)
         )
     }, [])
 
@@ -103,8 +103,8 @@ export function ShoppingListProvider({ children }: { children: ReactNode }) {
     }, [])
 
     const isItemInList = useCallback(
-        (itemNumber: number) =>
-            shoppingListItems.some((item) => item.number === itemNumber),
+        (itemId: string) =>
+            shoppingListItems.some((item) => item._id === itemId),
         [shoppingListItems]
     )
 

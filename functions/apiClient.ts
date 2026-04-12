@@ -14,6 +14,7 @@ import {
     CookbookIndex,
 } from "@/types/generated.ts/cookbook-schema"
 import { CookbookChapter } from "@/types/generated.ts/chapter-schema"
+import { InstructionalEntry } from "@/types/generated.ts/entry-schema"
 
 const DEFAULT_API_BASE = "http://127.0.0.1:8000"
 
@@ -66,13 +67,20 @@ export function getChapter(id: string): Promise<CookbookChapter | null> {
     return apiGet<CookbookChapter>(`/api/chapters/${safeId}`)
 }
 
+export function getEntries(
+    chapterId: string
+): Promise<InstructionalEntry[] | null> {
+    return apiGet<InstructionalEntry[]>(
+        `/api/entries?chapter_id=${encodeURIComponent(chapterId)}`
+    )
+}
+
 export async function updateEntry(
-    chapterId: string,
-    entryNumber: number,
+    entryId: string,
     data: Record<string, unknown>
-): Promise<CookbookChapter> {
-    const safeId = encodeURIComponent(chapterId)
-    const url = `${apiBase()}/api/chapters/${safeId}/entries/${entryNumber}`
+): Promise<InstructionalEntry> {
+    const safeId = encodeURIComponent(entryId)
+    const url = `${apiBase()}/api/entries/${safeId}`
     const response = await fetch(url, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
@@ -85,5 +93,5 @@ export async function updateEntry(
                 `Failed to update entry: ${response.status}`
         )
     }
-    return (await response.json()) as CookbookChapter
+    return (await response.json()) as InstructionalEntry
 }

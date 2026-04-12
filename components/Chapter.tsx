@@ -3,16 +3,22 @@
 import React from "react"
 import Section from "./Section"
 import { CookbookChapter } from "@/types/generated.ts/chapter-schema"
-import TableOfContents from "./TableOfContents" // Import the new component
-import createChapterTOC from "@/functions/createChapterTOC" // 1. Import the function
+import { InstructionalEntry } from "@/types/generated.ts/entry-schema"
+import TableOfContents from "./TableOfContents"
+import createChapterTOC from "@/functions/createChapterTOC"
 import "@/app/globals.css"
 
-const Chapter: React.FC<{ data: CookbookChapter }> = ({ data }) => {
-    const tocItems = createChapterTOC({ sections: data.sections })
+interface ChapterProps {
+    data: CookbookChapter
+    entries: Map<string, InstructionalEntry>
+}
+
+const Chapter: React.FC<ChapterProps> = ({ data, entries }) => {
+    const tocItems = createChapterTOC({ sections: data.sections, entries })
 
     return (
         <article
-            id={data.id}
+            id={data._id}
             className="chapter max-w-4xl mx-auto my-12 p-8 md:p-12 rounded-lg shadow-lg border border-gray-200"
         >
             <header className="chapter-header mb-10">
@@ -21,8 +27,6 @@ const Chapter: React.FC<{ data: CookbookChapter }> = ({ data }) => {
                 </h4>
             </header>
 
-            {/* --- THIS IS THE NEW SECTION --- */}
-            {/* Render the chapter-specific TOC if there are sections */}
             {data.sections && data.sections.length > 0 && (
                 <TableOfContents
                     items={tocItems}
@@ -31,7 +35,6 @@ const Chapter: React.FC<{ data: CookbookChapter }> = ({ data }) => {
                     topLevelItemsAreLinks={true}
                 />
             )}
-            {/* --- END OF NEW SECTION --- */}
 
             {data.introduction && (
                 <div className="chapter-introduction prose prose-xl max-w-none text-gray-600 leading-relaxed">
@@ -43,7 +46,12 @@ const Chapter: React.FC<{ data: CookbookChapter }> = ({ data }) => {
 
             <div className="chapter-body">
                 {data.sections.map((section) => (
-                    <Section key={section.title} section={section} chapterId={data.id} />
+                    <Section
+                        key={section._id}
+                        section={section}
+                        chapterId={data._id}
+                        entries={entries}
+                    />
                 ))}
             </div>
         </article>

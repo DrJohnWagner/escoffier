@@ -5,79 +5,55 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type InstructionalEntry =
-  | (BaseForAllEntries & Recipe)
-  | (BaseForAllEntries & Principle)
-  | (BaseForAllEntries & Technique)
-  | (BaseForAllEntries & Definition);
 /**
- * Represents a piece of information that can be a simple string, an array of strings for paragraphs, or a titled object with a list of detail strings.
+ * A single chapter of the cookbook, containing a hierarchical tree of sections whose leaves reference entry identifiers.
  */
-export type ContentBlock =
-  | string
-  | {
-      [k: string]: string[];
-    }
-  | string[];
-
 export interface CookbookChapter {
+  /**
+   * Machine-readable identifier for the chapter (e.g., 'chapter-i').
+   */
+  _id: string;
+  /**
+   * The chapter number expressed as a Roman numeral (e.g., 'I', 'XIV').
+   */
   chapter: string;
   /**
-   * A unique, machine-readable identifier for the chapter, used for linking (e.g., 'chapter-i').
+   * The display title of the chapter.
    */
-  id: string;
   title: string;
-  introduction?: string[];
+  /**
+   * Introductory paragraphs for the chapter as a whole.
+   */
+  introduction: string[];
+  /**
+   * The top-level sections within this chapter.
+   */
   sections: ChapterSection[];
   [k: string]: unknown;
 }
-export interface ChapterSection {
-  title: string;
-  introduction?: string[];
-  entries?: InstructionalEntry[];
-  sections?: ChapterSection[];
-  [k: string]: unknown;
-}
-export interface BaseForAllEntries {
-  number: number;
-  title: string;
-  type: string;
-  introduction?: ContentBlock;
-  notes?: ContentBlock[];
-  [k: string]: unknown;
-}
 /**
- * A standalone recipe entry.
+ * A named subdivision of a chapter or another section. Sections may be nested arbitrarily deep. Leaf sections carry a list of entry identifiers in the order they appear in the text.
  */
-export interface Recipe {
+export interface ChapterSection {
   /**
-   * The unique number of the recipe.
+   * Machine-readable identifier for the section (e.g., 'chapter-i/section-1').
    */
-  number: number;
+  _id: string;
   /**
-   * The title of the recipe.
+   * The display title of the section.
    */
   title: string;
   /**
-   * The type of entry, which must be 'recipe'.
+   * Introductory paragraphs for this section.
    */
-  type: "recipe";
-  introduction?: ContentBlock;
-  notes?: ContentBlock[];
-  yield?: string;
-  ingredients: ContentBlock[];
-  instructions: ContentBlock[];
-  [k: string]: unknown;
-}
-export interface Principle {
-  type?: "principle";
-  [k: string]: unknown;
-}
-export interface Technique {
-  type?: "technique";
-  [k: string]: unknown;
-}
-export interface Definition {
-  type?: "definition";
+  introduction: string[];
+  /**
+   * Ordered list of entry identifiers belonging directly to this section.
+   */
+  entryIDs: string[];
+  /**
+   * Nested sub-sections within this section.
+   */
+  sections: ChapterSection[];
   [k: string]: unknown;
 }

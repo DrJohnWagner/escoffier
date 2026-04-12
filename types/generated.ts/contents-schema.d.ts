@@ -6,28 +6,35 @@
  */
 
 /**
- * The table of contents for the cookbook, organized into parts and chapters.
+ * The table of contents for the cookbook, organized into named parts each containing an ordered list of chapters.
+ *
+ * @minItems 1
  */
-export type CookbookTableOfContents = PartEntry[];
+export type CookbookTableOfContents = [PartEntry, ...PartEntry[]];
 
 /**
- * A major part of the cookbook, containing a title and a list of chapters.
+ * A major part of the cookbook, grouping related chapters under a common title.
  */
 export interface PartEntry {
   /**
-   * The part number, expressed as a Roman numeral.
+   * The part number expressed as a Roman numeral (e.g., 'I', 'II').
    */
   part: string;
   /**
-   * The title of the part.
+   * The display title of the part.
    */
   title: string;
-  chapters: ChapterEntry[];
+  /**
+   * The chapters belonging to this part, in reading order.
+   *
+   * @minItems 1
+   */
+  chapters: [ChapterEntry, ...ChapterEntry[]];
   [k: string]: unknown;
 }
 export interface ChapterEntry {
   /**
-   * The chapter number, expressed as a Roman numeral.
+   * The chapter number expressed as a Roman numeral (e.g., 'I', 'XIV').
    */
   chapter: string;
   /**
@@ -35,7 +42,7 @@ export interface ChapterEntry {
    */
   id: string;
   /**
-   * The title of the chapter.
+   * The display title of the chapter.
    */
   title: string;
   [k: string]: unknown;

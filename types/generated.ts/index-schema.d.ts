@@ -6,40 +6,52 @@
  */
 
 /**
- * Can be either a standard term or a cross-reference.
+ * A standard term entry, a cross-reference, or both (some entries carry a recipe number and a see-also redirect simultaneously).
  */
 export type IndexEntry = IndexTerm | IndexCrossReference;
 /**
- * An index for the cookbook, grouped alphabetically.
+ * An alphabetically grouped index of terms and their associated entry identifiers or cross-references.
  */
 export type CookbookIndex = IndexGroup[];
 
 /**
- * A group of index entries under a specific letter of the alphabet.
+ * All index entries that begin with a given letter of the alphabet.
  */
 export interface IndexGroup {
+  /**
+   * The single uppercase letter heading this group.
+   */
   letter: string;
-  entries: IndexEntry[];
+  /**
+   * @minItems 1
+   */
+  entries: [IndexEntry, ...IndexEntry[]];
   [k: string]: unknown;
 }
+/**
+ * A term linked to one or more entry identifiers.
+ */
 export interface IndexTerm {
   /**
    * The indexed term or phrase.
    */
   term: string;
   /**
-   * The associated recipe number or range (e.g., '1652' or '2104-6').
+   * The associated entry identifier or range (e.g., '1652' or '2104-6').
    */
   recipe_number?: string;
   [k: string]: unknown;
 }
+/**
+ * A term that redirects the reader to another index term.
+ */
 export interface IndexCrossReference {
   /**
-   * The term to be redirected.
+   * The term being redirected.
    */
   term: string;
   /**
-   * The term to which the user is redirected (e.g., 'Apricots').
+   * The preferred term to look up instead (e.g., 'Apricots').
    */
   see: string;
   [k: string]: unknown;

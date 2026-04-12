@@ -45,20 +45,20 @@ export default function ShoppingListPage() {
                 <div className="space-y-8">
                     {shoppingListItems.map((item) => (
                         <article
-                            key={`${item.number}-${item.title}`}
+                            key={`${item._id}-${item.title}`}
                             className="bg-white border border-gray-200 rounded-lg shadow-sm p-6"
                         >
                             <header className="flex justify-between items-start mb-4">
                                 <h2 className="text-2xl font-semibold text-gray-800">
                                     <span className="text-gray-400 mr-2">
-                                        {item.number}
+                                        {item._id}
                                     </span>
                                     —<span>{item.title}</span>
                                 </h2>
                                 <button
                                     type="button"
-                                    onClick={() => removeItem(item.number)}
-                                    aria-label={`Remove recipe ${item.number}: ${item.title}`}
+                                    onClick={() => removeItem(item._id)}
+                                    aria-label={`Remove recipe ${item._id}: ${item.title}`}
                                     className="text-sm font-semibold text-red-600 hover:text-red-800"
                                 >
                                     Remove

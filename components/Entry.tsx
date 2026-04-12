@@ -5,39 +5,23 @@
 import React, { useState, useEffect } from "react"
 import {
     InstructionalEntry,
-    ContentBlock,
     Recipe,
-} from "@/types/generated.ts/chapter-schema"
+} from "@/types/generated.ts/entry-schema"
 import ContentBlockList from "./ContentBlockList"
-import EntryText from "@/components/EntryText"
 import CopyButton from "./buttons/CopyButton"
 import { useShoppingList } from "@/app/contexts/ShoppingListContext"
 import EditEntryModal from "./EditEntryModal"
 import PlusIcon from "./buttons/PlusIcon"
 import PencilIcon from "./buttons/PencilIcon"
 
-// Type guard to check if an entry is a Recipe
-const isRecipe = (
-    entry: InstructionalEntry
-): entry is BaseForAllEntries & Recipe => {
-    return entry.type === "recipe"
-}
-
-// Helper type for BaseForAllEntries & Recipe
-type BaseForAllEntries = {
-    number: number
-    title: string
-    type: string
-    introduction?: ContentBlock
-    notes?: ContentBlock[]
-}
+const isRecipe = (entry: InstructionalEntry): entry is Recipe =>
+    entry.type === "recipe"
 
 interface EntryProps {
     entry: InstructionalEntry
-    chapterId: string
 }
 
-const Entry: React.FC<EntryProps> = ({ entry, chapterId }) => {
+const Entry: React.FC<EntryProps> = ({ entry }) => {
     const [entryData, setEntryData] = useState<InstructionalEntry>(entry)
     const [isClient, setIsClient] = useState(false)
     const [isEditing, setIsEditing] = useState(false)
@@ -51,12 +35,12 @@ const Entry: React.FC<EntryProps> = ({ entry, chapterId }) => {
         setEntryData(entry)
     }, [entry])
 
-    const alreadyInList = isClient ? isItemInList(entryData.number) : false
+    const alreadyInList = isClient ? isItemInList(entryData._id) : false
 
     const handleAddItem = () => {
         if (isRecipe(entryData)) {
             addItem({
-                number: entryData.number,
+                _id: entryData._id,
                 title: entryData.title,
                 ingredients: entryData.ingredients,
             })
@@ -77,14 +61,14 @@ const Entry: React.FC<EntryProps> = ({ entry, chapterId }) => {
 
     return (
         <div
-            id={`entry-${entryData.number}`}
+            id={`entry-${entryData._id}`}
             className="entry bg-white border border-gray-200 rounded-lg shadow-sm p-6 mb-8"
         >
             <header className="flex justify-between items-start mb-4">
                 {/* Left Side: Title */}
                 <h4 className="text-2xl font-semibold text-gray-800 pr-4">
                     <span className="text-gray-400 mr-2">
-                        {entryData.number}
+                        {entryData._id}
                     </span>
                     —<span className="entry-title">{entryData.title}</span>
                 </h4>
@@ -119,21 +103,9 @@ const Entry: React.FC<EntryProps> = ({ entry, chapterId }) => {
                 </div>
             </header>
 
-            {entryData.introduction && (
+            {entryData.introduction && entryData.introduction.length > 0 && (
                 <div className="entry-introduction prose prose-gray max-w-none mb-4">
-                    {typeof entryData.introduction === "string" ? (
-                        <p>
-                            <EntryText text={entryData.introduction} />
-                        </p>
-                    ) : Array.isArray(entryData.introduction) ? (
-                        entryData.introduction.map((paragraph, index) => (
-                            <p key={index}>
-                                <EntryText text={paragraph} />
-                            </p>
-                        ))
-                    ) : (
-                        <ContentBlockList items={[entryData.introduction]} />
-                    )}
+                    <ContentBlockList items={entryData.introduction} />
                 </div>
             )}
 
@@ -165,7 +137,6 @@ const Entry: React.FC<EntryProps> = ({ entry, chapterId }) => {
             {/* Edit Modal */}
             <EditEntryModal
                 entry={entryData}
-                chapterId={chapterId}
                 isOpen={isEditing}
                 onClose={handleCloseEdit}
                 onSave={handleSaveEntry}
