@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 - **Framework**: A modern Next.js 16 application using the App Router, written in TypeScript.
 - **Styling**: Utilizes Tailwind CSS for styling, including the `@tailwindcss/typography` plugin for rich text formatting, which is ideal for a content-heavy site like a cookbook.
-- **Data**: All content is sourced from local JSON files within the `data/` directory. This data is highly structured, with its shape strictly defined by JSON schemas (`data/schemas/`).
+- **Data**: Source-of-truth content lives in JSON files under `data/`, strictly shaped by JSON schemas in `data/schemas/`. At runtime the Next.js app reads everything through the FastAPI backend (which serves it from MongoDB); the JSON files are loaded into MongoDB once via `make migrate-db`.
 - **Type Safety**: The project leverages `json-schema-to-typescript` to automatically generate TypeScript types from the schemas. This ensures that the data passed to components is type-safe, reducing potential runtime errors.
 
 ### Directory and File Structure Analysis
@@ -22,7 +22,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
     - `JSON/cookbook.json`: Master document containing metadata, table of contents, glossary, index, menus, and the full chapter/section tree (with sections referencing entries by ID rather than embedding them).
     - `JSON/entries.json`: Flat list of all instructional entries (recipes, techniques, principles, definitions) across every chapter.
     - `schemas/*.json`: The JSON Schema definitions that act as the single source of truth for the data's structure.
-- **`functions/`**: Utility modules for Server Components, notably `apiClient.ts`, which provides typed `getCookbook` / `getContents` / `getGlossary` / `getIndexData` / `getChapter` helpers that call the FastAPI backend.
+- **`functions/`**: Utility modules for Server Components, notably `apiClient.ts`, which provides typed `getCookbook` / `getContents` / `getGlossary` / `getIndexData` / `getChapter` / `getEntries` helpers that call the FastAPI backend, plus `updateEntry` for patching a single entry via `PATCH /api/entries/:id`.
 - **`server/`**: The Python FastAPI backend that reads from MongoDB and exposes `/api/*` JSON endpoints. See the API Server section.
 - **`tests/server/`**: Pytest integration tests for the FastAPI server. See the Testing section.
 - **`types/`**: This directory holds TypeScript definitions. The `generated.ts` subdirectory is particularly important as it contains the auto-generated types that align the code with the data schemas.
