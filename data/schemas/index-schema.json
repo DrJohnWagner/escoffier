@@ -18,7 +18,10 @@
                     "description": "The associated entry identifier or range (e.g., '1652' or '2104-6')."
                 }
             },
-            "required": ["term"]
+            "required": [
+                "term"
+            ],
+            "additionalProperties": false
         },
         "CrossReferenceEntry": {
             "title": "Index Cross-Reference",
@@ -34,11 +37,15 @@
                     "description": "The preferred term to look up instead (e.g., 'Apricots')."
                 }
             },
-            "required": ["term", "see"]
+            "required": [
+                "term",
+                "see"
+            ],
+            "additionalProperties": false
         },
         "IndexEntry": {
             "title": "Index Entry",
-            "description": "A standard term entry, a cross-reference, or both (some entries carry a recipe number and a see-also redirect simultaneously).",
+            "description": "A standard term entry, a cross-reference, or both (some entries carry an entry identifier and a see-also redirect simultaneously).",
             "anyOf": [
                 { "$ref": "#/$defs/TermEntry" },
                 { "$ref": "#/$defs/CrossReferenceEntry" }
@@ -61,7 +68,11 @@
                     "minItems": 1
                 }
             },
-            "required": ["letter", "entries"]
+            "required": [
+                "letter",
+                "entries"
+            ],
+            "additionalProperties": false
         }
     },
     "type": "array",

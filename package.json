@@ -10,6 +10,7 @@
         "lint": "eslint",
         "test": "NODE_OPTIONS='--experimental-vm-modules' jest",
         "test:data": "NODE_OPTIONS='--experimental-vm-modules' jest tests/data",
+        "test:server": "cd server && uv run pytest",
         "types:generate": "json2ts -i data/schemas/ --cwd data/schemas/ -o types/generated.ts",
         "types:watch": "json2ts -i data/schemas/ --cwd data/schemas/ -o types/generated.ts --watch",
         "validate:chapters": "for file in data/JSON/chapters/chapter-*.json; do echo \"--- Validating '$file' ---\"; cat \"$file\" | node scripts/validate-chapter.mjs; done",
