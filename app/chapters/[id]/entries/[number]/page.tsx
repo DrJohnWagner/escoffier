@@ -4,9 +4,42 @@ import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import Entry from "@/components/Entry"
-import { getEntry, getAllEntries } from "@/functions/apiClient"
+import { ChapterSection } from "@/types/generated.ts/chapter-schema"
+import { InstructionalEntry } from "@/types/generated.ts/entry-schema"
+import {
+    getChapter,
+    getEntries,
+    getEntry,
+    getAllEntries,
+} from "@/functions/apiClient"
 
 type EntryRouteParams = { id: string; number: string }
+
+interface OrderedChapterEntry {
+    entryNumber: string
+    title?: string
+}
+
+function getEntryHref(chapterId: string, entryNumber: string): string {
+    return `/chapters/${chapterId}/entries/${entryNumber}`
+}
+
+function flattenChapterEntries(
+    sections: ChapterSection[],
+    entriesById: Map<string, InstructionalEntry>
+): OrderedChapterEntry[] {
+    return sections.flatMap((section) => {
+        const directEntries = (section.entryIDs ?? []).map((entryNumber) => ({
+            entryNumber,
+            title: entriesById.get(entryNumber)?.title,
+        }))
+        const nestedEntries = flattenChapterEntries(
+            section.sections ?? [],
+            entriesById
+        )
+        return [...directEntries, ...nestedEntries]
+    })
+}
 
 export async function generateStaticParams(): Promise<EntryRouteParams[]> {
     const entries = await getAllEntries()
@@ -43,11 +76,33 @@ export default async function EntryPage({
     params: Promise<EntryRouteParams>
 }) {
     const { id, number } = await params
-    const entry = await getEntry(number)
+    const [entry, chapter, entriesArray] = await Promise.all([
+        getEntry(number),
+        getChapter(id),
+        getEntries(id),
+    ])
 
     if (!entry) {
         notFound()
     }
+
+    const entriesById = new Map<string, InstructionalEntry>(
+        (entriesArray ?? []).map((chapterEntry) => [
+            chapterEntry._id,
+            chapterEntry,
+        ])
+    )
+
+    const orderedEntries = chapter
+        ? flattenChapterEntries(chapter.sections, entriesById)
+        : []
+    const currentIndex = orderedEntries.findIndex(
+        (orderedEntry) => orderedEntry.entryNumber === number
+    )
+    const previousEntry =
+        currentIndex > 0 ? orderedEntries[currentIndex - 1] : undefined
+    const nextEntry =
+        currentIndex >= 0 ? orderedEntries[currentIndex + 1] : undefined
 
     return (
         <main className="entry-print-page max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
@@ -65,6 +120,26 @@ export default async function EntryPage({
                 )}
             </nav>
             <Entry entry={entry} showPrintButton={true} />
+            {(previousEntry || nextEntry) && (
+                <nav className="mt-10 pt-6 border-t border-gray-200 flex flex-wrap gap-4 text-sm">
+                    {previousEntry && (
+                        <Link
+                            href={getEntryHref(id, previousEntry.entryNumber)}
+                            className="text-blue-600 hover:underline font-medium"
+                        >
+                            {`← Previous: ${previousEntry.title ?? previousEntry.entryNumber}`}
+                        </Link>
+                    )}
+                    {nextEntry && (
+                        <Link
+                            href={getEntryHref(id, nextEntry.entryNumber)}
+                            className="text-blue-600 hover:underline font-medium ml-auto"
+                        >
+                            {`Next: ${nextEntry.title ?? nextEntry.entryNumber} →`}
+                        </Link>
+                    )}
+                </nav>
+            )}
         </main>
     )
 }
