@@ -58,8 +58,15 @@ export default async function HomePage() {
             </section>
 
             {cookbook.preface && cookbook.preface.length > 0 && (
-                <section className="introduction-section prose prose-lg max-w-none mb-12">
-                    <ContentBlockList items={cookbook.preface} />
+                <section className="introduction-section mb-12">
+                    <details>
+                        <summary className="cursor-pointer select-none text-lg font-semibold tracking-wide text-gray-800 hover:text-gray-600 transition-colors">
+                            PREFACE
+                        </summary>
+                        <div className="prose prose-lg max-w-none mt-6">
+                            <ContentBlockList items={cookbook.preface} />
+                        </div>
+                    </details>
                 </section>
             )}
 

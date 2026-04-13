@@ -71,6 +71,14 @@ export function getEntries(
     )
 }
 
+export function getAllEntries(): Promise<InstructionalEntry[] | null> {
+    return apiGet<InstructionalEntry[]>("/api/entries")
+}
+
+export function getEntry(id: string): Promise<InstructionalEntry | null> {
+    return apiGet<InstructionalEntry>(`/api/entries/${encodeURIComponent(id)}`)
+}
+
 export async function updateEntry(
     entryId: string,
     data: Record<string, unknown>

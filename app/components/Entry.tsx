@@ -3,12 +3,14 @@
 "use client"
 
 import React, { useState, useEffect } from "react"
+import Link from "next/link"
 import {
     InstructionalEntry,
     Recipe,
 } from "@/types/generated.ts/entry-schema"
 import ContentBlockList from "./ContentBlockList"
 import CopyButton from "./buttons/CopyButton"
+import PrintButton from "./buttons/PrintButton"
 import { useShoppingList } from "@/app/contexts/ShoppingListContext"
 import EditEntryModal from "./EditEntryModal"
 import PlusIcon from "./buttons/PlusIcon"
@@ -19,9 +21,10 @@ const isRecipe = (entry: InstructionalEntry): entry is Recipe =>
 
 interface EntryProps {
     entry: InstructionalEntry
+    showPrintButton?: boolean
 }
 
-const Entry: React.FC<EntryProps> = ({ entry }) => {
+const Entry: React.FC<EntryProps> = ({ entry, showPrintButton = false }) => {
     const [entryData, setEntryData] = useState<InstructionalEntry>(entry)
     const [isClient, setIsClient] = useState(false)
     const [isEditing, setIsEditing] = useState(false)
@@ -67,14 +70,17 @@ const Entry: React.FC<EntryProps> = ({ entry }) => {
             <header className="flex justify-between items-start mb-4">
                 {/* Left Side: Title */}
                 <h4 className="text-2xl font-semibold text-gray-800 pr-4">
-                    <span className="text-gray-400 mr-2">
-                        {entryData._id}
-                    </span>
-                    —<span className="entry-title">{entryData.title}</span>
+                    <span className="text-gray-400 mr-2">{entryData._id}</span>—{" "}
+                    <Link
+                        href={`/chapters/${entryData.chapter_id}/entries/${entryData._id}`}
+                        className="entry-title hover:underline"
+                    >
+                        {entryData.title}
+                    </Link>
                 </h4>
 
                 {/* Right Side: Action Buttons */}
-                <div className="flex items-center space-x-1 shrink-0">
+                <div className="entry-print-actions flex items-center space-x-1 shrink-0">
                     {isClient && (
                         <button
                             onClick={handleOpenEdit}
@@ -100,6 +106,7 @@ const Entry: React.FC<EntryProps> = ({ entry }) => {
                     )}
                     <CopyButton entry={entryData} format="text" />
                     <CopyButton entry={entryData} format="markdown" />
+                    {showPrintButton && isClient && <PrintButton />}
                 </div>
             </header>
 
