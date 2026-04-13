@@ -13,7 +13,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
     - `layout.tsx`: The root layout defining the global HTML structure and applying the Inter font.
     - `page.tsx`: The homepage, which calls `/api/cookbook` (metadata, preface, glossary, index) and `/api/contents` (table of contents parts and chapters) in parallel to assemble the full page.
     - `chapters/[id]/page.tsx`: A dynamic route that uses `generateStaticParams` to register valid chapter slugs. Each request fetches the chapter and its entries in parallel from `/api/chapters/{id}` and `/api/entries?chapter_id={id}` — fresh on every request because `apiClient.ts` uses `cache: "no-store"`.
-    - `chapters/[id]/entries/[number]/page.tsx`: A dedicated single-entry page. Pre-registers all entry routes via `generateStaticParams` (one `GET /api/entries` call). The entry title in the chapter view links here; a breadcrumb with the section path links back to the chapter.
+    - `chapters/[id]/entries/[number]/page.tsx`: A dedicated single-entry page. Pre-registers all entry routes via `generateStaticParams` (one `GET /api/entries` call). The entry title in the chapter view links here; a breadcrumb with the section path links back to the chapter. Includes a native print button (`window.print`) plus print-specific CSS so print/PDF output focuses on the recipe card content.
     - `glossary/page.tsx` & `index/page.tsx`: Static pages for displaying the glossary and index, respectively.
 - **`app/components/`**: A well-organized set of React components responsible for rendering different parts of the UI.
     - `Chapter.tsx`, `Section.tsx`, and `Entry.tsx` work together to render the hierarchical structure of a chapter's content.
@@ -73,7 +73,7 @@ By default the Next.js pages call `http://127.0.0.1:8000`. To point them at a di
 NEXT_PUBLIC_API_BASE_URL=http://api.local:8000 npm run dev
 ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load Inter.
 
 ## Database
 
