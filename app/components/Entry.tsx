@@ -3,6 +3,7 @@
 "use client"
 
 import React, { useState, useEffect } from "react"
+import Link from "next/link"
 import {
     InstructionalEntry,
     Recipe,
@@ -70,7 +71,13 @@ const Entry: React.FC<EntryProps> = ({ entry }) => {
                     <span className="text-gray-400 mr-2">
                         {entryData._id}
                     </span>
-                    —<span className="entry-title">{entryData.title}</span>
+                    —{" "}
+                    <Link
+                        href={`/chapters/${entryData.chapter_id}/entries/${entryData._id}`}
+                        className="entry-title hover:underline"
+                    >
+                        {entryData.title}
+                    </Link>
                 </h4>
 
                 {/* Right Side: Action Buttons */}
