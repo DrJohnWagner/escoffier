@@ -12,19 +12,23 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - **`app/`**: This directory contains the core routing and page structure.
     - `layout.tsx`: The root layout defining the global HTML structure and applying the Inter font.
     - `page.tsx`: The homepage, which calls `/api/cookbook` (metadata, preface, glossary, index) and `/api/contents` (table of contents parts and chapters) in parallel to assemble the full page.
-    - `chapters/[id]/page.tsx`: A dynamic route that uses `generateStaticParams` to register valid chapter slugs. Each request fetches the chapter and its entries in parallel from `/api/chapters/{id}` and `/api/entries?chapter_id={id}` — fresh on every request because `apiClient.ts` uses `cache: "no-store"`.
-    - `chapters/[id]/entries/[number]/page.tsx`: A dedicated single-entry page. Pre-registers all entry routes via `generateStaticParams` (one `GET /api/entries` call). The entry title in the chapter view links here; a breadcrumb with the section path links back to the chapter. Supports native print/PDF via `window.print`, with page-scoped classes and global print rules to keep printed output focused on recipe content.
+    - `chapters/[id]/page.tsx`: A dynamic route that uses `generateStaticParams` to register valid chapter slugs. Each request fetches the chapter and its entries in parallel from `/api/chapters/{id}` and `/api/entries?chapter_id={id}` — fresh on every request because `apiClient.ts` uses `cache: "no-store"`. The rendered chapter page now includes previous/next chapter links at the bottom, derived from the cookbook order in `/api/contents` rather than lexical chapter-id sorting.
+    - `chapters/[id]/entries/[number]/page.tsx`: A dedicated single-entry page. Pre-registers all entry routes via `generateStaticParams` (one `GET /api/entries` call). The entry title in the chapter view links here; a breadcrumb with the section path links back to the chapter. Supports native print/PDF via `window.print`, with page-scoped classes and global print rules to keep printed output focused on recipe content. The page also computes previous/next entry links from the chapter section tree so navigation follows the same reading order as the parent chapter.
+    - `bookmarks/page.tsx`: A client-side bookmarks page backed by localStorage. Saved entries are listed as links back to their dedicated single-entry pages.
     - `glossary/page.tsx` & `index/page.tsx`: Static pages for displaying the glossary and index, respectively.
 - **`app/components/`**: A well-organized set of React components responsible for rendering different parts of the UI.
     - `Chapter.tsx`, `Section.tsx`, and `Entry.tsx` work together to render the hierarchical structure of a chapter's content.
-    - `Entry.tsx` also hosts the single-entry action controls (copy/edit/add, plus print on the dedicated entry page).
+    - `Chapter.tsx` renders the bottom-of-page previous/next chapter navigation when adjacent chapters exist.
+    - `Entry.tsx` also hosts the single-entry action controls (copy/edit/add, bookmark, plus print on the dedicated entry page).
     - `ContentBlockList.tsx` is a key reusable component designed to handle the flexible `ContentBlock` schema, intelligently rendering simple lists, titled lists, and nested lists.
     - `Glossary.tsx` and `Index.tsx` are client components (`"use client"`) that use React's `useState` hook to provide interactive filtering by letter.
+    - `TableOfContents.tsx` renders grouped top-level sections on the homepage and the in-chapter table of contents for each chapter; `TableOfContentsSection.tsx` handles one grouped section in the homepage layout.
 - **`data/`**: The original source-of-truth JSON content. These files are loaded into MongoDB by `make migrate-db` and are then served to the Next.js app through the FastAPI backend (see the Database and API Server sections below).
     - `JSON/cookbook.json`: Master document containing metadata, table of contents, glossary, index, menus, and the full chapter/section tree (with sections referencing entries by ID rather than embedding them).
     - `JSON/entries.json`: Flat list of all instructional entries (recipes, techniques, principles, definitions) across every chapter.
     - `schemas/*.json`: The JSON Schema definitions that act as the single source of truth for the data's structure.
 - **`functions/`**: Utility modules for Server Components, notably `apiClient.ts`, which provides typed `getCookbook` / `getContents` / `getGlossary` / `getIndexData` / `getChapter` / `getEntries` / `getAllEntries` / `getEntry` helpers that call the FastAPI backend, plus `updateEntry` for patching a single entry via `PATCH /api/entries/:id`.
+- **`app/contexts/`**: Client-side state providers. `ShoppingListContext.tsx` manages shopping-list persistence in localStorage, and `BookmarksContext.tsx` uses the same pattern for saved entry bookmarks.
 - **`server/`**: The Python FastAPI backend that reads from MongoDB and exposes `/api/*` JSON endpoints. See the API Server section.
 - **`tests/server/`**: Pytest integration tests for the FastAPI server. See the Testing section.
 - **`types/`**: This directory holds TypeScript definitions. The `generated.ts` subdirectory is particularly important as it contains the auto-generated types that align the code with the data schemas.

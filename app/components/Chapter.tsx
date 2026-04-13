@@ -1,6 +1,7 @@
 // components/Chapter.tsx
 
 import React from "react"
+import Link from "next/link"
 import Section from "./Section"
 import { CookbookChapter } from "@/types/generated.ts/chapter-schema"
 import { InstructionalEntry } from "@/types/generated.ts/entry-schema"
@@ -8,12 +9,24 @@ import TableOfContents from "./TableOfContents"
 import createChapterTOC from "@/functions/createChapterTOC"
 import "@/app/globals.css"
 
+interface AdjacentChapter {
+    id: string
+    title: string
+}
+
 interface ChapterProps {
     data: CookbookChapter
     entries: Map<string, InstructionalEntry>
+    prevChapter?: AdjacentChapter
+    nextChapter?: AdjacentChapter
 }
 
-const Chapter: React.FC<ChapterProps> = ({ data, entries }) => {
+const Chapter: React.FC<ChapterProps> = ({
+    data,
+    entries,
+    prevChapter,
+    nextChapter,
+}) => {
     const tocItems = createChapterTOC({ sections: data.sections, entries })
 
     return (
@@ -54,6 +67,27 @@ const Chapter: React.FC<ChapterProps> = ({ data, entries }) => {
                     />
                 ))}
             </div>
+
+            {(prevChapter || nextChapter) && (
+                <nav className="mt-10 pt-6 border-t border-gray-200 flex flex-wrap gap-4 text-sm">
+                    {prevChapter && (
+                        <Link
+                            href={`/chapters/${prevChapter.id}`}
+                            className="text-blue-600 hover:underline font-medium"
+                        >
+                            {`← Previous chapter: ${prevChapter.title}`}
+                        </Link>
+                    )}
+                    {nextChapter && (
+                        <Link
+                            href={`/chapters/${nextChapter.id}`}
+                            className="text-blue-600 hover:underline font-medium ml-auto"
+                        >
+                            {`Next chapter: ${nextChapter.title} →`}
+                        </Link>
+                    )}
+                </nav>
+            )}
         </article>
     )
 }
