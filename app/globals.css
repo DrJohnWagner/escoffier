@@ -1,2 +1,28 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+
+@media print {
+    body {
+        background: white;
+    }
+
+    body>header,
+    .entry-print-breadcrumb,
+    .entry-print-actions {
+        display: none !important;
+    }
+
+    .entry-print-page {
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .entry-print-page .entry {
+        box-shadow: none !important;
+        border: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: white !important;
+    }
+}

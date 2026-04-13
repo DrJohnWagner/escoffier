@@ -13,10 +13,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
     - `layout.tsx`: The root layout defining the global HTML structure and applying the Inter font.
     - `page.tsx`: The homepage, which calls `/api/cookbook` (metadata, preface, glossary, index) and `/api/contents` (table of contents parts and chapters) in parallel to assemble the full page.
     - `chapters/[id]/page.tsx`: A dynamic route that uses `generateStaticParams` to register valid chapter slugs. Each request fetches the chapter and its entries in parallel from `/api/chapters/{id}` and `/api/entries?chapter_id={id}` — fresh on every request because `apiClient.ts` uses `cache: "no-store"`.
-    - `chapters/[id]/entries/[number]/page.tsx`: A dedicated single-entry page. Pre-registers all entry routes via `generateStaticParams` (one `GET /api/entries` call). The entry title in the chapter view links here; a breadcrumb with the section path links back to the chapter. Includes a native print button (`window.print`) plus print-specific CSS so print/PDF output focuses on the recipe card content.
+    - `chapters/[id]/entries/[number]/page.tsx`: A dedicated single-entry page. Pre-registers all entry routes via `generateStaticParams` (one `GET /api/entries` call). The entry title in the chapter view links here; a breadcrumb with the section path links back to the chapter. Supports native print/PDF via `window.print`, with page-scoped classes and global print rules to keep printed output focused on recipe content.
     - `glossary/page.tsx` & `index/page.tsx`: Static pages for displaying the glossary and index, respectively.
 - **`app/components/`**: A well-organized set of React components responsible for rendering different parts of the UI.
     - `Chapter.tsx`, `Section.tsx`, and `Entry.tsx` work together to render the hierarchical structure of a chapter's content.
+    - `Entry.tsx` also hosts the single-entry action controls (copy/edit/add, plus print on the dedicated entry page).
     - `ContentBlockList.tsx` is a key reusable component designed to handle the flexible `ContentBlock` schema, intelligently rendering simple lists, titled lists, and nested lists.
     - `Glossary.tsx` and `Index.tsx` are client components (`"use client"`) that use React's `useState` hook to provide interactive filtering by letter.
 - **`data/`**: The original source-of-truth JSON content. These files are loaded into MongoDB by `make migrate-db` and are then served to the Next.js app through the FastAPI backend (see the Database and API Server sections below).

@@ -4,7 +4,6 @@ import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import Entry from "@/components/Entry"
-import PrintButton from "@/components/buttons/PrintButton"
 import { getEntry, getAllEntries } from "@/functions/apiClient"
 
 type EntryRouteParams = { id: string; number: string }
@@ -51,11 +50,8 @@ export default async function EntryPage({
     }
 
     return (
-        <main className="entry-print-shell max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-            <div className="mb-4 print:hidden flex justify-end">
-                <PrintButton />
-            </div>
-            <nav className="mb-6 text-sm text-gray-500 print:hidden">
+        <main className="entry-print-page max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+            <nav className="entry-print-breadcrumb mb-6 text-sm text-gray-500">
                 <Link
                     href={`/chapters/${id}`}
                     className="text-blue-600 hover:underline font-medium"
@@ -68,30 +64,7 @@ export default async function EntryPage({
                     </span>
                 )}
             </nav>
-            <div className="print-recipe-card">
-                <Entry entry={entry} />
-            </div>
-
-            <style jsx global>{`
-                @media print {
-                    body * {
-                        visibility: hidden;
-                    }
-
-                    .print-recipe-card,
-                    .print-recipe-card * {
-                        visibility: visible;
-                    }
-
-                    .print-recipe-card {
-                        position: absolute;
-                        left: 0;
-                        top: 0;
-                        width: 100%;
-                        margin: 0;
-                    }
-                }
-            `}</style>
+            <Entry entry={entry} showPrintButton={true} />
         </main>
     )
 }
