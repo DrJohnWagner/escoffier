@@ -18,7 +18,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
     - `glossary/page.tsx` & `index/page.tsx`: Static pages for displaying the glossary and index, respectively.
 - **`app/components/`**: A well-organized set of React components responsible for rendering different parts of the UI.
     - `Chapter.tsx`, `Section.tsx`, and `Entry.tsx` work together to render the hierarchical structure of a chapter's content.
-    - `Chapter.tsx` renders the bottom-of-page previous/next chapter navigation when adjacent chapters exist.
+    - `Chapter.tsx` renders previous/next chapter navigation above the chapter table of contents and again at the bottom of the chapter when adjacent chapters exist.
     - `Entry.tsx` also hosts the single-entry action controls (copy as text, copy as Markdown, edit, add to shopping list, bookmark, plus print on the dedicated entry page).
     - `ContentBlockList.tsx` is a key reusable component designed to handle the flexible `ContentBlock` schema, intelligently rendering simple lists, titled lists, and nested lists.
     - `Glossary.tsx` and `Index.tsx` are client components (`"use client"`) that use React's `useState` hook to provide interactive filtering by letter.
