@@ -58,9 +58,9 @@ const Index: React.FC<IndexProps> = ({ data }) => {
 													<span className="text-lg text-gray-800">
 														{entry.term}
 													</span>
-													{entry.recipe_number && (
+													{entry.entry_id && (
 														<span className="text-md font-mono text-gray-500">
-															{entry.recipe_number}
+															{entry.entry_id}
 														</span>
 													)}
 												</>

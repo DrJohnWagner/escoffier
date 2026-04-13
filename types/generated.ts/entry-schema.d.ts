@@ -11,7 +11,7 @@
 export type InstructionalEntry = Recipe | Principle | Technique | Definition;
 export type Recipe = BaseEntryFields & RecipeEntry;
 /**
- * A unit of content within an entry: either a plain string or a titled section with a list of paragraph strings.
+ * A unit of content within an entry: either a plain string or a titled section whose items are themselves content blocks.
  */
 export type ContentBlock =
   | string
@@ -21,11 +21,11 @@ export type ContentBlock =
        */
       title: string;
       /**
-       * Paragraphs of text under this heading.
+       * Content items under this heading, each either a plain string or a nested titled content block.
        *
        * @minItems 1
        */
-      content: [string, ...string[]];
+      content: [ContentBlock, ...ContentBlock[]];
     };
 export type Principle = BaseEntryFields & PrincipleEntry;
 export type Technique = BaseEntryFields & TechniqueEntry;

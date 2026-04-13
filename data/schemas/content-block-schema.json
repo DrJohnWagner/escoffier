@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "https://example.com/schemas/content-block-schema.json",
     "title": "Content Block",
-    "description": "A unit of content within an entry: either a plain string or a titled section with a list of paragraph strings.",
+    "description": "A unit of content within an entry: either a plain string or a titled section whose items are themselves content blocks.",
     "oneOf": [
         {
             "type": "string"
@@ -16,9 +16,9 @@
                 },
                 "content": {
                     "type": "array",
-                    "description": "Paragraphs of text under this heading.",
+                    "description": "Content items under this heading, each either a plain string or a nested titled content block.",
                     "items": {
-                        "type": "string"
+                        "$ref": "#"
                     },
                     "minItems": 1
                 }

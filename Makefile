@@ -1,7 +1,7 @@
 COMPOSE ?= docker compose
 DB_SERVICE ?= mongodb
 
-.PHONY: help start-db stop-db restart-db db-status db-logs db-shell db-clean migrate-db install-server start-server test-server
+.PHONY: help start-db stop-db restart-db db-status db-logs db-shell db-clean migrate-db install-server start-server test-server test-data test
 
 help:
 	@echo "Available targets:"
@@ -16,6 +16,8 @@ help:
 	@echo "  install-server  Create/refresh the Python venv and install server deps"
 	@echo "  start-server    Run the FastAPI dev server on http://localhost:8000"
 	@echo "  test-server     Run the pytest suite for the FastAPI server"
+	@echo "  test-data       Run Jest tests in tests/data"
+	@echo "  test            Run all tests (Jest + FastAPI pytest)"
 
 start-db:
 	$(COMPOSE) up -d $(DB_SERVICE)
@@ -48,3 +50,9 @@ start-server:
 
 test-server:
 	cd server && uv run pytest
+
+test-data:
+	npm run test:data
+
+test:
+	$(MAKE) test-data && $(MAKE) test-server

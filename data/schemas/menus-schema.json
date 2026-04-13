@@ -6,7 +6,7 @@
     "$defs": {
         "MenuItem": {
             "title": "Menu Item",
-            "description": "A single course in a menu: either a string naming the dish, or a choice object listing two or more alternatives.",
+            "description": "A single course in a menu: either a string naming the dish, or an alternatives object listing two or more alternatives.",
             "oneOf": [
                 {
                     "type": "string"
@@ -14,7 +14,7 @@
                 {
                     "type": "object",
                     "properties": {
-                        "choice": {
+                        "alternatives": {
                             "type": "array",
                             "description": "Two or more alternative dishes for this course.",
                             "items": {
@@ -23,7 +23,7 @@
                             "minItems": 2
                         }
                     },
-                    "required": ["choice"],
+                    "required": ["alternatives"],
                     "additionalProperties": false
                 }
             ]
@@ -67,9 +67,11 @@
                             "type": "string",
                             "description": "The event or occasion the menu was prepared for."
                         }
-                    }
+                    },
+                    "additionalProperties": false
                 }
-            }
+            },
+            "additionalProperties": false
         },
         "MenuCollection": {
             "title": "Menu Collection",
@@ -88,7 +90,11 @@
                     "minItems": 1
                 }
             },
-            "required": ["title", "menus"]
+            "required": [
+                "title",
+                "menus"
+            ],
+            "additionalProperties": false
         }
     },
     "type": "array",

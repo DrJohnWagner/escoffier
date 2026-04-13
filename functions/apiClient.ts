@@ -7,12 +7,8 @@
 // unreachable, matching the pre-existing `getData` contract that the page
 // components were built around.
 
-import {
-    Cookbook,
-    CookbookTableOfContents,
-    CookbookGlossary,
-    CookbookIndex,
-} from "@/types/generated.ts/cookbook-schema"
+import { Cookbook, CookbookGlossary, CookbookIndex } from "@/types/generated.ts/cookbook-schema"
+import { CookbookTableOfContents } from "@/types/generated.ts/contents-schema"
 import { CookbookChapter } from "@/types/generated.ts/chapter-schema"
 import { InstructionalEntry } from "@/types/generated.ts/entry-schema"
 

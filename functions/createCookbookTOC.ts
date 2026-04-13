@@ -1,7 +1,7 @@
 // functions/createCookbookTOC.ts
 
 import TableOfContentsItemType from "@/types/TableOfContentsItemType"
-import { CookbookTableOfContents } from "@/types/generated.ts/cookbook-schema"
+import { CookbookTableOfContents } from "@/types/generated.ts/contents-schema"
 
 /**
  * Convert the cookbook's table of contents into the flat shape that the

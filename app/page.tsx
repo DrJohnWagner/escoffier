@@ -5,19 +5,19 @@ import ContentBlockList from "@/components/ContentBlockList"
 import Glossary from "@/components/Glossary"
 import Index from "@/components/Index"
 import DataLoadError from "@/components/DataLoadError"
-import { getCookbook } from "@/functions/apiClient"
+import { getCookbook, getContents } from "@/functions/apiClient"
 import createCookbookTOC from "@/functions/createCookbookTOC"
 
 export default async function HomePage() {
     // The /api/cookbook document embeds the TOC, glossary and index — one
     // request is enough for every section on this page.
-    const cookbook = await getCookbook()
+    const [cookbook, contents] = await Promise.all([getCookbook(), getContents()])
 
     if (!cookbook) {
         return <DataLoadError resource="cookbook" />
     }
 
-    const tocItems = createCookbookTOC(cookbook.contents)
+    const tocItems = contents ? createCookbookTOC(contents) : []
 
     return (
         <main className="max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8">

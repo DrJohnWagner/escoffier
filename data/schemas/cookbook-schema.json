@@ -18,7 +18,11 @@
                     "description": "The name of the publication the quote is drawn from."
                 }
             },
-            "required": ["text", "source"]
+            "required": [
+                "text",
+                "source"
+            ],
+            "additionalProperties": false
         }
     },
     "type": "object",
@@ -81,7 +85,11 @@
                     "description": "URL of the source text (e.g., the Project Gutenberg page)."
                 }
             },
-            "required": ["title", "authors"]
+            "required": [
+                "title",
+                "authors"
+            ],
+            "additionalProperties": false
         },
         "press": {
             "type": "object",
@@ -100,17 +108,18 @@
                     "minItems": 1
                 }
             },
-            "required": ["title", "quotes"]
+            "required": [
+                "title",
+                "quotes"
+            ],
+            "additionalProperties": false
         },
         "preface": {
             "type": "array",
-            "description": "The author's preface, as an ordered list of paragraph strings.",
+            "description": "The author's preface, as an ordered list of content blocks.",
             "items": {
-                "type": "string"
+                "$ref": "./content-block-schema.json"
             }
-        },
-        "contents": {
-            "$ref": "./contents-schema.json"
         },
         "menus": {
             "$ref": "./menus-schema.json"
@@ -130,5 +139,5 @@
             "minItems": 1
         }
     },
-    "required": ["_id", "title", "authors", "source", "contents", "chapters"]
+    "required": ["_id", "title", "authors", "source", "chapters"]
 }
