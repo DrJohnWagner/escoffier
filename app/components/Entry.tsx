@@ -11,6 +11,7 @@ import {
 import ContentBlockList from "./ContentBlockList"
 import CopyButton from "./buttons/CopyButton"
 import PrintButton from "./buttons/PrintButton"
+import { useBookmarks } from "@/app/contexts/BookmarksContext"
 import { useShoppingList } from "@/app/contexts/ShoppingListContext"
 import EditEntryModal from "./EditEntryModal"
 import PlusIcon from "./buttons/PlusIcon"
@@ -29,6 +30,7 @@ const Entry: React.FC<EntryProps> = ({ entry, showPrintButton = false }) => {
     const [isClient, setIsClient] = useState(false)
     const [isEditing, setIsEditing] = useState(false)
     const { addItem, isItemInList } = useShoppingList()
+    const { isBookmarked, toggleBookmark } = useBookmarks()
 
     useEffect(() => {
         setIsClient(true)
@@ -39,6 +41,9 @@ const Entry: React.FC<EntryProps> = ({ entry, showPrintButton = false }) => {
     }, [entry])
 
     const alreadyInList = isClient ? isItemInList(entryData._id) : false
+    const bookmarked = isClient
+        ? isBookmarked(entryData.chapter_id, entryData._id)
+        : false
 
     const handleAddItem = () => {
         if (isRecipe(entryData)) {
@@ -52,6 +57,14 @@ const Entry: React.FC<EntryProps> = ({ entry, showPrintButton = false }) => {
 
     const handleOpenEdit = () => {
         setIsEditing(true)
+    }
+
+    const handleToggleBookmark = () => {
+        toggleBookmark({
+            chapterId: entryData.chapter_id,
+            entryNumber: entryData._id,
+            title: entryData.title,
+        })
     }
 
     const handleCloseEdit = () => {
@@ -106,6 +119,33 @@ const Entry: React.FC<EntryProps> = ({ entry, showPrintButton = false }) => {
                     )}
                     <CopyButton entry={entryData} format="text" />
                     <CopyButton entry={entryData} format="markdown" />
+                    {isClient && (
+                        <button
+                            onClick={handleToggleBookmark}
+                            aria-label={
+                                bookmarked ? "Remove bookmark" : "Add bookmark"
+                            }
+                            title={
+                                bookmarked ? "Remove bookmark" : "Add bookmark"
+                            }
+                            className={`p-2 rounded-md transition-colors ${
+                                bookmarked
+                                    ? "text-yellow-500 hover:bg-yellow-50"
+                                    : "text-gray-500 hover:bg-gray-100 hover:text-gray-800"
+                            }`}
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill={bookmarked ? "currentColor" : "none"}
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                className="h-5 w-5"
+                            >
+                                <path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.86L12 17.77 5.82 21l1.18-6.86-5-4.87 7.1-1.01L12 2z" />
+                            </svg>
+                        </button>
+                    )}
                     {showPrintButton && isClient && <PrintButton />}
                 </div>
             </header>
