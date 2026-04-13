@@ -19,7 +19,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - **`app/components/`**: A well-organized set of React components responsible for rendering different parts of the UI.
     - `Chapter.tsx`, `Section.tsx`, and `Entry.tsx` work together to render the hierarchical structure of a chapter's content.
     - `Chapter.tsx` renders the bottom-of-page previous/next chapter navigation when adjacent chapters exist.
-    - `Entry.tsx` also hosts the single-entry action controls (copy/edit/add, bookmark, plus print on the dedicated entry page).
+    - `Entry.tsx` also hosts the single-entry action controls (copy as text, copy as Markdown, edit, add to shopping list, bookmark, plus print on the dedicated entry page).
     - `ContentBlockList.tsx` is a key reusable component designed to handle the flexible `ContentBlock` schema, intelligently rendering simple lists, titled lists, and nested lists.
     - `Glossary.tsx` and `Index.tsx` are client components (`"use client"`) that use React's `useState` hook to provide interactive filtering by letter.
     - `TableOfContents.tsx` renders grouped top-level sections on the homepage and the in-chapter table of contents for each chapter; `TableOfContentsSection.tsx` handles one grouped section in the homepage layout.
@@ -27,7 +27,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
     - `JSON/cookbook.json`: Master document containing metadata, table of contents, glossary, index, menus, and the full chapter/section tree (with sections referencing entries by ID rather than embedding them).
     - `JSON/entries.json`: Flat list of all instructional entries (recipes, techniques, principles, definitions) across every chapter.
     - `schemas/*.json`: The JSON Schema definitions that act as the single source of truth for the data's structure.
-- **`functions/`**: Utility modules for Server Components, notably `apiClient.ts`, which provides typed `getCookbook` / `getContents` / `getGlossary` / `getIndexData` / `getChapter` / `getEntries` / `getAllEntries` / `getEntry` helpers that call the FastAPI backend, plus `updateEntry` for patching a single entry via `PATCH /api/entries/:id`.
+- **`functions/`**: Utility modules for Server Components, notably `apiClient.ts`, which provides typed `getCookbook` / `getContents` / `getGlossary` / `getIndexData` / `getChapter` / `getEntries` / `getAllEntries` / `getEntry` helpers that call the FastAPI backend, plus `updateEntry` for patching a single entry via `PATCH /api/entries/:id`. Also contains `entryToMarkdown.ts`, a pure helper that serialises a recipe entry to clean Markdown (heading, yield, ingredients, instructions, notes) used by the copy-as-Markdown action.
 - **`app/contexts/`**: Client-side state providers. `ShoppingListContext.tsx` manages shopping-list persistence in localStorage, and `BookmarksContext.tsx` uses the same pattern for saved entry bookmarks.
 - **`server/`**: The Python FastAPI backend that reads from MongoDB and exposes `/api/*` JSON endpoints. See the API Server section.
 - **`tests/server/`**: Pytest integration tests for the FastAPI server. See the Testing section.

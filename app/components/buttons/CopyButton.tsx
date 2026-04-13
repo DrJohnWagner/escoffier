@@ -6,6 +6,7 @@ import {
     Recipe,
     ContentBlock,
 } from "@/types/generated.ts/entry-schema"
+import { entryToMarkdown } from "@/functions/entryToMarkdown"
 import CopyIcon from "./CopyIcon"
 
 const isRecipe = (entry: InstructionalEntry): entry is Recipe =>
@@ -16,28 +17,23 @@ const blockToText = (block: ContentBlock): string => {
     return `${block.title}\n${block.content.join("\n")}`
 }
 
-const generateFormattedText = (
-    entry: InstructionalEntry,
-    format: "text" | "markdown"
-): string => {
-    const title = `${format === "markdown" ? "####" : ""} ${entry._id} — ${
-        entry.title
-    }`
+const generateText = (entry: InstructionalEntry): string => {
+    const title = `${entry._id} — ${entry.title}`
     const intro = entry.introduction
         ? entry.introduction.map(blockToText).join("\n\n")
         : ""
 
     const ingredients =
         isRecipe(entry) && entry.ingredients
-            ? `\n${format === "markdown" ? "**Ingredients**" : "Ingredients"}\n${entry.ingredients.map((i: ContentBlock) => `- ${blockToText(i)}`).join("\n")}`
+            ? `\nIngredients\n${entry.ingredients.map((i: ContentBlock) => `- ${blockToText(i)}`).join("\n")}`
             : ""
     const instructions =
         isRecipe(entry) && entry.instructions
-            ? `\n${format === "markdown" ? "**Instructions**" : "Instructions"}\n${entry.instructions.map((i: ContentBlock, idx: number) => `${idx + 1}. ${blockToText(i)}`).join("\n")}`
+            ? `\nInstructions\n${entry.instructions.map((i: ContentBlock, idx: number) => `${idx + 1}. ${blockToText(i)}`).join("\n")}`
             : ""
 
     const notes = entry.notes
-        ? `\n${format === "markdown" ? "> " : "Notes:\n"}${entry.notes.map((n: ContentBlock) => `- ${blockToText(n)}`).join("\n")}`
+        ? `\nNotes:\n${entry.notes.map((n: ContentBlock) => `- ${blockToText(n)}`).join("\n")}`
         : ""
 
     return [title, intro, ingredients, instructions, notes]
@@ -54,7 +50,8 @@ const CopyButton: React.FC<CopyButtonProps> = ({ entry, format }) => {
     const [isCopied, setIsCopied] = useState(false)
 
     const handleCopy = useCallback(async () => {
-        const textToCopy = generateFormattedText(entry, format)
+        const textToCopy =
+            format === "markdown" ? entryToMarkdown(entry) : generateText(entry)
         await navigator.clipboard.writeText(textToCopy)
         setIsCopied(true)
         setTimeout(() => setIsCopied(false), 2500)
