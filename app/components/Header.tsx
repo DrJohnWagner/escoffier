@@ -1,38 +1,36 @@
-"use client"; // 1. Mark this as a Client Component
+"use client"
 
-import React, { useState, useEffect } from "react"
-import Link from "next/link";
-import { usePathname } from "next/navigation"; // 2. Import the usePathname hook
+import React, { useEffect, useState } from "react"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { useShoppingList } from "@/app/contexts/ShoppingListContext"
 
 const Header: React.FC = () => {
-	// 3. Get the current URL path
-	const pathname = usePathname();
-	const { shoppingListItems } = useShoppingList()
-	const [isClient, setIsClient] = useState(false)
+    const pathname = usePathname()
+    const { shoppingListItems } = useShoppingList()
+    const [mounted, setMounted] = useState(false)
 
     const itemCount = shoppingListItems.length
 
-    // Mark that we're on the client after hydration
     useEffect(() => {
-        setIsClient(true)
+        setMounted(true)
     }, [])
 
-    // 4. Define the logic: only show the header if the path is NOT the homepage ('/')
+    // Render only after mount so pathname-driven branching is hydration-safe.
+    if (!mounted) {
+        return null
+    }
+
     const showHeader = pathname !== "/"
 
-    // If the condition is not met, render nothing
     if (!showHeader) {
         return null
     }
 
-    // 5. If the condition is met, render the header JSX
     return (
-        // The header is no longer sticky; its position is fixed by the flex layout in RootLayout
         <header className="bg-white/80 backdrop-blur-sm border-b border-gray-200 z-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
-                    {/* Left side: Title/Logo */}
                     <div className="shrink-0">
                         <Link
                             href="/"
@@ -42,14 +40,13 @@ const Header: React.FC = () => {
                         </Link>
                     </div>
 
-                    {/* Right side: Navigation Links (optional) */}
                     <nav className="hidden md:flex md:space-x-8">
                         <Link
                             href="/shopping-list"
                             className="relative text-gray-600 hover:text-gray-900 font-medium"
                         >
                             Shopping List
-                            {isClient && itemCount > 0 && (
+                            {itemCount > 0 && (
                                 <span className="absolute top-0 right-0 -mt-2 -mr-4 flex h-5 w-5 items-center justify-center rounded-full bg-blue-600 text-xs font-bold text-white">
                                     {itemCount}
                                 </span>
@@ -67,12 +64,11 @@ const Header: React.FC = () => {
                         >
                             Index
                         </Link>
-                        {/* Add other links here in the future */}
                     </nav>
                 </div>
             </div>
         </header>
     )
-};
+}
 
-export default Header;
+export default Header

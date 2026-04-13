@@ -10,11 +10,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ### Directory and File Structure Analysis
 
 - **`app/`**: This directory contains the core routing and page structure.
-    - `layout.tsx`: The root layout defining the global HTML structure and applying the Geist font.
+    - `layout.tsx`: The root layout defining the global HTML structure and applying the Inter font.
     - `page.tsx`: The homepage, which calls `/api/cookbook` (metadata, preface, glossary, index) and `/api/contents` (table of contents parts and chapters) in parallel to assemble the full page.
     - `chapters/[id]/page.tsx`: A dynamic route that uses `generateStaticParams` to register valid chapter slugs. Each request fetches the chapter and its entries in parallel from `/api/chapters/{id}` and `/api/entries?chapter_id={id}` — fresh on every request because `apiClient.ts` uses `cache: "no-store"`.
     - `glossary/page.tsx` & `index/page.tsx`: Static pages for displaying the glossary and index, respectively.
-- **`components/`**: A well-organized set of React components responsible for rendering different parts of the UI.
+- **`app/components/`**: A well-organized set of React components responsible for rendering different parts of the UI.
     - `Chapter.tsx`, `Section.tsx`, and `Entry.tsx` work together to render the hierarchical structure of a chapter's content.
     - `ContentBlockList.tsx` is a key reusable component designed to handle the flexible `ContentBlock` schema, intelligently rendering simple lists, titled lists, and nested lists.
     - `Glossary.tsx` and `Index.tsx` are client components (`"use client"`) that use React's `useState` hook to provide interactive filtering by letter.
@@ -29,7 +29,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Github Branching
 - Using https://gist.github.com/digitaljhelms/4287848
-- Using `feature`, `bugfic` and `stable`
+- Using `feature`, `bugfix` and `stable`
 - Feature Branches: These branches are used for developing new features. Use the prefix feature/. For instance, feature/login-system.
 - Bugfix Branches: These branches are used to fix bugs in the code. Use the prefix bugfix/. For example, bugfix/header-styling.
 - Hotfix Branches: These branches are made directly from the production branch to fix critical bugs in the production environment. Use the prefix hotfix/. For instance, hotfix/critical-security-issue.
@@ -43,16 +43,21 @@ The Next.js app no longer reads the JSON files in `data/` directly — at runtim
 First-time setup:
 
 ```bash
-make install-server    # create the Python venv and install server deps via uv
+# Create the Python venv and install server deps via uv
+make install-server
 ```
 
 Then, in order:
 
 ```bash
-make start-db          # launch MongoDB in Docker (port 27018 on the host)
-make migrate-db        # load data/JSON/cookbook.json and data/JSON/entries.json into MongoDB
-make start-server      # FastAPI dev server on http://127.0.0.1:8000
-npm run dev            # Next.js dev server on http://127.0.0.1:3000
+# Launch MongoDB in Docker (port 27018 on the host)
+make start-db
+# Load data/JSON/cookbook.json and data/JSON/entries.json into MongoDB
+make migrate-db
+# Start FastAPI dev server on http://127.0.0.1:8000
+make start-server
+# Start Next.js dev server on http://127.0.0.1:3000
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -90,6 +95,9 @@ The project ships with a [MongoDB](https://www.mongodb.com/) service defined in 
 | `db-shell`    | Open a `mongosh` shell inside the running container           |
 | `db-clean`    | Stop the container **and delete its volumes** (destructive)   |
 | `migrate-db`  | Load the JSON files under `data/` into MongoDB                |
+| `test-data`   | Run Jest tests in `tests/data`                                |
+| `test-server` | Run FastAPI pytest suite from `server/`                       |
+| `test`        | Run all tests (`test-data` then `test-server`)                |
 
 Run `make help` to see the same list from the command line.
 
@@ -157,9 +165,12 @@ This runs `uv sync` inside `server/`, which creates `server/.venv` using the pye
 ### Running the server
 
 ```bash
-make start-db          # make sure MongoDB is up
-make migrate-db        # (only needed the first time or after editing data/JSON/)
-make start-server      # starts FastAPI dev server on http://127.0.0.1:8000
+# Make sure MongoDB is up
+make start-db
+# Load JSON data (first run or after editing data/JSON/)
+make migrate-db
+# Start FastAPI dev server on http://127.0.0.1:8000
+make start-server
 ```
 
 `start-server` runs `uv run fastapi dev app/main.py --host 127.0.0.1 --port 8000`, which enables auto-reload while you edit files in `server/`.
@@ -189,19 +200,28 @@ The server reads the same `MONGO_*` environment variables as the migration scrip
 
 Integration tests for the API live at [`tests/server/`](tests/server/) and are run with [pytest](https://docs.pytest.org/). They exercise the FastAPI app in-process through `fastapi.testclient.TestClient` and talk to a real MongoDB — so the database must be running and populated first.
 
-There is also a separate Jest-based data validation suite at [`tests/data/`](tests/data/) that validates `data/JSON/cookbook.json` and `data/JSON/entries.json` against their JSON Schemas and checks structural invariants and cross-file consistency. It does **not** require MongoDB. Run it with:
+There is also a separate Jest-based data validation suite at [`tests/data/`](tests/data/) that validates `data/JSON/cookbook.json` and `data/JSON/entries.json` against their JSON Schemas and checks structural invariants and cross-file consistency. It does **not** require MongoDB.
+
+### Testing quick start
 
 ```bash
+# Data-only schema/invariant checks (no MongoDB required)
+make test-data
+# npm equivalent
 npm run test:data
+
+# FastAPI integration tests (MongoDB required)
+make start-db
+make migrate-db
+make test-server
+# npm equivalent
+npm run test:server
+
+# Run all tests (data + server)
+make test
 ```
 
 Pytest is added as a dev dependency in `server/pyproject.toml` (under the `dev` dependency group) and is installed automatically by `make install-server` / `uv sync`.
-
-```bash
-make start-db          # start MongoDB
-make migrate-db        # (only needed once, or after editing data/JSON/)
-make test-server       # runs `uv run pytest` from inside server/
-```
 
 If MongoDB is not reachable, the entire suite is **skipped** with a helpful message rather than failing — so you can run `make test-server` safely even when the DB is down. When the DB *is* up, the suite currently contains **33 tests** covering:
 

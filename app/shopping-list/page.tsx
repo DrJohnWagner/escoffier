@@ -1,10 +1,16 @@
 "use client"
 
+import { useEffect, useState } from "react"
 import { useShoppingList } from "@/app/contexts/ShoppingListContext"
 import ContentBlockList from "@/components/ContentBlockList"
 
 export default function ShoppingListPage() {
     const { shoppingListItems, removeItem, removeAllItems } = useShoppingList()
+    const [mounted, setMounted] = useState(false)
+
+    useEffect(() => {
+        setMounted(true)
+    }, [])
 
     const handleRemoveAll = () => {
         const confirmed = window.confirm(
@@ -13,6 +19,10 @@ export default function ShoppingListPage() {
         if (confirmed) {
             removeAllItems()
         }
+    }
+
+    if (!mounted) {
+        return <main className="max-w-4xl mx-auto py-12" />
     }
 
     return (
