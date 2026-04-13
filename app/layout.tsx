@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import type { ReactNode } from "react"
 import { Inter } from "next/font/google"
 import Header from "@/components/Header"
+import { BookmarksProvider } from "@/app/contexts/BookmarksContext"
 import { ShoppingListProvider } from "@/app/contexts/ShoppingListContext"
 import "./globals.css"
 
@@ -22,10 +23,12 @@ export default function RootLayout({
             <body
                 className={`${inter.className} flex h-dvh flex-col bg-gray-50 text-gray-800`}
             >
-                <ShoppingListProvider>
-                    <Header />
-                    <div className="flex-1 overflow-y-auto">{children}</div>
-                </ShoppingListProvider>
+                <BookmarksProvider>
+                    <ShoppingListProvider>
+                        <Header />
+                        <div className="flex-1 overflow-y-auto">{children}</div>
+                    </ShoppingListProvider>
+                </BookmarksProvider>
             </body>
         </html>
     )
