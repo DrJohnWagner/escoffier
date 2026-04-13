@@ -16,7 +16,7 @@ export type MenuItem =
        *
        * @minItems 2
        */
-      choice: [string, string, ...string[]];
+      alternatives: [string, string, ...string[]];
     };
 /**
  * A collection of menu sets, each grouping related menus under a common title.

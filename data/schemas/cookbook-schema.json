@@ -104,13 +104,10 @@
         },
         "preface": {
             "type": "array",
-            "description": "The author's preface, as an ordered list of paragraph strings.",
+            "description": "The author's preface, as an ordered list of content blocks.",
             "items": {
-                "type": "string"
+                "$ref": "./content-block-schema.json"
             }
-        },
-        "contents": {
-            "$ref": "./contents-schema.json"
         },
         "menus": {
             "$ref": "./menus-schema.json"
@@ -130,5 +127,5 @@
             "minItems": 1
         }
     },
-    "required": ["_id", "title", "authors", "source", "contents", "chapters"]
+    "required": ["_id", "title", "authors", "source", "chapters"]
 }

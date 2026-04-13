@@ -14,7 +14,7 @@
                 {
                     "type": "object",
                     "properties": {
-                        "choice": {
+                        "alternatives": {
                             "type": "array",
                             "description": "Two or more alternative dishes for this course.",
                             "items": {
@@ -23,7 +23,7 @@
                             "minItems": 2
                         }
                     },
-                    "required": ["choice"],
+                    "required": ["alternatives"],
                     "additionalProperties": false
                 }
             ]

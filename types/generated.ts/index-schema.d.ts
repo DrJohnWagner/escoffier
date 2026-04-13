@@ -39,7 +39,7 @@ export interface IndexTerm {
   /**
    * The associated entry identifier or range (e.g., '1652' or '2104-6').
    */
-  recipe_number?: string;
+  entry_id?: string;
   [k: string]: unknown;
 }
 /**

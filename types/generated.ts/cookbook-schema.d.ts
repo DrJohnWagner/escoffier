@@ -6,11 +6,22 @@
  */
 
 /**
- * The table of contents for the cookbook, organized into named parts each containing an ordered list of chapters.
- *
- * @minItems 1
+ * A unit of content within an entry: either a plain string or a titled section whose items are themselves content blocks.
  */
-export type CookbookTableOfContents = [PartEntry, ...PartEntry[]];
+export type ContentBlock =
+  | string
+  | {
+      /**
+       * The heading for this content section.
+       */
+      title: string;
+      /**
+       * Content items under this heading, each either a plain string or a nested titled content block.
+       *
+       * @minItems 1
+       */
+      content: [ContentBlock, ...ContentBlock[]];
+    };
 /**
  * A single course in a menu: either a string naming the dish, or a choice object listing two or more alternatives.
  */
@@ -22,7 +33,7 @@ export type MenuItem =
        *
        * @minItems 2
        */
-      choice: [string, string, ...string[]];
+      alternatives: [string, string, ...string[]];
     };
 /**
  * A collection of menu sets, each grouping related menus under a common title.
@@ -116,10 +127,9 @@ export interface Cookbook {
     [k: string]: unknown;
   };
   /**
-   * The author's preface, as an ordered list of paragraph strings.
+   * The author's preface, as an ordered list of content blocks.
    */
-  preface?: string[];
-  contents: CookbookTableOfContents;
+  preface?: ContentBlock[];
   menus?: CookbookMenus;
   glossary?: CookbookGlossary;
   index?: CookbookIndex;
@@ -143,41 +153,6 @@ export interface PressQuote {
    * The name of the publication the quote is drawn from.
    */
   source: string;
-  [k: string]: unknown;
-}
-/**
- * A major part of the cookbook, grouping related chapters under a common title.
- */
-export interface PartEntry {
-  /**
-   * The part number expressed as a Roman numeral (e.g., 'I', 'II').
-   */
-  part: string;
-  /**
-   * The display title of the part.
-   */
-  title: string;
-  /**
-   * The chapters belonging to this part, in reading order.
-   *
-   * @minItems 1
-   */
-  chapters: [ChapterEntry, ...ChapterEntry[]];
-  [k: string]: unknown;
-}
-export interface ChapterEntry {
-  /**
-   * The chapter number expressed as a Roman numeral (e.g., 'I', 'XIV').
-   */
-  chapter: string;
-  /**
-   * A machine-readable identifier for building hyperlinks (e.g., 'chapter-i').
-   */
-  id: string;
-  /**
-   * The display title of the chapter.
-   */
-  title: string;
   [k: string]: unknown;
 }
 /**
@@ -278,7 +253,7 @@ export interface IndexTerm {
   /**
    * The associated entry identifier or range (e.g., '1652' or '2104-6').
    */
-  recipe_number?: string;
+  entry_id?: string;
   [k: string]: unknown;
 }
 /**

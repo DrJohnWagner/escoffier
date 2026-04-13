@@ -13,7 +13,7 @@
                     "type": "string",
                     "description": "The indexed term or phrase."
                 },
-                "recipe_number": {
+                "entry_id": {
                     "type": "string",
                     "description": "The associated entry identifier or range (e.g., '1652' or '2104-6')."
                 }
