@@ -40,6 +40,27 @@ const Chapter: React.FC<ChapterProps> = ({
                 </h4>
             </header>
 
+            {(prevChapter || nextChapter) && (
+                <nav className="mb-8 pb-6 border-b border-gray-200 flex flex-wrap gap-4 text-sm">
+                    {prevChapter && (
+                        <Link
+                            href={`/chapters/${prevChapter.id}`}
+                            className="text-blue-600 hover:underline font-medium"
+                        >
+                            {`← Previous chapter: ${prevChapter.title}`}
+                        </Link>
+                    )}
+                    {nextChapter && (
+                        <Link
+                            href={`/chapters/${nextChapter.id}`}
+                            className="text-blue-600 hover:underline font-medium ml-auto"
+                        >
+                            {`Next chapter: ${nextChapter.title} →`}
+                        </Link>
+                    )}
+                </nav>
+            )}
+
             {data.sections && data.sections.length > 0 && (
                 <TableOfContents
                     items={tocItems}
