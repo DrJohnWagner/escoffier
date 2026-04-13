@@ -4,9 +4,26 @@ import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Chapter from "@/components/Chapter"
 import { getContents, getChapter, getEntries } from "@/functions/apiClient"
+import { CookbookTableOfContents } from "@/types/generated.ts/contents-schema"
 import { InstructionalEntry } from "@/types/generated.ts/entry-schema"
 
 type ChapterRouteParams = { id: string }
+
+interface AdjacentChapter {
+    id: string
+    title: string
+}
+
+function flattenContentsChapters(
+    contents: CookbookTableOfContents | []
+): AdjacentChapter[] {
+    return contents.flatMap((part) =>
+        part.chapters.map((chapter) => ({
+            id: chapter.id,
+            title: chapter.title,
+        }))
+    )
+}
 
 export async function generateStaticParams(): Promise<ChapterRouteParams[]> {
     const contents = await getContents()
@@ -19,9 +36,9 @@ export async function generateStaticParams(): Promise<ChapterRouteParams[]> {
         }
         return []
     }
-    return contents.flatMap((part) =>
-        part.chapters.map((chapter) => ({ id: chapter.id }))
-    )
+    return flattenContentsChapters(contents).map((chapter) => ({
+        id: chapter.id,
+    }))
 }
 
 export async function generateMetadata({
@@ -47,8 +64,9 @@ export default async function ChapterPage({
     params: Promise<ChapterRouteParams>
 }) {
     const { id } = await params
-    const [chapter, entriesArray] = await Promise.all([
+    const [chapter, contents, entriesArray] = await Promise.all([
         getChapter(id),
+        getContents(),
         getEntries(id),
     ])
 
@@ -60,5 +78,25 @@ export default async function ChapterPage({
         (entriesArray ?? []).map((e) => [e._id, e])
     )
 
-    return <Chapter data={chapter} entries={entries} />
+    const chapterSequence = contents ? flattenContentsChapters(contents) : []
+    const currentChapterIndex = chapterSequence.findIndex(
+        (sequenceChapter) => sequenceChapter.id === id
+    )
+    const prevChapter =
+        currentChapterIndex > 0
+            ? chapterSequence[currentChapterIndex - 1]
+            : undefined
+    const nextChapter =
+        currentChapterIndex >= 0
+            ? chapterSequence[currentChapterIndex + 1]
+            : undefined
+
+    return (
+        <Chapter
+            data={chapter}
+            entries={entries}
+            prevChapter={prevChapter}
+            nextChapter={nextChapter}
+        />
+    )
 }
