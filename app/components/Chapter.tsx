@@ -1,10 +1,10 @@
 // components/Chapter.tsx
 
 import React from "react"
-import Link from "next/link"
 import Section from "./Section"
 import { CookbookChapter } from "@/types/generated.ts/chapter-schema"
 import { InstructionalEntry } from "@/types/generated.ts/entry-schema"
+import ChapterLink from "./ChapterLink"
 import TableOfContents from "./TableOfContents"
 import createChapterTOC from "@/functions/createChapterTOC"
 import "@/app/globals.css"
@@ -43,20 +43,13 @@ const Chapter: React.FC<ChapterProps> = ({
             {(prevChapter || nextChapter) && (
                 <nav className="mb-8 pb-6 border-b border-gray-200 flex flex-wrap gap-4 text-sm">
                     {prevChapter && (
-                        <Link
-                            href={`/chapters/${prevChapter.id}`}
-                            className="text-blue-600 hover:underline font-medium"
-                        >
-                            {`← Previous chapter: ${prevChapter.title}`}
-                        </Link>
+                        <ChapterLink
+                            chapter={prevChapter}
+                            direction="previous"
+                        />
                     )}
                     {nextChapter && (
-                        <Link
-                            href={`/chapters/${nextChapter.id}`}
-                            className="text-blue-600 hover:underline font-medium ml-auto"
-                        >
-                            {`Next chapter: ${nextChapter.title} →`}
-                        </Link>
+                        <ChapterLink chapter={nextChapter} direction="next" />
                     )}
                 </nav>
             )}
@@ -92,20 +85,13 @@ const Chapter: React.FC<ChapterProps> = ({
             {(prevChapter || nextChapter) && (
                 <nav className="mt-10 pt-6 border-t border-gray-200 flex flex-wrap gap-4 text-sm">
                     {prevChapter && (
-                        <Link
-                            href={`/chapters/${prevChapter.id}`}
-                            className="text-blue-600 hover:underline font-medium"
-                        >
-                            {`← Previous chapter: ${prevChapter.title}`}
-                        </Link>
+                        <ChapterLink
+                            chapter={prevChapter}
+                            direction="previous"
+                        />
                     )}
                     {nextChapter && (
-                        <Link
-                            href={`/chapters/${nextChapter.id}`}
-                            className="text-blue-600 hover:underline font-medium ml-auto"
-                        >
-                            {`Next chapter: ${nextChapter.title} →`}
-                        </Link>
+                        <ChapterLink chapter={nextChapter} direction="next" />
                     )}
                 </nav>
             )}

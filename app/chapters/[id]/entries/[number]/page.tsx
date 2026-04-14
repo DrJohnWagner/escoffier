@@ -4,6 +4,7 @@ import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import Entry from "@/components/Entry"
+import EntryLink from "@/components/EntryLink"
 import { ChapterSection } from "@/types/generated.ts/chapter-schema"
 import { InstructionalEntry } from "@/types/generated.ts/entry-schema"
 import {
@@ -18,10 +19,6 @@ type EntryRouteParams = { id: string; number: string }
 interface OrderedChapterEntry {
     entryNumber: string
     title?: string
-}
-
-function getEntryHref(chapterId: string, entryNumber: string): string {
-    return `/chapters/${chapterId}/entries/${entryNumber}`
 }
 
 function flattenChapterEntries(
@@ -123,20 +120,20 @@ export default async function EntryPage({
             {(previousEntry || nextEntry) && (
                 <nav className="mt-10 pt-6 border-t border-gray-200 flex flex-wrap gap-4 text-sm">
                     {previousEntry && (
-                        <Link
-                            href={getEntryHref(id, previousEntry.entryNumber)}
-                            className="text-blue-600 hover:underline font-medium"
-                        >
-                            {`← Previous: ${previousEntry.title ?? previousEntry.entryNumber}`}
-                        </Link>
+                        <EntryLink
+                            chapterId={id}
+                            entryNumber={previousEntry.entryNumber}
+                            title={previousEntry.title}
+                            direction="previous"
+                        />
                     )}
                     {nextEntry && (
-                        <Link
-                            href={getEntryHref(id, nextEntry.entryNumber)}
-                            className="text-blue-600 hover:underline font-medium ml-auto"
-                        >
-                            {`Next: ${nextEntry.title ?? nextEntry.entryNumber} →`}
-                        </Link>
+                        <EntryLink
+                            chapterId={id}
+                            entryNumber={nextEntry.entryNumber}
+                            title={nextEntry.title}
+                            direction="next"
+                        />
                     )}
                 </nav>
             )}
